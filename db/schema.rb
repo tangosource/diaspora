@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111207233503) do
+ActiveRecord::Schema.define(:version => 20111211213438) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -108,6 +108,14 @@ ActiveRecord::Schema.define(:version => 20111207233503) do
   end
 
   add_index "conversations", ["author_id"], :name => "conversations_author_id_fk"
+
+  create_table "invitation_codes", :force => true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.integer  "count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "invitations", :force => true do |t|
     t.text     "message"

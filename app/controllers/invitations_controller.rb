@@ -8,6 +8,7 @@ class InvitationsController < Devise::InvitationsController
   before_filter :check_if_invites_open, :only =>[:create]
 
   def new
+    @invite_code = InvitationCode.find_or_create_by_user_id(current_user.id)
     @sent_invitations = current_user.invitations_from_me.includes(:recipient)
     respond_to do |format|
       format.html do

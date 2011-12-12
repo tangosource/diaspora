@@ -5,6 +5,7 @@
 Diaspora::Application.routes.draw do
 
 
+
   # Posting and Reading
 
   resources :reshares
@@ -123,6 +124,8 @@ Diaspora::Application.routes.draw do
   get 'community_spotlight' => "contacts#spotlight", :as => 'community_spotlight'
 
   get 'stream' => "multis#index", :as => 'multi'
+
+  get 'i/:id' => 'invitation_codes#update', :as => 'invite_code'
 
   resources :people, :except => [:edit, :update] do
     resources :status_messages

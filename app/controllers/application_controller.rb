@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
                 :open_publisher
 
   def ensure_http_referer_is_set
-    request.env['HTTP_REFERER'] ||= '/aspects'
+    request.env['HTTP_REFERER'] ||= '/stream'
   end
 
   # we need to do this for vanna controller.  these should really be controller

@@ -167,3 +167,10 @@ Given /^I have (\d+) contacts$/ do |n|
   end
   AspectMembership.import(aspect_memberships)
 end
+
+Given /^I visit alice's invitation code url$/ do
+  @alice ||= Factory(:user, :username => 'alice', :getting_started => false)
+  invite_code  = InvitationCode.find_or_create_by_user_id(@alice.id)
+  visit invite_code_url(invite_code)
+end
+

@@ -3,6 +3,10 @@
     = image_tag 'icons/monotone_email_letter_round.png', :height => "128px", :width => "128px"
 
   .span-12.last
+    paste this link!
+    = text_field_tag :invite_code, invite_code_url(:title => @invite_code.title) 
+
+  .span-12.last
     %h2
       = t('.invite_someone_to_join')
       .description
@@ -15,7 +19,6 @@
           = t('email')
         = invite.text_field :email, :title => t('.comma_seperated_plz')
         %br
-
         %h4
           = t('.aspect')
         = invite.select(:aspects, options_from_collection_for_select(all_aspects, 'id', 'name'))

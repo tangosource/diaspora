@@ -15,7 +15,6 @@
     %p{:class => "login_#{name}"}= msg
 
   = image_tag 'diaspora_collage.png', :style => "margin-left:-50px;"
-
 .span-10
   %br
   %br
@@ -41,6 +40,9 @@
         %b
           = t('password_confirmation')
         = f.password_field :password_confirmation, :title => t('registrations.new.enter_password_again') 
+
+      .clearfix
+        = hidden_field_tag 'invite[code]', 'lalalala'
 
       .submit_field
         = f.submit t('registrations.new.create_my_account'), :class => 'in_aspects'

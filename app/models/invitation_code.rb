@@ -1,5 +1,8 @@
 class InvitationCode < ActiveRecord::Base
   belongs_to :user
+
+  validates_presence_of :user
+
   before_create :generate_token
 
   def to_param
@@ -7,6 +10,8 @@ class InvitationCode < ActiveRecord::Base
   end
 
   def generate_token
-    self.token =  ActiveSupport::SecureRandom.hex(6)
+    begin
+      self.token = ActiveSupport::SecureRandom.hex(6)
+    end while InvitationCode.exists?(:token => self[:token])
   end
 end

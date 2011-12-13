@@ -25,6 +25,10 @@ Factory.define :profile_with_image_url, :parent => :profile do |p|
   p.image_url_small "http://example.com/image_small.jpg"
 end
 
+Factory.define :invitation_code do |i|
+  i.association :user
+end
+
 Factory.define :person do |p|
   p.sequence(:diaspora_handle) { |n| "bob-person-#{n}#{r_str}@example.net" }
   p.sequence(:url)  { |n| AppConfig[:pod_url] }

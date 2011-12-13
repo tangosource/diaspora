@@ -181,3 +181,8 @@ When /^I fill in the new user form$/ do
   step 'I fill in "user_password_confirmation" with "secret"'
 end
 
+And /^I should be able to friend Alice$/ do
+  alice = User.find_by_username 'alice'
+  step 'I should see "Add contact"'
+  step "I should see \"#{alice.name}\""
+end

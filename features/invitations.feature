@@ -7,4 +7,4 @@ Feature: Invitations
     When I fill in the new user form
     And I press "Create my account!"
     Then I should see the "welcome to diaspora" message
-    And Alice should be my friend
+    And I should be able to friend Alice

@@ -327,12 +327,17 @@ class User < ActiveRecord::Base
     end
   end
 
+  def process_invite_acceptence(invite)
+    self.invited_by = invite.user
+  end
+
   # This method is called when an invited user accepts his invitation
   #
   # @param [Hash] opts the options to accept the invitation with
   # @option opts [String] :username The username the invited user wants.
   # @option opts [String] :password
   # @option opts [String] :password_confirmation
+
   def accept_invitation!(opts = {})
     log_hash = {:event => :invitation_accepted, :username => opts[:username], :uid => self.id}
     log_hash[:inviter] = invitations_to_me.first.sender.diaspora_handle if invitations_to_me.first && invitations_to_me.first.sender

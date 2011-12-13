@@ -13,6 +13,12 @@ module GettingStartedHelper
     current_user.contacts.receiving.size > 2
   end
 
+  def invited_by_message
+    if current_user.invited_by.present?
+      "you are invited by #{current_user.invited_by.name}"
+    end
+  end
+
   # @return [Boolean] The user has followed at least 3 tags
   def has_few_followed_tags?
     current_user.followed_tags.size > 2

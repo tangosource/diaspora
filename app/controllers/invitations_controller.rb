@@ -34,6 +34,7 @@ class InvitationsController < Devise::InvitationsController
   end
 
   def update
+    sign_out(current_user) if user_signed_in?
     invitation_token = params[:user][:invitation_token]
 
     if invitation_token.nil? || invitation_token.blank?

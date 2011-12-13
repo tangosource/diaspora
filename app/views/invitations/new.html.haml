@@ -3,16 +3,12 @@
     = image_tag 'icons/monotone_email_letter_round.png', :height => "128px", :width => "128px"
 
   .span-12.last
-    paste this link!
-    = text_field_tag :invite_code, invite_code_url(:title => @invite_code.title) 
-
-  .span-12.last
     %h2
       = t('.invite_someone_to_join')
       .description
         = t('.if_they_accept_info')
         %br
-  .span-7.append-1
+  .span-7.append-1.last
     #email_invitation
       = form_for User.new, :url => invitation_path(User) do |invite|
         %h4
@@ -39,6 +35,13 @@
 
         %p
           = invite.submit t('.send_an_invitation')
+
+  .clearfix
+    .span-7.prepend-3.last
+
+      or paste them this link!
+      = invite_link(@invite_code)
+      = "#{@invite_code.count} invites left on this code"
 
   %br
   %br

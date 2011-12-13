@@ -1,12 +1,12 @@
 class InvitationCode < ActiveRecord::Base
   belongs_to :user
-  before_create :generate_code
+  before_create :generate_token
 
   def to_param
-    title
+    token 
   end
 
-  def generate_code
-    self.title =  ActiveSupport::SecureRandom.hex(6)
+  def generate_token
+    self.token =  ActiveSupport::SecureRandom.hex(6)
   end
 end

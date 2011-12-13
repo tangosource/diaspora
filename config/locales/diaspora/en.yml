@@ -320,6 +320,8 @@ en:
       simplicity_explanation: "Diaspora makes sharing clean and easy – and this goes for privacy too. Inherently private, Diaspora doesn’t make you wade through pages of settings and options just to keep your profile secure."
       learn_about_host: "Learn about how to host your own Diaspora server."
 
+  invitation_codes:
+    excited: "%{name} is excited to see you here."
   invitations:
     create:
       sent: "Invitations have been sent to: "

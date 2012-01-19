@@ -7,8 +7,15 @@ app.models.Stream = Backbone.Collection.extend({
     return _.any(this.posts.models) ? this.timeFilteredPath() : this.basePath()
   },
 
+  _fetching : false,
+  _allPostsLoaded: false,
+
   fetch: function() {
+    if(this._allPostsLoaded || this._fetching) { return false }
     var self = this
+
+    // we're fetching the collection... there is probably a better way to do this
+    self._fetching = true;
 
     this.posts
       .fetch({
@@ -16,10 +23,20 @@ app.models.Stream = Backbone.Collection.extend({
         url : self.url()
       })
       .done(
-        function(){ 
+        function(resp){
+          // we're done fetching... there is probably a better way to handle this
+          self._fetching = false;
+
           self.trigger("fetched", self);
+
+          // all loaded?
+          if(resp.posts.length <= 1) {
+            self._allPostsLoaded = true;
+            self.trigger("allPostsLoaded", self);
+          }
         }
       )
+    return this;
   },
 
   basePath : function(){

@@ -44,77 +44,42 @@ describe("app.views.Stream", function(){
   describe("infScroll", function(){
     // NOTE: inf scroll happens at 500px
 
-    beforeEach(function(){
-      spyOn(this.view.collection, "fetch").andReturn($.Deferred())
-    })
-
-    context("when the user is at the bottom of the page", function(){
-      beforeEach(function(){
-        spyOn($.fn, "height").andReturn(0)
-        spyOn($.fn, "scrollTop").andReturn(100)
-      })
-
-      it("calls fetch", function(){
-        spyOn(this.view, "isLoading").andReturn(false)
-
-        this.view.infScroll();
-        expect(this.view.collection.fetch).toHaveBeenCalled();
-      })
-
-      it("does not call fetch if the collection is loading", function(){
-        spyOn(this.view, "isLoading").andReturn(true)
-
-        this.view.infScroll();
-        expect(this.view.collection.fetch).not.toHaveBeenCalled();
-      })
-
-      it("does not call fetch if all content has been fetched", function(){
-        spyOn(this.view, "isLoading").andReturn(false)
-        this.view.allContentLoaded = true;
-
-        this.view.infScroll();
-        expect(this.view.collection.fetch).not.toHaveBeenCalled();
-      })
-    })
-
-    it("does not fetch new content when the user is not at the bottom of the page", function(){
-      spyOn(this.view, "isLoading").andReturn(false)
-
-      spyOn($.fn, "height").andReturn(0);
-      spyOn($.fn, "scrollTop").andReturn(-500);
+    it("calls render when the user is at the bottom of the page", function(){
+      spyOn($.fn, "height").andReturn(0)
+      spyOn($.fn, "scrollTop").andReturn(100)
+      spyOn(this.view, "render")
 
       this.view.infScroll();
-      expect(this.view.collection.fetch).not.toHaveBeenCalled();
+      expect(this.view.render).toHaveBeenCalled();
     })
   })
 
-  describe("collectionFetched", function(){
-    context("unbinding scroll", function(){
-      beforeEach(function(){
-        spyOn($.fn, "unbind")
-      })
-
-      it("unbinds scroll if there are no more posts left to load", function(){
-        this.view.collectionFetched(this.collection, {posts : []})
-        expect($.fn.unbind).toHaveBeenCalled()
-      })
-
-      it("does not fetch new content when the user is fetching one post", function(){
-        this.view.collectionFetched(this.collection, {posts : {}})
-        expect($.fn.unbind).toHaveBeenCalled()
-      })
+  describe("streamFetched", function() {
+    it("triggers on stream.fetched", function(){
+      spyOn(this.view, "streamFetched")
+      this.view.stream.trigger("fetched")
+      expect(this.view.streamFetched()).toHaveBeenCalled()
     })
 
-    it("sets this.allContentLoaded if there are no more posts left to load", function(){
-      expect(this.view.allContentLoaded).toBe(false)
-      this.view.collectionFetched(this.collection, {posts : []})
-      expect(this.view.allContentLoaded).toBe(true)
+    it("calls removeLoader()", function() {
+      spyOn(this.view, "removeLoader")
+      this.view.streamFetched()
+      expect(this.view.removeLoader()).toHaveBeenCalled()
+    })
+  })
+
+  describe("allPostsLoaded", function(){
+    it("triggers on stream.allPostsLoaded", function(){
+      spyOn(this.view, "allPostsLoaded")
+      this.view.stream.trigger("allPostsLoaded")
+      expect(this.views.allPostsLoaded()).toHaveBeenCalled()
     })
 
-    it("does not set this.allContentLoaded if there was a non-empty response from the server", function(){
-      expect(this.view.allContentLoaded).toBe(false)
-      this.view.collectionFetched(this.collection, {posts : this.posts})
-      expect(this.view.allContentLoaded).toBe(false)
+    it("unbinds scroll", function() {
+      spyOn($.fn, "unbind")
+
+      this.view.allPostsLoaded()
+      expect($.fn.unbind).toHaveBeenCalled()
     })
   })
 })

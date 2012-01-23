@@ -8,6 +8,8 @@ Diaspora::Application.routes.draw do
     resources :photos
   end
 
+  get 'get_places' => "places#get_places", :as => :get_places
+
   # Posting and Reading
 
   resources :reshares

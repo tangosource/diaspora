@@ -63,7 +63,7 @@ var Publisher = {
       return "@{" + personData.name + "; " + personData.handle + "}";
     },
     hiddenMentionFromPlace : function(placeData){
-      return "={" + personData.name + "; " + personData.handle + "}";
+      return "={" + placeData.name + "; " + placeData.handle + "}";
     },
 
     onSelect :  function(visibleInput, data, formatted) {
@@ -268,9 +268,21 @@ var Publisher = {
         }
       );
 
-      $.getJSON($("#publisher .selected_contacts_link").attr("href"), undefined ,
+      $.getJSON($("#publisher .selected_places_link").attr("href"), undefined ,
         function(data){
-          Publisher.input().autocomplete(data,
+
+          name = data[0].place.diaspora_handle;
+          id = data[0].place.id;
+          places=[];
+          place = {
+            avatar: '/images/user/default.png',
+            name: name,
+            handle: name,
+            id: id
+          }
+          places.push(place);
+
+          Publisher.input().autocomplete(places,
             Publisher.autocompletion.options('places'));
           Publisher.input().result(Publisher.autocompletion.selectItemCallback);
           Publisher.oldInputContent = Publisher.input().val();

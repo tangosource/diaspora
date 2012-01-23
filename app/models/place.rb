@@ -22,6 +22,10 @@ class Place < ActiveRecord::Base
     self.diaspora_handle ||= description.title_sanitized
   end
 
+  #def self.places
+    #return Place.all
+  #end
+
 end
 
 

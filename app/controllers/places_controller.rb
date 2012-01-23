@@ -2,8 +2,15 @@ class PlacesController < ApplicationController
   before_filter :authenticate_user!
 
   respond_to :html, :only => [:show]
-  respond_to :json, :only => [:index, :show]
+  respond_to :json, :only => [:get_places, :show]
 
+  def get_places
+    @place = Place.all
+    
+    respond_to do |format|
+      format.json{render :json => @place.to_json}
+    end
+  end
 
   # GET /places/1
   # GET /places/1.xml

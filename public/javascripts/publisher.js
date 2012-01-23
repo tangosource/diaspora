@@ -41,9 +41,10 @@ var Publisher = {
   },
 
   autocompletion: {
-    options : function(){return {
+    options : function(who){return {
       minChars : 1,
       max : 5,
+      who: who,
       onSelect : Publisher.autocompletion.onSelect,
       searchTermFromValue: Publisher.autocompletion.searchTermFromValue,
       scroll : false,
@@ -60,6 +61,9 @@ var Publisher = {
     };},
     hiddenMentionFromPerson : function(personData){
       return "@{" + personData.name + "; " + personData.handle + "}";
+    },
+    hiddenMentionFromPlace : function(placeData){
+      return "={" + personData.name + "; " + personData.handle + "}";
     },
 
     onSelect :  function(visibleInput, data, formatted) {
@@ -219,8 +223,10 @@ var Publisher = {
       return [stringStart.length, stringStart.length + formatted.length];
     },
 
-    findStringToReplace: function(value, cursorIndex){
-      var atLocation = value.lastIndexOf('@', cursorIndex);
+    findStringToReplace: function(value, cursorIndex, tag){
+
+      var atLocation = value.lastIndexOf(tag, cursorIndex);
+
       if(atLocation == -1){return [0,0];}
       var nextAt = cursorIndex;
 
@@ -230,31 +236,47 @@ var Publisher = {
     },
 
     searchTermFromValue: function(value, cursorIndex) {
-      var stringLoc = Publisher.autocompletion.findStringToReplace(value, cursorIndex);
+      var tag = {
+       people: '@',
+       places: '='
+      }
+      var stringLoc = Publisher.autocompletion.findStringToReplace(value, cursorIndex, tag[this.who]);
       if(stringLoc[0] <= 2){
         stringLoc[0] = 0;
       }else{
         stringLoc[0] -= 2;
       }
-
       var relevantString = value.slice(stringLoc[0], stringLoc[1]).replace(/\s+$/,"");
+      re = '(^|\s)'+tag[this.who]+'(.+)' 
 
-      var matches = relevantString.match(/(^|\s)@(.+)/);
+      var matches = relevantString.match(re);
+
       if(matches){
         return matches[2];
       }else{
         return '';
       }
+
     },
     initialize: function(){
       $.getJSON($("#publisher .selected_contacts_link").attr("href"), undefined ,
         function(data){
           Publisher.input().autocomplete(data,
-            Publisher.autocompletion.options());
+            Publisher.autocompletion.options('people'));
           Publisher.input().result(Publisher.autocompletion.selectItemCallback);
           Publisher.oldInputContent = Publisher.input().val();
         }
       );
+
+      $.getJSON($("#publisher .selected_contacts_link").attr("href"), undefined ,
+        function(data){
+          Publisher.input().autocomplete(data,
+            Publisher.autocompletion.options('places'));
+          Publisher.input().result(Publisher.autocompletion.selectItemCallback);
+          Publisher.oldInputContent = Publisher.input().val();
+        }
+      );
+      
     }
   },
 

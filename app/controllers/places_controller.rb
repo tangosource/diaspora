@@ -5,10 +5,12 @@ class PlacesController < ApplicationController
   respond_to :json, :only => [:get_places, :show]
 
   def get_places
-    @place = Place.all
-    
     respond_to do |format|
-      format.json{render :json => @place.to_json}
+      format.json{
+        @place = Place.find(:all)
+
+        render :json => @place.to_json
+      }
     end
   end
 

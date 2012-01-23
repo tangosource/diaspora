@@ -271,16 +271,19 @@ var Publisher = {
       $.getJSON($("#publisher .selected_places_link").attr("href"), undefined ,
         function(data){
 
-          name = data[0].place.diaspora_handle;
-          id = data[0].place.id;
           places=[];
-          place = {
-            avatar: '/images/user/default.png',
-            name: name,
-            handle: name,
-            id: id
-          }
-          places.push(place);
+          _.each(data, function(value){
+            name = value.place.diaspora_handle;
+            id = value.place.id;
+            place = {
+              avatar: '/images/user/default.png',
+              name: name,
+              handle: name,
+              id: id,
+              url: ''
+            }
+            places.push(place);
+          });
 
           Publisher.input().autocomplete(places,
             Publisher.autocompletion.options('places'));

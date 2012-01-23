@@ -32,6 +32,9 @@
           %b
             = t('places.summary')
           = d.text_area :summary, :rows => 5
+          = f.hidden_field :guid, :value => '10'
+          = f.hidden_field :url, :value => 'www.puertanegra.com'
+          = f.hidden_field :serialized_public_key, :value => '10'
           %b
             = t('places.location')
           = d.text_field :location

@@ -41,10 +41,10 @@ var Publisher = {
   },
 
   autocompletion: {
-    options : function(who){return {
+    options : function(prefix){return {
       minChars : 1,
       max : 5,
-      who: who,
+      prefix: prefix,
       onSelect : Publisher.autocompletion.onSelect,
       searchTermFromValue: Publisher.autocompletion.searchTermFromValue,
       scroll : false,
@@ -59,11 +59,13 @@ var Publisher = {
       },
       disableRightAndLeft : true
     };},
-    hiddenMentionFromPerson : function(personData){
-      return "@{" + personData.name + "; " + personData.handle + "}";
+    hiddenMentionFromPerson : function(Data,tag){
+      return tag+"{" + Data.name + "; " + Data.handle + "}";
     },
-    hiddenMentionFromPlace : function(placeData){
-      return "={" + placeData.name + "; " + placeData.handle + "}";
+
+    tag : {
+      people: '@',
+      places: '='
     },
 
     onSelect :  function(visibleInput, data, formatted) {
@@ -71,7 +73,8 @@ var Publisher = {
       var visibleLoc = Publisher.autocompletion.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
       $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);
 
-      var mentionString = Publisher.autocompletion.hiddenMentionFromPerson(data);
+      var tag = Publisher.autocompletion.tag[this.prefix];
+      var mentionString = Publisher.autocompletion.hiddenMentionFromPerson(data,tag);
       var mention = { visibleStart: visibleLoc[0],
                       visibleEnd  : visibleLoc[1],
                       mentionString : mentionString
@@ -236,18 +239,15 @@ var Publisher = {
     },
 
     searchTermFromValue: function(value, cursorIndex) {
-      var tag = {
-       people: '@',
-       places: '='
-      }
-      var stringLoc = Publisher.autocompletion.findStringToReplace(value, cursorIndex, tag[this.who]);
+      var tag = Publisher.autocompletion.tag[this.prefix];
+      var stringLoc = Publisher.autocompletion.findStringToReplace(value, cursorIndex, tag);
       if(stringLoc[0] <= 2){
         stringLoc[0] = 0;
       }else{
         stringLoc[0] -= 2;
       }
       var relevantString = value.slice(stringLoc[0], stringLoc[1]).replace(/\s+$/,"");
-      re = '(^|\s)'+tag[this.who]+'(.+)' 
+      re = '(^|\s)'+tag+'(.+)' 
 
       var matches = relevantString.match(re);
 
@@ -270,7 +270,6 @@ var Publisher = {
 
       $.getJSON($("#publisher .selected_places_link").attr("href"), undefined ,
         function(data){
-
           places=[];
           _.each(data, function(value){
             name = value.place.diaspora_handle;
@@ -279,19 +278,15 @@ var Publisher = {
               avatar: '/images/user/default.png',
               name: name,
               handle: name,
-              id: id,
-              url: ''
             }
             places.push(place);
           });
-
           Publisher.input().autocomplete(places,
             Publisher.autocompletion.options('places'));
           Publisher.input().result(Publisher.autocompletion.selectItemCallback);
           Publisher.oldInputContent = Publisher.input().val();
         }
       );
-      
     }
   },
 

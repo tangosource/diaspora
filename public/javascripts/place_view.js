@@ -1,5 +1,4 @@
-Publisher.places = {}
-Publisher.places.view = Backbone.View.extend({
+Publisher.places = Backbone.View.extend({
 
   el: ('#publisher'),
 
@@ -8,8 +7,7 @@ Publisher.places.view = Backbone.View.extend({
   },
 
   initialize : function() {
-    _.bindAll(this, 'keyDownHandler');
-    this.setAutocomplete(".selected_contacts_link");
+    _.bindAll(this, 'keyDownHandler','findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput');
   },
 
   keyDownHandler: function(){
@@ -18,42 +16,96 @@ Publisher.places.view = Backbone.View.extend({
     var selectionEnd = input[0].selectionEnd;
     var isDeletion = (event.keyCode == KEYCODES.DEL && selectionStart < input.val().length) || (event.keyCode == KEYCODES.BACKSPACE && (selectionStart > 0 || selectionStart != selectionEnd));
     var isInsertion = (KEYCODES.isInsertion(event.keyCode) && event.keyCode != KEYCODES.RETURN );
+    var value = input.val();
 
     if(isDeletion){
-      console.log(input.val());
+      this.searchTermFromValue(value, selectionStart);
     }else if(isInsertion){
-      console.log(input.val());
+      this.searchTermFromValue(value, selectionStart);
     }
     
   },
 
-  setAutocomplete: function(Ajax){
-      $.getJSON($("#publisher "+Ajax).attr("href"), undefined ,
-        function(data){
-          $("#status_message_fake_text").autocomplete(data, {
-            minChars : 1,
-            max : 5,
-            onSelect : Publisher.autocompletion.onSelect,
-            searchTermFromValue: Publisher.autocompletion.searchTermFromValue,
-            scroll : false,
-            formatItem: function(row, i, max) {
-              return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
-            },
-            asa: (function(){console.log()})(),
-            formatMatch: function(row, i, max) {
-              return row.name;
-            },
-            formatResult: function(row) {
-              return row.name;
-            },
-            disableRightAndLeft : true
-          });
-        }
-    );
+  findStringToReplace: function(value, cursorIndex){
+    var atLocation = value.lastIndexOf('=', cursorIndex);
+    if(atLocation == -1){return [0,0];}
+    var nextAt = cursorIndex;
+
+    if(nextAt == -1){nextAt = value.length;}
+    return [atLocation, nextAt];
+
+  },
+
+  searchTermFromValue: function(value, cursorIndex) {
+    var stringLoc = this.findStringToReplace(value, cursorIndex);
+    if(stringLoc[0] <= 2){
+      stringLoc[0] = 0;
+    }else{
+      stringLoc[0] -= 2;
+    }
+
+    var relevantString = value.slice(stringLoc[0], stringLoc[1]).replace(/\s+$/,"");
+
+    var matches = relevantString.match(/(^|\s)=(.+)/);
+    console.log(matches);
+    if(matches){
+      return matches[2];
+    }else{
+      return '';
+    }
+  },
+  
+  onSelect :  function(visibleInput, data, formatted) {
+    var visibleCursorIndex = visibleInput[0].selectionStart;
+    var visibleLoc = this.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
+    $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);
+
+    var mentionString = Publisher.autocompletion.hiddenMentionFromPerson(data);
+    var mention = { visibleStart: visibleLoc[0],
+      visibleEnd  : visibleLoc[1],
+      mentionString : mentionString
+    };
+    Publisher.autocompletion.mentionList.push(mention);
+    Publisher.oldInputContent = visibleInput.val();
+    Publisher.hiddenInput().val(Publisher.autocompletion.mentionList.generateHiddenInput(visibleInput.val()));
+  },
+
+  addMentionToInput: function(input, cursorIndex, formatted){
+    var inputContent = input.val();
+
+    var stringLoc = this.findStringToReplace(inputContent, cursorIndex);
+
+    var stringStart = inputContent.slice(0, stringLoc[0]);
+    var stringEnd = inputContent.slice(stringLoc[1]);
+
+    input.val(stringStart + formatted + stringEnd);
+    var offset = formatted.length - (stringLoc[1] - stringLoc[0]);
+    Publisher.autocompletion.mentionList.updateMentionLocations(stringStart.length, offset);
+    return [stringStart.length, stringStart.length + formatted.length];
+  },
+  
+  setAutocomplete: function(){
+    $("#status_message_fake_text").autocomplete("url", {
+      minChars : 1,
+      max : 5,
+      onSelect : view.onSelect,
+      searchTermFromValue: view.searchTermFromValue,
+      scroll : false,
+      formatItem: function(row, i, max) {
+        return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
+      },
+      formatMatch: function(row, i, max) {
+        return row.name;
+      },
+      formatResult: function(row) {
+        return row.name;
+      },
+      disableRightAndLeft : true
+    });
   }
 
 });
 
 $(document).ready(function() {
-  var places = new Publisher.places.view();
+  var places = new Publisher.places();
 });

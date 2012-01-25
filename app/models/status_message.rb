@@ -79,7 +79,8 @@ class StatusMessage < Post
 
     escaped_message = opts[:plain_text] ? self.raw_message: ERB::Util.h(self.raw_message)
     mentioned_message = self.format_mentions(escaped_message, opts)
-    Diaspora::Taggable.format_tags(mentioned_message, opts.merge(:no_escape => true))
+    places_message = self.format_places(mentioned_message, opts)
+    Diaspora::Taggable.format_tags(places_message, opts.merge(:no_escape => true))
   end
 
   def format_mentions(text, opts = {})
@@ -106,6 +107,20 @@ class StatusMessage < Post
     else
       mentioned_people_from_string
     end
+  end
+
+  def format_places(text, opts ={})
+    regex = /=\{([^;]+); ([^\}]+)\}/
+    form_message = text.to_str.gsub(regex) do |matched_string|
+      review = self.reviews.detect{ |r| r.place.diaspora_handle == $~[2] unless r.nil?  }
+
+      if opts[:plain_text]
+        review ? ERB::Util.h(review.place.title) : ERB::Util.h($~[1])
+      else
+        review ? place_link(review.place, :class => 'mention hovercardable') : ERB::Util.h($~[1])
+      end
+    end
+    form_message
   end
 
   def create_mentions

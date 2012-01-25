@@ -17,7 +17,13 @@ module PlacesHelper
   end
 
   def place_href(place, opts={})
-    place_path(place)
+    Rails.application.routes.url_helpers.place_path(place,opts)
+  end
+
+  def place_link(place, opts={})
+    opts[:class] ||= ""
+    remote_or_hovercard_link = "/places/#{place.id}".html_safe
+    "<a data-hovercard='#{remote_or_hovercard_link}' #{place_href(place)} class='#{opts[:class]}' #{ ("target=" + opts[:target]) if opts[:target]}>#{h(place.title)}</a>".html_safe
   end
 
 end

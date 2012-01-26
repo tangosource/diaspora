@@ -361,21 +361,23 @@ ActiveRecord::Schema.define(:version => 20120126163341) do
 
   create_table "profiles", :force => true do |t|
     t.string   "diaspora_handle"
-    t.string   "first_name",       :limit => 127
-    t.string   "last_name",        :limit => 127
+    t.string   "first_name",        :limit => 127
+    t.string   "last_name",         :limit => 127
     t.string   "image_url"
     t.string   "image_url_small"
     t.string   "image_url_medium"
     t.date     "birthday"
     t.string   "gender"
     t.text     "bio"
-    t.boolean  "searchable",                      :default => true, :null => false
-    t.integer  "person_id",                                         :null => false
+    t.boolean  "searchable",                       :default => true, :null => false
+    t.integer  "person_id",                                          :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "location"
-    t.string   "full_name",        :limit => 70
-    t.string   "alias"
+    t.string   "full_name",         :limit => 70
+    t.boolean  "hide_full_name"
+    t.string   "hidden_first_name"
+    t.string   "hidden_last_name"
   end
 
   add_index "profiles", ["full_name", "searchable"], :name => "index_profiles_on_full_name_and_searchable"

@@ -39,7 +39,8 @@ class Profile < ActiveRecord::Base
   validate :valid_birthday
 
   attr_accessible :first_name, :last_name, :image_url, :image_url_medium,
-    :image_url_small, :birthday, :gender, :bio, :location, :searchable, :date, :tag_string, :alias
+    :image_url_small, :birthday, :gender, :bio, :location, :searchable, :date, :tag_string, 
+    :hide_full_name, :hidden_first_name, :hidden_last_name
 
   belongs_to :person
   before_validation do

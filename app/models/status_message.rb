@@ -109,6 +109,16 @@ class StatusMessage < Post
     end
   end
 
+  def mentioned_places
+    if self.persisted?
+      create_review if self.reviews.empty?
+      self.reviews.includes(:place).map{ |review| review.place }
+    else
+      mentioned_places_from_string
+    end
+  end
+  
+
   def format_places(text, opts ={})
     regex = /=\{([^;]+); ([^\}]+)\}/
     form_message = text.to_str.gsub(regex) do |matched_string|

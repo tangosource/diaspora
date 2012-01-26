@@ -5,6 +5,14 @@ class PlacesController < ApplicationController
   respond_to :json, :only => [:index, :show]
 
 
+  def index
+    @places = Place.search params[:q], params[:limit]
+
+    respond_with do |format|
+      format.json { render :json => @places.to_json }
+    end
+  end
+
   # GET /places/1
   # GET /places/1.xml
   def show

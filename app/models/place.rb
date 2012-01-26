@@ -27,6 +27,30 @@ class Place < ActiveRecord::Base
     self.diaspora_handle ||= "#{description.title_sanitized}#{User.diaspora_id_host}"
   end
 
+  def self.search(query,limit=5)
+
+    sql, tokens = self.search_query_string(query)
+    self.where(sql, *tokens)
+  end
+
+  def self.search_query_string(query)
+    query = query.downcase
+    like_operator = postgres? ? "ILIKE" : "LIKE"
+
+    where_clause = <<-SQL
+      places.url #{like_operator} ? OR
+      places.diaspora_handle #{like_operator} ?
+    SQL
+
+    q_tokens = []
+    q_tokens[0] = query.to_s.strip.gsub(/(\s|$|^)/) { "%#{$1}" }
+    q_tokens[1] = q_tokens[0].gsub(/\s/,'').gsub('%','')
+    q_tokens[1] << "%"
+
+    [where_clause, q_tokens]
+  end
+  
+
 end
 
 

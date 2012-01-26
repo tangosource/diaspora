@@ -2,12 +2,9 @@ Publisher.places = Backbone.View.extend({
 
   el: ('#publisher'),
 
-  events : {
-    "keydown #status_message_fake_text": "keyDownHandler"
-  },
-
   initialize : function() {
     _.bindAll(this, 'keyDownHandler','findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput');
+    this.setAutocomplete();
   },
 
   keyDownHandler: function(){
@@ -47,20 +44,24 @@ Publisher.places = Backbone.View.extend({
     var relevantString = value.slice(stringLoc[0], stringLoc[1]).replace(/\s+$/,"");
 
     var matches = relevantString.match(/(^|\s)=(.+)/);
-    console.log(matches);
     if(matches){
       return matches[2];
     }else{
       return '';
     }
   },
+
+  hiddenMentionFromPlace : function(placeData){
+    return "={" + placeData.name + "; " + placeData.handle + "}";
+  },
+  
   
   onSelect :  function(visibleInput, data, formatted) {
     var visibleCursorIndex = visibleInput[0].selectionStart;
     var visibleLoc = this.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
     $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);
 
-    var mentionString = Publisher.autocompletion.hiddenMentionFromPerson(data);
+    var mentionString = this.hiddenMentionFromPlace(data);
     var mention = { visibleStart: visibleLoc[0],
       visibleEnd  : visibleLoc[1],
       mentionString : mentionString
@@ -85,7 +86,9 @@ Publisher.places = Backbone.View.extend({
   },
   
   setAutocomplete: function(){
-    $("#status_message_fake_text").autocomplete("url", {
+
+    view = this;
+    $("#status_message_fake_text").autocomplete("/places/", {
       minChars : 1,
       max : 5,
       onSelect : view.onSelect,

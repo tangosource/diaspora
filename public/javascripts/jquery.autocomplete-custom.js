@@ -348,13 +348,17 @@ $.Autocompleter = function(input, options) {
 
 	function parse(data) {
 		var parsed = [];
-		var rows = data.split("\n");
+		//var rows = data.split("\n");
+    var rows = _.map(data, function(value){
+     return value.name;
+    });
+    
 		for (var i=0; i < rows.length; i++) {
 			var row = $.trim(rows[i]);
 			if (row) {
 				row = row.split("|");
 				parsed[parsed.length] = {
-					data: row,
+					data: data[i],
 					value: row[0],
 					result: options.formatResult && options.formatResult(row, row[0]) || row[0]
 				};

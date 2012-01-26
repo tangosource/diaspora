@@ -15,6 +15,9 @@ class Place < ActiveRecord::Base
   has_one :place_mention
   has_many :posts, :through=> :place_mention
 
+  def name
+    title
+  end
 
   #attr_accessible 
 

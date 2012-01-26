@@ -54,6 +54,19 @@ class Place < ActiveRecord::Base
   end
   
 
+  def as_json( opts = {} )
+    opts ||= {}
+    json = {
+      :id => self.id,
+      :name => self.name,
+      :avatar => self.description.image_url(:thumb_medium),
+      :handle => self.diaspora_handle,
+      :url => "/places/#{self.id}",
+    }
+    json.merge!(:tags => self.profile.tags.map{|t| "##{t.name}"}) if opts[:includes] == "tags"
+    json
+  end
+
 end
 
 

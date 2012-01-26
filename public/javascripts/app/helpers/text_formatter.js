@@ -44,7 +44,7 @@
       if(place)
       return "<a href='/places/" + place.id + "' class='mention'>" + fullName + "</a>"
 
-      return person ? "<a href='/people/" + person.id + "' class='mention'>" + fullName + "</a>" : fullName;
+      return person ? "<a href='/people/" + person.guid + "' class='mention'>" + fullName + "</a>" : fullName;
     })
 
   }

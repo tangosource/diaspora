@@ -1,9 +1,13 @@
 (function(){
   var textFormatter = function textFormatter(model) {
     var text = model.get("text");
-    var mentions = model.get("mentioned_people");
-    if (mentions.length == 0 )
-      var mentions = model.get("mentioned_places");
+
+    mentions = model.get("mentioned_people");
+    places = model.get("mentioned_places");
+
+    if(typeof places[0] != 'undefined'){
+      mentions.push(places[0]);
+    }
 
     return textFormatter.mentionify(
       textFormatter.hashtagify(

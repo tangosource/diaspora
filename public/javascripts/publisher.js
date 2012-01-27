@@ -230,6 +230,7 @@ var Publisher = {
     },
 
     searchTermFromValue: function(value, cursorIndex) {
+      $.place = false;
       var stringLoc = Publisher.autocompletion.findStringToReplace(value, cursorIndex);
       if(stringLoc[0] <= 2){
         stringLoc[0] = 0;

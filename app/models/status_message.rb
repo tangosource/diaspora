@@ -7,6 +7,7 @@ class StatusMessage < Post
 
   include ActionView::Helpers::TextHelper
   include PeopleHelper
+  include PlacesHelper
 
   acts_as_taggable_on :tags
   extract_tags_from :raw_message
@@ -108,6 +109,16 @@ class StatusMessage < Post
       mentioned_people_from_string
     end
   end
+
+  def mentioned_places
+    if self.persisted?
+      create_review if self.reviews.empty?
+      self.reviews.includes(:place).map{ |review| review.place }
+    else
+      mentioned_places_from_string
+    end
+  end
+  
 
   def format_places(text, opts ={})
     regex = /=\{([^;]+); ([^\}]+)\}/

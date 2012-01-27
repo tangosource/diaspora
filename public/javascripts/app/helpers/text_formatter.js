@@ -1,7 +1,13 @@
 (function(){
   var textFormatter = function textFormatter(model) {
     var text = model.get("text");
-    var mentions = model.get("mentioned_people");
+
+    mentions = model.get("mentioned_people");
+    places = model.get("mentioned_places");
+
+    if(typeof places[0] != 'undefined'){
+      mentions.push(places[0]);
+    }
 
     return textFormatter.mentionify(
       textFormatter.hashtagify(
@@ -23,14 +29,24 @@
   };
 
   textFormatter.mentionify = function mentionify(text, mentions) {
-    var mentionRegex = /@\{([^;]+); ([^\}]+)\}/g
+    var mentionRegex = /[@|=]\{([^;]+); ([^\}]+)\}/g
+
     return text.replace(mentionRegex, function(mentionText, fullName, diasporaId) {
+
       var person = _.find(mentions, function(person){
         return person.diaspora_id == diasporaId
-      })
-      
+      });
+
+      var place = _.find(mentions, function(place){
+        return place.handle == diasporaId
+      });
+     
+      if(place)
+      return "<a href='/places/" + place.id + "' class='mention'>" + fullName + "</a>"
+
       return person ? "<a href='/people/" + person.guid + "' class='mention'>" + fullName + "</a>" : fullName;
     })
+
   }
 
   app.helpers.textFormatter = textFormatter;

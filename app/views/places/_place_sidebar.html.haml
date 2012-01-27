@@ -6,6 +6,11 @@
   .profile_photo
     = place_image_link(place, :size => :thumb_large, :to => :photos)
 
+    %br
+
+    = link_to t('.edit'), edit_place_path(@place) if current_user.admin?
+
+
     %ul#profile_information
       - unless place.description.summary.blank?
         %li
@@ -21,6 +26,27 @@
           %div{ :class => direction_for(place.description.location) }
             = markdownify(place.description.location, :oembed => true, :newlines => true)
 
+      - unless place.description.address.blank?
+        %li
+          %h4
+            =t('.address')
+          %div{ :class => direction_for(place.description.address) }
+            = markdownify(place.description.address, :oembed => true, :newlines => true)
+
+
+      - unless place.description.phone.blank?
+        %li
+          %h4
+            =t('.phone')
+          %div{ :class => direction_for(place.description.phone) }
+            = markdownify(place.description.phone, :oembed => true, :newlines => true)
+
+      - unless place.description.website.blank?
+        %li
+          %h4
+            =t('.website')
+          %div{ :class => direction_for(place.description.website) }
+            = link_to t('.website'), place.description.website
 
 
         %br

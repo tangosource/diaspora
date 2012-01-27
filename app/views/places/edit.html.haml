@@ -1,0 +1,28 @@
+
+= form_for @place, place_path(@place) do |f|
+
+  = f.fields_for :description do |d|
+    %b
+      = t('places.title')
+    = d.text_field :title
+    %b
+      = t('places.summary')
+    = d.text_area :summary, :rows => 5
+    %b
+      = t('places.location')
+    = d.text_field :location
+
+    %b
+      = t('places.address')
+    = d.text_area :address, :rows => 5
+
+    %b
+      = t('places.phone')
+    = d.text_field :phone
+
+    %b
+      = t('places.website')
+    = d.text_field :website
+
+  .submit_field
+    = f.submit t('places.edit.submit'), :class => 'in_aspects'

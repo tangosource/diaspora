@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120127012436) do
+ActiveRecord::Schema.define(:version => 20120127173913) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -378,6 +378,7 @@ ActiveRecord::Schema.define(:version => 20120127012436) do
     t.boolean  "hide_full_name"
     t.string   "hidden_first_name"
     t.string   "hidden_last_name"
+    t.boolean  "public",                           :default => true
   end
 
   add_index "profiles", ["full_name", "searchable"], :name => "index_profiles_on_full_name_and_searchable"

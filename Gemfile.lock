@@ -32,16 +32,8 @@ GIT
       sinatra
 
 GIT
-  remote: https://github.com/socialcast/resque-ensure-connected.git
-  revision: 8ac0f9e4658495097fb333a93db81d54ba9a5311
-  specs:
-    resque-ensure-connected (0.2.0)
-      activerecord (>= 2.3.5)
-      resque (>= 1.10.0)
-
-GIT
   remote: git@github.com:sailing/magazine.git
-  revision: 3a3a3a1b9fba65956ee01349c557b861dbfeaf28
+  revision: 99f67d72f93cbe00b5ffd0e61a79334e6bf357b7
   specs:
     magazine (0.4.6)
       RedCloth (>= 4.2.9)
@@ -50,6 +42,14 @@ GIT
       nokogiri (>= 1.5.0)
       redcarpet (>= 2.0.1)
       will_paginate (>= 3.0.2)
+
+GIT
+  remote: https://github.com/socialcast/resque-ensure-connected.git
+  revision: 8ac0f9e4658495097fb333a93db81d54ba9a5311
+  specs:
+    resque-ensure-connected (0.2.0)
+      activerecord (>= 2.3.5)
+      resque (>= 1.10.0)
 
 GEM
   remote: http://rubygems.org/
@@ -211,9 +211,6 @@ GEM
       rails (>= 2)
     highline (1.6.11)
     http_accept_language (1.0.2)
-    hoptoad_notifier (2.4.11)
-      activesupport
-      builder
     i18n (0.5.0)
     i18n-inflector (2.6.3)
       i18n (>= 0.4.1)
@@ -304,8 +301,8 @@ GEM
       parallel
     pg (0.12.2)
     polyglot (0.3.3)
-    proxies (0.2.1)
     posix-spawn (0.3.6)
+    proxies (0.2.1)
     rack (1.2.5)
     rack-google-analytics (0.10.0)
     rack-mobile-detect (0.3.0)
@@ -484,8 +481,8 @@ DEPENDENCIES
   json
   jwt
   linecache (= 0.46)
-  messagebus_ruby_api (= 1.0.3)
   magazine!
+  messagebus_ruby_api (= 1.0.3)
   mini_magick (= 3.4)
   mobile-fu
   mock_redis

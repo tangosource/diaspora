@@ -51,6 +51,16 @@
   %br
   %br
 
+  %h4
+    = t('privacy')
+
+  %p{:class=>"checkbox_select"}
+    = label_tag 'profile[public]', t('profiles.edit.public')
+    = check_box_tag 'profile[public]', true, profile.public
+
+  %br
+  %br
+
   .submit_block
     =yield(:submit_block)
 

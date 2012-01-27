@@ -90,6 +90,11 @@ class PeopleController < ApplicationController
       raise ActiveRecord::RecordNotFound
     end
 
+    if !@person.profile.public? && !current_user
+      redirect_to :back, :notice => t("people.show.hidden_account")
+      return
+    end
+
     if @person.closed_account?
       redirect_to :back, :notice => t("people.show.closed_account")
       return

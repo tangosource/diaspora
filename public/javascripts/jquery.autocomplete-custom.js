@@ -352,6 +352,7 @@ $.Autocompleter = function(input, options) {
     var rows = _.map(data, function(value){
      return value.name;
     });
+
     
 		for (var i=0; i < rows.length; i++) {
 			var row = $.trim(rows[i]);
@@ -544,7 +545,26 @@ $.Autocompleter.Cache = function(options) {
 						$.each(c, function(i, x) {
 							if (matchSubset(x.value, q)) {
 								csub[csub.length] = x;
-							}
+							}else{
+
+                // Create place if dousn't exist
+                if($.place){
+                  create = {
+                    data: {
+                      avatar: "/images/user/default.png",
+                      handle: "create",
+                      id: 1,
+                      name: q,
+                      url: "",
+                      add: true
+                    },
+                    result: "add",
+                    value: "add"
+                  }
+                  csub[0] = create;
+                }
+
+              }
 						});
 						return csub;
 					}

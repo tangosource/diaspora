@@ -45,6 +45,7 @@ Publisher.places = Backbone.View.extend({
 
     var matches = relevantString.match(/(^|\s)=(.+)/);
     if(matches){
+      $.place = true;
       return matches[2];
     }else{
       return '';
@@ -57,6 +58,11 @@ Publisher.places = Backbone.View.extend({
   
   
   onSelect :  function(visibleInput, data, formatted) {
+
+    if(data.add){
+     window.location = "/places/new"
+    }
+
     var visibleCursorIndex = visibleInput[0].selectionStart;
     var visibleLoc = this.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
     $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);

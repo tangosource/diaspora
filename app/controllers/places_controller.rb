@@ -1,15 +1,20 @@
 class PlacesController < ApplicationController
   before_filter :authenticate_user!
 
-  respond_to :html, :only => [:show]
+  respond_to :html, :only => [:index, :show]
   respond_to :json, :only => [:index, :show]
 
 
   def index
-    @places = Place.search params[:q], params[:limit]
 
     respond_with do |format|
-      format.json { render :json => @places.to_json }
+      format.json do
+        @places = Place.search params[:q], params[:limit]
+        render :json => @places.to_json 
+      end
+      format.html do
+        @places = Place.all
+      end
     end
   end
 

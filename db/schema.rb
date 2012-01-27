@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120127173913) do
+ActiveRecord::Schema.define(:version => 20120127191343) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -123,6 +123,9 @@ ActiveRecord::Schema.define(:version => 20120127173913) do
     t.text     "summary"
     t.decimal  "lat",                            :precision => 10, :scale => 0
     t.decimal  "lng",                            :precision => 10, :scale => 0
+    t.text     "address"
+    t.string   "phone"
+    t.string   "website"
   end
 
   create_table "invitations", :force => true do |t|

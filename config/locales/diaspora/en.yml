@@ -630,11 +630,13 @@ en:
       your_public_profile: "Your public profile"
       your_private_profile: "Your private profile"
       your_name: "Your name"
+      your_name_hidden: "Your name (Hidden)"
       first_name: "First name"
       last_name: "Last name"
       your_gender: "Your gender"
       your_birthday: "Your birthday"
       your_tags: "Describe yourself in 5 words"
+      alias: "I want to hide my Real name"
 
       your_tags_placeholder: "like #movies #kittens #travel #teacher #newyork"
 

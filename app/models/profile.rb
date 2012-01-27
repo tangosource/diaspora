@@ -39,7 +39,8 @@ class Profile < ActiveRecord::Base
   validate :valid_birthday
 
   attr_accessible :first_name, :last_name, :image_url, :image_url_medium,
-    :image_url_small, :birthday, :gender, :bio, :location, :searchable, :date, :tag_string
+    :image_url_small, :birthday, :gender, :bio, :location, :searchable, :date, :tag_string, 
+    :hide_full_name, :hidden_first_name, :hidden_last_name
 
   belongs_to :person
   before_validation do
@@ -48,6 +49,7 @@ class Profile < ActiveRecord::Base
 
   before_save do
     self.build_tags
+    self.build_hide_full_name
     self.construct_full_name
   end
 
@@ -174,7 +176,24 @@ class Profile < ActiveRecord::Base
     end
   end
 
+  def build_hide_full_name
+    return true unless hide_full_name_changed?
+
+    if hide_full_name
+      hide_and_move(:first_name, :hidden_first_name) 
+      hide_and_move(:last_name,  :hidden_last_name)
+    else
+      hide_and_move(:hidden_first_name, :first_name)
+      hide_and_move(:hidden_last_name, :last_name)
+    end
+  end
+
   private
+  def hide_and_move(a,b)
+    write_attribute b, read_attribute(a)
+    write_attribute a, ''
+  end
+
   def clearable_fields
     self.attributes.keys - Profile.protected_attributes.to_a - ["created_at", "updated_at", "person_id"]
   end

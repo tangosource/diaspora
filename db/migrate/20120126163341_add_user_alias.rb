@@ -6,6 +6,8 @@ class AddUserAlias < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :profiles, :alias
+    remove_column :profiles, :hide_full_name
+    remove_column :profiles, :hidden_first_name
+    remove_column :profiles, :hidden_last_name
   end
 end

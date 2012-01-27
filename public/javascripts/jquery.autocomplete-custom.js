@@ -538,33 +538,36 @@ $.Autocompleter.Cache = function(options) {
 				return data[q];
 			} else
 			if (options.matchSubset) {
+
+        
 				for (var i = q.length - 1; i >= options.minChars; i--) {
 					var c = data[q.substr(0, i)];
+
+          // Create place if dousn't exist
+          if($.place){
+            var csub = [];
+            create = {
+              data: {
+                avatar: "/images/user/default.png",
+                handle: "create",
+                id: 1,
+                name: q,
+                url: "",
+                add: true
+              },
+              result: "add",
+              value: "add"
+            }
+            csub[0] = create;
+            return csub;
+          }
+
 					if (c) {
 						var csub = [];
 						$.each(c, function(i, x) {
 							if (matchSubset(x.value, q)) {
 								csub[csub.length] = x;
-							}else{
-
-                // Create place if dousn't exist
-                if($.place){
-                  create = {
-                    data: {
-                      avatar: "/images/user/default.png",
-                      handle: "create",
-                      id: 1,
-                      name: q,
-                      url: "",
-                      add: true
-                    },
-                    result: "add",
-                    value: "add"
-                  }
-                  csub[0] = create;
-                }
-
-              }
+							}
 						});
 						return csub;
 					}

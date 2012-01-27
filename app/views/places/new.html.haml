@@ -28,7 +28,7 @@
         = f.fields_for :description do |d|
           %b
             = t('places.title')
-          = d.text_field :title, :value => params[:place_name]
+          = d.text_field :title
           %b
             = t('places.summary')
           = d.text_area :summary, :rows => 5

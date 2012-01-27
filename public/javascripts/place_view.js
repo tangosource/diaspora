@@ -60,7 +60,7 @@ Publisher.places = Backbone.View.extend({
   onSelect :  function(visibleInput, data, formatted) {
 
     if(data.add){
-     window.location = "/places/new"
+     window.location = "/places/new?place_name="+data.name
     }
 
     var visibleCursorIndex = visibleInput[0].selectionStart;

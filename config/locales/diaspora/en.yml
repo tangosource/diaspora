@@ -670,6 +670,7 @@ en:
     place_sidebar:
       summary: "Description"
       location: "Location"
+      edit: "Edit place"
   registrations:
     new:
       create_my_account: "Create my account!"

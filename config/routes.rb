@@ -4,6 +4,17 @@
 
 Diaspora::Application.routes.draw do
 
+	# Keep these above the posts resources block
+  match "magazine/page/:page" => "magazine/articles#index"
+  match "magazine/tagged/:tag" => 'magazine/articles#tagged', :as => :tagged_articles
+  get "magazine" => "magazine/articles#index", :as => "magazine"
+
+	scope 'magazine', :module => :magazine do
+	  resources :articles, :controller => "articles", :as => "magazine_articles" do
+	    resources :comments, :controller => "comments", :as => "magazine_comments", :only => [:create, :destroy]
+	  end
+	end
+	
   resources :places do
     resources :photos
   end

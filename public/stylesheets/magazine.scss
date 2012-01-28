@@ -91,4 +91,7 @@
 	.blog_comment .actions, .article .actions{
 	  text-align: right;
 	}
+	label:not(.bootstrapped) {
+		position:relative;
+	}
 }

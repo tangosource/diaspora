@@ -66,3 +66,5 @@
   border-bottom: thin solid silver; }
 #magazine .blog_comment .actions, #magazine .article .actions {
   text-align: right; }
+#magazine label:not(.bootstrapped) {
+  position: relative; }

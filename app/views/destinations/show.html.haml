@@ -49,6 +49,14 @@
   .section
     = render "tags/followed_tags_listings"
 
+  %br
+
+  .section
+    %h3
+      = t('articles')
+    %ul 
+      = render :partial => 'destinations/article', :collection => @articles
+
 .span-15.last
   .stream_container
     #author_info

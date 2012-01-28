@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+export RAILS_ENV=`git branch | grep '*' | awk '{print $2}' `
+GIT_DIR=$(pwd)
+echo "Deploying on $RAILS_ENV"
+cd ..
+
+source .rvmrc
+
+echo 'checkout head'
+env -i git reset --hard
+
+env -i git submodule init
+env -i git submodule update
+
+echo 'deploy gems'
+bundle install --without=development --deployment
+
+echo "* rake db:migrate $RAILS_ENV"
+bundle exec rake db:migrate 
+
+echo '* restart server'
+[[ -f tmp/pids/server.pid ]] && kill -HUP `cat tmp/pids/server.pid`
+

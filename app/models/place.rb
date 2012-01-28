@@ -16,6 +16,9 @@ class Place < ActiveRecord::Base
   has_one :place_mention
   has_many :posts, :through=> :place_mention
 
+  acts_as_taggable_on :tags
+  
+
   def name
     title
   end

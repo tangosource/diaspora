@@ -1,6 +1,35 @@
 = javascript_include_tag "validation"
 = javascript_include_tag 'vendor/jquery.ghostInput'
 
+- content_for :head do
+  = include_javascripts :places
+  :javascript
+    $(document).ready(function () {
+      var autocompleteInput = $("#place_tag_list");
+
+      autocompleteInput.autoSuggest("#{tags_path}", {
+        selectedItemProp: "name",
+        searchObjProps: "name",
+        asHtmlID: "tags",
+        neverSubmit: true,
+        retriveLimit: 10,
+        minChars: 2,
+        keyDelay: 200,
+        startText: "",
+        emptyText: "#{t('no_results')}",
+        });
+
+      autocompleteInput.bind('keydown', function(evt){
+        if(evt.keyCode == 13 || evt.keyCode == 9 || evt.keyCode == 32){
+          evt.preventDefault();
+          if( $('li.as-result-item.active').length == 0 ){
+            $('li.as-result-item').first().click();
+          }
+        }
+      });
+    });
+
+
 = javascript_tag "Diaspora.Page = 'InvitationsEdit';"
 .span-7.append-1.prepend-3
   %br
@@ -30,8 +59,8 @@
             = t('places.title')
           = d.text_field :title
           %b
-            = t('places.tags')
-          = d.text_field :tags
+            = t('places.tag_list')
+          = f.text_field :tag_list
           %b
             = t('places.summary')
           = d.text_area :summary, :rows => 5
@@ -46,5 +75,3 @@
 
       .submit_field
         = f.submit t('places.new.submit'), :class => 'in_aspects'
-
-

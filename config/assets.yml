@@ -86,6 +86,8 @@ javascripts:
     - public/javascripts/inbox.js
   profile:
     - public/javascripts/vendor/jquery.autoSuggest.custom.js
+  places:
+    - public/javascripts/vendor/jquery.autoSuggest.custom.js
   ie:
     - public/javascripts/ie.js
 stylesheets:

@@ -1,3 +1,25 @@
+- content_for :head do
+  = include_javascripts :places
+  :javascript
+    $(document).ready(function () {
+      var data = $.parseJSON( '#{@tags_array.to_json.gsub("'", "\\\\'")}' ),
+          autocompleteInput = $("#place_tag_list");
+
+      autocompleteInput.autoSuggest("#{tags_path}", {
+        selectedItemProp: "name",
+        searchObjProps: "name",
+        asHtmlID: "tags",
+        neverSubmit: true,
+        retriveLimit: 10,
+        minChars: 2,
+        keyDelay: 200,
+        startText: "",
+        emptyText: "#{t('no_results')}",
+        preFill: data
+        });
+    });
+
+
 
 = form_for @place, place_path(@place) do |f|
 
@@ -5,6 +27,9 @@
     %b
       = t('places.title')
     = d.text_field :title
+    %b
+      = t('places.tag_list')
+    = f.text_field :tag_list
     %b
       = t('places.summary')
     = d.text_area :summary, :rows => 5

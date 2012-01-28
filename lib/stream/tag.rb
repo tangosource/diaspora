@@ -24,11 +24,11 @@ class Stream::Tag < Stream::Base
   end
 
   def tagged_people
-    @people ||= Person.profile_tagged_with(tag_name).paginate(:page => people_page, :per_page => 15)
+    @people ||= ::Person.profile_tagged_with(tag_name).paginate(:page => people_page, :per_page => 15)
   end
 
   def tagged_people_count
-    @people_count ||= Person.profile_tagged_with(tag_name).count
+    @people_count ||= ::Person.profile_tagged_with(tag_name).count
   end
 
   def posts
@@ -51,7 +51,7 @@ class Stream::Tag < Stream::Base
   end
 
   def construct_post_query
-    posts = StatusMessage
+    posts = ::StatusMessage
     if user.present? 
       posts = posts.owned_or_visible_by_user(user)
     else

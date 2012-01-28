@@ -10,12 +10,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120127191343) do
+ActiveRecord::Schema.define(:version => 20120125150926448180) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
     t.integer "person_id"
   end
+
+  create_table "article_comments", :force => true do |t|
+    t.string   "name",       :null => false
+    t.string   "email",      :null => false
+    t.string   "website"
+    t.text     "body",       :null => false
+    t.integer  "article_id", :null => false
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "article_comments", ["article_id"], :name => "index_article_comments_on_article_id"
+
+  create_table "articles", :force => true do |t|
+    t.string   "title",                         :null => false
+    t.text     "body",                          :null => false
+    t.integer  "blogger_id"
+    t.string   "blogger_type"
+    t.integer  "comments_count", :default => 0, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "articles", ["blogger_type", "blogger_id"], :name => "index_articles_on_blogger_type_and_blogger_id"
 
   create_table "aspect_memberships", :force => true do |t|
     t.integer  "aspect_id",  :null => false
@@ -126,6 +151,15 @@ ActiveRecord::Schema.define(:version => 20120127191343) do
     t.text     "address"
     t.string   "phone"
     t.string   "website"
+  end
+
+  create_table "destinations", :force => true do |t|
+    t.text     "summary"
+    t.string   "title"
+    t.string   "permalink"
+    t.string   "photo_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "invitations", :force => true do |t|

@@ -1057,6 +1057,18 @@ en:
     xrd_fetch_failed: "there was an error getting the xrd from account %{account}"
     not_enabled: "webfinger does not seem to be enabled for %{account}'s host"
     no_person_constructed: "No person could be constructed from this hcard."
+  destinations:
+    index:
+      new: "New destination"
+    show:
+      posts_tagged_with: "Posts tagged with #%{tag}"
+      nobody_talking: "Nobody is talking about %{tag} yet."
+      people_tagged_with: "People tagged with %{tag}"
+      follow: "Follow #%{tag}"
+      following: "Following #%{tag}"
+      stop_following: "Stop Following #%{tag}"
+      followed_by: 'followed by'
+      none: "The empty tag does not exist!"
 
 
 

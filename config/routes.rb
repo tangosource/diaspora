@@ -15,6 +15,9 @@ Diaspora::Application.routes.draw do
 	  end
 	end
 	
+  resources :destinations
+  get 'd/:permalink' => 'destinations#show'
+
   resources :places do
     resources :photos
   end

@@ -26,6 +26,7 @@ class DestinationsController < ApplicationController
 
     @stream = Stream::Tag.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
     @articles = Magazine::Article.tagged_with(@destination.permalink)
+    @places = Place.tagged_with(@destination.permalink)
 
     respond_with do |format|
       format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }

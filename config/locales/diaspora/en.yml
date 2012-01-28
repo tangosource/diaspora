@@ -1055,6 +1055,9 @@ en:
     xrd_fetch_failed: "there was an error getting the xrd from account %{account}"
     not_enabled: "webfinger does not seem to be enabled for %{account}'s host"
     no_person_constructed: "No person could be constructed from this hcard."
+  destinations:
+    index:
+      new: "New destination"
 
 
 

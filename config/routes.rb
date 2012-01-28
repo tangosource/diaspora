@@ -15,6 +15,8 @@ Diaspora::Application.routes.draw do
 	  end
 	end
 	
+  resources :destinations
+
   resources :places do
     resources :photos
   end

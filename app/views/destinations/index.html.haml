@@ -1,0 +1,11 @@
+%h1 Destinations
+
+%ul
+  -@destinations.each do |destination|
+    %li
+      = link_to destination.title, destination_path(destination)
+
+
+- if current_user.admin?
+  = link_to t('.new') , new_destination_path
+

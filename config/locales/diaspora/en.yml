@@ -1069,6 +1069,6 @@ en:
       stop_following: "Stop Following #%{tag}"
       followed_by: 'followed by'
       none: "The empty tag does not exist!"
-
-
+      places: "Places"
+      articles: "Articles"
 

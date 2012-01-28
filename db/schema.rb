@@ -131,6 +131,7 @@ ActiveRecord::Schema.define(:version => 20120128024410) do
   create_table "destinations", :force => true do |t|
     t.text     "summary"
     t.string   "title"
+    t.string   "permalink"
     t.string   "photo_url"
     t.datetime "created_at"
     t.datetime "updated_at"

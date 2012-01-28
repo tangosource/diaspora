@@ -550,6 +550,7 @@ en:
       mention: "Mention"
       ignoring: "You are ignoring all posts from %{name}."
       closed_account: "This account has been closed."
+      hidden_account: "This account is not available"
     sub_header:
       you_have_no_tags: "you have no tags!"
       add_some: "add some"
@@ -646,6 +647,7 @@ en:
       update_profile: "Update Profile"
       allow_search: "Allow for people to search for you within Diaspora"
       edit_profile: "Edit profile"
+      public: "Show public profile"
     update:
       updated: "Profile updated"
       failed: "Failed to update profile"

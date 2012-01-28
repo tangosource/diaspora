@@ -32,6 +32,18 @@ GIT
       sinatra
 
 GIT
+  remote: git@github.com:sailing/magazine.git
+  revision: 99f67d72f93cbe00b5ffd0e61a79334e6bf357b7
+  specs:
+    magazine (0.4.6)
+      RedCloth (>= 4.2.9)
+      acts-as-taggable-on (>= 2.0.6)
+      albino (>= 1.3.3)
+      nokogiri (>= 1.5.0)
+      redcarpet (>= 2.0.1)
+      will_paginate (>= 3.0.2)
+
+GIT
   remote: https://github.com/socialcast/resque-ensure-connected.git
   revision: 8ac0f9e4658495097fb333a93db81d54ba9a5311
   specs:
@@ -46,6 +58,7 @@ GEM
       Platform (>= 0.4.0)
       open4
     Platform (0.4.0)
+    RedCloth (4.2.9)
     SystemTimer (1.2.3)
     abstract (1.0.0)
     actionmailer (3.0.11)
@@ -86,6 +99,8 @@ GEM
     airbrake (3.0.9)
       activesupport
       builder
+    albino (1.3.3)
+      posix-spawn (>= 0.3.6)
     archive-tar-minitar (0.5.2)
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
@@ -182,11 +197,11 @@ GEM
       rspec-instafail (~> 0.1.8)
       ruby-progressbar (~> 0.0.10)
     gem_plugin (0.2.3)
-    gherkin (2.7.4)
+    gherkin (2.7.6)
       json (>= 1.4.6)
     haml (3.1.4)
     hashie (1.2.0)
-    heroku (2.18.1)
+    heroku (2.19.0)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       rubyzip
@@ -286,6 +301,7 @@ GEM
       parallel
     pg (0.12.2)
     polyglot (0.3.3)
+    posix-spawn (0.3.6)
     proxies (0.2.1)
     rack (1.2.5)
     rack-google-analytics (0.10.0)
@@ -403,9 +419,9 @@ GEM
     tzinfo (0.3.31)
     unicorn (4.1.1)
       kgio (~> 2.4)
-      rack
       raindrops (~> 0.6)
     vegas (0.1.11)
+      rack (>= 1.0.0)
     warden (1.0.6)
       rack (>= 1.0)
     webmock (1.6.2)
@@ -465,6 +481,7 @@ DEPENDENCIES
   json
   jwt
   linecache (= 0.46)
+  magazine!
   messagebus_ruby_api (= 1.0.3)
   mini_magick (= 3.4)
   mobile-fu

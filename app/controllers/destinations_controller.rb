@@ -1,4 +1,9 @@
 class DestinationsController < ApplicationController
+  respond_to :html, :only => [:show]
+  respond_to :json, :only => [:index, :show]
+
+  helper :tags
+
   # GET /destinations
   # GET /destinations.xml
   def index
@@ -13,11 +18,16 @@ class DestinationsController < ApplicationController
   # GET /destinations/1
   # GET /destinations/1.xml
   def show
-    @destination = Destination.find(params[:id])
+    if params[:id]
+      @destination = Destination.find(params[:id]) 
+    else
+      @destination = Destination.where(:permalink => params[:permalink]).first
+    end
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @destination }
+    @stream = Stream::Tag.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
+
+    respond_with do |format|
+      format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
     end
   end
 
@@ -80,4 +90,13 @@ class DestinationsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  helper_method :tag_followed?
+
+ def tag_followed?
+   if @tag_followed.nil?
+     @tag_followed = TagFollowing.joins(:tag).where(:tags => {:name => params[:name]}, :user_id => current_user.id).exists?
+   end
+   @tag_followed
+ end
 end

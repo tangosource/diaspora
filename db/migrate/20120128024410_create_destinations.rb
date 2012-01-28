@@ -3,6 +3,7 @@ class CreateDestinations < ActiveRecord::Migration
     create_table :destinations do |t|
       t.text :summary
       t.string :title
+      t.string :permalink
       t.string :photo_url
 
       t.timestamps

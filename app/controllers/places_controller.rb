@@ -42,6 +42,13 @@ class PlacesController < ApplicationController
   # GET /places/1/edit
   def edit
     @place = Place.find(params[:id])
+    @tags = @place.tags
+    @tags_array = []
+    @tags.each do |obj| 
+      @tags_array << { :name => ("#"+obj.name),
+        :value => ("#"+obj.name)}
+      end
+    
   end
 
   # POST /places

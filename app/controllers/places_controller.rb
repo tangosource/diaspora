@@ -32,7 +32,7 @@ class PlacesController < ApplicationController
   # GET /places/new
   # GET /places/new.xml
   def new
-    @place = Place.new
+    @place = Place.new params[:place]
 
     respond_to do |format|
       format.html # new.html.erb

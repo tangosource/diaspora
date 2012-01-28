@@ -1,5 +1,6 @@
 class PlacesController < ApplicationController
   before_filter :authenticate_user!
+  before_filter :user_authorized?, :only => :edit
 
   respond_to :html, :only => [:show]
   respond_to :json, :only => [:index, :show]
@@ -68,6 +69,15 @@ class PlacesController < ApplicationController
         format.html { render :action => "edit" }
         format.xml  { render :xml => @place.errors, :status => :unprocessable_entity }
       end
+    end
+  end
+
+  private
+
+  def user_authorized?
+    if current_user.admin? == false
+      flash[:notice] = 'You are not authorized to edit this place.'
+      redirect_to root_path
     end
   end
 

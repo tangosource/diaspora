@@ -23,6 +23,7 @@ Diaspora::Application.routes.draw do
   resources :places do
     resources :photos
   end
+  get 'places/get_place/:id' => 'places#get_place'
 
   # Posting and Reading
 

@@ -2,7 +2,7 @@
 
 = form_tag("/places/search", :method => "get") do
   = label_tag(:q, "Search for:")
-  = text_field_tag(:q)
+  = text_field_tag(:q, params[:q])
   = submit_tag("Search")
 
 %ul

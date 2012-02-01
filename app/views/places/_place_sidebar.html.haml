@@ -51,3 +51,5 @@
 
         %br
         %br
+      - if request.env['HTTP_REFERER'].include?('/places/search?')
+        = link_to 'Back to search', request.env['HTTP_REFERER']

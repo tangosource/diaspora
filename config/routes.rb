@@ -4,6 +4,7 @@
 
 Diaspora::Application.routes.draw do
 
+  get "places/search" => "places#search", :as => "search_places"
   resources :places do
     resources :photos
   end

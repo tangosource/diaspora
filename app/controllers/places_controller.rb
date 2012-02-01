@@ -77,6 +77,9 @@ class PlacesController < ApplicationController
     end
   end
 
+  def search
+  end
+
   private
 
   def user_authorized?

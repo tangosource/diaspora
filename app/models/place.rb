@@ -37,7 +37,7 @@ class Place < ActiveRecord::Base
   def self.search(query,limit=5)
 
     sql, tokens = self.search_query_string(query)
-    self.where(sql, *tokens)
+    self.includes(:description).where(sql, *tokens)
   end
 
   def self.search_query_string(query)
@@ -45,7 +45,7 @@ class Place < ActiveRecord::Base
     like_operator = postgres? ? "ILIKE" : "LIKE"
 
     where_clause = <<-SQL
-      places.url #{like_operator} ? OR
+      descriptions.title #{like_operator} ? OR
       places.diaspora_handle #{like_operator} ?
     SQL
 

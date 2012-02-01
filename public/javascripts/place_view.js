@@ -121,3 +121,18 @@ Places = Backbone.View.extend({
   }
 
 });
+
+
+$(document).ready(function(){
+  $('#place_publisher').css('width','24px');
+
+  $('#place_publisher').on('click', function(){
+    var input = $('#status_message_fake_text');
+    var value = input.val();
+    input.focus();
+    var selection = input[0].selectionStart; 
+    input[0].setSelectionRange(selection + 2,selection + 2);  
+    input.val(value+'=');
+  });
+
+});

@@ -93,7 +93,7 @@ class PlacesController < ApplicationController
       format.html do
         places   = Place.search(params[:q], current_user)
         @places = places.paginate( :page => params[:page], :per_page => 15)
-        redirect_to places_path
+        render 'index'
       end
     end
   end

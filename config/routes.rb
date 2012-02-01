@@ -18,6 +18,7 @@ Diaspora::Application.routes.draw do
   resources :destinations
   get 'd/:permalink' => 'destinations#show'
 
+  get "places/search" => "places#search", :as => "search_places"
   resources :places do
     resources :photos
   end

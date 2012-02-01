@@ -6,6 +6,6 @@
       = link_to destination.title, destination_path(destination)
 
 
-- if current_user.admin?
+- if current_user && current_user.admin?
   = link_to t('.new') , new_destination_path
 

@@ -2,10 +2,14 @@ class Place < ActiveRecord::Base
   include ROXML
   include Encryptor::Public
   include Diaspora::Guid
+  acts_as_taggable
 
   has_one :description, :dependent => :destroy
   delegate :title, :image_url, :to => :description
   accepts_nested_attributes_for :description
+
+  has_many :tag_followings
+  has_many :followed_tags, :through => :tag_followings, :source => :tag, :order => 'tags.name'
 
   validates_presence_of :description
   validates_associated :description

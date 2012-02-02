@@ -70,19 +70,22 @@
 					x = opts.asHtmlID;
 					var x_id = x;
 				}
-				opts.start.call(this);
-				var input = $(this);
-				input.attr("autocomplete","off").addClass("as-input").attr("id",x_id).val(opts.startText);
-				var input_focus = false;
+        var input = $(this)
+          , id = input.attr('id')
+          , name = input.attr('name');
+        input.removeAttr('name').removeAttr('id');
+        input.attr("autocomplete","off").addClass("as-input").attr("id",x_id).val(opts.startText);
+        var input_focus = false;
+
 				
 				// Setup basic elements and render them to the DOM
-				input.wrap('<ul class="as-selections" id="as-selections-'+x+'"></ul>').wrap('<li class="as-original" id="as-original-'+x+'"></li>');
-				var selections_holder = $("#as-selections-"+x);
-				var org_li = $("#as-original-"+x);				
-				var results_holder = $('<div class="as-results" id="as-results-'+x+'"></div>').hide();
-				var results_ul =  $('<ul class="as-list"></ul>');
-				var values_input = $('<input type="hidden" class="as-values" name="'+x+'" id="as-values-'+x+'" />');
-				var prefill_value = "";
+        input.wrap('<ul class="as-selections" id="as-selections-'+x+'"></ul>').wrap('<li class="as-original" id="as-original-'+x+'"></li>');
+        var selections_holder = $("#as-selections-"+x);
+        var org_li = $("#as-original-"+x);				
+        var results_holder = $('<div class="as-results" id="as-results-'+x+'"></div>').hide();
+        var results_ul =  $('<ul class="as-list"></ul>');
+        var values_input = $('<input type="hidden" class="as-values" name="'+name+'" id="'+id+'" />');
+        var prefill_value = "";
 				if(typeof opts.preFill == "string"){
 					var vals = opts.preFill.split(",");					
 					for(var i=0; i < vals.length; i++){

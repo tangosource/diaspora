@@ -59,13 +59,13 @@
     %h3
       = t('.articles')
     %ul 
-      = render :partial => 'destinations/article', :collection => @articles
+      = render :partial => 'destinations/article', :collection => @stream.related_articles
 
   .section
     %h3
       = t('.places')
     %ul 
-      = render :partial => 'destinations/place', :collection => @places
+      = render :partial => 'destinations/place', :collection => @stream.related_places
 
 .span-15.last
   .stream_container

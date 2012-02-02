@@ -4,6 +4,8 @@
   -@destinations.each do |destination|
     %li
       = link_to destination.title, destination_path(destination)
+    %li
+      = destination.summary
 
 
 - if current_user && current_user.admin?

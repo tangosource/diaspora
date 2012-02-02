@@ -52,6 +52,10 @@
   %br
 
   .section
+    .profile_photo
+      = image_tag @destination.photo_url
+
+  .section
     %h3
       = t('.articles')
     %ul 

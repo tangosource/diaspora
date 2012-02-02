@@ -1,17 +1,18 @@
 class DestinationsController < ApplicationController
-  respond_to :html, :only => [:show]
+  respond_to :html, :only => [:index, :show]
   respond_to :json, :only => [:index, :show]
 
   helper :tags
 
-  # GET /destinations
-  # GET /destinations.xml
   def index
     @destinations = Destination.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @destinations }
+      format.json do
+        @destinations = Destination.search params[:q], params[:limit]
+        render :json => @destinations.to_json 
+      end
     end
   end
 

@@ -1079,7 +1079,7 @@ en:
       places: "Places"
       articles: "Articles"
       photos: "Photos"
-    posts_with_photos:
+    photos:
       posts_tagged_with: "Posts tagged with #%{tag}"
       nobody_talking: "Nobody is talking about %{tag} yet."
       people_tagged_with: "People tagged with %{tag}"

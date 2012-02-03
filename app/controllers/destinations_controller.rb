@@ -2,6 +2,8 @@ class DestinationsController < ApplicationController
   respond_to :html, :only => [:index, :show]
   respond_to :json, :only => [:index, :show]
 
+  before_filter :find_destination, :only=> [:show, :photos]
+
   helper :tags
 
   def index
@@ -19,13 +21,7 @@ class DestinationsController < ApplicationController
   # GET /destinations/1
   # GET /destinations/1.xml
   def show
-    if params[:id]
-      @destination = Destination.find(params[:id]) 
-    else
-      @destination = Destination.where(:permalink => params[:permalink]).first
-    end
-
-    @stream = Stream::Destination.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
+    @stream = Stream::Destination.new(current_user, @destination.permalink, :max_time => params[:max_time], :page => params[:page])
 
     respond_with do |format|
       format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
@@ -92,18 +88,12 @@ class DestinationsController < ApplicationController
     end
   end
 
-  def posts_with_photos
-    if params[:id]
-      @destination = Destination.find(params[:id]) 
-    else
-      @destination = Destination.where(:permalink => params[:permalink]).first
-    end
-
-    @stream = Stream::Destination.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
+  def photos
+    @stream = Stream::Destination::Photos.new(current_user, @destination.permalink, :max_time => params[:max_time], :page => params[:page])
 
     respond_with do |format|
-      format.html{ render :posts_with_photos }
-      format.json{ render_for_api :backbone, :json => @stream.posts_with_photos, :root => :posts }
+      format.html {}
+      format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
     end
   end
 
@@ -115,4 +105,12 @@ class DestinationsController < ApplicationController
    end
    @tag_followed
  end
+
+  def find_destination
+    id = params[:id] || params[:destination_id]
+    @destination = 
+      Destination.find(id) || 
+      Destination.where(:permalink => params[:permalink]).first
+  end
+
 end

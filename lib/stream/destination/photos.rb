@@ -2,13 +2,12 @@ class Stream::Destination::Photos < Stream::Destination
 
   def construct_post_query
     posts = ::StatusMessage
-    debugger
     if user.present? 
       posts = posts.owned_or_visible_by_user(user)
     else
       posts = posts.all_public
     end
-    posts.tagged_with(tag_name)
+    posts.includes(:photos).where('photos.id IS NOT NULL').tagged_with(tag_name)
   end
 
   def posts_with_photos

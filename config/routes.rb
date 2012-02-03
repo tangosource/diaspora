@@ -16,6 +16,7 @@ Diaspora::Application.routes.draw do
 	end
 	
   resources :d, :controller=> 'destinations', :as => 'destinations'
+  match "d/:id/posts_with_photos" => 'destinations#posts_with_photos', :as => :posts_with_photos, :via => 'get'
 
   get "places/search" => "places#search", :as => "search_places"
   resources :places do

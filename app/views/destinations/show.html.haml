@@ -67,6 +67,10 @@
     %ul 
       = render :partial => 'destinations/place', :collection => @stream.related_places
 
+  .section
+    %h3
+      = link_to t('.photos'), posts_with_photos_path
+
 .span-15.last
   .stream_container
     #author_info

@@ -1,9 +1,15 @@
-Publisher.places = Backbone.View.extend({
+Places = Backbone.View.extend({
 
   el: ('#publisher'),
 
-  initialize : function() {
+  initialize : function(place) {
     _.bindAll(this, 'keyDownHandler','findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput');
+
+    if(place){
+      visibleInput = $('#status_message_fake_text');
+      this.onSelect(visibleInput,place,place.name);
+    }
+
     this.setAutocomplete();
   },
 
@@ -72,6 +78,7 @@ Publisher.places = Backbone.View.extend({
       visibleEnd  : visibleLoc[1],
       mentionString : mentionString
     };
+
     Publisher.autocompletion.mentionList.push(mention);
     Publisher.oldInputContent = visibleInput.val();
     Publisher.hiddenInput().val(Publisher.autocompletion.mentionList.generateHiddenInput(visibleInput.val()));
@@ -115,6 +122,17 @@ Publisher.places = Backbone.View.extend({
 
 });
 
-$(document).ready(function() {
-  var places = new Publisher.places();
+
+$(document).ready(function(){
+  $('#place_publisher').css('width','24px');
+
+  $('#place_publisher').on('click', function(){
+    var input = $('#status_message_fake_text');
+    var value = input.val();
+    input.focus();
+    var selection = input[0].selectionStart; 
+    input[0].setSelectionRange(selection + 2,selection + 2);  
+    input.val(value+'=');
+  });
+
 });

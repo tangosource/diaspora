@@ -11,7 +11,8 @@ app.views.Publisher = Backbone.View.extend({
     "submit form" : "createStatusMessage"
   },
 
-  initialize : function(){
+  initialize : function(collection,id){
+    this.id = id;
     this.collection = this.collection //takes a Posts collection
     return this;
   },
@@ -64,6 +65,13 @@ app.views.Publisher = Backbone.View.extend({
     this.$("#publisher_textarea_wrapper").addClass('active');
     this.$("textarea.ac_input").css('min-height', '42px');
 
+    var empty = $('#status_message_fake_text').val();
+    if((this.id) && (empty =="")){
+      $.getJSON('get_place/'+this.id,undefined, function(data) {
+        var places = new Places(data);
+      })
+    }
+    
     return this;
   },
 

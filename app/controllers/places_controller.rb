@@ -62,5 +62,13 @@ class PlacesController < ApplicationController
       end
     end
   end
+  
+  def get_place
+    place = Place.find(params[:id])
+    respond_to do |format|
+      format.html 
+      format.json {render :json => place.to_json}
+    end
+  end
 
 end

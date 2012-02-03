@@ -2,7 +2,7 @@
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
-class HomeController < Devise::RegistrationsController
+class HomeController < ApplicationController
 
   def show
     if current_user

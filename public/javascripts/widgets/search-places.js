@@ -1,11 +1,12 @@
 (function() {
-  var Search = function() {
+  var PlaceSearch = function() {
     var self = this;
 
+    console.log(self);
     this.subscribe("widget/ready", function(evt, searchForm) {
       $.extend(self, {
         searchForm: searchForm,
-        searchFormAction: '/people',
+        searchFormAction: '/places',
         searchInput: searchForm.find("input[type='search']"),
         searchInputName: searchForm.find("input[type='search']").attr("name"),
         options: {
@@ -66,6 +67,5 @@
     };
   };
 
-  Diaspora.Widgets.Search = Search;
-  console.log(Diaspora.Widgets.Search);
+  Diaspora.Widgets.PlaceSearch = PlaceSearch;
 })();

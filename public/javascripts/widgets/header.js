@@ -14,6 +14,7 @@
       );
 
       self.search = self.instantiate("Search", header.find(".search_form"));
+      self.search = self.instantiate("PlaceSearch", header.find(".search_form"));
     });
   };
 

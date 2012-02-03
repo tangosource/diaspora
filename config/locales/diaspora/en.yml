@@ -1060,6 +1060,13 @@ en:
   destinations:
     index:
       new: "New destination"
+    new:
+      sign_up_message: "Sign up!"
+      title: "Title"
+      summary: "Summary"
+      permalink: "Permalink"
+      photo_url: "Photo url"
+      submit: "Submit"
     show:
       posts_tagged_with: "Posts tagged with #%{tag}"
       nobody_talking: "Nobody is talking about %{tag} yet."

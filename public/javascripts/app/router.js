@@ -10,6 +10,7 @@ app.Router = Backbone.Router.extend({
     "followed_tags": "stream",
     "tags/:name": "stream",
     "d/:name": "stream",
+    "d/:name/posts_with_photos": "stream",
     "posts/:id": "stream",
     "places/:id": "stream",
     "p/:id": "stream"

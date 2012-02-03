@@ -1060,6 +1060,13 @@ en:
   destinations:
     index:
       new: "New destination"
+    new:
+      sign_up_message: "Sign up!"
+      title: "Title"
+      summary: "Summary"
+      permalink: "Permalink"
+      photo_url: "Photo url"
+      submit: "Submit"
     show:
       posts_tagged_with: "Posts tagged with #%{tag}"
       nobody_talking: "Nobody is talking about %{tag} yet."
@@ -1071,4 +1078,18 @@ en:
       none: "The empty tag does not exist!"
       places: "Places"
       articles: "Articles"
+      photos: "Photos"
+    posts_with_photos:
+      posts_tagged_with: "Posts tagged with #%{tag}"
+      nobody_talking: "Nobody is talking about %{tag} yet."
+      people_tagged_with: "People tagged with %{tag}"
+      follow: "Follow #%{tag}"
+      following: "Following #%{tag}"
+      stop_following: "Stop Following #%{tag}"
+      followed_by: 'followed by'
+      none: "The empty tag does not exist!"
+      places: "Places"
+      articles: "Articles"
+      photos: "Photos"
+
 

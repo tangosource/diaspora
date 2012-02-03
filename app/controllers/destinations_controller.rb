@@ -25,9 +25,7 @@ class DestinationsController < ApplicationController
       @destination = Destination.where(:permalink => params[:permalink]).first
     end
 
-    @stream = Stream::Tag.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
-    @articles = Magazine::Article.tagged_with(@destination.permalink)
-    @places = Place.tagged_with(@destination.permalink)
+    @stream = Stream::Destination.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
 
     respond_with do |format|
       format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
@@ -91,6 +89,21 @@ class DestinationsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(destinations_url) }
       format.xml  { head :ok }
+    end
+  end
+
+  def posts_with_photos
+    if params[:id]
+      @destination = Destination.find(params[:id]) 
+    else
+      @destination = Destination.where(:permalink => params[:permalink]).first
+    end
+
+    @stream = Stream::Destination.new(current_user, @destination.permalink, :max_time => max_time, :page => params[:page])
+
+    respond_with do |format|
+      format.html{ render :posts_with_photos }
+      format.json{ render_for_api :backbone, :json => @stream.posts_with_photos, :root => :posts }
     end
   end
 

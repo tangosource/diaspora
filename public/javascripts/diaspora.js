@@ -37,7 +37,6 @@
 
   Diaspora.BaseWidget = {
     instantiate: function(Widget, element) {
-      console.log(Widget);
       $.extend(Diaspora.Widgets[Widget].prototype, Diaspora.EventBroker.extend(Diaspora.BaseWidget));
 
       var widget = new Diaspora.Widgets[Widget](),

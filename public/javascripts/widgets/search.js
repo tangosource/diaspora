@@ -67,5 +67,4 @@
   };
 
   Diaspora.Widgets.Search = Search;
-  console.log(Diaspora.Widgets.Search);
 })();

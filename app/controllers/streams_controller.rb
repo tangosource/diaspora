@@ -52,7 +52,6 @@ class StreamsController < ApplicationController
   private
 
   def stream_responder(stream_klass=nil)
-    debugger
     if stream_klass.present?
       @stream ||= stream_klass.new(current_user, :max_time => max_time)
     end

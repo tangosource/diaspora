@@ -1,0 +1,8 @@
+
+#!/bin/bash
+
+# ensure right directory
+realpath=$( ruby -e "puts File.expand_path(\"$0\")")
+cd $(dirname $realpath)/..
+
+rsync -aP custom/ .

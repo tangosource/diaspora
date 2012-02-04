@@ -1,0 +1,21 @@
+= javascript_include_tag "validation"
+-# = javascript_include_tag 'vendor/jquery.ghostInput'
+
+= javascript_tag "Diaspora.Page = 'InvitationsEdit';"
+.span-7.append-1.prepend-3
+  %br
+  %br
+  %br
+  %br
+  = image_tag('ribbon.png')
+  #home_join_button
+    = link_to 'Join Us Now!', '/users/sign_up', :class => "myButton"
+  - flash.each do |name, msg|
+    %p{:class => "login_#{name}"}= msg
+
+
+.span-10
+  %br
+  %br
+  %br
+  %br

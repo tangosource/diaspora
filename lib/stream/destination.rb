@@ -7,10 +7,11 @@ class Stream::Destination < Stream::Tag
   end
 
   def related_places
+    places = {}
     RELATED_PLACES_TAGS.each do |tag|
-      related_places[tag] = related_places_each(tag)
+      places[tag] = related_places_each(tag)
     end
-    return related_places
+    return places
   end
 
   def related_places_each(key)

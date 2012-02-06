@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -280,7 +280,7 @@ ar:
       to: إلى
   layouts:
     application:
-      powered_by: "بدعم GuyTravelBuddy*"
+      powered_by: "بدعم GayTravelBuddy*"
       public_feed: "ملقم دياسبرا العام لـ %{name}"
       toggle: "حَوِّل لموقع الهواتف المحمولة"
       whats_new: "ما الجديد؟"
@@ -659,7 +659,7 @@ ar:
       really_disconnect: "فصل إتصال %{service}?"
     inviter:
       click_link_to_accept_invitation: "إتبع هذا الرابط لقبول دعوتك"
-      join_me_on_diaspora: "انضم إلي في GuyTravelBuddy*"
+      join_me_on_diaspora: "انضم إلي في GayTravelBuddy*"
     remote_friend:
       invite: دعوة
       not_on_diaspora: "ليس بعد على دياسبرا"
@@ -797,7 +797,7 @@ ar:
       change_language: "تغيير اللغة"
       change_password: "تغيير كلمة المرور"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...علق أحدهم على رسالتك"
       current_password: "كلمة المرور الحالية"
       download_photos: "تحميل صوري"
@@ -816,7 +816,7 @@ ar:
       your_handle: "وسيط ديسبورا الخاص بك"
     getting_started:
       hashtag_explanation: "الوسوم تسمح لك بالحديث عن اهتماماتك ومتابعتها.  وهي أيضا طريقة عبقرية للعثور على أناس جدد بدياسبرا."
-      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "هذا المستخدم %{username} غير موجود"
     update:

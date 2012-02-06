@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -693,7 +693,7 @@ ru:
       really_disconnect: "отключить %{service}?"
     inviter:
       click_link_to_accept_invitation: "Перейдите по этой ссылке для принятия вашего приглашения"
-      join_me_on_diaspora: "Присоединяйтесь ко мне в GuyTravelBuddy*"
+      join_me_on_diaspora: "Присоединяйтесь ко мне в GayTravelBuddy*"
     remote_friend:
       invite: приглашение
       not_on_diaspora: "Еще нет в Диаспоре"

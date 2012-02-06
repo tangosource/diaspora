@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -37,7 +37,7 @@ eo:
         friends_saying: "Kion viaj amikoj diras..."
         get_connected: Konektiĝu
         have_fun: Amuziĝu
-        help_fund: "subteni GuyTravelBuddy"
+        help_fund: "subteni GayTravelBuddy"
         here: "ĉi tie"
         ignore: "Se vi ne volas akcepti tiun inviton, bonvolu ignori ĉi tiun retpoŝton"
         join_team: "Angiu nian teamon"
@@ -46,11 +46,11 @@ eo:
         no_account_till: "Via konto ne kreiĝos ĝis vi iras al la supra ligilo kaj enskribiĝas."
         or: aŭ
         sign_up_now: "Enskribiĝi nun &rarr;"
-        subject: "Vi invitiĝis aniĝi al GuyTravelBuddy*!"
+        subject: "Vi invitiĝis aniĝi al GayTravelBuddy*!"
         view_in: "Rigardi en"
       inviter:
         accept_at: "ĉe %{url}, vi povas akcepti ĝin per la suba ligilo."
-        have_invited_you: "%{names} invitis vin aniĝi je GuyTravelBuddy*"
+        have_invited_you: "%{names} invitis vin aniĝi je GayTravelBuddy*"
       reset_password_instructions:
         change: "Ŝanĝi mian pasvorton"
         ignore: "Se vi ne petis ĉi tiun, bonvolu ignori ĉi tiun retpoŝton."

@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -79,7 +79,7 @@ is:
     index:
       handle_explanation: "Þetta er netfangið þitt hjá Díaspora. Eins og með venjulegt netfang, geturðu gefið fólki það svo þau geti haft samband við þig. "
       help:
-        here_to_help: "GuyTravelBuddy community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -112,8 +112,8 @@ is:
   back: "Til baka"
   bookmarklet:
     explanation: "%{link} from anywhere by bookmarking this link."
-    explanation_link_text: "Post to GuyTravelBuddy"
-    heading: "GuyTravelBuddy Bookmarklet"
+    explanation_link_text: "Post to GayTravelBuddy"
+    heading: "GayTravelBuddy Bookmarklet"
   cancel: "Hætta við"
   comments:
     few: "%{count} comments"
@@ -161,14 +161,14 @@ is:
     show:
       already_account: "nú þegar með notandastillingar?"
       choice: Valkostur
-      choice_explanation: "GuyTravelBuddy gerir þér kleift að raða tengingum í hópa sem kallast ásýndir. Einungis í GuyTravelBuddy tryggja ásýndir að myndir þínar, sögur og brandarar séu einungis samnýtt með þeim sem þú ætlar. "
-      learn_about_host: "Lærðu hvernig á að hýsa sinn eigin GuyTravelBuddy miðlara."
+      choice_explanation: "GayTravelBuddy gerir þér kleift að raða tengingum í hópa sem kallast ásýndir. Einungis í GayTravelBuddy tryggja ásýndir að myndir þínar, sögur og brandarar séu einungis samnýtt með þeim sem þú ætlar. "
+      learn_about_host: "Lærðu hvernig á að hýsa sinn eigin GayTravelBuddy miðlara."
       login_here: "innskráning hér"
       ownership: Eignarréttur
-      ownership_explanation: "Þú átt þínar myndir og þú ættir ekki að þurfa að gefa þær frá þér þótt þú deilir þeim. Þú heldur eign þinni á öllu því sem þú deilir um GuyTravelBuddy, sem gefur þér fulla stjórn á því hvernig því er dreift."
+      ownership_explanation: "Þú átt þínar myndir og þú ættir ekki að þurfa að gefa þær frá þér þótt þú deilir þeim. Þú heldur eign þinni á öllu því sem þú deilir um GayTravelBuddy, sem gefur þér fulla stjórn á því hvernig því er dreift."
       share_what_you_want: "Deildu því sem þú vilt, með þeim sem þú vilt."
       simplicity: Einfaldleiki
-      simplicity_explanation: "GuyTravelBuddy gerir samnýtingu hreina og auðvelda - og það gildir líka fyrir friðhelgi. Þar sem GuyTravelBuddy er í eðli sínu persónulegt, þarftu ekki að vaða í gegnum síður með stillingum og möguleikum til að halda síðunni þinni öruggri."
+      simplicity_explanation: "GayTravelBuddy gerir samnýtingu hreina og auðvelda - og það gildir líka fyrir friðhelgi. Þar sem GayTravelBuddy er í eðli sínu persónulegt, þarftu ekki að vaða í gegnum síður með stillingum og möguleikum til að halda síðunni þinni öruggri."
       tagline_first_half: "Deildu því sem þú vilt,"
       tagline_second_half: "með þeim sem þú vilt."
   invitations:
@@ -332,13 +332,13 @@ is:
       liked: "%{name} has just liked your post: "
     mentioned:
       mentioned: "gat þín í pósti:"
-      subject: "% {Nafn} hefur getið þín á GuyTravelBuddy*"
+      subject: "% {Nafn} hefur getið þín á GayTravelBuddy*"
     reshared:
       reshared: "%{name} just reshared your post"
     single_admin:
-      subject: "Skilaboð um notandastillingar þínar í GuyTravelBuddy:"
+      subject: "Skilaboð um notandastillingar þínar í GayTravelBuddy:"
     started_sharing:
-      subject: "%{name} has started sharing with you on GuyTravelBuddy*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
     thanks: "Takk,"
   or: eða
   password: Lykilorð
@@ -446,9 +446,9 @@ is:
     two: "%{count} reactions"
     zero: "0 reactions"
   registrations:
-    closed: "Innskráningar eru lokaðar á þessum GuyTravelBuddy pod."
+    closed: "Innskráningar eru lokaðar á þessum GayTravelBuddy pod."
     create:
-      success: "Nú hefurðu tengst GuyTravelBuddy!"
+      success: "Nú hefurðu tengst GayTravelBuddy!"
     edit:
       cancel_my_account: "Aflýsa mínum notandastillingum"
       edit: "Breyta %{name}"
@@ -509,7 +509,7 @@ is:
       really_disconnect: "aftengja %{service}?"
     inviter:
       click_link_to_accept_invitation: "Smelltu á þessa krækju til að þiggja boðið"
-      join_me_on_diaspora: "Tengstu mér á GuyTravelBuddy*"
+      join_me_on_diaspora: "Tengstu mér á GayTravelBuddy*"
     remote_friend:
       invite: bjóða
       resend: endursenda
@@ -518,9 +518,9 @@ is:
     add_contact:
       create_request: "Finna fólk eftir Díaspora netfangi"
       diaspora_handle: diaspora@handle.org
-      enter_a_diaspora_username: "Skrifaðu notandanafn hjá GuyTravelBuddy:"
+      enter_a_diaspora_username: "Skrifaðu notandanafn hjá GayTravelBuddy:"
       know_email: "Veistu netföngin þeirra? Þú ættir að senda þeim boðsmiða"
-      your_diaspora_username_is: "Þitt GuyTravelBuddy notandanafn er: %{diaspora_handle}"
+      your_diaspora_username_is: "Þitt GayTravelBuddy notandanafn er: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
       toggle:
@@ -543,7 +543,7 @@ is:
     notification:
       new: "Nýtt %{type} frá %{from}"
     public_explain:
-      outside: "Almennt aðgengileg skilaboð verða sýnileg öðrum utan GuyTravelBuddy."
+      outside: "Almennt aðgengileg skilaboð verða sýnileg öðrum utan GayTravelBuddy."
       title: "Þú ert að fara að setja þetta á almannafæri!"
     publisher:
       all: allt
@@ -597,7 +597,7 @@ is:
       success: "Successfully stopped following: #%{name}"
   tokens:
     show:
-      connecting_is_simple: "Connecting your GuyTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   username: Notandanafn
   users:
     confirm_email:
@@ -610,7 +610,7 @@ is:
       change_language: "Breyta um tungumál"
       change_password: "Breyta lykilorði"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       current_password: "Núverandi lykilorð"
       edit_account: "Breyta notandastillingum"
       email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Till you follow this link and activate the new address, we will continue to use your original address %{email}."
@@ -619,7 +619,7 @@ is:
       your_email: "Netfangið þitt"
       your_handle: "Díaspora netfangið þitt."
     getting_started:
-      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "Notandinn %{username} er ekki til!"
     update:

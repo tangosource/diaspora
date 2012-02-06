@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -93,22 +93,22 @@ de_formal:
       remove: entfernen
     index:
       cubbies:
-        explanation: "Cubbi.es ist die erste GuyTravelBuddy Anwendung."
+        explanation: "Cubbi.es ist die erste GayTravelBuddy Anwendung."
         heading: "Mit Cubbi.es verbinden"
         learn_more: "Mehr erfahren"
       diaspora_id:
-        content_1: "Ihre GuyTravelBuddy ID ist:"
-        content_2: "Geben Sie diese weiter und seien Sie somit auf GuyTravelBuddy leicht zu finden."
-        heading: GuyTravelBuddy-ID
+        content_1: "Ihre GayTravelBuddy ID ist:"
+        content_2: "Geben Sie diese weiter und seien Sie somit auf GayTravelBuddy leicht zu finden."
+        heading: GayTravelBuddy-ID
       donate: Spenden
-      handle_explanation: "Das ist Ihre GuyTravelBuddy ID. Sie können sie wie eine E-Mail-Adresse weitergeben, damit andere Nutzer mit Ihnen Kontakt aufnehmen können."
+      handle_explanation: "Das ist Ihre GayTravelBuddy ID. Sie können sie wie eine E-Mail-Adresse weitergeben, damit andere Nutzer mit Ihnen Kontakt aufnehmen können."
       help:
         do_you: "Haben Sie:"
-        email_feedback: "%{link} Ihr Feedback für GuyTravelBuddy"
+        email_feedback: "%{link} Ihr Feedback für GayTravelBuddy"
         feature_suggestion: "… einen %{link} Vorschlag?"
         find_a_bug: "… einen %{link} gefunden?"
         have_a_question: "… eine %{link}?"
-        here_to_help: "Die GuyTravelBuddy-Community ist hier!"
+        here_to_help: "Die GayTravelBuddy-Community ist hier!"
         need_help: "Benötigen Sie Hilfe?"
         tag_bug: "#bug"
         tag_feature: "#feature"
@@ -116,7 +116,7 @@ de_formal:
       introduce_yourself: "Das ist ihr Stream. Legen Sie los und stellen Sie sich vor."
       keep_us_running: "Helfen Sie, %{pod} schnell zu arbeiten und kaufen Sie unseren Servern ihren monatlichen Schuss Kaffee!"
       new_here:
-        follow: "Folgen Sie %{link} und heißen Sie neue Benutzer auf GuyTravelBuddy* willkommen!"
+        follow: "Folgen Sie %{link} und heißen Sie neue Benutzer auf GayTravelBuddy* willkommen!"
         learn_more: "Mehr erfahren"
         title: "Willkommen, neuer Benutzer"
       no_contacts: "Keine Kontakte"
@@ -124,10 +124,10 @@ de_formal:
       people_sharing_with_you: "Leute, die mit Ihnen teilen"
       post_a_message: "Schreiben Sie eine Nachricht >>"
       services:
-        content: "Sie können die folgenden Dienste mit GuyTravelBuddy verbinden:"
+        content: "Sie können die folgenden Dienste mit GayTravelBuddy verbinden:"
         heading: "Verbinde Dienste"
       unfollow_tag: "#%{tag} nicht mehr folgen"
-      welcome_to_diaspora: "Willkommen bei GuyTravelBuddy, %{name}!"
+      welcome_to_diaspora: "Willkommen bei GayTravelBuddy, %{name}!"
       your_aspects: "Ihre Aspekte"
     many: "%{count} Aspekte"
     move_contact:
@@ -176,9 +176,9 @@ de_formal:
       failure: "Konnte das Ignorieren dieses Benutzers nicht aufheben.  #evasion"
       success: "Sehen Sie, was diese zu sagen haben! #sayhello"
   bookmarklet:
-    explanation: "Erstellen Sie einen Beitrag in GuyTravelBuddy von überall, in dem Sie %{link} als Lesezeichen speichern."
+    explanation: "Erstellen Sie einen Beitrag in GayTravelBuddy von überall, in dem Sie %{link} als Lesezeichen speichern."
     explanation_link_text: "diesen Link"
-    post_something: "Erstellen Sie einen Beitrag in GuyTravelBuddy"
+    post_something: "Erstellen Sie einen Beitrag in GayTravelBuddy"
     post_success: "Erstellt! Schließen …"
   cancel: Abbrechen
   comments:
@@ -268,14 +268,14 @@ de_formal:
     show:
       already_account: "bereits registriert?"
       choice: "Ihre Entscheidung"
-      choice_explanation: "GuyTravelBuddy lässt Sie Ihre Kontakte in Gruppen einordnen, sogenannte Aspekte. Ihre Fotos, Geschichten und Witze werden durch diese Aspekte nur mit den Menschen geteilt, für die sie gedacht sind – einzigartig bei GuyTravelBuddy."
-      learn_about_host: "Wollen Sie Ihren eigenen GuyTravelBuddy-Server betreiben?"
+      choice_explanation: "GayTravelBuddy lässt Sie Ihre Kontakte in Gruppen einordnen, sogenannte Aspekte. Ihre Fotos, Geschichten und Witze werden durch diese Aspekte nur mit den Menschen geteilt, für die sie gedacht sind – einzigartig bei GayTravelBuddy."
+      learn_about_host: "Wollen Sie Ihren eigenen GayTravelBuddy-Server betreiben?"
       login_here: "hier anmelden"
       ownership: "Ihr Eigentum"
-      ownership_explanation: "Ihre Bilder gehören Ihnen. Um sie zu teilen, müssen Sie darauf nicht verzichten: Alles, was Sie auf GuyTravelBuddy teilen, bleibt Ihr Eigentum – mit voller Kontrolle über die Verbreitung."
+      ownership_explanation: "Ihre Bilder gehören Ihnen. Um sie zu teilen, müssen Sie darauf nicht verzichten: Alles, was Sie auf GayTravelBuddy teilen, bleibt Ihr Eigentum – mit voller Kontrolle über die Verbreitung."
       share_what_you_want: "Teilen Sie was Sie wollen, mit wem Sie wollen."
       simplicity: "Ganz einfach"
-      simplicity_explanation: "GuyTravelBuddy macht das Teilen von Inhalten klar und einfach – dasselbe gilt für den Schutz Ihrer Privatsphäre. GuyTravelBuddy ist von sich aus privat, seitenweise Einstellungen für die Profilsicherheit sind nicht nötig."
+      simplicity_explanation: "GayTravelBuddy macht das Teilen von Inhalten klar und einfach – dasselbe gilt für den Schutz Ihrer Privatsphäre. GayTravelBuddy ist von sich aus privat, seitenweise Einstellungen für die Profilsicherheit sind nicht nötig."
       tagline_first_half: "Teilen Sie was Sie wollen,"
       tagline_second_half: "mit wem Sie wollen."
   invitations:
@@ -297,7 +297,7 @@ de_formal:
       aspect: Aspekt
       comma_seperated_plz: "Sie können mehrere E-Mail-Adressen durch Trennen mit Kommata eintragen."
       if_they_accept_info: "Wenn sie akzeptieren, werden sie zu dem Aspekt hinzugefügt, in den Sie sie eingeladen haben."
-      invite_someone_to_join: "Laden Sie jemanden zu GuyTravelBuddy ein!"
+      invite_someone_to_join: "Laden Sie jemanden zu GayTravelBuddy ein!"
       language: Sprache
       personal_message: "Persönliche Nachricht"
       resend: "Erneut senden"
@@ -306,8 +306,8 @@ de_formal:
       to: An
   layouts:
     application:
-      powered_by: "BETRIEBEN MIT GuyTravelBuddy*"
-      public_feed: "Öffentlicher GuyTravelBuddy Feed von %{name}"
+      powered_by: "BETRIEBEN MIT GayTravelBuddy*"
+      public_feed: "Öffentlicher GayTravelBuddy Feed von %{name}"
       toggle: "Mobile Ansicht umschalten"
       whats_new: "Was gibt's Neues?"
       your_aspects: "Ihre Aspekte"
@@ -454,25 +454,25 @@ de_formal:
     confirm_email:
       click_link: "Um deine neue E-Mail-Adresse %{unconfirmed_email} zu aktivieren, klicken Sie bitte auf diesen Link:"
       subject: "Bitte aktivieren Sie Ihre neue E-Mail-Adresse %{unconfirmed_email}"
-    email_sent_by_diaspora: "Diese E-Mail wurde von GuyTravelBuddy verschickt. Falls Sie solche E-Mails nicht mehr erhalten wollen,"
+    email_sent_by_diaspora: "Diese E-Mail wurde von GayTravelBuddy verschickt. Falls Sie solche E-Mails nicht mehr erhalten wollen,"
     hello: "Hallo %{name}!"
     liked:
       liked: "%{name} gefällt Ihr Beitrag"
       view_post: "Beitrag betrachten >"
     mentioned:
       mentioned: "hat Sie in einem Beitrag erwähnt:"
-      subject: "%{name} hat Sie auf GuyTravelBuddy* erwähnt"
+      subject: "%{name} hat Sie auf GayTravelBuddy* erwähnt"
     private_message:
       reply_to_or_view: "Antworten Sie oder sehen Sie sich diese Unterhaltung an >"
     reshared:
       reshared: "%{name} hat Ihren Beitrag weitergesagt"
       view_post: "Beitrag anzeigen >"
     single_admin:
-      admin: "Ihr GuyTravelBuddy Administrator"
-      subject: "Eine Nachricht über Ihr GuyTravelBuddy Konto:"
+      admin: "Ihr GayTravelBuddy Administrator"
+      subject: "Eine Nachricht über Ihr GayTravelBuddy Konto:"
     started_sharing:
       sharing: "hat angefangen mit Ihnen zu teilen!"
-      subject: "%{name} hat angefangen mit Ihnen auf GuyTravelBuddy* zu teilen"
+      subject: "%{name} hat angefangen mit Ihnen auf GayTravelBuddy* zu teilen"
       view_profile: "Schauen Sie sich %{name}s Profil an"
     thanks: "Danke,"
     to_change_your_notification_settings: "um Ihre Benachrichtigungs-Einstellungen zu ändern"
@@ -582,7 +582,7 @@ de_formal:
   profile: Profil
   profiles:
     edit:
-      allow_search: "Erlauben Sie anderen auf GuyTravelBuddy nach Ihnen zu suchen"
+      allow_search: "Erlauben Sie anderen auf GayTravelBuddy nach Ihnen zu suchen"
       edit_profile: "Profil bearbeiten"
       first_name: Vorname
       last_name: Nachname
@@ -596,7 +596,7 @@ de_formal:
       your_private_profile: "Ihr privates Profil"
       your_public_profile: "Ihr öffentliches Profil"
       your_tags: "Beschreiben Sie sich in 5 Worten"
-      your_tags_placeholder: "Zum Beispiel: #GuyTravelBuddy #lustig #Kätzchen #Musik"
+      your_tags_placeholder: "Zum Beispiel: #GayTravelBuddy #lustig #Kätzchen #Musik"
     update:
       failed: "Fehler beim Aktualisieren Ihres Profils"
       updated: "Profil aktualisiert"
@@ -611,7 +611,7 @@ de_formal:
   registrations:
     closed: "Neuregistrierungen sind auf diesem Pod geschlossen."
     create:
-      success: "Sie sind GuyTravelBuddy beigetreten!"
+      success: "Sie sind GayTravelBuddy beigetreten!"
     edit:
       cancel_my_account: "Mein Konto schließen"
       edit: "%{name} bearbeiten"
@@ -630,7 +630,7 @@ de_formal:
   requests:
     create:
       sending: "Senden …"
-      sent: "Sie haben angefragt mit %{name} zu teilen. Er/sie sollte dies sehen, wenn er/sie sich das nächste Mal bei GuyTravelBuddy einloggt."
+      sent: "Sie haben angefragt mit %{name} zu teilen. Er/sie sollte dies sehen, wenn er/sie sich das nächste Mal bei GayTravelBuddy einloggt."
     destroy:
       error: "Bitte wählen Sie einen Aspekt!"
       ignore: "Kontaktanfrage ignoriert."
@@ -668,7 +668,7 @@ de_formal:
   search: Suche
   services:
     create:
-      already_authorized: "Ein anderer Nutzer mit der GuyTravelBuddy ID %{diaspora_id} hat diesen %{service_name}-Account bereits autorisiert."
+      already_authorized: "Ein anderer Nutzer mit der GayTravelBuddy ID %{diaspora_id} hat diesen %{service_name}-Account bereits autorisiert."
       failure: "Authentifizierung fehlgeschlagen."
       success: "Authentifizierung erfolgreich."
     destroy:
@@ -689,10 +689,10 @@ de_formal:
       really_disconnect: "Verbindung mit %{service} entfernen?"
     inviter:
       click_link_to_accept_invitation: "Öffnen Sie diesen Link, um die Einladung zu akzeptieren:"
-      join_me_on_diaspora: "Folgen Sie mir auf GuyTravelBuddy*"
+      join_me_on_diaspora: "Folgen Sie mir auf GayTravelBuddy*"
     remote_friend:
       invite: Einladen
-      not_on_diaspora: "Noch nicht auf GuyTravelBuddy"
+      not_on_diaspora: "Noch nicht auf GayTravelBuddy"
       resend: "Erneut senden"
   settings: Einstellungen
   share_visibilites:
@@ -702,11 +702,11 @@ de_formal:
   shared:
     add_contact:
       add_new_contact: "Einen neuen Kontakt hinzufügen"
-      create_request: "Finden Sie mittels GuyTravelBuddy ID"
+      create_request: "Finden Sie mittels GayTravelBuddy ID"
       diaspora_handle: diaspora@beispiel.org
-      enter_a_diaspora_username: "Geben Sie einen GuyTravelBuddy-Benutzernamen ein:"
+      enter_a_diaspora_username: "Geben Sie einen GayTravelBuddy-Benutzernamen ein:"
       know_email: "Sie kennen die E-Mail-Adresse? Senden Sie eine Einladung!"
-      your_diaspora_username_is: "Ihr GuyTravelBuddy Nutzername ist: %{diaspora_handle}"
+      your_diaspora_username_is: "Ihr GayTravelBuddy Nutzername ist: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Kontakt hinzufügen"
       toggle:
@@ -729,7 +729,7 @@ de_formal:
       invite_someone: "Jemanden einladen"
       invite_your_friends: "Laden Sie Ihre Freunde ein"
       invites: Einladungen
-      invites_closed: "Einladungen sind auf diesem GuyTravelBuddy-Pod derzeit nicht verfügbar."
+      invites_closed: "Einladungen sind auf diesem GayTravelBuddy-Pod derzeit nicht verfügbar."
     notification:
       new: "Neue %{type} von %{from}"
     public_explain:
@@ -737,7 +737,7 @@ de_formal:
       logged_in: "Eingeloggt in %{service}"
       manage: "Verbundene Dienste verwalten"
       new_user_welcome_message: "Benutzen Sie #Hashtags um Ihre Beiträge einzuordnen und Leute zu finden, die Ihre Interessen teilen. Benennen Sie tolle Leute mit @Erwähnungen"
-      outside: "Öffentliche Nachrichten werden für andere außerhalb von GuyTravelBuddy sichtbar sein."
+      outside: "Öffentliche Nachrichten werden für andere außerhalb von GayTravelBuddy sichtbar sein."
       share: Teilen
       title: "Verbundene Dienste verwalten"
       visibility_dropdown: "Benutzen Sie dieses Auswahlmenü um die Sichtbarkeit Ihres Betrags zu ändern.  (Wir empfehlen Ihnen den erst Öffentlich zu machen.)"
@@ -837,14 +837,14 @@ de_formal:
   tokens:
     show:
       connect_to_cubbies: "Mit Cubbi.es verbinden"
-      connecting_is_simple: "Ihr GuyTravelBuddy Konto mit Cubbi.es zu verbinden ist einfach! Tragen Sie einfach Ihre GuyTravelBuddy ID in der Cubbi.es <a href='%{href_link}'>Einstellungsseite</a> ein und verbinden Sie die Konten!"
-      daniels_account: "Daniels GuyTravelBuddy Konto"
+      connecting_is_simple: "Ihr GayTravelBuddy Konto mit Cubbi.es zu verbinden ist einfach! Tragen Sie einfach Ihre GayTravelBuddy ID in der Cubbi.es <a href='%{href_link}'>Einstellungsseite</a> ein und verbinden Sie die Konten!"
+      daniels_account: "Daniels GayTravelBuddy Konto"
       love_to_try: "Es wäre toll, wenn Sie es ausprobieren würden."
       making_the_connection: "Die Verbindung herstellen"
       screenshot_explanation: "%{link1}. Dieses \"Cubby\" ist verlinkt auf %{link2}."
       sign_up_today: "Jetzt registrieren!"
       typical_userpage: "Eine typische cubbi.es Benutzerseite"
-      what_is_cubbies: "Cubbi.es ist die erste GuyTravelBuddy Anwendung der Welt. Sie ist auch der beste Weg, um online Fotos zu sammeln."
+      what_is_cubbies: "Cubbi.es ist die erste GayTravelBuddy Anwendung der Welt. Sie ist auch der beste Weg, um online Fotos zu sammeln."
   undo: "Rückgängig machen?"
   username: Benutzername
   users:
@@ -859,7 +859,7 @@ de_formal:
       change_language: "Sprache ändern"
       change_password: "Passwort ändern"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "… jemand Ihren Beitrag kommentiert?"
       current_password: "Derzeitiges Kennwort"
       download_photos: "Meine Fotos herunterladen"
@@ -880,23 +880,23 @@ de_formal:
       started_sharing: "… jemand mit Ihnen zu teilen anfängt?"
       stream_preferences: Stream-Einstellungen
       your_email: "Ihre E-Mail-Adresse"
-      your_handle: "Ihre GuyTravelBuddy ID"
+      your_handle: "Ihre GayTravelBuddy ID"
     getting_started:
-      awesome_take_me_to_diaspora: "Super! Bring mich zu GuyTravelBuddy*"
-      community_welcome: "GuyTravelBuddys Gemeinschaft ist froh, Sie an Bord zu haben!"
-      hashtag_explanation: "Hashtags ermöglichen Ihnen, über Ihre Interessen zu reden und ihnen zu folgen. Sie sind auch ein guter Weg, neue Leute bei GuyTravelBuddy zu treffen!"
+      awesome_take_me_to_diaspora: "Super! Bring mich zu GayTravelBuddy*"
+      community_welcome: "GayTravelBuddys Gemeinschaft ist froh, Sie an Bord zu haben!"
+      hashtag_explanation: "Hashtags ermöglichen Ihnen, über Ihre Interessen zu reden und ihnen zu folgen. Sie sind auch ein guter Weg, neue Leute bei GayTravelBuddy zu treffen!"
       hashtag_suggestions: "Probieren Sie mal Tags wie #kunst, #musik oder #gif zu folgen."
       hooking_up_fb: "Sie Ihren Facebook-Account"
       saved: Gespeichert!
       we_can_speed_things_up: "Wir können die Dinge ein wenig beschleunigen wenn"
       well_hello_there: "Also, Hallöchen!"
       what_are_you_in_to: "Was machen Sie so?"
-      what_facebook_does: "mit GuyTravelBuddy verbinden. Hierbei wird Ihr Name und Ihr Foto geladen, und das Veröffentlichen zu Facebook ermöglicht."
+      what_facebook_does: "mit GayTravelBuddy verbinden. Hierbei wird Ihr Name und Ihr Foto geladen, und das Veröffentlichen zu Facebook ermöglicht."
       who_are_you: "Wer sind Sie?"
     logged_out:
       go_mobile: "Jetzt mobil werden."
-      on_your_mobile_device: "auf Ihrem mobilem Gerät, um die mobile Seite von GuyTravelBuddy* zu benutzen."
-      signed_out: "Sie haben Sich aus GuyTravelBuddy* ausgeloggt"
+      on_your_mobile_device: "auf Ihrem mobilem Gerät, um die mobile Seite von GayTravelBuddy* zu benutzen."
+      signed_out: "Sie haben Sich aus GayTravelBuddy* ausgeloggt"
       simply_visit: "Besuchen Sie einfach"
       works_on_modern: "Funktioniert auf allen modernen Smartphones"
     privacy_settings:

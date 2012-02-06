@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -30,7 +30,7 @@ id:
       success: "Successfully added friend to aspect."
     create:
       failure: "Aspek gagal dibuat."
-      success: "Klik pada tanda plus di sisi kiri untuk memberitahu GuyTravelBuddy siapa yang dapat melihat aspek baru Anda."
+      success: "Klik pada tanda plus di sisi kiri untuk memberitahu GayTravelBuddy siapa yang dapat melihat aspek baru Anda."
     destroy:
       success: "%{name} berhasil dihapus."
     edit:
@@ -42,7 +42,7 @@ id:
     index:
       handle_explanation: "This is your diaspora handle.  Like an email address, you can give this to people to reach you."
       help:
-        here_to_help: "GuyTravelBuddy community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -63,8 +63,8 @@ id:
     zero: "no aspects"
   bookmarklet:
     explanation: "%{link} from anywhere by bookmarking this link."
-    explanation_link_text: "Post to GuyTravelBuddy"
-    heading: "GuyTravelBuddy Bookmarklet"
+    explanation_link_text: "Post to GayTravelBuddy"
+    heading: "GayTravelBuddy Bookmarklet"
   cancel: Batal
   comments:
     few: "%{count} comments"
@@ -103,11 +103,11 @@ id:
   find_people: "Find people"
   home:
     show:
-      choice_explanation: "GuyTravelBuddy allows you to sort your connections into groups called Aspects. Unique to GuyTravelBuddy, Aspects ensure your photos, stories and jokes are shared with only the people you want them to be."
-      learn_about_host: "Learn about how to host your own GuyTravelBuddy server"
-      ownership_explanation: "You own your pictures, and you shouldn’t have to give that up just in order to share them. You maintain ownership of everything you share on GuyTravelBuddy, giving you full control over how it is distributed."
+      choice_explanation: "GayTravelBuddy allows you to sort your connections into groups called Aspects. Unique to GayTravelBuddy, Aspects ensure your photos, stories and jokes are shared with only the people you want them to be."
+      learn_about_host: "Learn about how to host your own GayTravelBuddy server"
+      ownership_explanation: "You own your pictures, and you shouldn’t have to give that up just in order to share them. You maintain ownership of everything you share on GayTravelBuddy, giving you full control over how it is distributed."
       share_what_you_want: "Bagikan apa yang anda ingin bagikan, pada orang yang anda kehendaki."
-      simplicity_explanation: "GuyTravelBuddy makes sharing clean and easy – this goes doubly so for privacy. Innherently private, GuyTravelBuddy doesn’t have pages of settings and options to wade through to keep your profile secure and to your liking."
+      simplicity_explanation: "GayTravelBuddy makes sharing clean and easy – this goes doubly so for privacy. Innherently private, GayTravelBuddy doesn’t have pages of settings and options to wade through to keep your profile secure and to your liking."
   invitations:
     check_token:
       not_found: "Token undangan tidak ditemukan"
@@ -116,7 +116,7 @@ id:
       sent: "Undangan telah dikirimkan ke:"
     new:
       already_invited: "Already invited"
-      invite_someone_to_join: "Undang seseorang untuk bergabung di GuyTravelBuddy!"
+      invite_someone_to_join: "Undang seseorang untuk bergabung di GayTravelBuddy!"
       send_an_invitation: "Kirim sebuah undangan"
       send_invitation: "Kirim undangan"
       to: Ke
@@ -255,9 +255,9 @@ id:
     reshared:
       reshared: "%{name} just reshared your post"
     single_admin:
-      subject: "A message from your GuyTravelBuddy administrator:"
+      subject: "A message from your GayTravelBuddy administrator:"
     started_sharing:
-      subject: "%{name} has started sharing with you on GuyTravelBuddy*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
   ok: Oke
   or: atau
   password: "Kata sandi"
@@ -318,7 +318,7 @@ id:
     zero: "0 reactions"
   registrations:
     create:
-      success: "Anda telah bergabung dengan GuyTravelBuddy!"
+      success: "Anda telah bergabung dengan GayTravelBuddy!"
     new:
       create_my_account: "Create my account"
       enter_email: "Enter an e-mail"
@@ -361,8 +361,8 @@ id:
       click_link_to_accept_invitation: "Click this link to accept your invitation"
   shared:
     add_contact:
-      create_request: "Find by GuyTravelBuddy handle"
-      diaspora_handle: "GuyTravelBuddy handle"
+      create_request: "Find by GayTravelBuddy handle"
+      diaspora_handle: "GayTravelBuddy handle"
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
       toggle:
@@ -375,7 +375,7 @@ id:
     invitations:
       by_email: "by Email"
       invitations_left: "(%{count} left)"
-      invites_closed: "Invites are currently closed on this GuyTravelBuddy seed"
+      invites_closed: "Invites are currently closed on this GayTravelBuddy seed"
     notification:
       new: "%{type} baru dari %{from}"
     public_explain:
@@ -423,7 +423,7 @@ id:
       success: "Successfully stopped following: #%{name}"
   tokens:
     show:
-      connecting_is_simple: "Connecting your GuyTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   users:
     confirm_email:
       email_confirmed: "E-Mail %{email} activated"
@@ -434,7 +434,7 @@ id:
       change_language: "Change Language"
       change_password: "Change Password"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       download_photos: "Unduh foto-fotoku"
       download_xml: "Unduh xmlku"
       email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Till you follow this link and activate the new address, we will continue to use your original address %{email}."
@@ -442,7 +442,7 @@ id:
       receive_email_notifications: "Receive email notificaions?"
       your_handle: "Your diaspora handle"
     getting_started:
-      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     update:
       email_notifications_changed: "Language Change Failed"
       language_changed: "Language Changed"

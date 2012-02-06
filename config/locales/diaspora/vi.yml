@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -94,12 +94,12 @@ vi:
       remove: "loại bỏ"
     index:
       cubbies:
-        explanation: "Cubbi.es là ứng dụng được phát triển đầu tiên của GuyTravelBuddy."
+        explanation: "Cubbi.es là ứng dụng được phát triển đầu tiên của GayTravelBuddy."
         heading: "Kết nối đến Cubbi.es"
         learn_more: "Tìm hiểu thêm"
       diaspora_id:
-        content_1: "ID GuyTravelBuddy của bạn:"
-        content_2: "Cho người khác biết và họ có thể tìm thấy bạn trên GuyTravelBuddy."
+        content_1: "ID GayTravelBuddy của bạn:"
+        content_2: "Cho người khác biết và họ có thể tìm thấy bạn trên GayTravelBuddy."
       donate: "Quyên góp"
       handle_explanation: "Đây là id diaspora của bạn. Giống như một địa chỉ thư điện tử, người khác có thể liên lạc với bạn thông qua nó."
       help:
@@ -108,7 +108,7 @@ vi:
         feature_suggestion: "... có một đề nghị %{link}?"
         find_a_bug: "... tìm thấy lỗi %{link}?"
         have_a_question: "... có một %{link}?"
-        here_to_help: "Cộng đồng GuyTravelBuddy!"
+        here_to_help: "Cộng đồng GayTravelBuddy!"
         need_help: "Cần giúp đỡ?"
         tag_bug: "#bug"
         tag_feature: "#feature"
@@ -116,7 +116,7 @@ vi:
         tutorials_wiki_and_forum: "%{tutorial} & %{wiki} & %{forum}: Kinh nghiệm, thủ thuật, giải đáp và tin tức từ cộng đồng"
       introduce_yourself: "Đây là luồng của bạn. Hãy tự giới thiệu mình ở đây."
       new_here:
-        follow: "Theo dõi %{link} và chào đón người dùng mới đến với GuyTravelBuddy*!"
+        follow: "Theo dõi %{link} và chào đón người dùng mới đến với GayTravelBuddy*!"
         learn_more: "Tìm hiểu thêm"
         title: "Chào mừng người dùng mới"
       no_contacts: "Không có liên lạc"
@@ -124,10 +124,10 @@ vi:
       people_sharing_with_you: "Đang chia sẻ với bạn"
       post_a_message: "đăng một tin >>"
       services:
-        content: "Bạn có thể kết nối những dịch vụ sau với GuyTravelBuddy:"
+        content: "Bạn có thể kết nối những dịch vụ sau với GayTravelBuddy:"
         heading: "Kết nối dịch vụ"
       unfollow_tag: "Ngừng theo dõi #%{tag}"
-      welcome_to_diaspora: "Chào mừng đến với GuyTravelBuddy, %{name}!"
+      welcome_to_diaspora: "Chào mừng đến với GayTravelBuddy, %{name}!"
       your_aspects: "Các mối quan hệ"
     many: "%{count} mối quan hệ"
     move_contact:
@@ -172,10 +172,10 @@ vi:
       failure: "Không thể bỏ qua người dùng.  #evasion"
       success: "Bạn sẽ không thấy #silencio trong luồng của bạn nữa!"
   bookmarklet:
-    explanation: "Đăng tin lên GuyTravelBuddy từ bất kì đâu bằng cách đánh dấu %{link}."
+    explanation: "Đăng tin lên GayTravelBuddy từ bất kì đâu bằng cách đánh dấu %{link}."
     explanation_link_text: "liên kết này"
     heading: "Đánh dấu"
-    post_something: "Đăng tin lên GuyTravelBuddy"
+    post_something: "Đăng tin lên GayTravelBuddy"
     post_success: "Đã đăng! Đang đóng!"
   cancel: "Hủy bỏ"
   comments:
@@ -273,7 +273,7 @@ vi:
       already_invited: "Những người sau không chấp nhận lời mời của bạn:"
       comma_seperated_plz: "Bạn có thể nhập nhiều địa chỉ thư điện tử và ngăn cách chúng bằng dấu phẩy."
       if_they_accept_info: "nếu chấp nhận, họ sẽ được thêm vào mối quan hệ mà bạn đã mời."
-      invite_someone_to_join: "Mời người khác tham gia GuyTravelBuddy!"
+      invite_someone_to_join: "Mời người khác tham gia GayTravelBuddy!"
       language: "Ngôn ngữ"
       personal_message: "Tin nhắn cá nhân"
       resend: "Gửi lại"
@@ -473,7 +473,7 @@ vi:
     zero: "0 reactions"
   registrations:
     create:
-      success: "Bạn đã tham gia vào GuyTravelBuddy!"
+      success: "Bạn đã tham gia vào GayTravelBuddy!"
     edit:
       cancel_my_account: "Huỷ tài khoản"
       edit: "Chỉnh sửa %{name}"
@@ -553,7 +553,7 @@ vi:
       email_not_confirmed: "Không thể kích hoạt địa chỉ thư điện tử. Sai địa chỉ?"
     destroy:
       no_password: "Nhập mật khẩu hiện tại để đóng tài khoản."
-      success: "Tài khoản của bạn đã bị khoá. Có thể mất 20 phút để đóng tài khoản của bạn. Cám ơn vì đã dùng GuyTravelBuddy."
+      success: "Tài khoản của bạn đã bị khoá. Có thể mất 20 phút để đóng tài khoản của bạn. Cám ơn vì đã dùng GayTravelBuddy."
       wrong_password: "Mật khẩu đã nhập không khớp với mật khẩu hiện tại."
     edit:
       change: "Thay đổi"
@@ -561,7 +561,7 @@ vi:
       change_language: "Đổi ngôn ngữ"
       change_password: "Đổi mật khẩu"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       current_password: "Mật khẩu hiện tại"
       download_photos: "tải ảnh của tôi"
       download_xml: "tải xml của tôi"
@@ -577,13 +577,13 @@ vi:
       started_sharing: "...ai đó bắt đầu chia sẻ với bạn?"
       stream_preferences: "Tuỳ chỉnh luồng"
       your_email: "Thư điện tử của bạn"
-      your_handle: "ID GuyTravelBuddy của bạn"
+      your_handle: "ID GayTravelBuddy của bạn"
     getting_started:
-      awesome_take_me_to_diaspora: "Tuyệt vời! Đưa tối đến GuyTravelBuddy*"
-      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
+      awesome_take_me_to_diaspora: "Tuyệt vời! Đưa tối đến GayTravelBuddy*"
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
       who_are_you: "Bạn là ai?"
     logged_out:
-      signed_out: "Bạn đã đăng xuất khỏi GuyTravelBuddy*"
+      signed_out: "Bạn đã đăng xuất khỏi GayTravelBuddy*"
       works_on_modern: "Hoạt động trên mọi điện thoại thông minh hiện đại"
     privacy_settings:
       title: "Thiết lập riêng tư"

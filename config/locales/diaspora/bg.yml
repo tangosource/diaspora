@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -90,15 +90,15 @@ bg:
       remove: премахване
     index:
       cubbies:
-        explanation: "Cubbi.es е първото приложение за GuyTravelBuddy и все още се разработва."
+        explanation: "Cubbi.es е първото приложение за GayTravelBuddy и все още се разработва."
         heading: "Свързване с Cubbi.es"
         learn_more: "Научете повече"
       diaspora_id:
-        content_1: "Вашият адрес в GuyTravelBuddy е:"
-        content_2: "Споделете го с който и да е и той ще ви намери в GuyTravelBuddy."
-        heading: "Адрес в GuyTravelBuddy"
+        content_1: "Вашият адрес в GayTravelBuddy е:"
+        content_2: "Споделете го с който и да е и той ще ви намери в GayTravelBuddy."
+        heading: "Адрес в GayTravelBuddy"
       donate: Дарете
-      handle_explanation: "Това е вашият адрес в GuyTravelBuddy. Наподобява адрес на ел. поща - давате го на хора, за да се свържат с вас."
+      handle_explanation: "Това е вашият адрес в GayTravelBuddy. Наподобява адрес на ел. поща - давате го на хора, за да се свържат с вас."
       help:
         do_you: "Вие:"
         email_feedback: "Ако предпочитате изпратете отзив по %{link}."
@@ -114,7 +114,7 @@ bg:
       introduce_yourself: "Това е вашият поток.  Включете се и се представете."
       keep_us_running: "Осигурете бързата работа на %{pod} като дарите пари за месечната издръжка на сървърите!"
       new_here:
-        follow: "Следете %{link} и приветствайте новите потребители на GuyTravelBuddy*!"
+        follow: "Следете %{link} и приветствайте новите потребители на GayTravelBuddy*!"
         learn_more: "Научете повече"
         title: "Поздравете новодошлите"
       no_contacts: "Няма контакти"
@@ -122,10 +122,10 @@ bg:
       people_sharing_with_you: "Хора споделящи с вас"
       post_a_message: "публикуване на съобщение >>"
       services:
-        content: "Можете да свържете следните услуги към GuyTravelBuddy:"
+        content: "Можете да свържете следните услуги към GayTravelBuddy:"
         heading: "Свързване към услуги"
       unfollow_tag: "Прекратяване следенето на #%{tag}"
-      welcome_to_diaspora: "Добре дошли в GuyTravelBuddy, %{name}!"
+      welcome_to_diaspora: "Добре дошли в GayTravelBuddy, %{name}!"
       your_aspects: "Вашите аспекти"
     many: "%{count} аспекта"
     move_contact:
@@ -173,9 +173,9 @@ bg:
       failure: "Игнорирането на потребителя не бе прекратено.  #evasion"
       success: "Какво ли ще кажат! #sayhello"
   bookmarklet:
-    explanation: "Публикувайте в GuyTravelBuddy от където и да е, запаметявайки %{link} като отметка."
+    explanation: "Публикувайте в GayTravelBuddy от където и да е, запаметявайки %{link} като отметка."
     explanation_link_text: "тази връзка"
-    post_something: "Публикуване в GuyTravelBuddy"
+    post_something: "Публикуване в GayTravelBuddy"
     post_success: Публикувано!
   cancel: Отказ
   comments:
@@ -265,14 +265,14 @@ bg:
     show:
       already_account: "вече имате акаунт?"
       choice: Избор
-      choice_explanation: "GuyTravelBuddy предоставя възможност за сортиране на контактите в групи, наречени аспекти. Уникални за GuyTravelBuddy, те позволяват споделянето на снимки, истории и шеги само с хората, за които са предвидени.\n"
-      learn_about_host: "Научете как да стартирате GuyTravelBuddy на собствен сървър."
+      choice_explanation: "GayTravelBuddy предоставя възможност за сортиране на контактите в групи, наречени аспекти. Уникални за GayTravelBuddy, те позволяват споделянето на снимки, истории и шеги само с хората, за които са предвидени.\n"
+      learn_about_host: "Научете как да стартирате GayTravelBuddy на собствен сървър."
       login_here: "впишете се от тук"
       ownership: Собственост
-      ownership_explanation: "Вие притежавате снимките си и не е необходимо да се отказвате от това си право само за да ги споделите. Запазвате собственост върху всичко, което споделяте в GuyTravelBuddy и контролирате разпространението."
+      ownership_explanation: "Вие притежавате снимките си и не е необходимо да се отказвате от това си право само за да ги споделите. Запазвате собственост върху всичко, което споделяте в GayTravelBuddy и контролирате разпространението."
       share_what_you_want: "Споделяйте каквото желаете, с когото пожелаете."
       simplicity: Леснота
-      simplicity_explanation: "Споделянето чрез GuyTravelBuddy е просто и лесно. Характерно за GuyTravelBuddy е, че запазва личния ви живот поверителен без нужда от настройване на различни страници с безброй опции."
+      simplicity_explanation: "Споделянето чрез GayTravelBuddy е просто и лесно. Характерно за GayTravelBuddy е, че запазва личния ви живот поверителен без нужда от настройване на различни страници с безброй опции."
       tagline_first_half: "Споделете каквото желаете,"
       tagline_second_half: "с когото пожелаете."
   invitations:
@@ -293,7 +293,7 @@ bg:
       aspect: Аспект
       comma_seperated_plz: "Можете да въведете повече от една ел. поща като ги разделяте със запетаи."
       if_they_accept_info: "ако приемат поканата ще бъдат добавени към аспекта в който сте ги поканили."
-      invite_someone_to_join: "Поканете някой в GuyTravelBuddy!"
+      invite_someone_to_join: "Поканете някой в GayTravelBuddy!"
       language: "Език за поканата"
       personal_message: "Лично съобщение"
       resend: "Повторно изпращане"
@@ -302,8 +302,8 @@ bg:
       to: До
   layouts:
     application:
-      powered_by: "Благодарение на GuyTravelBuddy*"
-      public_feed: "Публична емисия от GuyTravelBuddy за %{name}"
+      powered_by: "Благодарение на GayTravelBuddy*"
+      public_feed: "Публична емисия от GayTravelBuddy за %{name}"
       toggle: "вкл./изкл. на мобилния изглед"
       whats_new: "какво ново?"
       your_aspects: "вашите аспекти"
@@ -450,25 +450,25 @@ bg:
     confirm_email:
       click_link: "За да активирате новия адрес (%{unconfirmed_email}) кликнете върху следната връзка:"
       subject: "Моля, акивирайте новия адрес на ел. ви поща (%{unconfirmed_email})"
-    email_sent_by_diaspora: "Ел. писмо е изпратено от GuyTravelBuddy.  Ако вече не желаете да получавате подобни писма,"
+    email_sent_by_diaspora: "Ел. писмо е изпратено от GayTravelBuddy.  Ако вече не желаете да получавате подобни писма,"
     hello: "Здравейте %{name}!"
     liked:
       liked: "%{name} хареса вашата публикация"
       view_post: "Преглед на публикацията >"
     mentioned:
       mentioned: "ви спомена в публикация:"
-      subject: "%{name} ви спомена в GuyTravelBuddy*"
+      subject: "%{name} ви спомена в GayTravelBuddy*"
     private_message:
       reply_to_or_view: "Отговорете или прегледайте разговора >"
     reshared:
       reshared: "%{name} сподели ваша публикация"
       view_post: "Преглеждане >"
     single_admin:
-      admin: "Вашият администратор на GuyTravelBuddy"
-      subject: "Съобщение относно акаунта ви в GuyTravelBuddy:"
+      admin: "Вашият администратор на GayTravelBuddy"
+      subject: "Съобщение относно акаунта ви в GayTravelBuddy:"
     started_sharing:
       sharing: "започна да споделя с вас!"
-      subject: "%{name} започна да споделя с вас в GuyTravelBuddy*"
+      subject: "%{name} започна да споделя с вас в GayTravelBuddy*"
       view_profile: "Прегледайте профила на %{name}"
     thanks: "Благодаря,"
     to_change_your_notification_settings: "за да промените настройките за известяване"
@@ -580,7 +580,7 @@ bg:
   profile: Профил
   profiles:
     edit:
-      allow_search: "Разрешете търсенето в GuyTravelBuddy за вас"
+      allow_search: "Разрешете търсенето в GayTravelBuddy за вас"
       edit_profile: "Настройки на профила"
       first_name: "Собствено име"
       last_name: "Фамилно име"
@@ -607,9 +607,9 @@ bg:
     two: "%{count} отзива"
     zero: "0 отзива"
   registrations:
-    closed: "Нови регистрации не са възможни на този pod на GuyTravelBuddy."
+    closed: "Нови регистрации не са възможни на този pod на GayTravelBuddy."
     create:
-      success: "Вие се присъединихте към GuyTravelBuddy!"
+      success: "Вие се присъединихте към GayTravelBuddy!"
     edit:
       leave_blank: "(оставете празно ако не желаете да го променяте)"
       password_to_confirm: "(за да бъдат потвърдени промените е необходима текущата ви парола)"
@@ -626,7 +626,7 @@ bg:
   requests:
     create:
       sending: Изпращане
-      sent: "Изпратили сте покана до %{name} за да започнете да споделяте - щом се впишат в GuyTravelBuddy ще видят поканата."
+      sent: "Изпратили сте покана до %{name} за да започнете да споделяте - щом се впишат в GayTravelBuddy ще видят поканата."
     destroy:
       error: "Моля, изберете аспект!"
       success: "Сега споделяте."
@@ -662,7 +662,7 @@ bg:
   search: Търсене
   services:
     create:
-      already_authorized: "Потребител с адрес в GuyTravelBuddy %{diaspora_id} вече е удостоверил акаунта %{service_name}."
+      already_authorized: "Потребител с адрес в GayTravelBuddy %{diaspora_id} вече е удостоверил акаунта %{service_name}."
       failure: "Удостоверяването не бе успешно."
       success: "Удостоверяването приключи успешно."
     destroy:
@@ -670,7 +670,7 @@ bg:
     failure:
       error: "възникна грешка при свързването с услугата"
     finder:
-      fetching_contacts: "GuyTravelBuddy копира приятелите ви от %{service}. Моля, пробвайте отново след няколко минути."
+      fetching_contacts: "GayTravelBuddy копира приятелите ви от %{service}. Моля, пробвайте отново след няколко минути."
       no_friends: "Няма намерени приятели от Facebook."
       service_friends: "Приятели от %{service}"
     index:
@@ -684,10 +684,10 @@ bg:
       really_disconnect: "Наистина ли желаете свързаността с %{service} да бъде изключена?"
     inviter:
       click_link_to_accept_invitation: "Кликнете върху връзката, за да приемете поканата"
-      join_me_on_diaspora: "Присъединете се към мен в GuyTravelBuddy*"
+      join_me_on_diaspora: "Присъединете се към мен в GayTravelBuddy*"
     remote_friend:
       invite: покани
-      not_on_diaspora: "Все още не е в GuyTravelBuddy"
+      not_on_diaspora: "Все още не е в GayTravelBuddy"
       resend: "повторно изпращане"
   settings: Настройки
   share_visibilites:
@@ -697,10 +697,10 @@ bg:
   shared:
     add_contact:
       add_new_contact: "Добавяне на контакт"
-      create_request: "Търси по адрес в GuyTravelBuddy"
-      enter_a_diaspora_username: "Въведете потребителско име от GuyTravelBuddy:"
+      create_request: "Търси по адрес в GayTravelBuddy"
+      enter_a_diaspora_username: "Въведете потребителско име от GayTravelBuddy:"
       know_email: "Знаете адресите на ел. им поща? Трябва да ги поканите"
-      your_diaspora_username_is: "Вашето потребителско име в GuyTravelBuddy е %{diaspora_handle}"
+      your_diaspora_username_is: "Вашето потребителско име в GayTravelBuddy е %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Добавяне в аспект"
       toggle:
@@ -723,7 +723,7 @@ bg:
       invite_someone: "Поканете някого"
       invite_your_friends: "Поканете приятелите си"
       invites: Покани
-      invites_closed: "Издаването на покани за този pod на GuyTravelBuddy за момента е прекратено"
+      invites_closed: "Издаването на покани за този pod на GayTravelBuddy за момента е прекратено"
     notification:
       new: "Ново %{type} от %{from}"
     public_explain:
@@ -731,7 +731,7 @@ bg:
       logged_in: "вписани сте в %{service}"
       manage: "управление на свързаните услуги"
       new_user_welcome_message: "Ползвайте диез марките (#име–на-марката), за да изясните/посочите темата на публикацийте си и за намиране на хора споделящи вашите интереси. Call out awesome people with @Mentions"
-      outside: "Публичните съобщения ще са видими и за хора извън GuyTravelBuddy."
+      outside: "Публичните съобщения ще са видими и за хора извън GayTravelBuddy."
       share: "Споделете нещо"
       title: "Настройване на свързаните услуги"
       visibility_dropdown: "Ползвайте падащото меню, за да промените видимостта на публикацията. (Препоръчително е да направите първата си публикация публична.)"
@@ -845,15 +845,15 @@ bg:
   tokens:
     show:
       connect_to_cubbies: "Свързване с Cubbi.es"
-      connecting_is_simple: "За свързване на акаунта ви в GuyTravelBuddy е необходимо да въведете вашият адрес в GuyTravelBuddy (<b>%{diaspora_id}</b>) в <a href='%{href_link}'>страницата с настройки</a> на Cubbi.es и да натиснете \"Connect\"."
-      daniels_account: "акаунта на Daniel в GuyTravelBuddy"
+      connecting_is_simple: "За свързване на акаунта ви в GayTravelBuddy е необходимо да въведете вашият адрес в GayTravelBuddy (<b>%{diaspora_id}</b>) в <a href='%{href_link}'>страницата с настройки</a> на Cubbi.es и да натиснете \"Connect\"."
+      daniels_account: "акаунта на Daniel в GayTravelBuddy"
       love_to_try: "Бихме се радвали ако го пробвате!"
       making_the_connection: "Създаване на връзката"
       screenshot_explanation: "%{link1}.  Тази cubby страница е свързана с %{link2}."
       sign_up_today: "Регистрирайте се днес!"
       typical_userpage: "Типична потребителска страница от cubbi.es"
       via: "(чрез %{link})"
-      what_is_cubbies: "Cubbi.es е първото приложение за GuyTravelBuddy. Също така е и най-добрият начин за събиране на изображения."
+      what_is_cubbies: "Cubbi.es е първото приложение за GayTravelBuddy. Също така е и най-добрият начин за събиране на изображения."
   undo: Отмяна?
   username: "Потребителско име"
   users:
@@ -862,7 +862,7 @@ bg:
       email_not_confirmed: "Ел. поща не може да бъде активирана. Грешна връзка?"
     destroy:
       no_password: "Моля, въведете паролата си, за да бъде затворен акаунта."
-      success: "Акаунтът ви е заключен.  Затварянето на акаунт изисква около 20 минути.  Благодарим ви, че пробвахте GuyTravelBuddy."
+      success: "Акаунтът ви е заключен.  Затварянето на акаунт изисква около 20 минути.  Благодарим ви, че пробвахте GayTravelBuddy."
       wrong_password: "Въведената парола не съвпада с текущата парола на акаунта."
     edit:
       also_commented: "...някой коментира публикация на ваш контакт?"
@@ -876,10 +876,10 @@ bg:
         if_you_want_this: "Ако наистина го желаете въведете паролата си, по-долу и натиснете \"Затваряне на акаунта\""
         lock_username: "потребителско ви име се \"заключва\" - ако пожелаете да се върнете отново"
         locked_out: "автоматично ще бъдете отписани, а акаунтът - \"заключен\""
-        make_diaspora_better: "Надяваме се да ни помогнете в усилията ни да направим услугата GuyTravelBuddy по-добра. Ако наистина желаете да напуснете ето какво се случва при напускане:"
+        make_diaspora_better: "Надяваме се да ни помогнете в усилията ни да направим услугата GayTravelBuddy по-добра. Ако наистина желаете да напуснете ето какво се случва при напускане:"
         mr_wiggles: "И г-н Wiggles ще се натъжи много"
         no_turning_back: "За момента действието е необратимо!"
-        what_we_delete: "изтриват се всички ваши публикации и данни от профила (възможно най-бързо). Вашите коментари ще останат наоколо, но ще бъдат асоциирани с адреса ви GuyTravelBuddy."
+        what_we_delete: "изтриват се всички ваши публикации и данни от профила (възможно най-бързо). Вашите коментари ще останат наоколо, но ще бъдат асоциирани с адреса ви GayTravelBuddy."
       close_account_text: "Затваряне на акаунта"
       comment_on_post: "...някой коментира ваша публикация?"
       current_password: "Текуща парола"
@@ -900,23 +900,23 @@ bg:
       started_sharing: "...някой започне да споделя с вас?"
       stream_preferences: "Предпочитания за потока"
       your_email: "Вашата ел. поща"
-      your_handle: "Вашият адрес в GuyTravelBuddy"
+      your_handle: "Вашият адрес в GayTravelBuddy"
     getting_started:
-      awesome_take_me_to_diaspora: "Към GuyTravelBuddy*"
-      community_welcome: "Общността около GuyTravelBuddy с радост ви приветства в този pod!"
-      hashtag_explanation: "Диез марките (#име–на-марката) ви позволяват да коментирате и следите интересни за вас теми.  Улесняват и откриване на хора със сходни интереси в GuyTravelBuddy."
+      awesome_take_me_to_diaspora: "Към GayTravelBuddy*"
+      community_welcome: "Общността около GayTravelBuddy с радост ви приветства в този pod!"
+      hashtag_explanation: "Диез марките (#име–на-марката) ви позволяват да коментирате и следите интересни за вас теми.  Улесняват и откриване на хора със сходни интереси в GayTravelBuddy."
       hashtag_suggestions: "Пробвайте да следвате няколко марки като #art, #movies, #gif и др."
       hooking_up_fb: "да свържете акаунта си от Facebook"
       saved: Записано!
       we_can_speed_things_up: "Ако желаете можете"
       well_hello_there: Здравейте!
       what_are_you_in_to: "От какво се интересувате?"
-      what_facebook_does: "с GuyTravelBuddy. Така някои данни (име и снимка) ще бъдат попълнени автоматично и ще можете да публикувате съобщения във Facebook от GuyTravelBuddy."
+      what_facebook_does: "с GayTravelBuddy. Така някои данни (име и снимка) ще бъдат попълнени автоматично и ще можете да публикувате съобщения във Facebook от GayTravelBuddy."
       who_are_you: "Кой сте вие?"
     logged_out:
       go_mobile: "Пробвайте и версията за мобилни устройства."
-      on_your_mobile_device: "от вашето мобилно устройство за достъп до мобилната версия на GuyTravelBuddy*."
-      signed_out: "Отписахте се от GuyTravelBuddy*"
+      on_your_mobile_device: "от вашето мобилно устройство за достъп до мобилната версия на GayTravelBuddy*."
+      signed_out: "Отписахте се от GayTravelBuddy*"
       simply_visit: "Просто посетете"
       works_on_modern: "Съвместима е с всеки съвременен смартфон"
     privacy_settings:
@@ -935,4 +935,4 @@ bg:
       settings_updated: "Настройките са обновени"
       unconfirmed_email_changed: "Ел. поща е променена. Необходимо е да я активирате."
       unconfirmed_email_not_changed: "Ел. поща не бе променена"
-  welcome: "Привет от GuyTravelBuddy,"
+  welcome: "Привет от GayTravelBuddy,"

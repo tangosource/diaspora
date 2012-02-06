@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -43,7 +43,7 @@ ml:
   all_aspects: എല്ലാം
   application:
     helper:
-      diaspora_alpha: "GuyTravelBuddy* ALPHA"
+      diaspora_alpha: "GayTravelBuddy* ALPHA"
       unknown_person: "അറിയാത്ത വ്യക്തി"
       video_title:
         unknown: "ചലചിത്രത്തിന്റെ തലക്കെട്ട് അറിയില്ല"
@@ -94,13 +94,13 @@ ml:
       remove: "നീക്കം ചെയ്യു"
     index:
       cubbies:
-        explanation: "Cubbi.es is the first GuyTravelBuddy application under development."
+        explanation: "Cubbi.es is the first GayTravelBuddy application under development."
         heading: "Connect to Cubbi.es"
         learn_more: "Learn more"
       diaspora_id:
-        content_1: "Your GuyTravelBuddy ID is:"
-        content_2: "Give it to anyone and they'll be able to find you on GuyTravelBuddy."
-        heading: "GuyTravelBuddy ID"
+        content_1: "Your GayTravelBuddy ID is:"
+        content_2: "Give it to anyone and they'll be able to find you on GayTravelBuddy."
+        heading: "GayTravelBuddy ID"
       donate: "Donate"
       handle_explanation: "ഇത് താങ്കളുടെ ഡയസ്പോറ ഐഡിയാണ്. അളുകള്‍ക്ക് താങ്കളെ ബന്ധപെടാന്‍ ഇത് ഇമെയില്‍ പോലെ കൊടുക്കാം."
       help:
@@ -109,7 +109,7 @@ ml:
         feature_suggestion: "... have a %{link} suggestion?"
         find_a_bug: "... find a %{link}?"
         have_a_question: "... have a %{link}?"
-        here_to_help: "The GuyTravelBuddy community is here!"
+        here_to_help: "The GayTravelBuddy community is here!"
         need_help: "Need Help?"
         tag_bug: "bug"
         tag_feature: "feature"
@@ -118,7 +118,7 @@ ml:
       introduce_yourself: "This is your stream.  Jump in and introduce yourself."
       keep_us_running: "Keep %{pod} running fast, buy our servers their monthly coffee fix!"
       new_here:
-        follow: "Follow %{link} and welcome new users to GuyTravelBuddy*!"
+        follow: "Follow %{link} and welcome new users to GayTravelBuddy*!"
         learn_more: "Learn more"
         title: "Welcome New Users"
       no_contacts: സമ്പര്‍ക്കങ്ങളില്ല
@@ -126,10 +126,10 @@ ml:
       people_sharing_with_you: "People sharing with you"
       post_a_message: "ഒരു കത്തയക്കുക >>"
       services:
-        content: "You can connect the following services to GuyTravelBuddy:"
+        content: "You can connect the following services to GayTravelBuddy:"
         heading: "Connect Services"
       unfollow_tag: "Stop following #%{tag}"
-      welcome_to_diaspora: "Welcome to GuyTravelBuddy, %{name}!"
+      welcome_to_diaspora: "Welcome to GayTravelBuddy, %{name}!"
       your_aspects: "Your Aspects"
     many: "%{count} പരിചയങ്ങള്‍"
     move_contact:
@@ -178,7 +178,7 @@ ml:
       failure: "I couldn't stop ignoring that user.  #evasion"
       success: "Let's see what they have to say! #sayhello"
   bookmarklet:
-    explanation: "Post to GuyTravelBuddy from anywhere by bookmarking %{link}."
+    explanation: "Post to GayTravelBuddy from anywhere by bookmarking %{link}."
     explanation_link_text: "this link"
     heading: "Bookmarklet"
     post_something: "ഡയസ്പോറയിലേക്ക് എന്തെങ്കിലും കുറിക്കുക"
@@ -458,7 +458,7 @@ ml:
     confirm_email:
       click_link: "To activate your new email address %{unconfirmed_email}, please click this link:"
       subject: "Please activate your new email address %{unconfirmed_email}"
-    email_sent_by_diaspora: "This email was sent by GuyTravelBuddy.  If you'd like to stop getting emails like this,"
+    email_sent_by_diaspora: "This email was sent by GayTravelBuddy.  If you'd like to stop getting emails like this,"
     hello: "നമസ്‌കാരം %{name}!"
     liked:
       liked: "%{name} just liked your post"
@@ -476,7 +476,7 @@ ml:
       subject: "നിങ്ങളുടെ ഡയസ്പോറ അക്കൌണ്ടിനെ സംബന്ധിച്ച് ഒരു സന്ദേശം:"
     started_sharing:
       sharing: "has started sharing with you!"
-      subject: "%{name} started sharing with you on GuyTravelBuddy*"
+      subject: "%{name} started sharing with you on GayTravelBuddy*"
       view_profile: "View %{name}'s profile"
     thanks: "നന്ദിയോടെ,"
     to_change_your_notification_settings: "to change your notification settings"
@@ -686,7 +686,7 @@ ml:
     failure:
       error: "അ സേവനവുമായി ബന്ധിപ്പിക്കുന്നതില്‍ അവിടെ ഒരു തെറ്റുണ്ട്"
     finder:
-      fetching_contacts: "GuyTravelBuddy is populating your %{service} friends please check back in a few minutes."
+      fetching_contacts: "GayTravelBuddy is populating your %{service} friends please check back in a few minutes."
       no_friends: "No Facebook friends found."
       service_friends: "%{service} Friends"
     index:
@@ -703,7 +703,7 @@ ml:
       join_me_on_diaspora: "എന്നെ ഡയസ്പോറ*യില്‍ ചേര്‍ക്കൂ*"
     remote_friend:
       invite: ക്ഷണിക്കു
-      not_on_diaspora: "Not yet on GuyTravelBuddy"
+      not_on_diaspora: "Not yet on GayTravelBuddy"
       resend: "വീണ്ടും അയയ്ക്കു"
   settings: ക്രമീകരണങ്ങള്‍
   share_visibilites:
@@ -863,15 +863,15 @@ ml:
   tokens:
     show:
       connect_to_cubbies: "Connect to Cubbi.es"
-      connecting_is_simple: "Connecting your GuyTravelBuddy account is simple!  Just enter your GuyTravelBuddy ID (<b>%{diaspora_id}</b>) from your cubbies <a href='%{href_link}'>settings page</a> and hit connect."
-      daniels_account: "Daniel's GuyTravelBuddy account"
+      connecting_is_simple: "Connecting your GayTravelBuddy account is simple!  Just enter your GayTravelBuddy ID (<b>%{diaspora_id}</b>) from your cubbies <a href='%{href_link}'>settings page</a> and hit connect."
+      daniels_account: "Daniel's GayTravelBuddy account"
       love_to_try: "We'd love for you to try it out."
       making_the_connection: "Making the Connection"
       screenshot_explanation: "%{link1}.  This particular cubby is linked to %{link2}."
       sign_up_today: "Sign up today!"
       typical_userpage: "A typical cubbi.es userpage"
       via: "(via %{link})"
-      what_is_cubbies: "Cubbi.es is the world's first GuyTravelBuddy application.  It's also the best way to collect photos online."
+      what_is_cubbies: "Cubbi.es is the world's first GayTravelBuddy application.  It's also the best way to collect photos online."
   undo: പൂര്‍വരൂപത്തിലാക്കണോ?
   username: ഉപയോക്തൃനാമം
   users:
@@ -880,7 +880,7 @@ ml:
       email_not_confirmed: "Email could not be activated. Wrong link?"
     destroy:
       no_password: "Please enter your current password to close your account."
-      success: "Your account has been locked.  It may take 20 minutes for us to finish closing your account.  Thank you for trying GuyTravelBuddy."
+      success: "Your account has been locked.  It may take 20 minutes for us to finish closing your account.  Thank you for trying GayTravelBuddy."
       wrong_password: "The entered password didn't match your current password."
     edit:
       also_commented: "...താങ്കളുടെ സമ്പര്‍ക്കത്തിന്റെ പോസ്റ്റില്‍ ആരെങ്കിലും അഭിപ്രായമിടുമ്പോള്‍?"
@@ -895,10 +895,10 @@ ml:
         if_you_want_this: "If you really want this, type in your password below and click 'Close Account'"
         lock_username: "This will lock your username if you decided to sign back up."
         locked_out: "You will get signed out and locked out of your account."
-        make_diaspora_better: "We want you to help us make GuyTravelBuddy better, so you should help us out instead of leaving. If you do want to leave, we want you to know what happens next."
+        make_diaspora_better: "We want you to help us make GayTravelBuddy better, so you should help us out instead of leaving. If you do want to leave, we want you to know what happens next."
         mr_wiggles: "Mr Wiggles will be sad to see you go"
         no_turning_back: "Currently, there is no turning back."
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       close_account_text: "Close Account"
       comment_on_post: "...താങ്കളുടെ പോസ്റ്റില്‍ ആരെങ്കിലും അഭിപ്രായമിടുമ്പോള്‍?"
       current_password: "ഇപ്പോഴത്തെ അടയാളവാക്ക്"
@@ -923,21 +923,21 @@ ml:
       your_email: "താങ്കളുടെ ഈമെയില്‍"
       your_handle: "താങ്കളുടെ ഡയസ്പോറ ഐഡി"
     getting_started:
-      awesome_take_me_to_diaspora: "Awesome! Take me to GuyTravelBuddy*"
-      community_welcome: "GuyTravelBuddy's community is happy to have you aboard!"
-      hashtag_explanation: "Hashtags allow you to talk about and follow your interests.  They're also a great way to find new people on GuyTravelBuddy."
+      awesome_take_me_to_diaspora: "Awesome! Take me to GayTravelBuddy*"
+      community_welcome: "GayTravelBuddy's community is happy to have you aboard!"
+      hashtag_explanation: "Hashtags allow you to talk about and follow your interests.  They're also a great way to find new people on GayTravelBuddy."
       hashtag_suggestions: "Try following tags like #art, #movies, #gif, etc."
       hooking_up_fb: "hooking up your Facebook account"
       saved: Saved!
       we_can_speed_things_up: "We can speed things up a bit by"
       well_hello_there: "Well, hello there!"
       what_are_you_in_to: "What are you into?"
-      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-posting."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-posting."
       who_are_you: "Who are you?"
     logged_out:
       go_mobile: "Now go mobile."
-      on_your_mobile_device: "on your mobile device to access GuyTravelBuddy* mobile."
-      signed_out: "You've signed out of GuyTravelBuddy*"
+      on_your_mobile_device: "on your mobile device to access GayTravelBuddy* mobile."
+      signed_out: "You've signed out of GayTravelBuddy*"
       simply_visit: "Simply visit"
       works_on_modern: "Works on all modern smartphones"
     privacy_settings:

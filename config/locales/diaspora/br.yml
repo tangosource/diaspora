@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -48,7 +48,7 @@ br:
     index:
       handle_explanation: "Ar postel-mañ zo ho skor diaspora. E-giz ur chomlec'h-postel e c'hellit skignat anezhañ a-benn bezañ kavet gant an dud."
       help:
-        here_to_help: "GuyTravelBuddy community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -72,9 +72,9 @@ br:
   back: Distreiñ
   bookmarklet:
     explanation: "%{link} adalek pep lec'h dre lakaat al liamm-se e-barzh ho sinedoù."
-    explanation_link_text: "Embann e-barzh GuyTravelBuddy"
-    heading: "GuyTravelBuddy Bookmarklet"
-    post_something: "Embann un dra bennak e-barzh GuyTravelBuddy"
+    explanation_link_text: "Embann e-barzh GayTravelBuddy"
+    heading: "GayTravelBuddy Bookmarklet"
+    post_something: "Embann un dra bennak e-barzh GayTravelBuddy"
     post_success: "Embannet! O serriñ!"
   cancel: Nullañ
   comments:
@@ -136,7 +136,7 @@ br:
       to: Da
   layouts:
     application:
-      powered_by: "DEGASET GANT GuyTravelBuddy*"
+      powered_by: "DEGASET GANT GayTravelBuddy*"
       toggle: "toggle mobile site"
       whats_new: "petra nevez?"
     header:
@@ -274,7 +274,7 @@ br:
     reshared:
       reshared: "%{name} just reshared your post"
     started_sharing:
-      subject: "%{name} has started sharing with you on GuyTravelBuddy*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
   ok: "MAT EO"
   or: pe
   password: Ger-kuzh
@@ -396,9 +396,9 @@ br:
       click_link_to_accept_invitation: "Click this link to accept your invitation"
   shared:
     add_contact:
-      create_request: "Klask diwar ar skor GuyTravelBuddy"
+      create_request: "Klask diwar ar skor GayTravelBuddy"
       diaspora_handle: diaspora@handle.org
-      your_diaspora_username_is: "Setu hoc'h anv-implijer war GuyTravelBuddy: %{diaspora_handle}"
+      your_diaspora_username_is: "Setu hoc'h anv-implijer war GayTravelBuddy: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
       toggle:
@@ -472,7 +472,7 @@ br:
       posts_tagged_with: "Skridoù bet merket gant #%{tag}"
   tokens:
     show:
-      connecting_is_simple: "Connecting your GuyTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   undo: "Mont war-gil?"
   username: Anv-implijer
   users:
@@ -486,14 +486,14 @@ br:
       change_language: "Cheñch Yezh"
       change_password: "Cheñch ar Ger-Kuzh"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       current_password: "Ho Ker-Kuzh"
       email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Till you follow this link and activate the new address, we will continue to use your original address %{email}."
       new_password: "Ger-Kuzh Nevez"
       your_email: "Ho postel"
       your_handle: "Ho skor diaspora"
     getting_started:
-      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     update:
       language_changed: "Yezh Cheñchet"
       language_not_changed: "Kudennoù zo bet o cheñch ar yezh"

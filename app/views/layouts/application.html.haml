@@ -59,14 +59,14 @@
       = stylesheet_link_tag "blueprint/screen", :media => 'screen'
       = stylesheet_link_tag "blueprint/print", :media => 'print'
     
-    - if request.path.include?("magazine")
-      = stylesheet_link_tag "magazine", :media => 'screen'
     
     = stylesheet_link_tag "login", :media => 'screen'
 
     = include_stylesheets :default, :media => 'all'
     - if rtl?
       = include_stylesheets :rtl, :media => 'all'
+    - if request.path.include?("magazine")
+      = stylesheet_link_tag "magazine", :media => 'screen'
 
     :javascript
       // Support for older browsers

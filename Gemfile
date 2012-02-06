@@ -160,4 +160,4 @@ group :development do
 end
 
 # Magazine
-gem "magazine", :git => 'git@github.com:sailing/magazine.git' #:path => '~/Sites/gems/magazine' 
+gem "magazine", :git => 'git@github.com:tangosource/magazine.git' #:path => '~/Sites/gems/magazine' 

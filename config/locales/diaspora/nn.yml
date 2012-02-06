@@ -39,7 +39,7 @@ nn:
               taken: "er allereie i bruk."
   application:
     helper:
-      diaspora_alpha: "DIASPORA* ALFA"
+      diaspora_alpha: "GuyTravelBuddy* ALFA"
       unknown_person: "ukjend person"
       video_title:
         unknown: "Ukjend filmtittel"
@@ -253,7 +253,7 @@ nn:
       to: Til
   layouts:
     application:
-      powered_by: "DRIVEN AV DIASPORA*"
+      powered_by: "DRIVEN AV GuyTravelBuddy*"
       public_feed: "Offentleg GuyTravelBuddy-straum for %{name}"
       toggle: "slå på mobilnettstad"
       whats_new: "kva er nytt?"
@@ -625,7 +625,7 @@ nn:
       really_disconnect: "kopla frå %{service}?"
     inviter:
       click_link_to_accept_invitation: "Godta invitasjonen ved å klikka på denne lenkja"
-      join_me_on_diaspora: "Ver med meg på DIASPORA*"
+      join_me_on_diaspora: "Ver med meg på GuyTravelBuddy*"
     remote_friend:
       invite: inviter
       not_on_diaspora: "Enno ikkje på GuyTravelBuddy"

@@ -136,7 +136,7 @@ br:
       to: Da
   layouts:
     application:
-      powered_by: "DEGASET GANT DIASPORA*"
+      powered_by: "DEGASET GANT GuyTravelBuddy*"
       toggle: "toggle mobile site"
       whats_new: "petra nevez?"
     header:

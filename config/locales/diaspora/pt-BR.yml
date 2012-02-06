@@ -305,7 +305,7 @@ pt-BR:
       to: Para
   layouts:
     application:
-      powered_by: "PRODUZIDO POR DIASPORA*"
+      powered_by: "PRODUZIDO POR GuyTravelBuddy*"
       public_feed: "Feed público de GuyTravelBuddy para %{name}"
       toggle: "Versão para celular"
       whats_new: "O que há de novo?"
@@ -693,7 +693,7 @@ pt-BR:
       really_disconnect: "Desconectar %{service}?"
     inviter:
       click_link_to_accept_invitation: "Clique neste link para aceitar o convite"
-      join_me_on_diaspora: "Junte-se a mim em DIASPORA*"
+      join_me_on_diaspora: "Junte-se a mim em GuyTravelBuddy*"
     remote_friend:
       invite: Convidar
       not_on_diaspora: "Não está ainda em GuyTravelBuddy"

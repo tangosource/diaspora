@@ -314,7 +314,7 @@ he:
       to: אל
   layouts:
     application:
-      powered_by: "DIASPORA* מופעל על ידי "
+      powered_by: "GuyTravelBuddy* מופעל על ידי "
       public_feed: " %{name} הזנת דיאספורה ציבורית עבור "
       toggle: "הפעלה/נטרול האתר לניידים"
       whats_new: "מה חדש"
@@ -705,7 +705,7 @@ he:
       really_disconnect: "? %{service}האם לנתק את"
     inviter:
       click_link_to_accept_invitation: "יש ללחוץ על קישור זה כדי לקבל את ההזמנה שלך"
-      join_me_on_diaspora: "DIASPORA*למה שלא להצטרף אלי ב"
+      join_me_on_diaspora: "GuyTravelBuddy*למה שלא להצטרף אלי ב"
     remote_friend:
       invite: הזמנה
       not_on_diaspora: "עדיין לא בדיאספורה"

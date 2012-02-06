@@ -684,7 +684,7 @@ el:
       really_disconnect: "αποσύνδεση %{service};"
     inviter:
       click_link_to_accept_invitation: "Κάντε κλικ σ' αυτό το σύνδεσμο για να αποδεχθείτε την πρόσκλησή σας"
-      join_me_on_diaspora: "Συνδεθείτε μαζί μου στο DIASPORA*"
+      join_me_on_diaspora: "Συνδεθείτε μαζί μου στο GuyTravelBuddy*"
     remote_friend:
       invite: πρόσκληση
       not_on_diaspora: "Όχι ακόμα στο GuyTravelBuddy"

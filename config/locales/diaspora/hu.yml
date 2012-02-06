@@ -304,7 +304,7 @@ hu:
       to: Címzett
   layouts:
     application:
-      powered_by: "DIASPORA* fordította ADAMEX"
+      powered_by: "GuyTravelBuddy* fordította ADAMEX"
       public_feed: "Nyílvános GuyTravelBuddy hírfolyam neki: %{name}"
       toggle: "mobil változat"
       whats_new: belépés
@@ -690,7 +690,7 @@ hu:
       really_disconnect: "Megszakítod a kapcsolatot ezzel: %{service}?"
     inviter:
       click_link_to_accept_invitation: "Kattints a linkre, hogy elfogadd a meghívást."
-      join_me_on_diaspora: "Találkozzunk a DIASPORA*-n"
+      join_me_on_diaspora: "Találkozzunk a GuyTravelBuddy*-n"
     remote_friend:
       invite: meghív
       not_on_diaspora: "Még nincs GuyTravelBuddy fiókja"

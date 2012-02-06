@@ -689,7 +689,7 @@ uk:
       really_disconnect: "відключити %{service}?"
     inviter:
       click_link_to_accept_invitation: "Перейдіть по цьому посиланню для прийняття вашого запрошення"
-      join_me_on_diaspora: "Приєднуйтеся до мене в DIASPORA*"
+      join_me_on_diaspora: "Приєднуйтеся до мене в GuyTravelBuddy*"
     remote_friend:
       invite: запрошення
       not_on_diaspora: "Ще немає в Діаспорі"

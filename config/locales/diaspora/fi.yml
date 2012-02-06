@@ -306,7 +306,7 @@ fi:
       to: Vastaanottaja
   layouts:
     application:
-      powered_by: "PALVELUN TARJOAA DIASPORA*"
+      powered_by: "PALVELUN TARJOAA GuyTravelBuddy*"
       public_feed: "Käyttäjän %{name} julkinen GuyTravelBuddy-uutisvirta"
       toggle: "mobiilisivusto päälle/pois"
       whats_new: Uutta
@@ -686,7 +686,7 @@ fi:
       really_disconnect: "katkaise %{service}?"
     inviter:
       click_link_to_accept_invitation: "Paina tätä linkkiä hyväksyäksesi kutsun"
-      join_me_on_diaspora: "DIASPORA* kutsuu!"
+      join_me_on_diaspora: "GuyTravelBuddy* kutsuu!"
     remote_friend:
       invite: kutsu
       not_on_diaspora: "Ei vielä GuyTravelBuddyssa"

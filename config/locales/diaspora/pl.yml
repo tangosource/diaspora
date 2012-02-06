@@ -44,7 +44,7 @@ pl:
   all_aspects: "Wszystkie aspekty"
   application:
     helper:
-      diaspora_alpha: "DIASPORA* ALFA"
+      diaspora_alpha: "GuyTravelBuddy* ALFA"
       unknown_person: "nieznana osoba"
       video_title:
         unknown: "Wideo bez nazwy"
@@ -696,7 +696,7 @@ pl:
       really_disconnect: "odłączyć %{service}?"
     inviter:
       click_link_to_accept_invitation: "Kliknij te łącze, aby przyjąć zaproszenie"
-      join_me_on_diaspora: "Dołącz do mnie w serwisie DIASPORA*"
+      join_me_on_diaspora: "Dołącz do mnie w serwisie GuyTravelBuddy*"
     remote_friend:
       invite: zaproś
       not_on_diaspora: "Nie ma jeszcze konta na Diasporze"

@@ -308,7 +308,7 @@ de:
       to: An
   layouts:
     application:
-      powered_by: "BETRIEBEN MIT DIASPORA*"
+      powered_by: "BETRIEBEN MIT GuyTravelBuddy*"
       public_feed: "Öffentlicher GuyTravelBuddy Feed von %{name}"
       toggle: "Mobile Ansicht umschalten"
       whats_new: "Was gibt's Neues?"
@@ -697,7 +697,7 @@ de:
       really_disconnect: "Verbindung mit %{service} entfernen?"
     inviter:
       click_link_to_accept_invitation: "Öffne diesen Link, um die Einladung zu akzeptieren:"
-      join_me_on_diaspora: "Folge mir auf DIASPORA*"
+      join_me_on_diaspora: "Folge mir auf GuyTravelBuddy*"
     remote_friend:
       invite: Einladen
       not_on_diaspora: "Noch nicht auf GuyTravelBuddy"

@@ -414,7 +414,7 @@ cy:
       really_disconnect: "datgysylltu %{service}?"
     inviter:
       click_link_to_accept_invitation: "Click this link to accept your invitation"
-      join_me_on_diaspora: "Cysylltu gyda fi mewn DIASPORA*"
+      join_me_on_diaspora: "Cysylltu gyda fi mewn GuyTravelBuddy*"
   settings: Gosodiadau
   shared:
     add_contact:

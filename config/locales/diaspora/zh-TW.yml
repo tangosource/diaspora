@@ -44,7 +44,7 @@ zh-TW:
   all_aspects: 所有面向
   application:
     helper:
-      diaspora_alpha: "DIASPORA* 預覽版"
+      diaspora_alpha: "GuyTravelBuddy* 預覽版"
       unknown_person: 不明聯絡人
       video_title:
         unknown: 影片標題不明
@@ -308,7 +308,7 @@ zh-TW:
       to: 收件人
   layouts:
     application:
-      powered_by: "強力配置 DIASPORA*"
+      powered_by: "強力配置 GuyTravelBuddy*"
       public_feed: "%{name} 的 GuyTravelBuddy 公開資訊源"
       toggle: 行動切換
       whats_new: 有什麼新消息?
@@ -697,7 +697,7 @@ zh-TW:
       really_disconnect: "切斷與 %{service} 的連結?"
     inviter:
       click_link_to_accept_invitation: 使用這個連結來接受邀請
-      join_me_on_diaspora: "跟我一起加入 DIASPORA*"
+      join_me_on_diaspora: "跟我一起加入 GuyTravelBuddy*"
     remote_friend:
       invite: 邀請
       not_on_diaspora: "還沒來 GuyTravelBuddy"

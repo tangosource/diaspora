@@ -685,7 +685,7 @@ da:
       really_disconnect: "afbryd %{service}?"
     inviter:
       click_link_to_accept_invitation: "Klik på dette link for at acceptere din invitation"
-      join_me_on_diaspora: "Kom over til mig på DIASPORA*"
+      join_me_on_diaspora: "Kom over til mig på GuyTravelBuddy*"
     remote_friend:
       invite: inviter
       not_on_diaspora: "Endnu ikke på diaspora"

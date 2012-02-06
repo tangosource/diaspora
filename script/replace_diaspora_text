@@ -5,11 +5,13 @@
 for fl in config/locales/diaspora/*.yml; do mv $fl $fl.old
   echo ' ---- Replacing Diaspora for GayTravelBuddy in' $fl
   sed 's/Diaspora/GuyTravelBuddy/g' $fl.old > $fl
+  sed 's/DIASPORA/GuyTravelBuddy/g' $fl.old > $fl
   rm -f $fl.old
 done
 
 for fl in config/locales/devise/*.yml; do mv $fl $fl.old
   echo ' ---- Replacing Diaspora for GayTravelBuddy in' $fl
   sed 's/Diaspora/GuyTravelBuddy/g' $fl.old > $fl
+  sed 's/DIASPORA/GuyTravelBuddy/g' $fl.old > $fl
   rm -f $fl.old
 done

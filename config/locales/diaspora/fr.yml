@@ -301,7 +301,7 @@ fr:
       to: À
   layouts:
     application:
-      powered_by: "MIS EN SERVICE PAR DIASPORA*"
+      powered_by: "MIS EN SERVICE PAR GuyTravelBuddy*"
       public_feed: "Flux GuyTravelBuddy public pour %{name}"
       toggle: "activer/désactiver la version mobile"
       whats_new: "Quoi de neuf ?"
@@ -684,7 +684,7 @@ fr:
       really_disconnect: "déconnecter %{service} ?"
     inviter:
       click_link_to_accept_invitation: "Suivez ce lien pour accepter l'invitation"
-      join_me_on_diaspora: "Rejoignez-moi sur DIASPORA*"
+      join_me_on_diaspora: "Rejoignez-moi sur GuyTravelBuddy*"
     remote_friend:
       invite: inviter
       not_on_diaspora: "Pas encore sur GuyTravelBuddy"

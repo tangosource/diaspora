@@ -302,7 +302,7 @@ bg:
       to: До
   layouts:
     application:
-      powered_by: "Благодарение на DIASPORA*"
+      powered_by: "Благодарение на GuyTravelBuddy*"
       public_feed: "Публична емисия от GuyTravelBuddy за %{name}"
       toggle: "вкл./изкл. на мобилния изглед"
       whats_new: "какво ново?"
@@ -684,7 +684,7 @@ bg:
       really_disconnect: "Наистина ли желаете свързаността с %{service} да бъде изключена?"
     inviter:
       click_link_to_accept_invitation: "Кликнете върху връзката, за да приемете поканата"
-      join_me_on_diaspora: "Присъединете се към мен в DIASPORA*"
+      join_me_on_diaspora: "Присъединете се към мен в GuyTravelBuddy*"
     remote_friend:
       invite: покани
       not_on_diaspora: "Все още не е в GuyTravelBuddy"

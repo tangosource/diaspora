@@ -300,7 +300,7 @@ sl:
       to: Za
   layouts:
     application:
-      powered_by: "STRAN POGANJA DIASPORA*"
+      powered_by: "STRAN POGANJA GuyTravelBuddy*"
       public_feed: "Javne GuyTravelBuddy objave za %{name}"
       toggle: "vklop/izklop mobilne strani"
       whats_new: "kaj je novega?"

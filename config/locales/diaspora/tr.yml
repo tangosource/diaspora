@@ -44,7 +44,7 @@ tr:
   all_aspects: "Tüm Yönler"
   application:
     helper:
-      diaspora_alpha: "DIASPORA* ALFA"
+      diaspora_alpha: "GuyTravelBuddy* ALFA"
       unknown_person: "bilinmeyen kişi"
       video_title:
         unknown: "Geçersiz Video Başlığı"
@@ -305,7 +305,7 @@ tr:
       to: Kime
   layouts:
     application:
-      powered_by: "GELİŞTİRİCİ DIASPORA*"
+      powered_by: "GELİŞTİRİCİ GuyTravelBuddy*"
       public_feed: " %{name} için Genel GuyTravelBuddy Beslemesi"
       toggle: "mobil site"
       whats_new: "neler yeni?"
@@ -694,7 +694,7 @@ tr:
       really_disconnect: "%{service} ile bağlantı kesilsin mi?"
     inviter:
       click_link_to_accept_invitation: "Daveti kabul etmek bu bağlantıya tıklayın"
-      join_me_on_diaspora: "DIASPORA*'da bana katılın"
+      join_me_on_diaspora: "GuyTravelBuddy*'da bana katılın"
     remote_friend:
       invite: "davet et"
       not_on_diaspora: "Henüz GuyTravelBuddy'da değil"

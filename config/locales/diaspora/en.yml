@@ -85,7 +85,7 @@ en:
       unknown_person: "unknown person"
       video_title:
         unknown: "Unknown Video Title"
-      diaspora_alpha: "DIASPORA* ALPHA"
+      diaspora_alpha: "GuyTravelBuddy* ALPHA"
   aspects:
     zero: "no aspects"
     one: "1 aspect"
@@ -355,7 +355,7 @@ en:
       view_all: "View all"
       recent_notifications: "Recent notifications"
     application:
-      powered_by: "POWERED BY DIASPORA*"
+      powered_by: "POWERED BY GuyTravelBuddy*"
       whats_new: "what's new?"
       toggle: "toggle mobile"
       public_feed: "Public GuyTravelBuddy Feed for %{name}"
@@ -752,7 +752,7 @@ en:
     failure:
       error: "there was an error connecting that service"
     inviter:
-      join_me_on_diaspora: "Join me on DIASPORA*"
+      join_me_on_diaspora: "Join me on GuyTravelBuddy*"
       click_link_to_accept_invitation: "Follow this link to accept your invitation"
     finder:
       fetching_contacts: "GuyTravelBuddy is populating your %{service} friends please check back in a few minutes."

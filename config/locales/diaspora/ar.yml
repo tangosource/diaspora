@@ -280,7 +280,7 @@ ar:
       to: إلى
   layouts:
     application:
-      powered_by: "بدعم DIASPORA*"
+      powered_by: "بدعم GuyTravelBuddy*"
       public_feed: "ملقم دياسبرا العام لـ %{name}"
       toggle: "حَوِّل لموقع الهواتف المحمولة"
       whats_new: "ما الجديد؟"
@@ -659,7 +659,7 @@ ar:
       really_disconnect: "فصل إتصال %{service}?"
     inviter:
       click_link_to_accept_invitation: "إتبع هذا الرابط لقبول دعوتك"
-      join_me_on_diaspora: "انضم إلي في DIASPORA*"
+      join_me_on_diaspora: "انضم إلي في GuyTravelBuddy*"
     remote_friend:
       invite: دعوة
       not_on_diaspora: "ليس بعد على دياسبرا"

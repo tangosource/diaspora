@@ -670,7 +670,7 @@ nl:
       really_disconnect: "verbreek verbinding met %{service}?"
     inviter:
       click_link_to_accept_invitation: "Klik op deze link om de uitnodiging te accepteren"
-      join_me_on_diaspora: "Volg me op DIASPORA*"
+      join_me_on_diaspora: "Volg me op GuyTravelBuddy*"
     remote_friend:
       invite: uitnodigen
       not_on_diaspora: "Nog niet op GuyTravelBuddy"

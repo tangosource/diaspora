@@ -39,7 +39,7 @@ gl:
   all_aspects: "Todos os aspectos"
   application:
     helper:
-      diaspora_alpha: "DIASPORA* ALFA"
+      diaspora_alpha: "GuyTravelBuddy* ALFA"
       unknown_person: "persoa descoñecida"
       video_title:
         unknown: "Título de vídeo descoñecido"
@@ -242,7 +242,7 @@ gl:
       to: Destinatario
   layouts:
     application:
-      powered_by: "CONSTRUÍDO CON DIASPORA*"
+      powered_by: "CONSTRUÍDO CON GuyTravelBuddy*"
       public_feed: "Comentarios públicos de %{name}"
       toggle: "Ir ao sitio web para móbiles"
       whats_new: "Últimos cambios"
@@ -525,7 +525,7 @@ gl:
       really_disconnect: "Está seguro de que quere desconectarse de «%{service}»?"
     inviter:
       click_link_to_accept_invitation: "Prema esta ligazón para aceptar a invitación."
-      join_me_on_diaspora: "Únase a min en DIASPORA*"
+      join_me_on_diaspora: "Únase a min en GuyTravelBuddy*"
     remote_friend:
       invite: Convidar
       resend: "Volver enviar"

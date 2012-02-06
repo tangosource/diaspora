@@ -155,7 +155,7 @@ ga:
       to: "Go dtí"
   layouts:
     application:
-      powered_by: "AG ÚSÁID DIASPORA*"
+      powered_by: "AG ÚSÁID GuyTravelBuddy*"
       toggle: "toggle mobile site"
       whats_new: "cad atá nua?"
     header:

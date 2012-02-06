@@ -509,7 +509,7 @@ is:
       really_disconnect: "aftengja %{service}?"
     inviter:
       click_link_to_accept_invitation: "Smelltu á þessa krækju til að þiggja boðið"
-      join_me_on_diaspora: "Tengstu mér á DIASPORA*"
+      join_me_on_diaspora: "Tengstu mér á GuyTravelBuddy*"
     remote_friend:
       invite: bjóða
       resend: endursenda

@@ -308,7 +308,7 @@ sk:
       to: Príjemca
   layouts:
     application:
-      powered_by: "PREVÁDZKUJE DIASPORA*"
+      powered_by: "PREVÁDZKUJE GuyTravelBuddy*"
       public_feed: "Verejný kanál Diaspory pre %{name}"
       toggle: "prepnúť na stránku pre mobil"
       whats_new: "Čo je nové?"

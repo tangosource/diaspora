@@ -252,7 +252,7 @@ nb:
       to: Til
   layouts:
     application:
-      powered_by: "DREVET AV DIASPORA*"
+      powered_by: "DREVET AV GuyTravelBuddy*"
       public_feed: "Offentlig GuyTravelBuddy feed for %{name}"
       toggle: "vis mobilsiden"
       whats_new: "hva er nytt?"
@@ -625,7 +625,7 @@ nb:
       really_disconnect: "koble fra %{service}?"
     inviter:
       click_link_to_accept_invitation: "Klikk denne linken for å akseptere invitasjonen din"
-      join_me_on_diaspora: "Bli med meg på DIASPORA*"
+      join_me_on_diaspora: "Bli med meg på GuyTravelBuddy*"
     remote_friend:
       invite: inviter
       resend: "send på nytt"

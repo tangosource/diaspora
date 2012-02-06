@@ -309,7 +309,7 @@ es:
   layouts:
     application:
       back_to_top: "Volver arriba"
-      powered_by: "IMPULSADO POR DIASPORA*"
+      powered_by: "IMPULSADO POR GuyTravelBuddy*"
       public_feed: "Canal público de %{name} "
       toggle: "cambiar al sitio móvil"
       whats_new: "Novedades en GuyTravelBuddy*"
@@ -697,7 +697,7 @@ es:
       really_disconnect: "¿Desconectar %{service}?"
     inviter:
       click_link_to_accept_invitation: "Sigue este enlace para aceptar la invitación"
-      join_me_on_diaspora: "Nos vemos en DIASPORA*."
+      join_me_on_diaspora: "Nos vemos en GuyTravelBuddy*."
     remote_friend:
       invite: invitar
       not_on_diaspora: "Aún no en GuyTravelBuddy*"

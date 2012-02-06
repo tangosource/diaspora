@@ -227,7 +227,7 @@ zh-CN:
       to: 收件人
   layouts:
     application:
-      powered_by: "Powered by DIASPORA*"
+      powered_by: "Powered by GuyTravelBuddy*"
       public_feed: "%{name} 的 GuyTravelBuddy RSS Feed"
       toggle: 切换为手机网页
       whats_new: 有什么新内容？
@@ -571,7 +571,7 @@ zh-CN:
       really_disconnect: "切断与 %{service} 的连接？"
     inviter:
       click_link_to_accept_invitation: 点击这个链接以接受邀请
-      join_me_on_diaspora: "跟我一起加入 DIASPORA*"
+      join_me_on_diaspora: "跟我一起加入 GuyTravelBuddy*"
     remote_friend:
       invite: 邀请
       resend: 重新发送

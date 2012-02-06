@@ -304,7 +304,7 @@ eu:
       to: "Jasotzailea:"
   layouts:
     application:
-      powered_by: "DIASPORAK ESKAINIA"
+      powered_by: "GuyTravelBuddyK ESKAINIA"
       public_feed: "%{name}(r)en GuyTravelBuddy Feed publikoa"
       toggle: "gaitu mugikorreko orrialdea"
       whats_new: "zer berri?"
@@ -693,7 +693,7 @@ eu:
       really_disconnect: "irten %{service}(e)tik?"
     inviter:
       click_link_to_accept_invitation: "Jarraitu esteka hau zure gonbidapena onartzeko"
-      join_me_on_diaspora: "Bat egin nirekin DIASPORAN"
+      join_me_on_diaspora: "Bat egin nirekin GuyTravelBuddyN"
     remote_friend:
       invite: gonbidapena
       not_on_diaspora: "GuyTravelBuddyn oraindik ez"

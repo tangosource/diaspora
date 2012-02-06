@@ -691,7 +691,7 @@ pt-PT:
       really_disconnect: "desligar do %{service}?"
     inviter:
       click_link_to_accept_invitation: "Siga esta ligação para aceitar o seu convite"
-      join_me_on_diaspora: "Junte-se a mim no DIASPORA*"
+      join_me_on_diaspora: "Junte-se a mim no GuyTravelBuddy*"
     remote_friend:
       invite: convite
       not_on_diaspora: "Ainda não está no GuyTravelBuddy"

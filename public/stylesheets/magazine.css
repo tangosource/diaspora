@@ -68,3 +68,7 @@
   text-align: right; }
 #magazine label:not(.bootstrapped) {
   position: relative; }
+label:not(.bootstrapped) {
+  position: relative;
+  left: 0px;
+}

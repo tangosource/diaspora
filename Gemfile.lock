@@ -32,7 +32,7 @@ GIT
       sinatra
 
 GIT
-  remote: git@github.com:sailing/magazine.git
+  remote: git@github.com:tangosource/magazine.git
   revision: 258376d889b854c95b2fe2857e65f0bf3af7f0d0
   specs:
     magazine (0.4.6)

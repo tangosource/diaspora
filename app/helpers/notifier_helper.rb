@@ -27,9 +27,9 @@ module NotifierHelper
   def invite_email_title
     names = @invites.collect{|x| x.sender.person.name}.uniq
     if @invites.empty? && names.empty?
-      "Accept Your Diaspora* invite!"
+      "Accept Your GayTravelBuddy* invite!"
     else
-      "#{names.to_sentence} invited you to Diaspora*"
+      "#{names.to_sentence} invited you to GayTravelBuddy*"
     end
   end
 end

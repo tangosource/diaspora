@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -94,28 +94,28 @@ fi:
       remove: poista
     index:
       cubbies:
-        explanation: "Cubbi.es on ensimmäinen kehitettävä Diaspora-sovellus."
+        explanation: "Cubbi.es on ensimmäinen kehitettävä GuyTravelBuddy-sovellus."
         heading: "Yhdistä Cubbi.es:iin"
         learn_more: "Lue lisää"
       diaspora_id:
-        content_1: "Diaspora-ID:si on:"
-        content_2: "Anna se toisille ihmisille, jotta he voivat löytää sinut Diasporasta."
-        heading: Diaspora-ID
+        content_1: "GuyTravelBuddy-ID:si on:"
+        content_2: "Anna se toisille ihmisille, jotta he voivat löytää sinut GuyTravelBuddysta."
+        heading: GuyTravelBuddy-ID
       donate: Lahjoita
-      handle_explanation: "Tämä on Diaspora-tunnuksesi. Voit antaa sen ihmisille kuten sähköpostiosoitteesi, jotta he voivat sen avulla tavoittaa sinut Diasporasta."
+      handle_explanation: "Tämä on GuyTravelBuddy-tunnuksesi. Voit antaa sen ihmisille kuten sähköpostiosoitteesi, jotta he voivat sen avulla tavoittaa sinut GuyTravelBuddysta."
       help:
         do_you: "Haluatko:"
         email_feedback: "Voit halutessasi lähettää palautteesi %{link}lla"
         feature_suggestion: "... ehdottaa uutta ominaisuutta? %{link}"
         find_a_bug: "... raportoida ohjelmistovirheen? %{link}"
         have_a_question: "... kysyä kysymyksen? %{link}"
-        here_to_help: "Diaspora-yhteisö auttaa!"
+        here_to_help: "GuyTravelBuddy-yhteisö auttaa!"
         need_help: "Tarvitsetko apua?"
         tutorials_wiki_and_forum: "%{tutorial} & %{wiki} & %{forum}: Yhteisön laatimia oppaita, ohjeita ja uutisia"
       introduce_yourself: "Tämä on virtasi. Hyppää sekaan ja esittele itsesi."
       keep_us_running: "Pidä %{pod} vauhdissa tarjoamalla palvelimille kupponen kahvia kuukausittaisella lahjoituksella!"
       new_here:
-        follow: "Seuraa tagia %{link} ja toivota uudet käyttäjät tervetulleiksi Diasporaan!"
+        follow: "Seuraa tagia %{link} ja toivota uudet käyttäjät tervetulleiksi GuyTravelBuddyan!"
         learn_more: "Lue lisää"
         title: "Tervehdi uusia käyttäjiä"
       no_contacts: "Ei kontakteja"
@@ -123,10 +123,10 @@ fi:
       people_sharing_with_you: "Ihmiset jotka jakavat kanssasi"
       post_a_message: "lähetä viesti >>"
       services:
-        content: "Voit yhdistää Diasporaan seuraavat palvelut:"
+        content: "Voit yhdistää GuyTravelBuddyan seuraavat palvelut:"
         heading: "Yhdistä palveluihin"
       unfollow_tag: "Lopeta tagin #%{tag} seuraaminen"
-      welcome_to_diaspora: "Tervetuloa Diasporaan, %{name}!"
+      welcome_to_diaspora: "Tervetuloa GuyTravelBuddyan, %{name}!"
       your_aspects: Näkymäsi
     many: "%{count} näkymää"
     move_contact:
@@ -175,10 +175,10 @@ fi:
       failure: "En voinut lakata sivuuttamasta käyttäjää. #evasion"
       success: "Katsotaanpa, mitä sanottavaa hänellä on! #sayhello"
   bookmarklet:
-    explanation: "Voit lähettää viestin Diasporaan mistä tahansa lisäämällä %{link} kirjanmerkkeihisi."
+    explanation: "Voit lähettää viestin GuyTravelBuddyan mistä tahansa lisäämällä %{link} kirjanmerkkeihisi."
     explanation_link_text: "tämän linkin"
     heading: Sovelluskirjanmerkki
-    post_something: "Kirjoita jotain Diasporaan"
+    post_something: "Kirjoita jotain GuyTravelBuddyan"
     post_success: "Lähetetty! Suljetaan!"
   cancel: Peruuta
   comments:
@@ -268,14 +268,14 @@ fi:
     show:
       already_account: "onko sinulla jo käyttäjätili?"
       choice: Valinta
-      choice_explanation: "Diasporassa voit lajitella kontaktisi eri ryhmiin, joita kutsutaan näkymiksi. Toisin kuin muissa yhteisöpalveluissa, Diasporassa näkymät takaavat, että kuvasi, viestisi ja vitsisi jaetaan vain niille ihmisille, joille ne on tarkoitettu."
-      learn_about_host: "Lue miten voit perustaa oman Diaspora-palvelimen."
+      choice_explanation: "GuyTravelBuddyssa voit lajitella kontaktisi eri ryhmiin, joita kutsutaan näkymiksi. Toisin kuin muissa yhteisöpalveluissa, GuyTravelBuddyssa näkymät takaavat, että kuvasi, viestisi ja vitsisi jaetaan vain niille ihmisille, joille ne on tarkoitettu."
+      learn_about_host: "Lue miten voit perustaa oman GuyTravelBuddy-palvelimen."
       login_here: "kirjaudu sisään täältä"
       ownership: Omistajuus
-      ownership_explanation: "Omistat kuvasi, eikä sinun pitäisi luopua oikeudestasi vain jakaaksesi ne. Säilytät omistajuutesi kaikkeen, mitä jaat Diasporassa - näin on myös täysin vallassasi, kuinka materiaaliasi jaetaan eteenpäin."
+      ownership_explanation: "Omistat kuvasi, eikä sinun pitäisi luopua oikeudestasi vain jakaaksesi ne. Säilytät omistajuutesi kaikkeen, mitä jaat GuyTravelBuddyssa - näin on myös täysin vallassasi, kuinka materiaaliasi jaetaan eteenpäin."
       share_what_you_want: "Jaa mitä haluat, kenen kanssa haluat."
       simplicity: Yksinkertaisuus
-      simplicity_explanation: "Diaspora tekee jakamisesta helppoa ja siistiä – sama koskee myös yksityisyyttäsi. Luonnostaan yksityisenä Diaspora ei pakota sinua samoamaan sivukaupalla asetusten ja valintojen läpi vain pitääksesi profiilisi turvassa."
+      simplicity_explanation: "GuyTravelBuddy tekee jakamisesta helppoa ja siistiä – sama koskee myös yksityisyyttäsi. Luonnostaan yksityisenä GuyTravelBuddy ei pakota sinua samoamaan sivukaupalla asetusten ja valintojen läpi vain pitääksesi profiilisi turvassa."
       tagline_first_half: "Jaa mitä haluat,"
       tagline_second_half: "kenen kanssa haluat."
   invitations:
@@ -297,7 +297,7 @@ fi:
       aspect: Näkymä
       comma_seperated_plz: "Voit syöttää useita sähköpostiosoitteita pilkuilla erotettuna."
       if_they_accept_info: "jos he hyväksyvät kutsun, heidät lisätään siihen näkymään, johon heidät kutsuit."
-      invite_someone_to_join: "Kutsu joku Diasporan käyttäjäksi!"
+      invite_someone_to_join: "Kutsu joku GuyTravelBuddyn käyttäjäksi!"
       language: Kieli
       personal_message: "Henkilökohtainen viesti"
       resend: "Lähetä uudelleen"
@@ -307,7 +307,7 @@ fi:
   layouts:
     application:
       powered_by: "PALVELUN TARJOAA DIASPORA*"
-      public_feed: "Käyttäjän %{name} julkinen Diaspora-uutisvirta"
+      public_feed: "Käyttäjän %{name} julkinen GuyTravelBuddy-uutisvirta"
       toggle: "mobiilisivusto päälle/pois"
       whats_new: Uutta
       your_aspects: näkymäsi
@@ -452,25 +452,25 @@ fi:
     confirm_email:
       click_link: "Aktivoi uusi sähköpostiosoitteesi %{unconfirmed_email} napsauttamalla tätä linkkiä:"
       subject: "Aktivoi uusi sähköpostiosoitteesi %{unconfirmed_email}"
-    email_sent_by_diaspora: "Diaspora lähetti tämän sähköpostin. Jos et halua saada tällaisia sähköposteja jatkossa,"
+    email_sent_by_diaspora: "GuyTravelBuddy lähetti tämän sähköpostin. Jos et halua saada tällaisia sähköposteja jatkossa,"
     hello: "Hei %{name}!"
     liked:
       liked: "%{name} tykkäsi kirjoituksestasi"
       view_post: "Katso viesti >"
     mentioned:
       mentioned: "mainitsi sinut viestissään:"
-      subject: "%{name} on maininnut sinut Diasporassa"
+      subject: "%{name} on maininnut sinut GuyTravelBuddyssa"
     private_message:
       reply_to_or_view: "Lue tai osallistu keskusteluun >"
     reshared:
       reshared: "%{name} jakoi viestisi uudelleen"
       view_post: "Näytä viesti >"
     single_admin:
-      admin: "Sinun Diaspora-ylläpitäjäsi"
-      subject: "Viesti Diaspora-käyttäjätilistäsi:"
+      admin: "Sinun GuyTravelBuddy-ylläpitäjäsi"
+      subject: "Viesti GuyTravelBuddy-käyttäjätilistäsi:"
     started_sharing:
       sharing: "on alkanut jakaa kanssasi!"
-      subject: "%{name} on alkanut jakaa kanssasi Diasporassa"
+      subject: "%{name} on alkanut jakaa kanssasi GuyTravelBuddyssa"
       view_profile: "Näytä käyttäjän %{name} profiiili"
     thanks: "Kiitos,"
     to_change_your_notification_settings: "vaihtaaksesi ilmoitusasetuksia"
@@ -583,7 +583,7 @@ fi:
   profile: Profiili
   profiles:
     edit:
-      allow_search: "Salli ihmisten etsiä sinua Diasporassa"
+      allow_search: "Salli ihmisten etsiä sinua GuyTravelBuddyssa"
       edit_profile: "Muokkaa profiilia"
       first_name: Etunimi
       last_name: Sukunimi
@@ -610,9 +610,9 @@ fi:
     two: "%{count} reaktiota"
     zero: "0 reaktiota"
   registrations:
-    closed: "Rekisteröityminen on suljettu tässä Diaspora-podissa."
+    closed: "Rekisteröityminen on suljettu tässä GuyTravelBuddy-podissa."
     create:
-      success: "Olet liittynyt Diasporaan!"
+      success: "Olet liittynyt GuyTravelBuddyan!"
     edit:
       cancel_my_account: "Poista käyttäjätilini"
       edit: "Muokkaa %{name}"
@@ -631,7 +631,7 @@ fi:
   requests:
     create:
       sending: Lähetetään...
-      sent: "Olet lähettänyt käyttäjälle %{name} pyynnön jakaa kanssasi. Hänen pitäisi nähdä se kirjautuessaan seuraavan kerran Diasporaan."
+      sent: "Olet lähettänyt käyttäjälle %{name} pyynnön jakaa kanssasi. Hänen pitäisi nähdä se kirjautuessaan seuraavan kerran GuyTravelBuddyan."
     destroy:
       error: "Valitse näkymä!"
       ignore: "Hylätty kontaktipyyntö."
@@ -689,7 +689,7 @@ fi:
       join_me_on_diaspora: "DIASPORA* kutsuu!"
     remote_friend:
       invite: kutsu
-      not_on_diaspora: "Ei vielä Diasporassa"
+      not_on_diaspora: "Ei vielä GuyTravelBuddyssa"
       resend: "lähetä uudelleen"
   settings: Asetukset
   share_visibilites:
@@ -699,10 +699,10 @@ fi:
   shared:
     add_contact:
       add_new_contact: "Lisää uusi kontakti"
-      create_request: "Etsi Diaspora-tunnuksella"
-      enter_a_diaspora_username: "Anna Diaspora-käyttäjätunnus:"
+      create_request: "Etsi GuyTravelBuddy-tunnuksella"
+      enter_a_diaspora_username: "Anna GuyTravelBuddy-käyttäjätunnus:"
       know_email: "Tiedätkö heidän sähköpostiosoitteitansa? Kutsu heidät!"
-      your_diaspora_username_is: "Diaspora-käyttäjätunnuksesi on: %{diaspora_handle}"
+      your_diaspora_username_is: "GuyTravelBuddy-käyttäjätunnuksesi on: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Lisää kontakti"
       toggle:
@@ -725,7 +725,7 @@ fi:
       invite_someone: "Kutsu joku"
       invite_your_friends: "Kutsu kavereitasi"
       invites: Kutsut
-      invites_closed: "Kutsut on toistaiseksi suljettu tällä Diaspora-palvelimella"
+      invites_closed: "Kutsut on toistaiseksi suljettu tällä GuyTravelBuddy-palvelimella"
     notification:
       new: "Uusi %{type} henkilöltä %{from}"
     public_explain:
@@ -733,7 +733,7 @@ fi:
       logged_in: "kirjauduttu palveluun %{service}"
       manage: "hallitse yhdistettyjä palveluita"
       new_user_welcome_message: "Käytä #hashtageja luokitellaksesi viestisi ja löytääksesi ihmisiä, jotka jakavat kiinnostuksen kohteesi. Kutsu upeita ihmisiä paikalle @Maininnoilla."
-      outside: "Julkiset viestit näkyvät Diasporan ulkopuolelle."
+      outside: "Julkiset viestit näkyvät GuyTravelBuddyn ulkopuolelle."
       share: Jaa
       title: "Yhdistä ulkoisia palveluita"
       visibility_dropdown: "Muuta tästä pudotusvalikosta viestisi näkyvyyttä. (Suosittelemme, että teet tästä ensimmäisestä viestistäsi julkisen.)"
@@ -841,15 +841,15 @@ fi:
   tokens:
     show:
       connect_to_cubbies: "Yhdistä kohteeseen Cubbi.es"
-      connecting_is_simple: "Diaspora-tilisi yhdistäminen on helppoa! Syötä vain Diaspora-tunnuksesi (<b>%{diaspora_id}</b>) Cubbi.es-<a href='%{href_link}'>asetussivulle</a> ja yhdistä."
-      daniels_account: "Danielin Diaspora-käyttäjätili"
+      connecting_is_simple: "GuyTravelBuddy-tilisi yhdistäminen on helppoa! Syötä vain GuyTravelBuddy-tunnuksesi (<b>%{diaspora_id}</b>) Cubbi.es-<a href='%{href_link}'>asetussivulle</a> ja yhdistä."
+      daniels_account: "Danielin GuyTravelBuddy-käyttäjätili"
       love_to_try: "Kokeile sinäkin."
       making_the_connection: "Yhteyden muodostaminen"
       screenshot_explanation: "%{link1}. Tämä tila on linkitetty tänne: %{link2}."
       sign_up_today: "Liity tänään!"
       typical_userpage: "Esimerkki cubbi.es-käyttäjäsivusta"
       via: "(%{link} kautta)"
-      what_is_cubbies: "Cubbi.es on maailman ensimmäinen Diaspora-sovellus. Se on myös paras tapa kerätä valokuvia verkossa."
+      what_is_cubbies: "Cubbi.es on maailman ensimmäinen GuyTravelBuddy-sovellus. Se on myös paras tapa kerätä valokuvia verkossa."
   undo: Peruuta?
   username: Käyttäjätunnus
   users:
@@ -858,7 +858,7 @@ fi:
       email_not_confirmed: "Sähköpostiosoitetta ei voitu aktivoida. Oliko linkki väärä?"
     destroy:
       no_password: "Syötä nykyinen salasanasi sulkeaksesi tilisi."
-      success: "Tilisi on lukittu. Meiltä voi mennä 20 minuuttia tilisi sulkemiseen. Kiitos, kun kokeilit Diasporaa."
+      success: "Tilisi on lukittu. Meiltä voi mennä 20 minuuttia tilisi sulkemiseen. Kiitos, kun kokeilit GuyTravelBuddya."
       wrong_password: "Syötetty salasana ei vastannut nykyistä salasanaasi."
     edit:
       also_commented: "...joku myös kommentoi kontaktisi viestiin?"
@@ -873,10 +873,10 @@ fi:
         if_you_want_this: "Jos todella haluat tätä, kirjoita salasanasi alle ja napsauta 'Sulje käyttäjätili'"
         lock_username: "Tämä lukitsee käyttäjänimesi, jos päätät kirjautua uudelleen."
         locked_out: "Kirjaudut ulos ja käyttäjätilisi lukitaan."
-        make_diaspora_better: "Haluamme sinun auttavan Diasporan parantamisessa, joten voit lähtemisen sijaan auttaa meitä. Jos haluat lähteä, haluamme sinun tietävän, mitä tapahtuu seuraavaksi."
+        make_diaspora_better: "Haluamme sinun auttavan GuyTravelBuddyn parantamisessa, joten voit lähtemisen sijaan auttaa meitä. Jos haluat lähteä, haluamme sinun tietävän, mitä tapahtuu seuraavaksi."
         mr_wiggles: "Herra Töpö on surullinen, kun lähdet"
         no_turning_back: "Tällä hetkellä tästä ei ole paluuta."
-        what_we_delete: "Poistamme kaikki viestisi ja profiilisi tiedot niin pian kuin inhimillisesti mahdollista. Kommenttisi jäävät paikoilleen, mutta ne yhdistetään Diaspora-tunnukseesi."
+        what_we_delete: "Poistamme kaikki viestisi ja profiilisi tiedot niin pian kuin inhimillisesti mahdollista. Kommenttisi jäävät paikoilleen, mutta ne yhdistetään GuyTravelBuddy-tunnukseesi."
       close_account_text: "Sulje käyttäjätili"
       comment_on_post: "...joku kommentoi viestiisi?"
       current_password: "Nykyinen salasana"
@@ -898,23 +898,23 @@ fi:
       started_sharing: "...aloittaa jakamaan kanssasi?"
       stream_preferences: "Virran asetukset"
       your_email: Sähköpostiosoitteesi
-      your_handle: Diaspora-tunnuksesi
+      your_handle: GuyTravelBuddy-tunnuksesi
     getting_started:
-      awesome_take_me_to_diaspora: "Loistavaa! Mennään Diasporaan"
-      community_welcome: "Diaspora-yhteisö on iloinen saadessaan sinut mukaan!"
-      hashtag_explanation: "Hashtagien avulla voit keskustella ja seurata keskusteluja kiinnostuksen kohteistasi. Ne ovat myös hyvä keino löytää ihmisiä Diasporassa."
+      awesome_take_me_to_diaspora: "Loistavaa! Mennään GuyTravelBuddyan"
+      community_welcome: "GuyTravelBuddy-yhteisö on iloinen saadessaan sinut mukaan!"
+      hashtag_explanation: "Hashtagien avulla voit keskustella ja seurata keskusteluja kiinnostuksen kohteistasi. Ne ovat myös hyvä keino löytää ihmisiä GuyTravelBuddyssa."
       hashtag_suggestions: "Voit seurata tageja kuten #taide, #elokuvat, #gif jne."
       hooking_up_fb: "yhdistämällä Facebook-tilisi"
       saved: Tallennettu!
       we_can_speed_things_up: "Voimme nopeuttaa asioita hieman"
       well_hello_there: "No, mutta hei!"
       what_are_you_in_to: "Mistä olet kiinnostunut?"
-      what_facebook_does: "Diasporaan. Nimesi ja kuvasi haetaan Diasporaan, ja tämän jälkeen voit myös lähettää viestejä Diasporasta Facebookiin."
+      what_facebook_does: "GuyTravelBuddyan. Nimesi ja kuvasi haetaan GuyTravelBuddyan, ja tämän jälkeen voit myös lähettää viestejä GuyTravelBuddysta Facebookiin."
       who_are_you: "Kuka olet?"
     logged_out:
       go_mobile: "Siirry nyt mobiiliin."
-      on_your_mobile_device: "mobiililaitteellasi päästäksesi Diasporan mobiilisivustolle."
-      signed_out: "Olet kirjautunut ulos Diasporasta"
+      on_your_mobile_device: "mobiililaitteellasi päästäksesi GuyTravelBuddyn mobiilisivustolle."
+      signed_out: "Olet kirjautunut ulos GuyTravelBuddysta"
       simply_visit: "Voit yksinkertaisesti mennä osoitteeseen"
       works_on_modern: "Toimii kaikilla moderneilla älypuhelimilla"
     privacy_settings:

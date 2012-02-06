@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -98,17 +98,17 @@ sl:
         heading: "Poveži se z Cubbi.es"
         learn_more: "Več informacij"
       diaspora_id:
-        content_1: "Vaš Diaspora ID je:"
-        content_2: "Svoj Diaspora ID delite z drugimi, da vas bodo lahko našli."
+        content_1: "Vaš GuyTravelBuddy ID je:"
+        content_2: "Svoj GuyTravelBuddy ID delite z drugimi, da vas bodo lahko našli."
       donate: Prispevaj
-      handle_explanation: "To je vaš Diaspora ID naslov. Tako kot vaš e-naslov,  ga lahko uporabite kot naslov s pomočjo katerega drugi stopijo v stik z vami."
+      handle_explanation: "To je vaš GuyTravelBuddy ID naslov. Tako kot vaš e-naslov,  ga lahko uporabite kot naslov s pomočjo katerega drugi stopijo v stik z vami."
       help:
         do_you: "Ali:"
         email_feedback: "če želite, %{link} povratno informacijo"
         feature_suggestion: "... imate predlog(%{link})?"
         find_a_bug: "... ste našli hrošča(%{link})?"
         have_a_question: "... imate vprašanje(%{link})?"
-        here_to_help: "Skupnost Diaspora je tukaj!"
+        here_to_help: "Skupnost GuyTravelBuddy je tukaj!"
         need_help: "Potrebujete pomoč?"
         tutorials_wiki_and_forum: "%{tutorial} & %{wiki} & %{forum}: Vodiči, navodila in novice iz skupnosti"
       introduce_yourself: "To je vaš tok. Vskoči in predstavi se."
@@ -262,14 +262,14 @@ sl:
     show:
       already_account: "Že imate uporabniški račun?"
       choice: Izbira
-      choice_explanation: "V omrežju Diaspora lahko vaše stike razvrščate s pomočjo pogledov. Pogledi kot takšni so unikatni in vam omogočajo, da so vaše slike, zgodbe in šale dostopne le osebam katerim ste jih namenili."
-      learn_about_host: "Preberite več o tem, kako gostiti lasten Diaspora  strežnik."
+      choice_explanation: "V omrežju GuyTravelBuddy lahko vaše stike razvrščate s pomočjo pogledov. Pogledi kot takšni so unikatni in vam omogočajo, da so vaše slike, zgodbe in šale dostopne le osebam katerim ste jih namenili."
+      learn_about_host: "Preberite več o tem, kako gostiti lasten GuyTravelBuddy  strežnik."
       login_here: "prijavite se tukaj"
       ownership: Lastništvo
-      ownership_explanation: "Vaše slike so vaša last in zato je prav, da jih lahko delite, ne da bi jih s tem komerkoli posredovali. Vsebina, ki jo delite v  omrežju Diaspora, se ohrani v vaši lasti, kot tudi kontrola nad distribucijo le-te."
+      ownership_explanation: "Vaše slike so vaša last in zato je prav, da jih lahko delite, ne da bi jih s tem komerkoli posredovali. Vsebina, ki jo delite v  omrežju GuyTravelBuddy, se ohrani v vaši lasti, kot tudi kontrola nad distribucijo le-te."
       share_what_you_want: "Delite kar želite, s komerkoli želite."
       simplicity: Preprostost
-      simplicity_explanation: "Diaspora omogoča preprosto izmenjavo z upoštevanjem vaše zasebnosti. Za ohranjanje zasebnosti v Diaspori ni potrebno skozi neskončen seznam različnih nastavitev in možnosti."
+      simplicity_explanation: "GuyTravelBuddy omogoča preprosto izmenjavo z upoštevanjem vaše zasebnosti. Za ohranjanje zasebnosti v Diaspori ni potrebno skozi neskončen seznam različnih nastavitev in možnosti."
       tagline_first_half: "Delite kar želite,"
       tagline_second_half: "s komerkoli želite."
   invitations:
@@ -291,7 +291,7 @@ sl:
       aspect: Pogled
       comma_seperated_plz: "Vnesete lahko več e-naslovov, ki naj bodo med seboj ločeni z vejico."
       if_they_accept_info: "v kolikor sprejmejo vaše povabilo, bodo samodejno  dodani pogledom v katere ste jih povabili."
-      invite_someone_to_join: "Povabite nekoga v omrežje Diaspora!"
+      invite_someone_to_join: "Povabite nekoga v omrežje GuyTravelBuddy!"
       language: Jezik
       personal_message: "Osebno sporočilo"
       resend: "Ponovno pošlji"
@@ -301,7 +301,7 @@ sl:
   layouts:
     application:
       powered_by: "STRAN POGANJA DIASPORA*"
-      public_feed: "Javne Diaspora objave za %{name}"
+      public_feed: "Javne GuyTravelBuddy objave za %{name}"
       toggle: "vklop/izklop mobilne strani"
       whats_new: "kaj je novega?"
       your_aspects: "vaše skupine"
@@ -462,7 +462,7 @@ sl:
       view_post: "Poglej objavo >"
     single_admin:
       admin: "Vaš administrator Diaspore"
-      subject: "Sporočilo o vašem Diaspora računu:"
+      subject: "Sporočilo o vašem GuyTravelBuddy računu:"
     started_sharing:
       sharing: "je začel deliti z vami!"
       subject: "%{name} je začel deliti z vami na Diaspori*"
@@ -604,7 +604,7 @@ sl:
     two: "%{count} reakciji"
     zero: "0 reakcij"
   registrations:
-    closed: "Za ta 'Diaspora pod' registracije trenutno niso omogočene."
+    closed: "Za ta 'GuyTravelBuddy pod' registracije trenutno niso omogočene."
     create:
       success: "Pridružili ste se v Diasporo!"
     edit:
@@ -671,7 +671,7 @@ sl:
     failure:
       error: "pri povezovanju s servisom je prišlo do napake"
     finder:
-      fetching_contacts: "Diaspora pridobiva vaše prijatelje s vira %{service}. Prosimo počakajte nekaj minut."
+      fetching_contacts: "GuyTravelBuddy pridobiva vaše prijatelje s vira %{service}. Prosimo počakajte nekaj minut."
       no_friends: "Noben prijatelj s Facebook-a ni bil najden."
       service_friends: "%{service} Prijatelji"
     index:
@@ -698,10 +698,10 @@ sl:
   shared:
     add_contact:
       add_new_contact: "Dodaj nov stik"
-      create_request: "Poišči po Diaspora imenu"
-      enter_a_diaspora_username: "Vpišite Diaspora uporabniško ime:"
+      create_request: "Poišči po GuyTravelBuddy imenu"
+      enter_a_diaspora_username: "Vpišite GuyTravelBuddy uporabniško ime:"
       know_email: "Ali poznate njihove naslove e-naslove? Povabite jih"
-      your_diaspora_username_is: "Vaše Diaspora uporabniško ime je:  %{diaspora_handle}"
+      your_diaspora_username_is: "Vaše GuyTravelBuddy uporabniško ime je:  %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Dodaj stik"
       toggle:
@@ -724,7 +724,7 @@ sl:
       invite_someone: "Povabi osebo"
       invite_your_friends: "Povabi prijatelje"
       invites: Povabila
-      invites_closed: "Za ta 'Diaspora pod' so povabila trenutno onemogočena."
+      invites_closed: "Za ta 'GuyTravelBuddy pod' so povabila trenutno onemogočena."
     notification:
       new: "Novo %{type} od %{from}"
     public_explain:
@@ -879,7 +879,7 @@ sl:
         make_diaspora_better: "Želimo, da nam pomagate narediti Diasporo boljšo, zato nam raje pomakajte, kot pa da odhajate. Če želite oditi, želimo vedeti kaj se bo zgodilo za tem."
         mr_wiggles: "Gospod Wiggles bo žalosten, če vas bo videl odhajati"
         no_turning_back: "Trenutno ni poti nazaj."
-        what_we_delete: "Izbrisali bomo vse vaše objave, podatke profila, kolikor kmalu je to človeško možno. Vaši komentarji se bodo obdržali in bili povezani z vašim Diaspora Handle."
+        what_we_delete: "Izbrisali bomo vse vaše objave, podatke profila, kolikor kmalu je to človeško možno. Vaši komentarji se bodo obdržali in bili povezani z vašim GuyTravelBuddy Handle."
       close_account_text: "Zapri račun"
       comment_on_post: "...nekdo komentira vašo objavo?"
       current_password: "Trenutno geslo"
@@ -904,7 +904,7 @@ sl:
       your_handle: "Vaš diaspora naslov"
     getting_started:
       awesome_take_me_to_diaspora: "Popelji me v Diasporo*"
-      community_welcome: "Skupnost Diaspora je vesela, da vas ima na krovu!"
+      community_welcome: "Skupnost GuyTravelBuddy je vesela, da vas ima na krovu!"
       hashtag_explanation: "Oznake vam omogočajo, da govorite in sledite vašim interesom. So tudi dober način za iskanje novih ljudi na Diaspori."
       hashtag_suggestions: "Poskusite lahko oznake, kot so #art, #movies, #gif in podobno."
       hooking_up_fb: "povezavo vašega Facebook računa"
@@ -916,7 +916,7 @@ sl:
       who_are_you: "Kdo si?"
     logged_out:
       go_mobile: "Zdaj pa pojdi mobilno."
-      on_your_mobile_device: "na mobilni napravi za dostop do Diaspora* mobile."
+      on_your_mobile_device: "na mobilni napravi za dostop do GuyTravelBuddy* mobile."
       signed_out: "Odjavili ste se z Diaspore*"
       simply_visit: "Preprost obisk"
       works_on_modern: "Deluje na vseh sodobnih pametnih telefonih"

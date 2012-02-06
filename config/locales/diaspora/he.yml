@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -121,7 +121,7 @@ he:
       introduce_yourself: "אלו החדשות שלך, היכנס והצג את עצמך"
       keep_us_running: "כדי שהפוד %{pod} ימשיך לפעול במהירות ולרכוש שרתים נוספים שימו כמה דולרים כל חודש כדי לממן להם איזה כוס קפה!"
       new_here:
-        follow: "Diaspora*! וקבל בברכה משתמשים חדשים ל %{link} עקוב אחרי"
+        follow: "GuyTravelBuddy*! וקבל בברכה משתמשים חדשים ל %{link} עקוב אחרי"
         learn_more: "למד יותר"
         title: "ברך משתמשים חדשים"
       no_contacts: "אין אנשי קשר"
@@ -469,7 +469,7 @@ he:
       view_post: "צפייה ברשומה >"
     mentioned:
       mentioned: "ציין/ה אותך ברשומה"
-      subject: "Diaspora*  הוזכרת על ידי %{name} "
+      subject: "GuyTravelBuddy*  הוזכרת על ידי %{name} "
     private_message:
       reply_to_or_view: "שליחת תגובה או צפייה בדיון זה >"
     reshared:
@@ -935,7 +935,7 @@ he:
       your_email: "כתובת הדוא״ל שלך"
       your_handle: "שם המשתמש שלך בדיאספורה"
     getting_started:
-      awesome_take_me_to_diaspora: "Diaspora* מגניב, קח אותי ל"
+      awesome_take_me_to_diaspora: "GuyTravelBuddy* מגניב, קח אותי ל"
       community_welcome: "קהילת דיאספורה שמחה לראות אותך איתנו"
       hashtag_explanation: "תגיות מאפשרות לך לשוחח על ולעקוב אחר תחומי העניין שלך. זוהי גם דרך מצוינת למצוא אנשים בדיאספורה."
       hashtag_suggestions: "וכולי #art, #movies, #gif נסה את התגיות הבאות כגון"
@@ -949,7 +949,7 @@ he:
     logged_out:
       go_mobile: "עכשיו הצטרף לנייד"
       on_your_mobile_device: "* במכשיר הנייד שלך תוכל להיכנס לדיאספורה"
-      signed_out: "Diaspora* התנתקת מ"
+      signed_out: "GuyTravelBuddy* התנתקת מ"
       simply_visit: "פשוט תבקר "
       works_on_modern: "פועל בכל הסמארטפונים"
     privacy_settings:

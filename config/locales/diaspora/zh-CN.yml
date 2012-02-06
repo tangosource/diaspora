@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -84,7 +84,7 @@ zh-CN:
     index:
       handle_explanation: "这是您的 diaspora 帐号， 就像是邮箱一样，你可以把它提供给想好友您的人。"
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GuyTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -121,8 +121,8 @@ zh-CN:
   bookmarklet:
     explanation: "%{link} 收藏这个链接，即可随时发布新内容"
     explanation_link_text: 这个链接
-    heading: "Diaspora Bookmarklet"
-    post_something: 发布些新内容到Diaspora
+    heading: "GuyTravelBuddy Bookmarklet"
+    post_something: 发布些新内容到GuyTravelBuddy
     post_success: 发布完成！关闭中！
   cancel: 取消
   comments:
@@ -194,14 +194,14 @@ zh-CN:
     show:
       already_account: 已经有帐号了吗？
       choice: 选择
-      choice_explanation: "Diaspora 让你将您的关系分成多个视图，每个视图是您生活的不同部分。这是Diaspora首创，用来确保您的照片、经历和笑话，只与您所希望分享的人分享。"
-      learn_about_host: 学习如何架设您自己的Diaspora服务器。
+      choice_explanation: "GuyTravelBuddy 让你将您的关系分成多个视图，每个视图是您生活的不同部分。这是GuyTravelBuddy首创，用来确保您的照片、经历和笑话，只与您所希望分享的人分享。"
+      learn_about_host: 学习如何架设您自己的GuyTravelBuddy服务器。
       login_here: 从这里登录
       ownership: 所有权
-      ownership_explanation: 你拥有您的图片，且不因为分享而失去该权利。在Diaspora，所有你分享的内容，你都持有所有权，你可以控制它们的发布。
+      ownership_explanation: 你拥有您的图片，且不因为分享而失去该权利。在GuyTravelBuddy，所有你分享的内容，你都持有所有权，你可以控制它们的发布。
       share_what_you_want: 分享您想分享的内容，给您想分享给的人。
       simplicity: 简单
-      simplicity_explanation: "Diaspora让分享变得干净而简单，对隐私设置也是这样。以隐私为出发点，Diaspora 让你不必千辛万苦的调整设置，就能保护您的个人信息安全。"
+      simplicity_explanation: "GuyTravelBuddy让分享变得干净而简单，对隐私设置也是这样。以隐私为出发点，GuyTravelBuddy 让你不必千辛万苦的调整设置，就能保护您的个人信息安全。"
       tagline_first_half: 分享您想分享的内容，
       tagline_second_half: 给您想分享给的人。
   invitations:
@@ -219,7 +219,7 @@ zh-CN:
       aspect: 视图
       comma_seperated_plz: 你可以输入多个邮箱，输入多个时以逗号分隔。
       if_they_accept_info: 如果他们接受，就会自动被加入到您所邀请的视图中。
-      invite_someone_to_join: 邀请好友来加入到Diaspora！
+      invite_someone_to_join: 邀请好友来加入到GuyTravelBuddy！
       personal_message: 个人信息
       resend: 重寄
       send_an_invitation: 发送邀请函
@@ -228,7 +228,7 @@ zh-CN:
   layouts:
     application:
       powered_by: "Powered by DIASPORA*"
-      public_feed: "%{name} 的 Diaspora RSS Feed"
+      public_feed: "%{name} 的 GuyTravelBuddy RSS Feed"
       toggle: 切换为手机网页
       whats_new: 有什么新内容？
       your_aspects: 您的视图
@@ -372,16 +372,16 @@ zh-CN:
     liked:
       liked: "%{name}刚说喜欢您发布的内容："
     mentioned:
-      mentioned: "在 Diaspora* 发布的内容中提到了您："
-      subject: "%{name} 在 Diaspora* 上发布的内容中提到了您"
+      mentioned: "在 GuyTravelBuddy* 发布的内容中提到了您："
+      subject: "%{name} 在 GuyTravelBuddy* 上发布的内容中提到了您"
     reshared:
       reshared: "%{name} just reshared your post"
     single_admin:
-      admin: "为您服务的 Diaspora 管理员"
-      subject: "关于您 Diaspora 帐号的信息:"
+      admin: "为您服务的 GuyTravelBuddy 管理员"
+      subject: "关于您 GuyTravelBuddy 帐号的信息:"
     started_sharing:
       sharing: 刚开始与您分享！
-      subject: "%{name}刚开始在Diaspora*与您分享"
+      subject: "%{name}刚开始在GuyTravelBuddy*与您分享"
     thanks: 谢谢，
   ok: 确定
   or: 或
@@ -397,7 +397,7 @@ zh-CN:
       people_on_pod_are_aware_of: " Pod上已知的人"
       results_for: " %{params}的搜索结果"
     index:
-      couldnt_find_them_send_invite: 找不到他们？邀请他们加入Diaspora吧！
+      couldnt_find_them_send_invite: 找不到他们？邀请他们加入GuyTravelBuddy吧！
       no_one_found: ……找不到任何内容。
       no_results: "嘿！ 搜索必须要有目标呀。"
       results_for: 搜索结果：
@@ -478,7 +478,7 @@ zh-CN:
   profile: 个人档案
   profiles:
     edit:
-      allow_search: "允许别人在 Diaspora* 中搜索到你"
+      allow_search: "允许别人在 GuyTravelBuddy* 中搜索到你"
       edit_profile: 编辑个人档案
       first_name: 名
       last_name: 姓
@@ -504,9 +504,9 @@ zh-CN:
     two: "%{count} reactions"
     zero: "0 reactions"
   registrations:
-    closed: "本 Diaspora pod 不开放注册。"
+    closed: "本 GuyTravelBuddy pod 不开放注册。"
     create:
-      success: "你已成功加入 Diaspora 了！"
+      success: "你已成功加入 GuyTravelBuddy 了！"
     edit:
       cancel_my_account: 取消我的帐号
       edit: "编辑 %{name}"
@@ -524,7 +524,7 @@ zh-CN:
   requests:
     create:
       sending: 发送中
-      sent: "您已经请求与 %{name} 分享。他们下次登入 Diaspora 时就会看见您的请求。"
+      sent: "您已经请求与 %{name} 分享。他们下次登入 GuyTravelBuddy 时就会看见您的请求。"
     destroy:
       error: 请选择一个视图！
       ignore: 忽略建立好友的请求。
@@ -578,11 +578,11 @@ zh-CN:
   settings: 设置
   shared:
     add_contact:
-      create_request: "用 Diaspora 帐号搜索"
+      create_request: "用 GuyTravelBuddy 帐号搜索"
       diaspora_handle: diaspora@handle.org
-      enter_a_diaspora_username: "输入 Diaspora 帐号："
+      enter_a_diaspora_username: "输入 GuyTravelBuddy 帐号："
       know_email: "知道他们的电子信箱吗？ 你可以邀请他们加入。"
-      your_diaspora_username_is: "您的 Diaspora 帐号是: %{diaspora_handle}"
+      your_diaspora_username_is: "您的 GuyTravelBuddy 帐号是: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
       toggle:
@@ -605,13 +605,13 @@ zh-CN:
       invite_someone: 邀请别人
       invite_your_friends: 邀请您的好友
       invites: 邀请
-      invites_closed: "目前本 Diaspora pod 不开放邀请功能"
+      invites_closed: "目前本 GuyTravelBuddy pod 不开放邀请功能"
     notification:
       new: "%{from} 有新的 %{type}"
     public_explain:
       logged_in: "成功登录到 %{service}"
       manage: 管理已连线的服务
-      outside: "不使用 Diaspora 的人也能看到公开讯息。"
+      outside: "不使用 GuyTravelBuddy 的人也能看到公开讯息。"
       title: 设定连线服务
     publisher:
       all: 全部
@@ -677,7 +677,7 @@ zh-CN:
       posts_tagged_with: "标记为 #%{tag} 的内容"
   tokens:
     show:
-      connecting_is_simple: "Connecting your Diaspora account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GuyTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   undo: 撤消？
   username: 帐号
   users:
@@ -692,7 +692,7 @@ zh-CN:
       change_language: 更改语言
       change_password: 更改密码
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
       comment_on_post: ……当有人对您的内容发表评论时？
       current_password: 当前密码
       download_photos: 下载我的照片
@@ -709,7 +709,7 @@ zh-CN:
       your_email: 您的电子邮箱
       your_handle: "您的 diaspora 帐号"
     getting_started:
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "不存在 %{username} 这个用户！"
     update:

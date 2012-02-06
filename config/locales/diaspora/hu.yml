@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -93,22 +93,22 @@ hu:
       remove: eltávolítás
     index:
       cubbies:
-        explanation: "Cubbi.es az első fejlesztés alatt álló Diaspora applikáció."
+        explanation: "Cubbi.es az első fejlesztés alatt álló GuyTravelBuddy applikáció."
         heading: "Kapcsolódás: Cubbi.es"
         learn_more: "Tudj meg többet"
       diaspora_id:
-        content_1: "A te Diaspora azonosítód:"
-        content_2: "Add meg bárkinek és ez alapján meg tud találni a Diaspora-n."
-        heading: "Diaspora azonosító"
+        content_1: "A te GuyTravelBuddy azonosítód:"
+        content_2: "Add meg bárkinek és ez alapján meg tud találni a GuyTravelBuddy-n."
+        heading: "GuyTravelBuddy azonosító"
       donate: Adományoz
-      handle_explanation: "Ez a Te Diaspora azonosítód. Megadhatod elérhetőségként, mint egy email címet."
+      handle_explanation: "Ez a Te GuyTravelBuddy azonosítód. Megadhatod elérhetőségként, mint egy email címet."
       help:
         do_you: "Te:"
         email_feedback: "Küldd el %{link}-ben a visszajelzésed"
         feature_suggestion: "... van egy fejlesztési javaslata? %{link}"
         find_a_bug: "... hibát találtál? %{link}?"
         have_a_question: "... kérdésed van? %{link}"
-        here_to_help: "A Diaspora közösség megérkezett!"
+        here_to_help: "A GuyTravelBuddy közösség megérkezett!"
         need_help: "Segítségre van szüksége?"
         tag_feature: funkció
         tag_question: kérdés
@@ -116,7 +116,7 @@ hu:
       introduce_yourself: "Ez a te Hírfolyamod. Kezdd is el gyorsan egy bemutatkozással."
       keep_us_running: "Hogy gyors maradjon ez a pod (%{pod}), kérlek adományozz pénzt."
       new_here:
-        follow: "Kövesd %{link} és üdvözöld az új Diaspora* felhasználókat!"
+        follow: "Kövesd %{link} és üdvözöld az új GuyTravelBuddy* felhasználókat!"
         learn_more: "Tudj meg többet"
         title: "Sziasztok új felhasználók"
       no_contacts: "Nincs ismerős"
@@ -127,7 +127,7 @@ hu:
         content: "A következő szolgáltatásokhoz tudsz kapcsolódni:"
         heading: "Összekapcsolt szolgáltatások"
       unfollow_tag: "Követés leállítása #%{tag}"
-      welcome_to_diaspora: "Üdv a Diaspora* közösségi oldalon %{name}!"
+      welcome_to_diaspora: "Üdv a GuyTravelBuddy* közösségi oldalon %{name}!"
       your_aspects: Csoportjaid
     many: "%{count} csoport"
     move_contact:
@@ -176,7 +176,7 @@ hu:
       failure: "Nem tudtam kikapcsolni annak a felhasználónak a figyelmen kívül hagyását. #elkerülés"
       success: "Lássuk mit akarnak mondani! #sayhello"
   bookmarklet:
-    explanation: "Küldj bejegyzést a Diaspora-ra bárhonnan, csak mentsd el ezt könyvjelzőként:"
+    explanation: "Küldj bejegyzést a GuyTravelBuddy-ra bárhonnan, csak mentsd el ezt könyvjelzőként:"
     explanation_link_text: "ez a link"
     heading: Könyvjelzők
     post_something: "Írj valamit a Diasporára"
@@ -266,14 +266,14 @@ hu:
     show:
       already_account: "már van fiókod?"
       choice: Csoportok
-      choice_explanation: "A Diaspora* közösségi oldalon különböző szempontok alapján Csoportokba rendezheted a kapcsolataidat. Ezek segítségével mindig a megfelelő emberekkel oszthatod meg a történeteidet, vicceidet, képeidet."
-      learn_about_host: "Így indíthatod el saját Diaspora* szervered."
+      choice_explanation: "A GuyTravelBuddy* közösségi oldalon különböző szempontok alapján Csoportokba rendezheted a kapcsolataidat. Ezek segítségével mindig a megfelelő emberekkel oszthatod meg a történeteidet, vicceidet, képeidet."
+      learn_about_host: "Így indíthatod el saját GuyTravelBuddy* szervered."
       login_here: "Jelentkezz be"
       ownership: Sajátod
-      ownership_explanation: "A képeid a sajátjaid, és ezt nem kell feladnod, hogy megoszthasd őket másokkal. Minden megosztás felett teljes irányításod van a Diaspora* közösségi oldalon."
+      ownership_explanation: "A képeid a sajátjaid, és ezt nem kell feladnod, hogy megoszthasd őket másokkal. Minden megosztás felett teljes irányításod van a GuyTravelBuddy* közösségi oldalon."
       share_what_you_want: "Oszd meg... akivel akarod!"
       simplicity: Egyszerűség
-      simplicity_explanation: "A Diaspora könnyűvé és érthetővé teszi a megosztást - és ez a biztonságra is vonatkozik. Nem kell hosszú beállító oldalakon átvergődnöd, hogy biztonságban tudd a profilodat."
+      simplicity_explanation: "A GuyTravelBuddy könnyűvé és érthetővé teszi a megosztást - és ez a biztonságra is vonatkozik. Nem kell hosszú beállító oldalakon átvergődnöd, hogy biztonságban tudd a profilodat."
       tagline_first_half: "Oszd meg..."
       tagline_second_half: "akivel akarod!"
   invitations:
@@ -295,7 +295,7 @@ hu:
       aspect: Csoport
       comma_seperated_plz: "Megadhatsz több e-mail címet is vesszővel elválasztva."
       if_they_accept_info: "Ha elfogadják felkérésed, akkor belekerülnek abba a csoportba amelyikbe meghívtad őket."
-      invite_someone_to_join: "Hívj meg valakit, hogy csatlakozzon a Diaspora-hoz!"
+      invite_someone_to_join: "Hívj meg valakit, hogy csatlakozzon a GuyTravelBuddy-hoz!"
       language: Nyelv
       personal_message: "Személyes üzenet"
       resend: Újraküld
@@ -305,7 +305,7 @@ hu:
   layouts:
     application:
       powered_by: "DIASPORA* fordította ADAMEX"
-      public_feed: "Nyílvános Diaspora hírfolyam neki: %{name}"
+      public_feed: "Nyílvános GuyTravelBuddy hírfolyam neki: %{name}"
       toggle: "mobil változat"
       whats_new: belépés
       your_aspects: csoportjaid
@@ -451,22 +451,22 @@ hu:
     confirm_email:
       click_link: "Ahhoz, hogy aktiváld az új email címedet (%{unconfirmed_email}), kattints erre a linkre:"
       subject: "Kérlek aktiváld az új email címedet: %{unconfirmed_email}"
-    email_sent_by_diaspora: "Ezt az emailt a Diaspora küldte. Ha nem szeretnél ilyen leveleket kapni,"
+    email_sent_by_diaspora: "Ezt az emailt a GuyTravelBuddy küldte. Ha nem szeretnél ilyen leveleket kapni,"
     hello: "Szia %{name}!"
     liked:
       liked: "%{name} kedveli a bejegyzésedet"
       view_post: "Bejegyzés megtekintése >"
     mentioned:
       mentioned: "megemlített téged egy bejegyzésében:"
-      subject: "%{name} megemlített téged a Diaspora* közösségi oldalon."
+      subject: "%{name} megemlített téged a GuyTravelBuddy* közösségi oldalon."
     private_message:
       reply_to_or_view: "Beszélgetés folytatása vagy megtekintése >"
     reshared:
       reshared: "%{name} épp újraosztotta a bejegyzésedet."
       view_post: "Bejegyzés megtekintése >"
     single_admin:
-      admin: "A Te Diaspora* rendszergazdád"
-      subject: "Üzenet a Diaspora* rendszergazdától:"
+      admin: "A Te GuyTravelBuddy* rendszergazdád"
+      subject: "Üzenet a GuyTravelBuddy* rendszergazdától:"
     started_sharing:
       sharing: "mostantól ismerősöd!"
       subject: "%{name} elkezdett megosztani veled"
@@ -582,7 +582,7 @@ hu:
   profile: Profil
   profiles:
     edit:
-      allow_search: "Megtalálható legyek a Diaspora keresőben"
+      allow_search: "Megtalálható legyek a GuyTravelBuddy keresőben"
       edit_profile: "Profil szerkesztése"
       first_name: Keresztnév
       last_name: Vezetéknév
@@ -609,9 +609,9 @@ hu:
     two: "%{count} visszajelzés"
     zero: "0 visszajelzés"
   registrations:
-    closed: "A regisztráció zárva ezen a Diaspora kiszolgálón."
+    closed: "A regisztráció zárva ezen a GuyTravelBuddy kiszolgálón."
     create:
-      success: "Csatlakoztál a Diaspora-hoz!"
+      success: "Csatlakoztál a GuyTravelBuddy-hoz!"
     edit:
       cancel_my_account: "Fiókom törlése"
       edit: "%{name} szerkesztése"
@@ -676,7 +676,7 @@ hu:
     failure:
       error: "Hiba történt a szolgáltatáshoz kapcsolódás közben"
     finder:
-      fetching_contacts: "A Diaspora keresi a %{service} ismerőseidet, nézz vissza néhány perc múlva."
+      fetching_contacts: "A GuyTravelBuddy keresi a %{service} ismerőseidet, nézz vissza néhány perc múlva."
       no_friends: "Nincs Facebook ismerősöd"
       service_friends: "%{service} ismerős"
     index:
@@ -693,7 +693,7 @@ hu:
       join_me_on_diaspora: "Találkozzunk a DIASPORA*-n"
     remote_friend:
       invite: meghív
-      not_on_diaspora: "Még nincs Diaspora fiókja"
+      not_on_diaspora: "Még nincs GuyTravelBuddy fiókja"
       resend: újraküld
   settings: Beállítások
   share_visibilites:
@@ -703,10 +703,10 @@ hu:
   shared:
     add_contact:
       add_new_contact: "Új ismerős"
-      create_request: "Keresés Diaspora azonosító alapján"
-      enter_a_diaspora_username: "Diaspora felhasználónév:"
+      create_request: "Keresés GuyTravelBuddy azonosító alapján"
+      enter_a_diaspora_username: "GuyTravelBuddy felhasználónév:"
       know_email: "Tudod az e-mail címüket? Hívd meg őket!"
-      your_diaspora_username_is: "Diaspora felhasználóneved: %{diaspora_handle}"
+      your_diaspora_username_is: "GuyTravelBuddy felhasználóneved: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Ismerős hozzáadása"
       toggle:
@@ -729,7 +729,7 @@ hu:
       invite_someone: "Hívj meg valakit"
       invite_your_friends: "Hívd meg a barátaidat"
       invites: Meghívók
-      invites_closed: "A meghívás jelenleg szünetel erre a Diaspora* kiszolgálóra."
+      invites_closed: "A meghívás jelenleg szünetel erre a GuyTravelBuddy* kiszolgálóra."
     notification:
       new: "Új %{type} %{from}-tól/től"
     public_explain:
@@ -739,7 +739,7 @@ hu:
       new_user_welcome_message: |-
           Használj kettőskeresztet(#), hogy felcímkézd a bejegyzésedet. Címkék alapján találhatsz veled azonos érdeklődésű embereket.
           A kukac(@) jellel, pedig személyeket említhetsz meg a bejegyzésedben.
-      outside: "A publikus üzeneteket a Diaspora-n kívüli személyek is láthatják."
+      outside: "A publikus üzeneteket a GuyTravelBuddy-n kívüli személyek is láthatják."
       share: Megoszt
       title: "Kapcsolódó szolgáltatások beállítása"
       visibility_dropdown: "Használd ezt a legördülő menüt, hogy módosítsd a bejegyzésed láthatóságát."
@@ -847,14 +847,14 @@ hu:
   tokens:
     show:
       connect_to_cubbies: "Csatlakozás ehhez: Cubbi.es"
-      connecting_is_simple: "A csatlakozás sima ügy, csak írd be a Diaspora azonosítódat."
-      daniels_account: "Adam Diaspora* fiókja"
+      connecting_is_simple: "A csatlakozás sima ügy, csak írd be a GuyTravelBuddy azonosítódat."
+      daniels_account: "Adam GuyTravelBuddy* fiókja"
       love_to_try: "Szeretnénk, ha kipróbálnád."
       making_the_connection: "Kapcsolat létrehozása"
       screenshot_explanation: "%{link1}.  Ez a cubby ehhez van linkelve: %{link2}."
       sign_up_today: "Regisztrálj még ma!"
       typical_userpage: "Tipikus 'cubbi.es' oldal"
-      what_is_cubbies: "Cubbi.es a világ első Diaspora* applikációja. Egyben a legjobb mód az online fotógyűjtésre!"
+      what_is_cubbies: "Cubbi.es a világ első GuyTravelBuddy* applikációja. Egyben a legjobb mód az online fotógyűjtésre!"
   undo: Visszavonod?
   username: Felhasználónév
   users:
@@ -863,7 +863,7 @@ hu:
       email_not_confirmed: "Email cím aktiválása sikertelen. Rossz a link?"
     destroy:
       no_password: "Add meg a jelszavad, hogy megszüntesd a fiókod."
-      success: "A fiókod le van zárva. Húsz percbe is beletelhet, mire befejezzük a fiókod törlését. Köszönjük, hogy kipróbáltad a Diaspora közösségi oldalt."
+      success: "A fiókod le van zárva. Húsz percbe is beletelhet, mire befejezzük a fiókod törlését. Köszönjük, hogy kipróbáltad a GuyTravelBuddy közösségi oldalt."
       wrong_password: "A megadott jelszó nem felel meg."
     edit:
       also_commented: "...más is hozzászólt az ismerősöd bejegyzéséhez?"
@@ -872,7 +872,7 @@ hu:
       change_language: "Nyelv megváltoztatása"
       change_password: "Jelszó módosítása"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
       comment_on_post: "...valaki hozzászólt egy bejegyzésedhez?"
       current_password: "Jelenlegi jelszó"
       download_photos: "Képeim letöltése"
@@ -893,10 +893,10 @@ hu:
       started_sharing: "...valaki megoszt veled?"
       stream_preferences: "Hírfolyam tulajdonságai"
       your_email: "E-mail címed"
-      your_handle: "Diaspora azonosítód"
+      your_handle: "GuyTravelBuddy azonosítód"
     getting_started:
-      awesome_take_me_to_diaspora: "Remek! Irány a Diaspora*"
-      community_welcome: "A Diaspora közösség üdvözöl a fedélzeten!"
+      awesome_take_me_to_diaspora: "Remek! Irány a GuyTravelBuddy*"
+      community_welcome: "A GuyTravelBuddy közösség üdvözöl a fedélzeten!"
       hashtag_explanation: "A #címkék segítenek egy bizonyos téma megtalálásában, így akár új kapcsolatokra is szert tehetsz."
       hashtag_suggestions: "Kövess pár téged érdeklő címkét. Például: #művészet, #fényképezés, #webdesign"
       hooking_up_fb: "Kapcsold ide a Facebook fiókoadt"
@@ -908,8 +908,8 @@ hu:
       who_are_you: "Ki vagy?"
     logged_out:
       go_mobile: "Maradj kapcsolatban."
-      on_your_mobile_device: "a mobiltelefonodon, hogy hozzáférj a Diaspora* mobil verzióhoz."
-      signed_out: "Kijelentkeztél a Diaspora* rendszerből"
+      on_your_mobile_device: "a mobiltelefonodon, hogy hozzáférj a GuyTravelBuddy* mobil verzióhoz."
+      signed_out: "Kijelentkeztél a GuyTravelBuddy* rendszerből"
       simply_visit: "Tekintsd meg"
       works_on_modern: "Az összes modern okostelefonon működik"
     privacy_settings:

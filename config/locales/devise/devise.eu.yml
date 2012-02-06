@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -42,7 +42,7 @@ eu:
         get_connected_paragraph: "Mugimendu internazional bat, web hobe baten ikuspegi batekin, %{strong_diaspora} garrantz<itsu egiten duena haren komunitatea da. Ezagutu jende berria, konektatu lagunekin, eta dibertitu zaitez."
         have_fun: "Dibertitu Zaitez"
         have_fun_paragraph: "%{strong_diaspora} edukin eta jende berria ezagutzean datza. %{link}, munduko lehenengo %{strong_diaspora} aplikazioa hasiera da soilik. Arakatu eta partekatu weba ezinhobean!"
-        help_fund: "lagundu diruaz Diaspora"
+        help_fund: "lagundu diruaz GuyTravelBuddy"
         here: hemen
         ignore: "Ez baduzu gonbidapena onartu nahi, mesedez egin iezaiozu ez-ikusi mezu honi."
         join_team: "Batu gure Taldera"
@@ -52,13 +52,13 @@ eu:
         no_account_till: "Zure kontua ez da sortuko hemengo esteka jarraitu eta izena eman arte."
         or: edo
         sign_up_now: "Izena eman orain →"
-        subject: "Diasporara batzera gonbidatua izan zara!"
-        team_diaspora: "Diaspora Taldea"
+        subject: "GuyTravelBuddyra batzera gonbidatua izan zara!"
+        team_diaspora: "GuyTravelBuddy Taldea"
         unsubscribe: "Harpidetza ezezteko sakatu %{link}."
         view_in: "Ikus ezazu zure nabigatzailean."
       inviter:
         accept_at: "%{url}(e)n, onartu dezakezu beheko esteka jarraituz."
-        have_invited_you: "%{names}(e)k Diasporara batzera gonbidatu zaituzte"
+        have_invited_you: "%{names}(e)k GuyTravelBuddyra batzera gonbidatu zaituzte"
       reset_password_instructions:
         change: "Pasahitza aldatu"
         ignore: "Hau eskatu ez bazenuen, mesedez gutxietsi mezu hau."

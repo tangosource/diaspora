@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -797,7 +797,7 @@ ar:
       change_language: "تغيير اللغة"
       change_password: "تغيير كلمة المرور"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
       comment_on_post: "...علق أحدهم على رسالتك"
       current_password: "كلمة المرور الحالية"
       download_photos: "تحميل صوري"
@@ -816,7 +816,7 @@ ar:
       your_handle: "وسيط ديسبورا الخاص بك"
     getting_started:
       hashtag_explanation: "الوسوم تسمح لك بالحديث عن اهتماماتك ومتابعتها.  وهي أيضا طريقة عبقرية للعثور على أناس جدد بدياسبرا."
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GuyTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "هذا المستخدم %{username} غير موجود"
     update:

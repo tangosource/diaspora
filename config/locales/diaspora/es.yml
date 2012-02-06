@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -94,22 +94,22 @@ es:
       remove: eliminar
     index:
       cubbies:
-        explanation: "Cubbi.es es la primera aplicación de Diaspora* en desarrollo."
+        explanation: "Cubbi.es es la primera aplicación de GuyTravelBuddy* en desarrollo."
         heading: "Conecta con Cubbi.es"
         learn_more: "Ver más"
       diaspora_id:
-        content_1: "Tu identidad Diaspora* es:"
+        content_1: "Tu identidad GuyTravelBuddy* es:"
         content_2: "Compártela con quien quieras que te encuentre rápidamente."
-        heading: "Identidad Diaspora*"
+        heading: "Identidad GuyTravelBuddy*"
       donate: Donaciones
-      handle_explanation: "Ésta es tu dirección Diaspora*. Como una dirección de email, puedes dársela a la gente para que te encuentre."
+      handle_explanation: "Ésta es tu dirección GuyTravelBuddy*. Como una dirección de email, puedes dársela a la gente para que te encuentre."
       help:
         do_you: "Tal vez:"
         email_feedback: "Si lo prefieres, envía tus comentarios a este %{link}."
         feature_suggestion: "- Propongas alguna %{link}."
         find_a_bug: "- Encuentres algún %{link}"
         have_a_question: "- Realices alguna %{link}."
-        here_to_help: "¡La comunidad Diaspora está aquí!"
+        here_to_help: "¡La comunidad GuyTravelBuddy está aquí!"
         need_help: Ayuda
         tag_bug: error
         tag_feature: idea
@@ -118,7 +118,7 @@ es:
       introduce_yourself: "Esta es tu entrada principal. Adelante, preséntate..."
       keep_us_running: "Haz que %{pod} vaya más rápido, ¡compra a nuestros servidores sus dosis de café mensual!"
       new_here:
-        follow: "¡Sigue %{link} y da la bienvenida a los nuevos miembros de Diaspora*!"
+        follow: "¡Sigue %{link} y da la bienvenida a los nuevos miembros de GuyTravelBuddy*!"
         learn_more: "Más información"
         title: Bienvenida
       no_contacts: "No hay contactos"
@@ -126,10 +126,10 @@ es:
       people_sharing_with_you: "Comparten contigo"
       post_a_message: "publica un mensaje >>"
       services:
-        content: "Puedes conectar los siguientes servicios a Diaspora*:"
+        content: "Puedes conectar los siguientes servicios a GuyTravelBuddy*:"
         heading: Servicios
       unfollow_tag: "Dejar de seguir a #%{tag}"
-      welcome_to_diaspora: "¡Bienvenid@ a Diaspora, %{name}!"
+      welcome_to_diaspora: "¡Bienvenid@ a GuyTravelBuddy, %{name}!"
       your_aspects: Aspectos
     many: "%{count} aspectos"
     move_contact:
@@ -178,10 +178,10 @@ es:
       failure: "No podría dejar de ignorar a esa persona.  #evasion"
       success: "¡Vamos a ver qué tiene que decir! #sayhello"
   bookmarklet:
-    explanation: "Publica en Diaspora* desde donde quieras agregando a tus marcadores %{link}."
+    explanation: "Publica en GuyTravelBuddy* desde donde quieras agregando a tus marcadores %{link}."
     explanation_link_text: "este enlace"
     heading: Marcador
-    post_something: "Publica algo en Diaspora*"
+    post_something: "Publica algo en GuyTravelBuddy*"
     post_success: "¡Publicado! ¡Cerrando!"
   cancel: Cancelar
   comments:
@@ -270,14 +270,14 @@ es:
     show:
       already_account: "¿Tienes ya una cuenta?"
       choice: Elección
-      choice_explanation: "Diaspora* te permite organizar conexiones en grupos llamados aspectos. En Diaspora*, los aspectos aseguran que tus fotos, historias y bromas sean compartidas sólo con la gente que tu quieras."
-      learn_about_host: "Aprende acerca de cómo hostear tu propio servidor Diaspora*."
+      choice_explanation: "GuyTravelBuddy* te permite organizar conexiones en grupos llamados aspectos. En GuyTravelBuddy*, los aspectos aseguran que tus fotos, historias y bromas sean compartidas sólo con la gente que tu quieras."
+      learn_about_host: "Aprende acerca de cómo hostear tu propio servidor GuyTravelBuddy*."
       login_here: "accede aquí"
       ownership: Propiedad
-      ownership_explanation: "Eres dueño de tus imágenes, y no deberías tener que cederlas solo para compartirlas. Tú mantienes la propiedad sobre todo lo que compartas en Diaspora*, dándote control total sobre lo que es distribuido."
+      ownership_explanation: "Eres dueño de tus imágenes, y no deberías tener que cederlas solo para compartirlas. Tú mantienes la propiedad sobre todo lo que compartas en GuyTravelBuddy*, dándote control total sobre lo que es distribuido."
       share_what_you_want: "Comparte lo que quieras, con quien quieras."
       simplicity: Simplicidad
-      simplicity_explanation: "Diaspora* hace que compartir sea transparente y fácil — y esto también va por la privacidad. Inheréntemente privado, Diaspora* no te hace ir a través de configuraciones y opciones solo para mantener tu perfil seguro."
+      simplicity_explanation: "GuyTravelBuddy* hace que compartir sea transparente y fácil — y esto también va por la privacidad. Inheréntemente privado, GuyTravelBuddy* no te hace ir a través de configuraciones y opciones solo para mantener tu perfil seguro."
       tagline_first_half: "Comparte lo que quieras, "
       tagline_second_half: "con quien te gustaría"
   invitations:
@@ -299,7 +299,7 @@ es:
       aspect: Aspecto
       comma_seperated_plz: "Puedes escribir múltiples direcciones de email separadas por comas."
       if_they_accept_info: "Si acepta, se añadirá al aspecto seleccionado."
-      invite_someone_to_join: "¡Invita a alguien a unirse a Diaspora*!"
+      invite_someone_to_join: "¡Invita a alguien a unirse a GuyTravelBuddy*!"
       language: Idioma
       personal_message: "Mensaje personal"
       resend: Reenviar
@@ -312,7 +312,7 @@ es:
       powered_by: "IMPULSADO POR DIASPORA*"
       public_feed: "Canal público de %{name} "
       toggle: "cambiar al sitio móvil"
-      whats_new: "Novedades en Diaspora*"
+      whats_new: "Novedades en GuyTravelBuddy*"
       your_aspects: "tus aspectos"
     header:
       admin: Administrar
@@ -456,25 +456,25 @@ es:
     confirm_email:
       click_link: "Para activar tu nueva dirección de email %{unconfirmed_email}, sigue este enlace:"
       subject: "Por favor activa tu nueva dirección de email %{unconfirmed_email}"
-    email_sent_by_diaspora: "Este email fue enviado por Diaspora*. Si te gustaría dejar de recibir emails como este,"
+    email_sent_by_diaspora: "Este email fue enviado por GuyTravelBuddy*. Si te gustaría dejar de recibir emails como este,"
     hello: "¡Hola %{name}!"
     liked:
       liked: "a %{name} le gustó tu publicación"
       view_post: "Ver comentario >"
     mentioned:
       mentioned: "te mencionó en una publicación:"
-      subject: "%{name} te mencionó en Diaspora*"
+      subject: "%{name} te mencionó en GuyTravelBuddy*"
     private_message:
       reply_to_or_view: "Responder o ver esta conversación >"
     reshared:
       reshared: "%{name} compartió tu publicación"
       view_post: "Ver publicación >"
     single_admin:
-      admin: "Tu administrador Diaspora*"
-      subject: "Un mensaje sobre tu cuenta Diaspora*:"
+      admin: "Tu administrador GuyTravelBuddy*"
+      subject: "Un mensaje sobre tu cuenta GuyTravelBuddy*:"
     started_sharing:
       sharing: "ha empezado a compartir contigo!"
-      subject: "%{name} ha empezado a compartir contigo en Diaspora*"
+      subject: "%{name} ha empezado a compartir contigo en GuyTravelBuddy*"
       view_profile: "Ver el perfil de %{name}"
     thanks: "Gracias,"
     to_change_your_notification_settings: "para cambiar tus ajustes de notificación"
@@ -589,7 +589,7 @@ es:
   profile: Perfil
   profiles:
     edit:
-      allow_search: "Permitir que la gente te busque dentro de Diaspora*"
+      allow_search: "Permitir que la gente te busque dentro de GuyTravelBuddy*"
       edit_profile: "Editar perfil"
       first_name: Nombre
       last_name: Apellidos
@@ -616,9 +616,9 @@ es:
     two: "%{count} reacciones"
     zero: "0 reacciones"
   registrations:
-    closed: "Los registros están cerrados en este servidor Diaspora*"
+    closed: "Los registros están cerrados en este servidor GuyTravelBuddy*"
     create:
-      success: "¡Te has unido a Diaspora*!"
+      success: "¡Te has unido a GuyTravelBuddy*!"
     edit:
       cancel_my_account: "Cancelar mi cuenta"
       edit: "Editar %{name}"
@@ -637,7 +637,7 @@ es:
   requests:
     create:
       sending: Enviando
-      sent: "Quisieras compartir con %{name}. Lo verá la próxima vez que entre en Diaspora*."
+      sent: "Quisieras compartir con %{name}. Lo verá la próxima vez que entre en GuyTravelBuddy*."
     destroy:
       error: "¡Selecciona un aspecto!"
       ignore: "Solicitud de contacto ignorada."
@@ -675,7 +675,7 @@ es:
   search: Buscar
   services:
     create:
-      already_authorized: "Una persona con la identidad Diaspora %{diaspora_id} ya registró esa cuenta de %{service_name}."
+      already_authorized: "Una persona con la identidad GuyTravelBuddy %{diaspora_id} ya registró esa cuenta de %{service_name}."
       failure: "Error de acceso."
       success: "Autenticación correcta."
     destroy:
@@ -683,7 +683,7 @@ es:
     failure:
       error: "hubo un error conectando ese servicio"
     finder:
-      fetching_contacts: "Diaspora está trasladando a tus contactos de %{service}, por favor compruébalo de nuevo en unos minutos."
+      fetching_contacts: "GuyTravelBuddy está trasladando a tus contactos de %{service}, por favor compruébalo de nuevo en unos minutos."
       no_friends: "No se han encontrados contactos en Facebook."
       service_friends: "Contactos de %{service}"
     index:
@@ -700,7 +700,7 @@ es:
       join_me_on_diaspora: "Nos vemos en DIASPORA*."
     remote_friend:
       invite: invitar
-      not_on_diaspora: "Aún no en Diaspora*"
+      not_on_diaspora: "Aún no en GuyTravelBuddy*"
       resend: reenviar
   settings: Ajustes
   share_visibilites:
@@ -710,10 +710,10 @@ es:
   shared:
     add_contact:
       add_new_contact: "Añade un nuevo contacto"
-      create_request: "Encontrar por la dirección Diaspora*"
-      enter_a_diaspora_username: "Introduce un nombre de usuario Diaspora*:"
+      create_request: "Encontrar por la dirección GuyTravelBuddy*"
+      enter_a_diaspora_username: "Introduce un nombre de usuario GuyTravelBuddy*:"
       know_email: "¿Conoces sus direcciones de email? Podrías invitarles"
-      your_diaspora_username_is: "Tu nombre de usuario Diaspora* es: %{diaspora_handle}"
+      your_diaspora_username_is: "Tu nombre de usuario GuyTravelBuddy* es: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Añadir contacto"
       toggle:
@@ -736,7 +736,7 @@ es:
       invite_someone: "Invita a alguien"
       invite_your_friends: "Invita a tus contactos"
       invites: Invitaciones
-      invites_closed: "Las invitaciones en este servidor Diaspora* están actualmente cerradas."
+      invites_closed: "Las invitaciones en este servidor GuyTravelBuddy* están actualmente cerradas."
     notification:
       new: "Nuevo %{type} de %{from}"
     public_explain:
@@ -744,7 +744,7 @@ es:
       logged_in: "conectado a %{service}"
       manage: "gestión de servicios conectados"
       new_user_welcome_message: "Usa #etiquetas para clasificar tus publicaciones y encontrar gente que comparte tus intereses. Llama a gente interesante con las @Menciones"
-      outside: "Los mensajes públicos también podrán verse fuera de Diaspora*."
+      outside: "Los mensajes públicos también podrán verse fuera de GuyTravelBuddy*."
       share: Comparte
       title: "Configurar los servicios conectados"
       visibility_dropdown: "Usa este menú desplegable para cambiar la visibilidad de tu publicación. (Sugerimos hacerlo público la primera vez.)"
@@ -859,15 +859,15 @@ es:
   tokens:
     show:
       connect_to_cubbies: "Conecta con Cubbi.es"
-      connecting_is_simple: "Conectar tu cuenta de Diaspora* es sencillo. Solo introduce tu identidad Diaspora*(<b>%{diaspora_id}</b>) desde tu página de <a href='%{href_link}'>ajustes</a> de cubbi y dale a conectar."
-      daniels_account: "La cuenta de Diaspora de Daniel"
+      connecting_is_simple: "Conectar tu cuenta de GuyTravelBuddy* es sencillo. Solo introduce tu identidad GuyTravelBuddy*(<b>%{diaspora_id}</b>) desde tu página de <a href='%{href_link}'>ajustes</a> de cubbi y dale a conectar."
+      daniels_account: "La cuenta de GuyTravelBuddy de Daniel"
       love_to_try: "Nos encantaría que lo probases."
       making_the_connection: "Creando la conexión"
       screenshot_explanation: "%{link1}. Este cubby en particular está conectado con %{link2}."
       sign_up_today: "Regístrate hoy mismo!"
       typical_userpage: "Una página de un usuario de cubbi.es"
       via: "(vía %{link})"
-      what_is_cubbies: "Cubbi.es es la primera aplicación de Diaspora en el mundo.  Es también la mejor forma de coleccionar fotos en línea."
+      what_is_cubbies: "Cubbi.es es la primera aplicación de GuyTravelBuddy en el mundo.  Es también la mejor forma de coleccionar fotos en línea."
   undo: ¿Deshacer?
   username: "Nombre de usuario"
   users:
@@ -876,7 +876,7 @@ es:
       email_not_confirmed: "El email no pudo ser activado. ¿Enlace erróneo?"
     destroy:
       no_password: "Por favor, introduce tu contraseña actual para cerrar tu cuenta."
-      success: "Tu cuenta ha sido bloqueda.  Tomará unos 20 minutos cerrarla y destruirla.  Gracias por probar Diaspora."
+      success: "Tu cuenta ha sido bloqueda.  Tomará unos 20 minutos cerrarla y destruirla.  Gracias por probar GuyTravelBuddy."
       wrong_password: "La contraseña introducida no coincide con la contraseña actual."
     edit:
       also_commented: "...alguien comenta en la publicación de tu contacto?"
@@ -891,10 +891,10 @@ es:
         if_you_want_this: "Si realmente quieres eliminarla, teclea tu contraseña debajo y haz click en 'Eliminar Cuenta'"
         lock_username: "Esto bloquerá tu nombre de usuario si decides volver a registrarte."
         locked_out: "Saldrás y eliminarás tu cuenta."
-        make_diaspora_better: "Queremos que nos ayudes a hacer Diaspora mejor, podrías hacerlo. Si te vas, queremos que sepas que pasa después."
+        make_diaspora_better: "Queremos que nos ayudes a hacer GuyTravelBuddy mejor, podrías hacerlo. Si te vas, queremos que sepas que pasa después."
         mr_wiggles: "El Tío la Vara estará triste si te vas"
         no_turning_back: "Actualmente, no hay vuelta atrás."
-        what_we_delete: "Eliminamos todas tus publicaciones y datos del perfil, tan pronto como es humanamente posible. Tus comentarios seguirán en línea, pero asociados a tu dirección Diaspora*."
+        what_we_delete: "Eliminamos todas tus publicaciones y datos del perfil, tan pronto como es humanamente posible. Tus comentarios seguirán en línea, pero asociados a tu dirección GuyTravelBuddy*."
       close_account_text: "Eliminar Cuenta"
       comment_on_post: "...alguien comenta en tu publicación?"
       current_password: "Contraseña actual"
@@ -917,23 +917,23 @@ es:
       started_sharing: "...alquien empieza a seguir tus mensajes públicos?"
       stream_preferences: "Preferencias de Entrada"
       your_email: "Tu email"
-      your_handle: "Tu dirección Diaspora*"
+      your_handle: "Tu dirección GuyTravelBuddy*"
     getting_started:
-      awesome_take_me_to_diaspora: "¡Increíble! Llévame a Diaspora*"
-      community_welcome: "¡La comunidad de Diaspora está encantada de tenerte a bordo!"
-      hashtag_explanation: "Las etiquetas te permiten hablar sobre tus intereses así como seguirlos. Además es una forma genial de encontrar gente nueva en Diaspora. "
+      awesome_take_me_to_diaspora: "¡Increíble! Llévame a GuyTravelBuddy*"
+      community_welcome: "¡La comunidad de GuyTravelBuddy está encantada de tenerte a bordo!"
+      hashtag_explanation: "Las etiquetas te permiten hablar sobre tus intereses así como seguirlos. Además es una forma genial de encontrar gente nueva en GuyTravelBuddy. "
       hashtag_suggestions: "Prueba a seguir etiquetas como #arte, #cine, #activismo, #geek, etc."
       hooking_up_fb: "conectando tu cuenta de Facebook"
       saved: ¡Guardado!
       we_can_speed_things_up: "Podemos acelerar las cosas un poquito"
       well_hello_there: "Bueno, ¿qué tal?"
       what_are_you_in_to: "¿En qué estás?"
-      what_facebook_does: "a Diaspora. Esto traerá tu nombre y foto, y habilitará publicaciones cruzadas."
+      what_facebook_does: "a GuyTravelBuddy. Esto traerá tu nombre y foto, y habilitará publicaciones cruzadas."
       who_are_you: "¿Quién eres?"
     logged_out:
       go_mobile: "Ahora tecnología móvil."
-      on_your_mobile_device: "en tu móvil para acceder a Diaspora* mobile."
-      signed_out: "Saliste de Diaspora*"
+      on_your_mobile_device: "en tu móvil para acceder a GuyTravelBuddy* mobile."
+      signed_out: "Saliste de GuyTravelBuddy*"
       simply_visit: "Simplemente visita"
       works_on_modern: "Funciona en todos los smartphones modernos"
     privacy_settings:

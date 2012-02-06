@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -95,22 +95,22 @@ tr:
       remove: sil
     index:
       cubbies:
-        explanation: "İlk Diaspora uygulaması Cubbi.es, geliştirilme aşamasındadır."
+        explanation: "İlk GuyTravelBuddy uygulaması Cubbi.es, geliştirilme aşamasındadır."
         heading: "Cubbi.es'e Bağlan"
         learn_more: "Daha fazla bilgi edin"
       diaspora_id:
-        content_1: "Diaspora ID'niz:"
-        content_2: "Diaspora'da sizi bulabilmelerini istediğiniz kişilere verebilirsiniz."
-        heading: "Diaspora ID (Diaspora Kimliği)"
+        content_1: "GuyTravelBuddy ID'niz:"
+        content_2: "GuyTravelBuddy'da sizi bulabilmelerini istediğiniz kişilere verebilirsiniz."
+        heading: "GuyTravelBuddy ID (GuyTravelBuddy Kimliği)"
       donate: "Bağış yap"
-      handle_explanation: "Bu Diaspora kimliğindir. Bir e-posta adresi gibi, bunu insanlara sana ulaşması için verebilirsin."
+      handle_explanation: "Bu GuyTravelBuddy kimliğindir. Bir e-posta adresi gibi, bunu insanlara sana ulaşması için verebilirsin."
       help:
         do_you: "Seçim:"
         email_feedback: "%{link} ile yolla mesajını, bu yolu tercih ediyorsan"
         feature_suggestion: "... bir %{link} önerin var mı?"
         find_a_bug: "... bulduğun %{link} mı var?"
         have_a_question: "... bir %{link} mu sormak istiyorsun?"
-        here_to_help: "Diaspora topluluğu burada!"
+        here_to_help: "GuyTravelBuddy topluluğu burada!"
         need_help: "Yardıma mı ihtiyacın var?"
         tag_bug: hata
         tag_feature: işlev
@@ -119,7 +119,7 @@ tr:
       introduce_yourself: "Bu sizin akışınızdır. Atla ve kendini tanıt."
       keep_us_running: "%{pod} ağının daha hızlı ve hatasız olması için geliştiricilere kahve ısmarla!"
       new_here:
-        follow: "%{link} unsurunu izle ve yeni Diaspora* kullanıcılarını karşıla!"
+        follow: "%{link} unsurunu izle ve yeni GuyTravelBuddy* kullanıcılarını karşıla!"
         learn_more: "Daha fazla bilgi"
         title: "Yenilere Hoş Geldin De"
       no_contacts: "Kişi yok"
@@ -127,10 +127,10 @@ tr:
       people_sharing_with_you: "Seninle paylaşımda bulunanlar"
       post_a_message: "mesaj gönder >>"
       services:
-        content: "Diaspora'ya aşağıdaki hizmetleri bağlayabilirsin:"
+        content: "GuyTravelBuddy'ya aşağıdaki hizmetleri bağlayabilirsin:"
         heading: "Servisleri ilişkilendir"
       unfollow_tag: "#%{tag}'i takip etmeyi bırak"
-      welcome_to_diaspora: "Diaspora'ya Hoş Geldin, %{name}!"
+      welcome_to_diaspora: "GuyTravelBuddy'ya Hoş Geldin, %{name}!"
       your_aspects: Yönlerin
     many: "%{count} yön"
     move_contact:
@@ -179,10 +179,10 @@ tr:
       failure: "Bu kullanıcıyı görmezden gelmeyi kaldıramadım.  #evasion"
       success: "Bakalım ne diyecekler! #sayhello"
   bookmarklet:
-    explanation: "Diaspora'ya istediğin her yerden gönderi yapmak için %{link} yer imleri çubuğuna sürükle."
+    explanation: "GuyTravelBuddy'ya istediğin her yerden gönderi yapmak için %{link} yer imleri çubuğuna sürükle."
     explanation_link_text: "bu bağlantıyı"
-    heading: "Diaspora yer işareti"
-    post_something: "Diaspora için birşey gönder"
+    heading: "GuyTravelBuddy yer işareti"
+    post_something: "GuyTravelBuddy için birşey gönder"
     post_success: "Gönderildi! Kapatılıyor!"
   cancel: "İptal Et"
   comments:
@@ -267,14 +267,14 @@ tr:
     show:
       already_account: "Zaten bir hesabın var mı?"
       choice: Seçim
-      choice_explanation: "Diaspora bağlantılarınızı yön adı verilen gruplar halinde sıralamanızı sağlar. Diaspora'ya özgü olarak, yönleri, fotoğrafları, hikayeleri ve şakaları sadece istediğiniz insanlarla paylaşırsınız."
-      learn_about_host: "Sunucunuzda Diaspora'yı sunmak için bilgi edin."
+      choice_explanation: "GuyTravelBuddy bağlantılarınızı yön adı verilen gruplar halinde sıralamanızı sağlar. GuyTravelBuddy'ya özgü olarak, yönleri, fotoğrafları, hikayeleri ve şakaları sadece istediğiniz insanlarla paylaşırsınız."
+      learn_about_host: "Sunucunuzda GuyTravelBuddy'yı sunmak için bilgi edin."
       login_here: "buradan oturum açın"
       ownership: Sahiplik
-      ownership_explanation: "Kendi resimlerinin sahibi sensin, paylaşabilmek için bu hakkından olmaman lâzım. Diaspora'da paylaştığın her şeyin sahibi sen olmaya devam edersin ve yayılmasında tüm kontrol sendedir."
+      ownership_explanation: "Kendi resimlerinin sahibi sensin, paylaşabilmek için bu hakkından olmaman lâzım. GuyTravelBuddy'da paylaştığın her şeyin sahibi sen olmaya devam edersin ve yayılmasında tüm kontrol sendedir."
       share_what_you_want: "İstediğinle, istediğini paylaş."
       simplicity: Sadelik
-      simplicity_explanation: "Diaspora, sadeliğe,kolay paylaşıma ve gizliliklere önem verir. Doğal olarak özeldir, Diaspora Java ayarları sayfalarıyla saklama yapmaz. Bu yüzden güvenlidir."
+      simplicity_explanation: "GuyTravelBuddy, sadeliğe,kolay paylaşıma ve gizliliklere önem verir. Doğal olarak özeldir, GuyTravelBuddy Java ayarları sayfalarıyla saklama yapmaz. Bu yüzden güvenlidir."
       tagline_first_half: "İstediğiniz ne ise paylaşın,"
       tagline_second_half: istediğiniz.
   invitations:
@@ -296,7 +296,7 @@ tr:
       aspect: Yön
       comma_seperated_plz: "Virgülle ayırarak birden fazla e-posta adresi girebilirsin."
       if_they_accept_info: "kabul ederseler, yönünüze eklenecekler."
-      invite_someone_to_join: "Diaspora'ya birilerini davet et!"
+      invite_someone_to_join: "GuyTravelBuddy'ya birilerini davet et!"
       language: Dil
       personal_message: "Kişisel mesaj"
       resend: "Tekrar gönder"
@@ -306,7 +306,7 @@ tr:
   layouts:
     application:
       powered_by: "GELİŞTİRİCİ DIASPORA*"
-      public_feed: " %{name} için Genel Diaspora Beslemesi"
+      public_feed: " %{name} için Genel GuyTravelBuddy Beslemesi"
       toggle: "mobil site"
       whats_new: "neler yeni?"
       your_aspects: "sizin yönleriniz"
@@ -452,25 +452,25 @@ tr:
     confirm_email:
       click_link: "Yeni e-mail adresini %{unconfirmed_email} etkinleştirmek için şu bağlantıyı tıkla:"
       subject: "Lütfen yeni e-mail adresini %{unconfirmed_email} etkinleştir"
-    email_sent_by_diaspora: "Bu e-posta Diaspora tarafından gönderildi. Bu gibi e-postalar almak istemiyorsanız,"
+    email_sent_by_diaspora: "Bu e-posta GuyTravelBuddy tarafından gönderildi. Bu gibi e-postalar almak istemiyorsanız,"
     hello: "Merhaba %{name}!"
     liked:
       liked: "%{name} gönderinizi beğendi."
       view_post: "Gönderiyi görüntüle >"
     mentioned:
       mentioned: "gönderisinde senden bahsetti:"
-      subject: "%{name} sana Diaspora*'da özel mesaj gönderdi "
+      subject: "%{name} sana GuyTravelBuddy*'da özel mesaj gönderdi "
     private_message:
       reply_to_or_view: "Yanıtla ya da konuşmayı görüntüle >"
     reshared:
       reshared: "%{name} gönderini tekrar paylaştı"
       view_post: "Gönderiyi görüntüle>"
     single_admin:
-      admin: "Diaspora yönetici"
-      subject: "Diaspora hesabı hakkında bir mesaj:"
+      admin: "GuyTravelBuddy yönetici"
+      subject: "GuyTravelBuddy hesabı hakkında bir mesaj:"
     started_sharing:
       sharing: "sizinle paylaşıma başladı!"
-      subject: "%{name} Diaspora*'da seninle paylaşıma başladı"
+      subject: "%{name} GuyTravelBuddy*'da seninle paylaşıma başladı"
       view_profile: "%{name} kişisinin profilini görüntüle"
     thanks: "Teşekkürler,"
     to_change_your_notification_settings: "tıklayarak bildirim ayarlarınızı değiştirebilirsiniz"
@@ -586,7 +586,7 @@ tr:
   profile: Profil
   profiles:
     edit:
-      allow_search: "Diaspora aramaları ile bulunmana izin ver"
+      allow_search: "GuyTravelBuddy aramaları ile bulunmana izin ver"
       edit_profile: "Profil düzenle"
       first_name: Ad
       last_name: Soyad
@@ -613,9 +613,9 @@ tr:
     two: "%{count} tepki"
     zero: "0 tepki"
   registrations:
-    closed: "Üyelik bu Diaspora'da kapandı."
+    closed: "Üyelik bu GuyTravelBuddy'da kapandı."
     create:
-      success: "Diasporaya katıldınız!"
+      success: "GuyTravelBuddyya katıldınız!"
     edit:
       cancel_my_account: "Hesabımı iptal et"
       edit: "Düzenle %{name}"
@@ -634,7 +634,7 @@ tr:
   requests:
     create:
       sending: Gönderiliyor...
-      sent: "%{name} ile paylaşmak istedin. Diaspora'ya tekrar bağlandığında görecektir."
+      sent: "%{name} ile paylaşmak istedin. GuyTravelBuddy'ya tekrar bağlandığında görecektir."
     destroy:
       error: "Lütfen bir yön seçiniz!"
       ignore: "Arkadaş isteğini reddettin."
@@ -680,7 +680,7 @@ tr:
     failure:
       error: "hizmete bağlanırken hata oluştu"
     finder:
-      fetching_contacts: "Diaspora %{service} arkadaşlarını dolduruyor, lütfen birkaç dakika sonra tekrar bak."
+      fetching_contacts: "GuyTravelBuddy %{service} arkadaşlarını dolduruyor, lütfen birkaç dakika sonra tekrar bak."
       no_friends: "Hiç Facebook arkadaşı bulunamadı."
       service_friends: "%{service} Arkadaşları"
     index:
@@ -697,7 +697,7 @@ tr:
       join_me_on_diaspora: "DIASPORA*'da bana katılın"
     remote_friend:
       invite: "davet et"
-      not_on_diaspora: "Henüz Diaspora'da değil"
+      not_on_diaspora: "Henüz GuyTravelBuddy'da değil"
       resend: "tekrar gönder"
   settings: Ayarlar
   share_visibilites:
@@ -707,10 +707,10 @@ tr:
   shared:
     add_contact:
       add_new_contact: "Yeni kişi ekle"
-      create_request: "Diaspora ID ile bul"
-      enter_a_diaspora_username: "Diaspora kullanıcı adınızı giriniz:"
+      create_request: "GuyTravelBuddy ID ile bul"
+      enter_a_diaspora_username: "GuyTravelBuddy kullanıcı adınızı giriniz:"
       know_email: "E-posta adresini biliyor musun? O zaman onu davet et"
-      your_diaspora_username_is: "Diaspora kullanıcı adın: %{diaspora_handle}"
+      your_diaspora_username_is: "GuyTravelBuddy kullanıcı adın: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Yönüne ekle"
       toggle:
@@ -733,7 +733,7 @@ tr:
       invite_someone: "Birisini davet et"
       invite_your_friends: "Arkadaşlarını davet et"
       invites: Davetiyeler
-      invites_closed: "Bu Diaspora'da davet kapalı görünüyor"
+      invites_closed: "Bu GuyTravelBuddy'da davet kapalı görünüyor"
     notification:
       new: "%{from}'den yeni %{type}"
     public_explain:
@@ -741,7 +741,7 @@ tr:
       logged_in: "%{service} servisine bağlandınız."
       manage: "bağlı servisleri yönetin"
       new_user_welcome_message: "#hashtag ile gönderilerinizi sınıflandırabilir veya ilgi alanlarını paylaşan kişileri bulabilirsiniz. @Bahset kişiler ile iletişim kurmak için harika bir yoldur."
-      outside: "Genel mesajlar, Diaspora dışından da görünür."
+      outside: "Genel mesajlar, GuyTravelBuddy dışından da görünür."
       share: Paylaş
       title: "Bağlı hizmetler"
       visibility_dropdown: "Açılan menüden gönderinizin görünürlüğünü değiştirebilirsiniz. (İlk olarak Genel yapmanızı öneririz.)"
@@ -856,8 +856,8 @@ tr:
   tokens:
     show:
       connect_to_cubbies: "Cubbi.es Bağlan"
-      connecting_is_simple: "Diaspora'da hesap bağlama basittir! Sadece Diaspora ID'nizi girin (<b>%{diaspora_id}</b>) ve Cubbi.es <a href='%{href_link}'>ayarlar</a> sayfasına gidin."
-      daniels_account: "Daniel'in Diaspora hesabı"
+      connecting_is_simple: "GuyTravelBuddy'da hesap bağlama basittir! Sadece GuyTravelBuddy ID'nizi girin (<b>%{diaspora_id}</b>) ve Cubbi.es <a href='%{href_link}'>ayarlar</a> sayfasına gidin."
+      daniels_account: "Daniel'in GuyTravelBuddy hesabı"
       love_to_try: "Bunu denemek isterdim."
       making_the_connection: "Bağlantı Kurma"
       screenshot_explanation: "%{link1}. Bu özel cubby buna bağlıdır %{link2}."
@@ -873,7 +873,7 @@ tr:
       email_not_confirmed: "E-posta doğrulanamadı. Yanlış bağlantı olabilir mi?"
     destroy:
       no_password: "Hesabını kapatmak için lütfen güncel parolanı gir."
-      success: "Hesabın kilitlendi.  Hesabını kapatmamızın tamamlanması 20 dakika alabilir.  Diaspora'yı denediğin için teşekkür ederiz."
+      success: "Hesabın kilitlendi.  Hesabını kapatmamızın tamamlanması 20 dakika alabilir.  GuyTravelBuddy'yı denediğin için teşekkür ederiz."
       wrong_password: "Girilen parola güncel parola ile uyumsuz."
     edit:
       also_commented: "...birisi gönderime yorum yazdığında?"
@@ -888,10 +888,10 @@ tr:
         if_you_want_this: "Bunu yapmak istediğinden eminsen, aşağıda parolanı gir ve 'Hesabı Kapat' düğmesini tıkla"
         lock_username: "Bu, geri gelmek istersen bulunması için kullanıcı ismini kilitleyecektir."
         locked_out: "Oturumdan çıkacak ve hesabına tekrar giriş yapamayacaksın."
-        make_diaspora_better: "Diaspora'yı daha da iyi yapmamıza yardım etmeni isteriz, dolayısıyla hesabı kapatmak yerine bize yardımcı olmanı tercih ederiz. Hesabı gerçekten kapatmak istiyorsan, bundan sonra olacakları dikkatine sunarız."
+        make_diaspora_better: "GuyTravelBuddy'yı daha da iyi yapmamıza yardım etmeni isteriz, dolayısıyla hesabı kapatmak yerine bize yardımcı olmanı tercih ederiz. Hesabı gerçekten kapatmak istiyorsan, bundan sonra olacakları dikkatine sunarız."
         mr_wiggles: "Ayrılırsan bay Wiggles üzülecek"
         no_turning_back: "Şu anda, geri almak mümkün değildir."
-        what_we_delete: "Tüm gönderilerini ve profil verilerini mümkün olduğu kadar çabuk sileceğiz. Yorumların kalacak ve Diaspora kimliğin ile ilişik olacaktır."
+        what_we_delete: "Tüm gönderilerini ve profil verilerini mümkün olduğu kadar çabuk sileceğiz. Yorumların kalacak ve GuyTravelBuddy kimliğin ile ilişik olacaktır."
       close_account_text: "Hesabı Kapat"
       comment_on_post: "...birisi gönderine yorum yazdığında?"
       current_password: "Mevcut parola"
@@ -914,23 +914,23 @@ tr:
       started_sharing: "...birisi benimle birşey paylaştığında?"
       stream_preferences: "Akış Tercihleri"
       your_email: E-posta
-      your_handle: "Diaspora kimliğin"
+      your_handle: "GuyTravelBuddy kimliğin"
     getting_started:
-      awesome_take_me_to_diaspora: "Harika! Diaspora* Git"
-      community_welcome: "Diaspora topluluğunda seni aramızda görmekten mutluyuz!"
-      hashtag_explanation: "Etiketler, hakkında konuşmak ve ilgi alanlarını takip etmenize izin verir. Ayrıca yeni insanları Diaspora üzerinde bulmak için harika bir yoldur."
+      awesome_take_me_to_diaspora: "Harika! GuyTravelBuddy* Git"
+      community_welcome: "GuyTravelBuddy topluluğunda seni aramızda görmekten mutluyuz!"
+      hashtag_explanation: "Etiketler, hakkında konuşmak ve ilgi alanlarını takip etmenize izin verir. Ayrıca yeni insanları GuyTravelBuddy üzerinde bulmak için harika bir yoldur."
       hashtag_suggestions: "Sevdiğiniz etiketleri takip etmeyi deneyin #resim, #film, #gif, vb."
       hooking_up_fb: "Facebook hesabıza bağlanın"
       saved: Kaydedildi!
       we_can_speed_things_up: "Biz şeyler için biraz hız"
       well_hello_there: Merhaba!
       what_are_you_in_to: "Ne yapıyorsun?"
-      what_facebook_does: "Diaspora için. Bu adınızı girin ve fotoğrafınızı çekin."
+      what_facebook_does: "GuyTravelBuddy için. Bu adınızı girin ve fotoğrafınızı çekin."
       who_are_you: "Sen kimsin?"
     logged_out:
       go_mobile: "Şimdi mobil olun."
       on_your_mobile_device: "mobil cihazınız üzerinden diaspora* mobile erişim."
-      signed_out: "Diaspora'dan çıkış yaptınız*"
+      signed_out: "GuyTravelBuddy'dan çıkış yaptınız*"
       simply_visit: "Basitçe ziyaret"
       works_on_modern: "Tüm modern akıllı telefonlarda çalışır"
     privacy_settings:

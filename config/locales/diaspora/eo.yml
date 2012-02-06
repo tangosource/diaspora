@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GuyTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -118,7 +118,7 @@ eo:
       introduce_yourself: "Tio estas via torento. Ensaltu kaj prezentu vin mem."
       keep_us_running: "Helpu %{pod} rapide funkcii kaj aĉetu por niaj servkomputiloj ilian kaforiparon per ĉiumonata donatado!"
       new_here:
-        follow: "Sekvu %{link} kaj bonvenu novajn uzantojn al Diaspora*!"
+        follow: "Sekvu %{link} kaj bonvenu novajn uzantojn al GuyTravelBuddy*!"
         learn_more: "Lerni pli"
         title: "Bonvenigu novajn uzantojn"
       no_contacts: "neniuj kontaktoj"
@@ -129,7 +129,7 @@ eo:
         content: "Vi povas konekti la postajn servojn kun DIASPORA*:"
         heading: "Konekti Servojn"
       unfollow_tag: "Ne plu abonas #%{tag}."
-      welcome_to_diaspora: "Bonvenon al Diaspora, %{name}!"
+      welcome_to_diaspora: "Bonvenon al GuyTravelBuddy, %{name}!"
       your_aspects: "Viaj Aspektoj"
     many: "%{count} aspektoj"
     move_contact:
@@ -267,10 +267,10 @@ eo:
       already_account: "ĉu vi jam havas konton?"
       choice: Elekto
       choice_explanation: "DIASPORA* ebligas vin klasigi viajn kontaktojn en grupojn, kiuj nomiĝas „aspektoj“. Unike al DIASPORA*, aspektoj certigas, ke vi nur konigas viajn bildojn, rakontojn, kaj ŝercojn al homojal kiuj vi tion intencas."
-      learn_about_host: "Lernu pri kiel starigi propran Diaspora-servilon."
+      learn_about_host: "Lernu pri kiel starigi propran GuyTravelBuddy-servilon."
       login_here: "ensalutu ĉi tie"
       ownership: Proprieto
-      ownership_explanation: "Vi posedas viajn bildojn, kaj vi ne devus rezigni tiun, por konigi ilin. Vi ankoraŭ havas proprieton de ĉio, kiun vi konigas per Diaspora, donante al vi kompletan administradon pri kiel aĵoj disdoniĝas."
+      ownership_explanation: "Vi posedas viajn bildojn, kaj vi ne devus rezigni tiun, por konigi ilin. Vi ankoraŭ havas proprieton de ĉio, kiun vi konigas per GuyTravelBuddy, donante al vi kompletan administradon pri kiel aĵoj disdoniĝas."
       share_what_you_want: "Konigu kion vi volas, al kiu vi volas."
       simplicity: Simpleco
       simplicity_explanation: "DIASPORA* purigas kaj faciligas konigadon – kaj ankaŭ privatecon. DIASPORA* ne direktas tra multaj paĝoj de agordoj kaj opcioj por sekurigi vian profilon ĉar ĝi estas planita por privateco."
@@ -669,7 +669,7 @@ eo:
   search: Serĉi
   services:
     create:
-      already_authorized: "Uzanto kun Diaspora nomo %{diaspora_id} jam sankciis tiun %{service_name} konton."
+      already_authorized: "Uzanto kun GuyTravelBuddy nomo %{diaspora_id} jam sankciis tiun %{service_name} konton."
       failure: "Aŭtentigo malsukcesis."
       success: "Aŭtentokontrolo sukcesis."
     destroy:
@@ -857,7 +857,7 @@ eo:
       email_not_confirmed: "Retpoŝtadreso ne povis aktiviĝi. Ĉu malĝusta ligilo?"
     destroy:
       no_password: "Bonvolu entajpi vian nunan pasvorton por fermi vian konton."
-      success: "Via konto ŝlosiĝis. Povas daŭri 20 minutoj ĝis ĝi via konto fine estos fermita. Dankon por elprovi Diasporan."
+      success: "Via konto ŝlosiĝis. Povas daŭri 20 minutoj ĝis ĝi via konto fine estos fermita. Dankon por elprovi GuyTravelBuddyn."
       wrong_password: "La entajpita pasvoroto ne kongruis kun la nuna pasvorto."
     edit:
       also_commented: "...iu ankaŭ komentis pri la afiŝo de via kontakto?"
@@ -867,7 +867,7 @@ eo:
       change_language: "Ŝanĝi lingvon"
       change_password: "Ŝanĝi pasvorton"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GuyTravelBuddy Handle."
       comment_on_post: "...iu komentas pri via afiŝo?"
       current_password: "Nuna pasvorto"
       download_photos: "elŝuti miajn bildojn"
@@ -890,7 +890,7 @@ eo:
       your_email: "Via retpoŝtadreso"
       your_handle: "Via DIASPORA* uzantnomo"
     getting_started:
-      awesome_take_me_to_diaspora: "Malaĉe! Gvidu min al Diaspora*"
+      awesome_take_me_to_diaspora: "Malaĉe! Gvidu min al GuyTravelBuddy*"
       community_welcome: "La komunumo de DIASPORA* feliĉas, ke vi aniĝis!"
       hashtag_explanation: "Etikedoj lasu vin pridiri kaj aboni viajn interesigojn.  Ili ankaŭ estas bona metodo trovi novajn homojn ĉe DIASPORA*."
       hashtag_suggestions: "Provu sekvi etikedojn kiel #arto, #filmoj, #gif, ktp."
@@ -899,7 +899,7 @@ eo:
       we_can_speed_things_up: "Ni povas iomete rapidigi ĝin per"
       well_hello_there: "Bone, saluton tie!"
       what_are_you_in_to: "Pri kio vi ŝatokupiĝas?"
-      what_facebook_does: "al Diaspora. Tio tiros vian nomon kaj foton, kaj ebligos krucreferencadon."
+      what_facebook_does: "al GuyTravelBuddy. Tio tiros vian nomon kaj foton, kaj ebligos krucreferencadon."
       who_are_you: "Kiu vi estas?"
     logged_out:
       go_mobile: "Nun uzu poŝtelefonan!"

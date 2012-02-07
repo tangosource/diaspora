@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -44,7 +44,7 @@ mk:
     index:
       handle_explanation: "Ова е вашето diaspora корисничко име. Исто како е-маил адреса, можете да го давате на луѓе за да се сврзат со вас."
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -75,8 +75,8 @@ mk:
   back: Назад
   bookmarklet:
     explanation: "%{link} from anywhere by bookmarking this link."
-    explanation_link_text: "Post to Diaspora"
-    heading: "Diaspora Bookmarklet"
+    explanation_link_text: "Post to GayTravelBuddy"
+    heading: "GayTravelBuddy Bookmarklet"
   cancel: Откажи
   comments:
     few: "%{count} comments"
@@ -119,14 +119,14 @@ mk:
     show:
       already_account: "веќе имате корисничка сметка?"
       choice: Избор
-      choice_explanation: "Diaspora ви овозможува сортирање на вашите врски во групи наречени аспекти. Особеност на Diaspora, аспектите осигураат дека вашите слики, стории и шеги се споделени само со луѓето кои вие ќе ги назначите."
-      learn_about_host: "Научете како вие можете да хостирате Diaspora сервер."
+      choice_explanation: "GayTravelBuddy ви овозможува сортирање на вашите врски во групи наречени аспекти. Особеност на GayTravelBuddy, аспектите осигураат дека вашите слики, стории и шеги се споделени само со луѓето кои вие ќе ги назначите."
+      learn_about_host: "Научете како вие можете да хостирате GayTravelBuddy сервер."
       login_here: "најави се овде"
       ownership: Сопственост
-      ownership_explanation: "Вие ги поседувате вашите слики, и не треба да се откажете од нивната сопственост само за да ги споделите. Во Diaspora секоја содржина која ја споделувате останува во ваша сопственост, давајќи ви целосна контрола врз начинот на нејзиното ширење."
+      ownership_explanation: "Вие ги поседувате вашите слики, и не треба да се откажете од нивната сопственост само за да ги споделите. Во GayTravelBuddy секоја содржина која ја споделувате останува во ваша сопственост, давајќи ви целосна контрола врз начинот на нејзиното ширење."
       share_what_you_want: "Споделувајте се што сакате, со оние кои вие ги изберете."
       simplicity: Едноставност
-      simplicity_explanation: "Diaspora овозможува споделување кое е чисто и едноставно - ова се однесува и за приватноста. Благодарение на вградената приватност, Diaspora не ве тера да пребарувате низ страници со подесувања и опции само за да си го заштитите профилот."
+      simplicity_explanation: "GayTravelBuddy овозможува споделување кое е чисто и едноставно - ова се однесува и за приватноста. Благодарение на вградената приватност, GayTravelBuddy не ве тера да пребарувате низ страници со подесувања и опции само за да си го заштитите профилот."
   invitations:
     check_token:
       not_found: "Токенот за поканата не е пронајден"
@@ -137,7 +137,7 @@ mk:
     new:
       already_invited: "Already invited"
       comma_seperated_plz: "Можете да внесете повеќе е-маил адреси разделени со запирки."
-      invite_someone_to_join: "Поканете некој да се придружи на Diaspora!"
+      invite_someone_to_join: "Поканете некој да се придружи на GayTravelBuddy!"
       send_an_invitation: "Испрати покана"
       send_invitation: "Испрати покана"
       to: До
@@ -277,9 +277,9 @@ mk:
     reshared:
       reshared: "%{name} just reshared your post"
     single_admin:
-      subject: "A message from your Diaspora administrator:"
+      subject: "A message from your GayTravelBuddy administrator:"
     started_sharing:
-      subject: "%{name} has started sharing with you on Diaspora*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
   ok: ОК
   or: или
   password: Лозинка
@@ -361,7 +361,7 @@ mk:
   registrations:
     closed: "Регистрирањето е затворено."
     create:
-      success: "Вие и се придруживте на Diaspora!"
+      success: "Вие и се придруживте на GayTravelBuddy!"
     edit:
       cancel_my_account: "Откажи ја мојата корисничка сметка"
       edit: "Уреди %{name}"
@@ -422,10 +422,10 @@ mk:
   settings: Подесувања
   shared:
     add_contact:
-      create_request: "Најди според Diaspora корисничко име"
-      diaspora_handle: "Diaspora корисничко име"
-      enter_a_diaspora_username: "Внеси Diaspora корисничко име:"
-      your_diaspora_username_is: "Вашето Diaspora корисничко име е: %{diaspora_handle}"
+      create_request: "Најди според GayTravelBuddy корисничко име"
+      diaspora_handle: "GayTravelBuddy корисничко име"
+      enter_a_diaspora_username: "Внеси GayTravelBuddy корисничко име:"
+      your_diaspora_username_is: "Вашето GayTravelBuddy корисничко име е: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
       toggle:
@@ -440,13 +440,13 @@ mk:
       dont_have_now: "Моментално немате права, но повеќе покани ќе дојдат наскоро!"
       invitations_left: "(%{count} лево)"
       invite_someone: "Покани некој"
-      invites_closed: "Invites are currently closed on this Diaspora seed"
+      invites_closed: "Invites are currently closed on this GayTravelBuddy seed"
     notification:
       new: "Нов %{type} од %{from}"
     public_explain:
       logged_in: "најавен во %{service}"
       manage: "менаџирај ги поврзаните сервиси"
-      outside: "Јавните пораки ќе бидат достапни за сите кои се надвор од Diaspora."
+      outside: "Јавните пораки ќе бидат достапни за сите кои се надвор од GayTravelBuddy."
       title: "На пат сте да испратите јавна порака!"
     publisher:
       all: сите
@@ -498,7 +498,7 @@ mk:
       success: "Successfully stopped following: #%{name}"
   tokens:
     show:
-      connecting_is_simple: "Connecting your Diaspora account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   username: "Корисничко име"
   users:
     confirm_email:
@@ -510,7 +510,7 @@ mk:
       change_language: "Промени јазик"
       change_password: "Промени лозинка"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       download_photos: "симни ги моите слики"
       download_xml: "симни го мојот xml"
       email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Till you follow this link and activate the new address, we will continue to use your original address %{email}."
@@ -520,7 +520,7 @@ mk:
       your_email: "Вашиот е-маил"
       your_handle: "Вашето diaspora корисничко име"
     getting_started:
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "Корисникот %{username} не постои!"
     update:

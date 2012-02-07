@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -95,7 +95,7 @@ en_shaw:
       donate: 𐑛𐑴𐑯𐑱𐑑
       handle_explanation: "𐑞𐑦𐑕 𐑦𐑟 𐑿𐑼 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑲𐑛𐑧𐑯𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯. 𐑤𐑲𐑒 𐑩𐑯 𐑦-𐑥𐑱𐑤 𐑨𐑛𐑮𐑧𐑕, 𐑿 𐑒𐑨𐑯 𐑜𐑦𐑝 𐑞𐑦𐑕 𐑑 𐑐𐑰𐑐𐑩𐑤 𐑑 𐑮𐑰𐑗 𐑿."
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -746,7 +746,7 @@ en_shaw:
       change_language: "𐑗𐑱𐑯𐑡 𐑤𐑱𐑙𐑜𐑢𐑩𐑡"
       change_password: "𐑗𐑱𐑯𐑡 𐑐𐑨𐑕𐑢𐑼𐑛"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...𐑕𐑳𐑥𐑢𐑩𐑯 𐑒𐑪𐑥𐑩𐑯𐑑𐑕 𐑪𐑯 𐑿𐑼 𐑐𐑴𐑕𐑑?"
       current_password: "𐑒𐑻𐑩𐑯𐑑 𐑐𐑨𐑕𐑢𐑼𐑛"
       download_photos: "𐑛𐑬𐑯𐑤𐑴𐑛 𐑥𐑲 𐑓𐑴𐑑𐑴𐑟"
@@ -764,7 +764,7 @@ en_shaw:
       your_handle: "𐑿𐑼 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩 𐑲𐑛𐑧𐑯𐑑𐑦𐑓𐑦𐑒𐑱𐑖𐑩𐑯"
     getting_started:
       hashtag_explanation: "𐑣𐑨𐑖𐑑𐑨𐑜𐑟 𐑩𐑤𐑬 𐑿 𐑑 𐑑𐑷𐑒 𐑩𐑚𐑬𐑑 𐑯 𐑓𐑪𐑤𐑴 𐑿𐑼 𐑦𐑯𐑑𐑮𐑧𐑕𐑑𐑕.  𐑞𐑺 𐑷𐑤𐑕𐑴 𐑩 𐑜𐑮𐑱𐑑 𐑢𐑱 𐑑 𐑓𐑲𐑯𐑛 𐑯𐑿 𐑐𐑰𐑐𐑩𐑤 𐑪𐑯 ·𐑛𐑦𐑨𐑕𐑐𐑹𐑩."
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "𐑿𐑟𐑼 %{username} 𐑛𐑳𐑟 𐑯𐑪𐑑 𐑧𐑜𐑟𐑦𐑕𐑑!"
     update:

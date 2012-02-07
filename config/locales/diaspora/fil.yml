@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -77,7 +77,7 @@ fil:
     index:
       handle_explanation: "This is your diaspora id. Like an email address, you can give this to people to reach you."
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -382,10 +382,10 @@ fil:
   users:
     edit:
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       your_handle: "Your diaspora id"
     getting_started:
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
   webfinger:
     fetch_failed: "hindi nakuha ang webfinger profile para sa %{profile_url}"
     hcard_fetch_failed: "nagkaroon ng problema sa pagkuha ng hcard ni %{account}"

@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -35,7 +35,7 @@ pa:
     index:
       handle_explanation: "This is your diaspora handle. Like an email address, you can give this to people to reach you."
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -59,8 +59,8 @@ pa:
   back: ਪਿੱਛੇ
   bookmarklet:
     explanation: "%{link} from anywhere by bookmarking this link."
-    explanation_link_text: "Post to Diaspora"
-    heading: "Diaspora Bookmarklet"
+    explanation_link_text: "Post to GayTravelBuddy"
+    heading: "GayTravelBuddy Bookmarklet"
   cancel: "ਰੱਦ ਕਰੋ"
   comments:
     few: "%{count} comments"
@@ -242,7 +242,7 @@ pa:
     reshared:
       reshared: "%{name} just reshared your post"
     started_sharing:
-      subject: "%{name} has started sharing with you on Diaspora*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
   ok: "ਠੀਕ ਹੈ"
   or: ਜਾਂ
   password: ਪਾਸਵਰਡ
@@ -337,7 +337,7 @@ pa:
       resend: ਮੁੜ-ਭੇਜੋ
   shared:
     add_contact:
-      create_request: "Find by Diaspora handle"
+      create_request: "Find by GayTravelBuddy handle"
       diaspora_handle: diaspora@handle.org
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
@@ -400,7 +400,7 @@ pa:
       success: "Successfully stopped following: #%{name}"
   tokens:
     show:
-      connecting_is_simple: "Connecting your Diaspora account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   username: "ਯੂਜ਼ਰ ਨਾਂ"
   users:
     confirm_email:
@@ -412,13 +412,13 @@ pa:
       change_language: "Change Language"
       change_password: "Change Password"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Till you follow this link and activate the new address, we will continue to use your original address %{email}."
       new_password: "New Password"
       receive_email_notifications: "Receive email notificaions?"
       your_handle: "Your diaspora handle"
     getting_started:
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     update:
       language_changed: "ਭਾਸ਼ਾ ਬਦਲੀ ਗਈ"
       language_not_changed: "Language Change Failed"

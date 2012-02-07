@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#This script replaces 'Diaspora' for 'GayTravelBuddy' in all config/locales/*.yml
+
+for fl in config/locales/diaspora/*.yml; do mv $fl $fl.old
+  echo ' ---- Replacing Diaspora for GayTravelBuddy in' $fl
+  sed 's/Diaspora/GayTravelBuddy/g' $fl.old > $fl
+  sed 's/DIASPORA/GayTravelBuddy/g' $fl.old > $fl
+  rm -f $fl.old
+done
+
+for fl in config/locales/devise/*.yml; do mv $fl $fl.old
+  echo ' ---- Replacing Diaspora for GayTravelBuddy in' $fl
+  sed 's/Diaspora/GayTravelBuddy/g' $fl.old > $fl
+  sed 's/DIASPORA/GayTravelBuddy/g' $fl.old > $fl
+  rm -f $fl.old
+done

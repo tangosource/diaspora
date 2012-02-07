@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -90,14 +90,14 @@ cs:
       remove: odebrat
     index:
       cubbies:
-        explanation: "Cubbi.es je první Diaspora aplikace ve vývoji."
+        explanation: "Cubbi.es je první GayTravelBuddy aplikace ve vývoji."
         heading: "Připojit se na Cubbi.es"
         learn_more: "Dozvědět se více"
       diaspora_id:
-        content_1: "Vaše Diaspora ID je:"
+        content_1: "Vaše GayTravelBuddy ID je:"
         content_2: "Dejte to někomu a bude vás moci najít na Diaspoře."
       donate: Přispějte
-      handle_explanation: "Toto je vaše Diaspora ID. Podobně jako e-mailovou adresu ho můžete dál lidem a budete na něm dostupní."
+      handle_explanation: "Toto je vaše GayTravelBuddy ID. Podobně jako e-mailovou adresu ho můžete dál lidem a budete na něm dostupní."
       help:
         email_feedback: "Můžete také poslat %{link}."
         feature_suggestion: "... vymyslel jste novou %{link}?"
@@ -238,14 +238,14 @@ cs:
     show:
       already_account: "máte již účet?"
       choice: Volba
-      choice_explanation: "Diaspora Vám umožňuje přiřadit si všechny Vaše kontakty do skupin, které se nazývají Aspekty. Je unikátní právě tím, že dokáže zabezpečit, aby k fotkám, zprávám a stavům měli přístup jen ti, kterých si v aspektech určíte."
-      learn_about_host: "Dozvědět se o více o tom, jak hostovat vlastní Diaspora server."
+      choice_explanation: "GayTravelBuddy Vám umožňuje přiřadit si všechny Vaše kontakty do skupin, které se nazývají Aspekty. Je unikátní právě tím, že dokáže zabezpečit, aby k fotkám, zprávám a stavům měli přístup jen ti, kterých si v aspektech určíte."
+      learn_about_host: "Dozvědět se o více o tom, jak hostovat vlastní GayTravelBuddy server."
       login_here: "přihlásit se zde"
       ownership: Vlastnictví
       ownership_explanation: "Vaše obrázky jsou Vaším vlastnictvím. Neměli by jste se ho zříkat jen kvůli tomu, že je chcete sdílet. Zachovejte si proto právo na vše, co zveřejňujete. Jen to Vám dá plnou kontrolu nad tím, jak se s tím nakládá."
       share_what_you_want: "Sdílejte, co chcete, s kým chcete."
       simplicity: Jednoduchost
-      simplicity_explanation: "Sdílení je v Diaspoře velmi lehké a transparentní – je to dvojitá záruka ochrany soukromí. Kromě soukromí, Diaspora neobsahuje žádné složité stránky s nastavením, kterými by jste se museli prolouskat, aby jste uchovali bezpečnost Vašeho profilu podle svých představ."
+      simplicity_explanation: "Sdílení je v Diaspoře velmi lehké a transparentní – je to dvojitá záruka ochrany soukromí. Kromě soukromí, GayTravelBuddy neobsahuje žádné složité stránky s nastavením, kterými by jste se museli prolouskat, aby jste uchovali bezpečnost Vašeho profilu podle svých představ."
       tagline_first_half: "Sdílejte, co chcete,"
       tagline_second_half: "s kým chcete."
   invitations:
@@ -276,7 +276,7 @@ cs:
       to: Pro
   layouts:
     application:
-      public_feed: "Veřejný Diaspora feed %{name}"
+      public_feed: "Veřejný GayTravelBuddy feed %{name}"
       toggle: "přepnout mobilní stránku"
       whats_new: "co je nového?"
       your_aspects: "vaše aspekty"
@@ -421,7 +421,7 @@ cs:
     confirm_email:
       click_link: "K aktivaci vaší nové e-mailové adresy %{unconfirmed_email}, použijte prosím tento odkaz:"
       subject: "Prosím aktivujte si svou novou e-mailovou adresu %{unconfirmed_email}"
-    email_sent_by_diaspora: "Tento e-mail odeslala Diaspora. Pokud si nepřejete nadále dostávat takovéto e-maily,"
+    email_sent_by_diaspora: "Tento e-mail odeslala GayTravelBuddy. Pokud si nepřejete nadále dostávat takovéto e-maily,"
     hello: "Vítej %{name}!"
     liked:
       liked: "%{name} si právě oblíbil váš příspěvek"
@@ -434,7 +434,7 @@ cs:
     reshared:
       reshared: "%{name} just reshared your post"
     single_admin:
-      admin: "Váš Diaspora administrátor"
+      admin: "Váš GayTravelBuddy administrátor"
       subject: "Zpráva o vašem účtu na Diaspoře:"
     started_sharing:
       sharing: "s vámi začal sdílet!"
@@ -657,7 +657,7 @@ cs:
   shared:
     add_contact:
       add_new_contact: "Přidat nový kontakt"
-      create_request: "Hledat podle Diaspora ID"
+      create_request: "Hledat podle GayTravelBuddy ID"
       enter_a_diaspora_username: "Zadejte uživatelské jméno na Diaspoře:"
       know_email: "Znáte jejich e-mailové adresy? Můžete je pozvat"
       your_diaspora_username_is: "Vaše uživatelské jméno na Diaspoře: %{diaspora_handle}"
@@ -683,7 +683,7 @@ cs:
       invite_someone: "Pozvěte někoho"
       invite_your_friends: "Pozvěte vaše přátele"
       invites: Pozvánky
-      invites_closed: "Pozvánky jsou aktuálně uzavřeny na tomto Diaspora podu"
+      invites_closed: "Pozvánky jsou aktuálně uzavřeny na tomto GayTravelBuddy podu"
     notification:
       new: "Nový %{type} od %{from}"
     public_explain:
@@ -774,7 +774,7 @@ cs:
   tokens:
     show:
       connect_to_cubbies: "Připojit na Cubbi.es"
-      connecting_is_simple: "Připojení účtu na Diaspoře je tak jednoduché! Zadejte vaše Diaspora ID (<b>%{diaspora_id}</b>) z nastavení cubbies a připojte se."
+      connecting_is_simple: "Připojení účtu na Diaspoře je tak jednoduché! Zadejte vaše GayTravelBuddy ID (<b>%{diaspora_id}</b>) z nastavení cubbies a připojte se."
       love_to_try: "Rádi bychom, aby jste to vyzkoušeli."
       making_the_connection: "Vytvoření spojení"
       screenshot_explanation: "%{link1}. Tato konkrétní cubby je připojena na %{link2}."
@@ -796,7 +796,7 @@ cs:
       change_language: "Změnit jazyk"
       change_password: "Změnit heslo"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...někdo komentoval váš příspěvek?"
       current_password: "Současné heslo"
       download_photos: "stáhnout moje fotky"
@@ -811,11 +811,11 @@ cs:
       receive_email_notifications: "Přijímat oznámení e-mailem když..."
       started_sharing: "...někdo začne sdílet s vámi?"
       your_email: "Váš e-mail"
-      your_handle: "Vaše Diaspora ID"
+      your_handle: "Vaše GayTravelBuddy ID"
     getting_started:
       hashtag_explanation: "Štítky vám dovolují sledovat, o co se zajímáte, a diskutovat. Je to také skvělý způsob, jak najít nové lidi na Diaspoře."
       saved: Uloženo!
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     privacy_settings:
       title: "Nastavení soukromí"
     public:

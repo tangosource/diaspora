@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -85,7 +85,7 @@ ja:
     index:
       handle_explanation: これがあなたのハンドル名です。メールアドレスと同じようにほかの人に教えて、ダイアスポラで連絡を取り合うことができます。
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -120,7 +120,7 @@ ja:
   bookmarklet:
     explanation: "このリンクをお気に入りに登録すると、どこからでも%{link}できます。"
     explanation_link_text: ダイアスポラに投稿
-    heading: "Diaspora Bookmarklet"
+    heading: "GayTravelBuddy Bookmarklet"
     post_something: ダイアスポラに投稿
     post_success: 投稿完了！ウィンドウを閉じます。
   cancel: 取り消す
@@ -374,7 +374,7 @@ ja:
       admin: ダイアスポラ＊管理者
       subject: ダイアスポラ＊アカウントの重要なお知らせ：
     started_sharing:
-      subject: "%{name} has started sharing with you on Diaspora*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
     thanks: ありがとうございます。
   ok: 了解
   or: または
@@ -669,7 +669,7 @@ ja:
       posts_tagged_with: "#%{tag}とタグ付けられている投稿"
   tokens:
     show:
-      connecting_is_simple: "Connecting your Diaspora account is as simple as filling out two fields on your Cubbi.es account page."
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
   undo: 元に戻す
   username: ユーザ名
   users:
@@ -684,7 +684,7 @@ ja:
       change_language: 言語変更
       change_password: パスワード変更
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: 自分の投稿にコメントがあったとき
       current_password: 現在のパスワード
       download_photos: 写真をダウンロードする
@@ -699,7 +699,7 @@ ja:
       your_email: メールアドレス
       your_handle: ダイアスポラのユーザ名
     getting_started:
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "ユーザ名「%{username}」は存在しません。"
     update:

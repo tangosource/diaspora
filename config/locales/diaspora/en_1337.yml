@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -793,7 +793,7 @@ en_1337:
       change_language: "CH4NG3 L4NGU4G3"
       change_password: "CH4NG3 *****"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...50M30N3 5P4M5 Y0UR 5P4M?"
       current_password: "CURR3N7 *****"
       download_photos: "D0WNL04D MY PR0N"
@@ -813,7 +813,7 @@ en_1337:
     getting_started:
       community_welcome: "7H3 D* C0MMUN17Y 15 H4PPY 2 H4V3 U 4B04RD!"
       hashtag_explanation: "H45H74G5 4LL0W U 2 74LK 4B0U7 4ND F0LL0W Y0UR 1N73R3575! 7H3YR3 4L50 4 GR347 W4Y 2 F1ND N3W N00B5 0N D*!"
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     logged_out:
       go_mobile: "N0W G0 M0B1L3!"
       on_your_mobile_device: "0N Y0UR M0B1L3 D3V1C3 2 4CC355 D* M0B1L3!"

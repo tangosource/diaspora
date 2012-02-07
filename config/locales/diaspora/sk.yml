@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -270,14 +270,14 @@ sk:
     show:
       already_account: "Máte už účet?"
       choice: "Možnosť výberu"
-      choice_explanation: "Diaspora vám umožňuje roztriediť si všetky vaše kontakty do skupín, ktoré sa  v anglickej verzii nazývajú Aspekty. Je unikátna práve tým, že dokáže zabezpečiť, aby  k fotkám, správam  a statusom mali prístup len tí ľudia, ktorých určíte vy."
+      choice_explanation: "GayTravelBuddy vám umožňuje roztriediť si všetky vaše kontakty do skupín, ktoré sa  v anglickej verzii nazývajú Aspekty. Je unikátna práve tým, že dokáže zabezpečiť, aby  k fotkám, správam  a statusom mali prístup len tí ľudia, ktorých určíte vy."
       learn_about_host: "Dozvedieť sa viac  o tom, ako prevádzkovať vlastný server  s Diasporou."
       login_here: "sa prihláste tu"
       ownership: Vlastníctvo
       ownership_explanation: "Vlastníte svoje fotky  a nemali by ste sa ich vzdávať len kvôli tomu, že sa  o ne chcete  s niekym podeliť. Vaše vlastnícke práva na všetko,  o čo sa na Diaspore podelíte, zostávajú nedotknuté,  a tak môžete úplne kontrolovať to, ako sa  s tým zaobchádza."
       share_what_you_want: "Podeľte sa o čo chcete s kým chcete."
       simplicity: Jednoduchosť
-      simplicity_explanation: "Zdieľanie na Diaspore je veľmi ľahké  a transparentné –  a to isté platí  aj o ochrane osobných údajov. Keďže Diaspora je súkromná sama  o sebe, nenúti vás prejsť  cez žiadne zložité stránky  s nastaveniami  a možnosťami iba kvôli tomu, aby ste zabezpečili svoj profil."
+      simplicity_explanation: "Zdieľanie na Diaspore je veľmi ľahké  a transparentné –  a to isté platí  aj o ochrane osobných údajov. Keďže GayTravelBuddy je súkromná sama  o sebe, nenúti vás prejsť  cez žiadne zložité stránky  s nastaveniami  a možnosťami iba kvôli tomu, aby ste zabezpečili svoj profil."
       tagline_first_half: "Podeľte sa, o čo chcete,"
       tagline_second_half: "s kým chcete."
   invitations:
@@ -308,7 +308,7 @@ sk:
       to: Príjemca
   layouts:
     application:
-      powered_by: "PREVÁDZKUJE DIASPORA*"
+      powered_by: "PREVÁDZKUJE GayTravelBuddy*"
       public_feed: "Verejný kanál Diaspory pre %{name}"
       toggle: "prepnúť na stránku pre mobil"
       whats_new: "Čo je nové?"
@@ -456,7 +456,7 @@ sk:
     confirm_email:
       click_link: "Ak chcete aktivovať svoju novú e-mailovú adresu %{unconfirmed_email}, prosím, kliknite na tento odkaz:"
       subject: "Aktivujte si, prosím, svoju e-mailovú adresu %{unconfirmed_email}"
-    email_sent_by_diaspora: "Tento e-mail poslala Diaspora. Ak nechcete dostávať takéto e-maily,"
+    email_sent_by_diaspora: "Tento e-mail poslala GayTravelBuddy. Ak nechcete dostávať takéto e-maily,"
     hello: "Ahoj %{name}!"
     liked:
       liked: "%{name} označil(a), že sa mu/jej páči váš príspevok"
@@ -683,7 +683,7 @@ sk:
     failure:
       error: "pri pripájaní  k službe nastala chyba"
     finder:
-      fetching_contacts: "Diaspora pridáva údaje o vašich priateľoch zo siete %{service}, prosím, vráťte sa sem  o niekoľko minút."
+      fetching_contacts: "GayTravelBuddy pridáva údaje o vašich priateľoch zo siete %{service}, prosím, vráťte sa sem  o niekoľko minút."
       no_friends: "Žiadni priatelia z Facebooku sa nenašli."
       service_friends: "Priatelia zo siete %{service}"
     index:

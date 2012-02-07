@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -84,11 +84,11 @@ ro:
       remove: şterge
     index:
       diaspora_id:
-        content_1: "ID-ul tău Diaspora este:"
+        content_1: "ID-ul tău GayTravelBuddy este:"
       donate: Donează
       handle_explanation: "This is your diaspora handle.  Like an email address, you can give this to people to reach you."
       help:
-        here_to_help: "Diaspora community is here to help!"
+        here_to_help: "GayTravelBuddy community is here to help!"
         tag_bug: "#bug"
         tag_feature: "#feature"
         tag_question: "#question"
@@ -126,9 +126,9 @@ ro:
   back: Înapoi
   bookmarklet:
     explanation: "%{link} from anywhere by bookmarking this link."
-    explanation_link_text: "Post to Diaspora"
-    heading: "Diaspora Bookmarklet"
-    post_something: "Publicati ceva catre Diaspora"
+    explanation_link_text: "Post to GayTravelBuddy"
+    heading: "GayTravelBuddy Bookmarklet"
+    post_something: "Publicati ceva catre GayTravelBuddy"
     post_success: "Publicat! Inchidere!"
   cancel: Anulează
   comments:
@@ -199,14 +199,14 @@ ro:
     show:
       already_account: "ai deja cont?"
       choice: Alegere
-      choice_explanation: "Diaspora allows you to sort your connections into groups called Aspects. Unique to Diaspora, Aspects ensure your photos, stories and jokes are shared with only the people you want them to be."
-      learn_about_host: "Learn about how to host your own Diaspora server"
+      choice_explanation: "GayTravelBuddy allows you to sort your connections into groups called Aspects. Unique to GayTravelBuddy, Aspects ensure your photos, stories and jokes are shared with only the people you want them to be."
+      learn_about_host: "Learn about how to host your own GayTravelBuddy server"
       login_here: "intrarea e aici"
       ownership: Proprietate
-      ownership_explanation: "You own your pictures, and you shouldn’t have to give that up just in order to share them. You maintain ownership of everything you share on Diaspora, giving you full control over how it is distributed."
+      ownership_explanation: "You own your pictures, and you shouldn’t have to give that up just in order to share them. You maintain ownership of everything you share on GayTravelBuddy, giving you full control over how it is distributed."
       share_what_you_want: "Impartaseste ce doresti, cu cine doresti."
       simplicity: Simplitate
-      simplicity_explanation: "Diaspora makes sharing clean and easy – this goes doubly so for privacy. Innherently private, Diaspora doesn’t have pages of settings and options to wade through to keep your profile secure and to your liking."
+      simplicity_explanation: "GayTravelBuddy makes sharing clean and easy – this goes doubly so for privacy. Innherently private, GayTravelBuddy doesn’t have pages of settings and options to wade through to keep your profile secure and to your liking."
   invitations:
     a_facebook_user: "Un utilizator Facebook"
     check_token:
@@ -221,7 +221,7 @@ ro:
       already_invited: "Deja invitat "
       comma_seperated_plz: "Puteţi introduce multiple adrese de email separate prin virgulă."
       if_they_accept_info: "în cazul în care acceptă, vor fi adăugate la aspectul la care le-ai invitat."
-      invite_someone_to_join: "Invită pe cineva pe Diaspora!"
+      invite_someone_to_join: "Invită pe cineva pe GayTravelBuddy!"
       personal_message: "Mesaj personal"
       resend: "Mai trimite odata"
       send_an_invitation: "Trimite o invitaţie"
@@ -378,15 +378,15 @@ ro:
       liked: "%{name} ia placut publicatia ta"
     mentioned:
       mentioned: "te-a menţionat întrun post:  "
-      subject: "%{name} te-a menţionat pe Diaspora*"
+      subject: "%{name} te-a menţionat pe GayTravelBuddy*"
     reshared:
       reshared: "%{name} just reshared your post"
     single_admin:
-      admin: "Administratorul  local de Diaspora"
-      subject: "A message from your Diaspora administrator:"
+      admin: "Administratorul  local de GayTravelBuddy"
+      subject: "A message from your GayTravelBuddy administrator:"
     started_sharing:
       sharing: "a inceput sa comunice cu tine!"
-      subject: "%{name} has started sharing with you on Diaspora*"
+      subject: "%{name} has started sharing with you on GayTravelBuddy*"
       view_profile: "Vezi profilul lui %{name}"
     thanks: "Mulţumim,"
     to_change_your_notification_settings: "pentru a schimba setăriile notificărilor"
@@ -489,7 +489,7 @@ ro:
   profile: Profil
   profiles:
     edit:
-      allow_search: "Permiteti sa fiti gasit prin cautarea pe Diaspora"
+      allow_search: "Permiteti sa fiti gasit prin cautarea pe GayTravelBuddy"
       edit_profile: "Editează profil"
       first_name: "Numele mic"
       last_name: "Numele de familie"
@@ -514,9 +514,9 @@ ro:
     two: "%{count} reactions"
     zero: "0 reactions"
   registrations:
-    closed: "Ȋnscrierile sunt ȋnchise pe acest pod Diaspora."
+    closed: "Ȋnscrierile sunt ȋnchise pe acest pod GayTravelBuddy."
     create:
-      success: "Bun venit pe Diaspora!"
+      success: "Bun venit pe GayTravelBuddy!"
     edit:
       cancel_my_account: "Anulează contul meu"
       edit: "Editează %{name}"
@@ -591,10 +591,10 @@ ro:
   shared:
     add_contact:
       add_new_contact: "Adaugă un nou contact"
-      create_request: "Find by Diaspora handle"
-      diaspora_handle: "Diaspora handle"
-      enter_a_diaspora_username: "Introduceţi numele de utilizator Diaspora :"
-      your_diaspora_username_is: "Numele tău de utilizator Diaspora este: %{diaspora_handle}"
+      create_request: "Find by GayTravelBuddy handle"
+      diaspora_handle: "GayTravelBuddy handle"
+      enter_a_diaspora_username: "Introduceţi numele de utilizator GayTravelBuddy :"
+      your_diaspora_username_is: "Numele tău de utilizator GayTravelBuddy este: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Add to aspect"
       toggle:
@@ -614,13 +614,13 @@ ro:
       invite_someone: "Invită pe cineva"
       invite_your_friends: "Invită-ţi prietenii"
       invites: "Invitaţii "
-      invites_closed: "Invites are currently closed on this Diaspora seed"
+      invites_closed: "Invites are currently closed on this GayTravelBuddy seed"
     notification:
       new: "O noua %{type} de la %{from}"
     public_explain:
       logged_in: "autentificat pe %{service}"
       manage: "gestionează serviciile la care eşti conectat"
-      outside: "Mesajele publice vor fi disponibile pentru cei ce nu fac parte din Diaspora."
+      outside: "Mesajele publice vor fi disponibile pentru cei ce nu fac parte din GayTravelBuddy."
       title: "Sunteţi pe cale de a publica un mesaj public!"
     publisher:
       all: toate
@@ -686,10 +686,10 @@ ro:
   tokens:
     show:
       connect_to_cubbies: "Conectarea la Cubbi.es"
-      connecting_is_simple: "Connecting your Diaspora account is as simple as filling out two fields on your Cubbi.es account page."
-      daniels_account: "Contul Diaspora a lui Daniel"
+      connecting_is_simple: "Connecting your GayTravelBuddy account is as simple as filling out two fields on your Cubbi.es account page."
+      daniels_account: "Contul GayTravelBuddy a lui Daniel"
       sign_up_today: "Ȋnregistrează-te astăzi!"
-      what_is_cubbies: "Cubbi.es este prima aplicaţie Diaspora din lume.  Este cea mai bună metodă de a colecta imagini online."
+      what_is_cubbies: "Cubbi.es este prima aplicaţie GayTravelBuddy din lume.  Este cea mai bună metodă de a colecta imagini online."
   undo: refacem?
   username: "Nume de utilizator"
   users:
@@ -704,7 +704,7 @@ ro:
       change_language: "Modificare limbă"
       change_password: "Modificare parolă"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...cineva comenteaza pe o publicatie proprie?"
       current_password: "Parola curentă"
       download_photos: "descarcă fotografiile mele"
@@ -718,9 +718,9 @@ ro:
       private_message: "...primesti un mesaj privat?"
       receive_email_notifications: "Receive email notificaions?"
       your_email: "E-mailul tău"
-      your_handle: "Identificatorul tău pe Diaspora"
+      your_handle: "Identificatorul tău pe GayTravelBuddy"
     getting_started:
-      what_facebook_does: "to Diaspora. This will pull your name and photo, and enable cross-positng."
+      what_facebook_does: "to GayTravelBuddy. This will pull your name and photo, and enable cross-positng."
     public:
       does_not_exist: "Utilizatorul %{username} nu există!"
     update:

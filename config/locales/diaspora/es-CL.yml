@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -93,22 +93,22 @@ es-CL:
       remove: eliminar
     index:
       cubbies:
-        explanation: "Cubbi.es es la primera aplicación de Diaspora en desarrollo."
+        explanation: "Cubbi.es es la primera aplicación de GayTravelBuddy en desarrollo."
         heading: "Conectate a Cubbi.es"
         learn_more: "Aprende mas"
       diaspora_id:
-        content_1: "Tu ID de Diaspora es:"
-        content_2: "Daselo a quien quieras y podrán encontrarte en Diaspora."
-        heading: "ID de Diaspora "
+        content_1: "Tu ID de GayTravelBuddy es:"
+        content_2: "Daselo a quien quieras y podrán encontrarte en GayTravelBuddy."
+        heading: "ID de GayTravelBuddy "
       donate: Donar
-      handle_explanation: "Este es tu ID de Diaspora. Como una dirección de correo, puedes dársela a la gente para que te encuentren."
+      handle_explanation: "Este es tu ID de GayTravelBuddy. Como una dirección de correo, puedes dársela a la gente para que te encuentren."
       help:
         do_you: "Acaso tu:"
         email_feedback: "Si lo prefieres envíanos un %{link} con tu opinión"
         feature_suggestion: "... tienes una %{link}?"
         find_a_bug: "... encontraste errores (%{link})?"
         have_a_question: "... tienes una %{link}?"
-        here_to_help: "La comunidad de Diaspora esta aquí!"
+        here_to_help: "La comunidad de GayTravelBuddy esta aquí!"
         need_help: "Necesitas ayuda?"
         tag_feature: idea
         tag_question: pregunta
@@ -116,7 +116,7 @@ es-CL:
       introduce_yourself: "Esta es tu corriente. Entra y preséntate."
       keep_us_running: "Mantén %{pod} rápido, !compra a nuestros servidores su dosis mensual de café!"
       new_here:
-        follow: "Sigue %{link} y bienvenido nuevo usuario de Diaspora*!"
+        follow: "Sigue %{link} y bienvenido nuevo usuario de GayTravelBuddy*!"
         learn_more: "Aprende más"
         title: "Bienvenidos Nuevos Usuarios"
       no_contacts: "No hay contactos"
@@ -124,10 +124,10 @@ es-CL:
       people_sharing_with_you: "Personas compartiendo contigo"
       post_a_message: "postea un mensaje >>"
       services:
-        content: "Puedes enlazar los siguientes servicios a Diaspora:"
+        content: "Puedes enlazar los siguientes servicios a GayTravelBuddy:"
         heading: "Servicios que puedes enlazar"
       unfollow_tag: "Dejar de seguir #%{tag}"
-      welcome_to_diaspora: "Bienvenido a Diaspora, %{name}!"
+      welcome_to_diaspora: "Bienvenido a GayTravelBuddy, %{name}!"
       your_aspects: "Tus Aspectos"
     many: "%{count} aspectos"
     move_contact:
@@ -177,9 +177,9 @@ es-CL:
       success: "Veamos que tienen para decir! #dihola"
   bookmarklet:
     explanation: "%{link} donde sea agregando a marcadores este link."
-    explanation_link_text: "Postea en Diaspora"
-    heading: "Diaspora en tus marcadores"
-    post_something: "Postea algo en Diaspora"
+    explanation_link_text: "Postea en GayTravelBuddy"
+    heading: "GayTravelBuddy en tus marcadores"
+    post_something: "Postea algo en GayTravelBuddy"
     post_success: "Posteado! Cerrando!"
   cancel: Cancelar
   comments:
@@ -264,14 +264,14 @@ es-CL:
     show:
       already_account: "¿Ya tienes una cuenta?"
       choice: Opción
-      choice_explanation: "Diaspora te permite organizar conexiones en grupos llamados aspectos. En Diaspora, los aspectos aseguran que tus fotos, historias y bromas sean compartidas sólo con la gente que tu quieras."
-      learn_about_host: "Aprende como hostear tu propio servidor Diaspora."
+      choice_explanation: "GayTravelBuddy te permite organizar conexiones en grupos llamados aspectos. En GayTravelBuddy, los aspectos aseguran que tus fotos, historias y bromas sean compartidas sólo con la gente que tu quieras."
+      learn_about_host: "Aprende como hostear tu propio servidor GayTravelBuddy."
       login_here: "iniciar sesión aquí"
       ownership: Propiedad
-      ownership_explanation: "Eres dueño de tus imágenes, y no deberías tener que cederlas sólo para compartirlas. Tú mantienes la propiedad sobre todo lo que compartas en Diaspora, dándote control total sobre lo que es distribuido."
+      ownership_explanation: "Eres dueño de tus imágenes, y no deberías tener que cederlas sólo para compartirlas. Tú mantienes la propiedad sobre todo lo que compartas en GayTravelBuddy, dándote control total sobre lo que es distribuido."
       share_what_you_want: "Comparte lo que quieras, con quien quieras."
       simplicity: Simpleza
-      simplicity_explanation: "Diaspora hace que compartir sea transparente y fácil - y esto va por privacidad también. Inherentemente privado, Diaspora no te hace ir a través de configuraciones y opciones solo para mantener tu perfil seguro."
+      simplicity_explanation: "GayTravelBuddy hace que compartir sea transparente y fácil - y esto va por privacidad también. Inherentemente privado, GayTravelBuddy no te hace ir a través de configuraciones y opciones solo para mantener tu perfil seguro."
       tagline_first_half: "Comparte lo que quieras,"
       tagline_second_half: "con los que quiera."
   invitations:
@@ -293,7 +293,7 @@ es-CL:
       aspect: Aspecto
       comma_seperated_plz: "Puedes escribir varias direcciones de correo separadas por comas."
       if_they_accept_info: "Si aceptan, ellos se agregarán al aspecto que los invitaste."
-      invite_someone_to_join: "¡Invita a alguien a unirse a Diaspora!"
+      invite_someone_to_join: "¡Invita a alguien a unirse a GayTravelBuddy!"
       language: Idioma
       personal_message: "Mensaje personal"
       resend: Reenviar
@@ -447,25 +447,25 @@ es-CL:
     confirm_email:
       click_link: "Para activar la nueva dirección de email %{unconfirmed_email}, por favor haz click en este link:"
       subject: "Por favor activa tu nueva dirección de email %{unconfirmed_email}"
-    email_sent_by_diaspora: "Este email fue enviado por Diaspora.  Si no quieres seguir recibiendo emails como este, "
+    email_sent_by_diaspora: "Este email fue enviado por GayTravelBuddy.  Si no quieres seguir recibiendo emails como este, "
     hello: "¡Hola %{name}!"
     liked:
       liked: "A %{name} le gustó tu post"
       view_post: "Ver post >"
     mentioned:
       mentioned: "Te mencionó en un post:"
-      subject: "%{name} te mencionó en Diaspora*"
+      subject: "%{name} te mencionó en GayTravelBuddy*"
     private_message:
       reply_to_or_view: "Responder o ver esta conversación >"
     reshared:
       reshared: "%{name} compartió tu post"
       view_post: "Ver el post >"
     single_admin:
-      admin: "Tu administrador de Diaspora"
-      subject: "Un mensaje sobre tu cuenta de Diaspora:"
+      admin: "Tu administrador de GayTravelBuddy"
+      subject: "Un mensaje sobre tu cuenta de GayTravelBuddy:"
     started_sharing:
       sharing: "Ha comenzado a compartir contigo!"
-      subject: "%{name} ha comenzado a compartir contigo en Diaspora*"
+      subject: "%{name} ha comenzado a compartir contigo en GayTravelBuddy*"
       view_profile: "Ver el perfil de %{name}"
     thanks: "Gracias,"
     to_change_your_notification_settings: "para cambiar tu configuración de notificaciones"
@@ -576,7 +576,7 @@ es-CL:
   profile: Perfil
   profiles:
     edit:
-      allow_search: "Permitir que la gente te busque dentro de Diaspora"
+      allow_search: "Permitir que la gente te busque dentro de GayTravelBuddy"
       edit_profile: "Editar perfil"
       first_name: Nombre
       last_name: Apellido
@@ -603,9 +603,9 @@ es-CL:
     two: "%{count} reacciones"
     zero: "0 reacciones"
   registrations:
-    closed: "Los registros están cerrados en este servidor de Diaspora."
+    closed: "Los registros están cerrados en este servidor de GayTravelBuddy."
     create:
-      success: "¡Te has unido a Diaspora!"
+      success: "¡Te has unido a GayTravelBuddy!"
     edit:
       cancel_my_account: "Cerrar mi cuenta"
       edit: "Editar %{name}"
@@ -624,7 +624,7 @@ es-CL:
   requests:
     create:
       sending: Enviando
-      sent: "Has pedido compartir con %{name}.  Ellos deberían ver esto la próxima vez que entren a Diaspora."
+      sent: "Has pedido compartir con %{name}.  Ellos deberían ver esto la próxima vez que entren a GayTravelBuddy."
     destroy:
       error: "¡Por favor selecciona un aspecto!"
       ignore: "Ignorar la solicitud de contacto."
@@ -670,7 +670,7 @@ es-CL:
     failure:
       error: "ocurrió un error al conectarse con ese servicio"
     finder:
-      fetching_contacts: "Diaspora se está llenando de tus amigos de %{service} por favor regresa en unos minutos."
+      fetching_contacts: "GayTravelBuddy se está llenando de tus amigos de %{service} por favor regresa en unos minutos."
       no_friends: "Ningún amigo de Facebook encontrado."
       service_friends: "Contactos de %{service}"
     index:
@@ -684,10 +684,10 @@ es-CL:
       really_disconnect: "¿desconectar %{service}?"
     inviter:
       click_link_to_accept_invitation: "Haz click en este enlace para aceptar tu invitación"
-      join_me_on_diaspora: "Únete a mi en DIASPORA*"
+      join_me_on_diaspora: "Únete a mi en GayTravelBuddy*"
     remote_friend:
       invite: invitar
-      not_on_diaspora: "Aun no en Diaspora"
+      not_on_diaspora: "Aun no en GayTravelBuddy"
       resend: reenviar
   settings: Configuración
   share_visibilites:
@@ -697,10 +697,10 @@ es-CL:
   shared:
     add_contact:
       add_new_contact: "Agregar un nuevo contacto"
-      create_request: "Encontrar por el ID de Diaspora"
-      enter_a_diaspora_username: "Ingresa tu nombre de usuario Diaspora:"
+      create_request: "Encontrar por el ID de GayTravelBuddy"
+      enter_a_diaspora_username: "Ingresa tu nombre de usuario GayTravelBuddy:"
       know_email: "¿Conoces sus direcciones de correo? Deberías invitarlos"
-      your_diaspora_username_is: "Tu nombre de usuario Diaspora es: %{diaspora_handle}"
+      your_diaspora_username_is: "Tu nombre de usuario GayTravelBuddy es: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Agregar contacto"
       toggle:
@@ -723,7 +723,7 @@ es-CL:
       invite_someone: "Invita a alguien"
       invite_your_friends: "Invita a tus contactos"
       invites: Invitaciones
-      invites_closed: "Las invitaciones están temporalmente cerradas en este servidor de Diaspora"
+      invites_closed: "Las invitaciones están temporalmente cerradas en este servidor de GayTravelBuddy"
     notification:
       new: "Nuevo %{type} de %{from}"
     public_explain:
@@ -731,7 +731,7 @@ es-CL:
       logged_in: "entrar a %{service}"
       manage: "manejar los servicios conectados"
       new_user_welcome_message: "Usa los #hashtags para clasificar tus posts y encontrar personas que compartan tus intereses. Comunícate con personas asombrosas usando las @Menciones"
-      outside: "Los mensajes públicos estarán disponibles para que otros fuera de Diaspora los puedan ver."
+      outside: "Los mensajes públicos estarán disponibles para que otros fuera de GayTravelBuddy los puedan ver."
       share: Compartir
       title: "Configurar los servicios conectados"
       visibility_dropdown: "Usa este menú desplegable para cambiar la visibilidad de tu post. (Te sugerimos hacer el primer post público.)"
@@ -839,14 +839,14 @@ es-CL:
   tokens:
     show:
       connect_to_cubbies: "Conectarse a Cubbi.es"
-      connecting_is_simple: "Conectar la cuenta de diáspora es simple! Solo ingresa tu ID de Diaspora (<b>%{diaspora_id}</b>) en la <a href='%{href_link}'>pagina de configuración</a> de cubbies y presiona conectar."
-      daniels_account: "La cuenta de Diaspora de Daniel"
+      connecting_is_simple: "Conectar la cuenta de diáspora es simple! Solo ingresa tu ID de GayTravelBuddy (<b>%{diaspora_id}</b>) en la <a href='%{href_link}'>pagina de configuración</a> de cubbies y presiona conectar."
+      daniels_account: "La cuenta de GayTravelBuddy de Daniel"
       love_to_try: "Nos encantaría que lo pruebes."
       making_the_connection: "Haciendo la conexión"
       screenshot_explanation: "%{link1}.  Este cubby en particular esta linkeado a %{link2}."
       sign_up_today: "Registrate hoy mismo!"
       typical_userpage: "Una tipica pagina de usuario de cubbi.es "
-      what_is_cubbies: "Cubbi.es es la primera aplicación en el mundo de Diaspora.  Es también la mejor manera de coleccionar fotos online."
+      what_is_cubbies: "Cubbi.es es la primera aplicación en el mundo de GayTravelBuddy.  Es también la mejor manera de coleccionar fotos online."
   undo: Deshacer?
   username: "Nombre de usuario"
   users:
@@ -855,7 +855,7 @@ es-CL:
       email_not_confirmed: "El email no se pudo activar. Es la dirección correcta?"
     destroy:
       no_password: "Por favor ingresa tu contraseña actual para cerrar tu cuenta."
-      success: "Tu cuenta ha sido bloqueada.  Puede llevarnos 20 minutos terminar de cerrar tu cuenta. Gracias por probar Diaspora."
+      success: "Tu cuenta ha sido bloqueada.  Puede llevarnos 20 minutos terminar de cerrar tu cuenta. Gracias por probar GayTravelBuddy."
       wrong_password: "La contraseña ingresada no concuerda con la contraseña actual."
     edit:
       also_commented: "...alguien comenta en el post de tu amigo?"
@@ -864,7 +864,7 @@ es-CL:
       change_language: "Cambiar Idioma"
       change_password: "Cambiar Contraseña"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...alguien comenta en tu post?"
       current_password: "Contraseña actual"
       download_photos: "descargar mis fotos"
@@ -887,21 +887,21 @@ es-CL:
       your_email: "Tu correo electrónico"
       your_handle: "Tu id de diaspora"
     getting_started:
-      awesome_take_me_to_diaspora: "Asombroso! Llévame a Diaspora*"
-      community_welcome: "La comunidad de Diaspora esta feliz de tenerte abordo!"
-      hashtag_explanation: "Los Hashtags te permiten hablar y seguir sobre tus intereses. También son una manera genial de encontrar nuevas personas en Diaspora."
+      awesome_take_me_to_diaspora: "Asombroso! Llévame a GayTravelBuddy*"
+      community_welcome: "La comunidad de GayTravelBuddy esta feliz de tenerte abordo!"
+      hashtag_explanation: "Los Hashtags te permiten hablar y seguir sobre tus intereses. También son una manera genial de encontrar nuevas personas en GayTravelBuddy."
       hashtag_suggestions: "Prueba siguiendo tags como #arte, #películas, #gif, etc."
       hooking_up_fb: "conectar tu cuenta de Facebook"
       saved: Guardado!
       we_can_speed_things_up: "Podemos acelerar un poco las cosas"
       well_hello_there: "Bueno, hola!"
       what_are_you_in_to: "En que estas?"
-      what_facebook_does: "con Diaspora. Esto mostrará tu nombre y foto, también activará la publicación cruzada."
+      what_facebook_does: "con GayTravelBuddy. Esto mostrará tu nombre y foto, también activará la publicación cruzada."
       who_are_you: "Quien eres tu?"
     logged_out:
       go_mobile: "Ahora desde tu celular"
-      on_your_mobile_device: "desde tu celular para acceder a Diaspora* móvil."
-      signed_out: "Te has desconectado de Diaspora*"
+      on_your_mobile_device: "desde tu celular para acceder a GayTravelBuddy* móvil."
+      signed_out: "Te has desconectado de GayTravelBuddy*"
       simply_visit: "Simplemente visita"
       works_on_modern: "Funciona en todos los smartphones modernos"
     privacy_settings:

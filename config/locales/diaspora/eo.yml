@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -44,7 +44,7 @@ eo:
   all_aspects: "Ĉiuj Aspektoj"
   application:
     helper:
-      diaspora_alpha: "DIASPORA* ALFA"
+      diaspora_alpha: "GayTravelBuddy* ALFA"
       unknown_person: "nekonata persono"
       video_title:
         unknown: "Nekonata video-titolo"
@@ -94,22 +94,22 @@ eo:
       remove: forigi
     index:
       cubbies:
-        explanation: "Cubbi.es estas la unua DIASPORA* aplikaĵo developata."
+        explanation: "Cubbi.es estas la unua GayTravelBuddy* aplikaĵo developata."
         heading: "Konekti al Cubbi.es"
         learn_more: "Lerni pli"
       diaspora_id:
-        content_1: "Via DIASPORA* uzantnomo estas:"
-        content_2: "Donu ĝin al iu ajn, kaj tiu povos trovi vin ĉe DIASPORA*."
-        heading: "DIASPORA* uzantnomo"
+        content_1: "Via GayTravelBuddy* uzantnomo estas:"
+        content_2: "Donu ĝin al iu ajn, kaj tiu povos trovi vin ĉe GayTravelBuddy*."
+        heading: "GayTravelBuddy* uzantnomo"
       donate: Donaci
-      handle_explanation: "Tiu ĉi estas via DIASPORA* uzantnomo. Kiel retpoŝtadreso, vi povas doni tiun ĉi al homoj, por ke ili vin kontaktu."
+      handle_explanation: "Tiu ĉi estas via GayTravelBuddy* uzantnomo. Kiel retpoŝtadreso, vi povas doni tiun ĉi al homoj, por ke ili vin kontaktu."
       help:
         do_you: "Ĉu vi:"
         email_feedback: "%{link} viajn respondojn, se vi volas"
         feature_suggestion: "... havas %{link} proponon?"
         find_a_bug: "... trovis %{link}n?"
         have_a_question: "... havas %{link}n?"
-        here_to_help: "Jen la DIASPORA* komunumo!"
+        here_to_help: "Jen la GayTravelBuddy* komunumo!"
         need_help: "Ĉu Vi Bezonas Helpon?"
         tag_bug: cimo
         tag_feature: trajto
@@ -118,7 +118,7 @@ eo:
       introduce_yourself: "Tio estas via torento. Ensaltu kaj prezentu vin mem."
       keep_us_running: "Helpu %{pod} rapide funkcii kaj aĉetu por niaj servkomputiloj ilian kaforiparon per ĉiumonata donatado!"
       new_here:
-        follow: "Sekvu %{link} kaj bonvenu novajn uzantojn al Diaspora*!"
+        follow: "Sekvu %{link} kaj bonvenu novajn uzantojn al GayTravelBuddy*!"
         learn_more: "Lerni pli"
         title: "Bonvenigu novajn uzantojn"
       no_contacts: "neniuj kontaktoj"
@@ -126,10 +126,10 @@ eo:
       people_sharing_with_you: "Homoj, kiuj konigas kun vi"
       post_a_message: "Afiŝu mesaĝon »"
       services:
-        content: "Vi povas konekti la postajn servojn kun DIASPORA*:"
+        content: "Vi povas konekti la postajn servojn kun GayTravelBuddy*:"
         heading: "Konekti Servojn"
       unfollow_tag: "Ne plu abonas #%{tag}."
-      welcome_to_diaspora: "Bonvenon al Diaspora, %{name}!"
+      welcome_to_diaspora: "Bonvenon al GayTravelBuddy, %{name}!"
       your_aspects: "Viaj Aspektoj"
     many: "%{count} aspektoj"
     move_contact:
@@ -178,10 +178,10 @@ eo:
       failure: "Mi ne povis ĉesi ignori tiun uzanton. #evasion"
       success: "Ni vidu kion ili emas diri! #sayhello"
   bookmarklet:
-    explanation: "Vi povas afiŝi al DIASPORA* el ĉie per paĝosigno montranta al %{link}."
+    explanation: "Vi povas afiŝi al GayTravelBuddy* el ĉie per paĝosigno montranta al %{link}."
     explanation_link_text: "ĉi tiu ligilo"
     heading: Legosigneto
-    post_something: "Afiŝi ion al DIASPORA*"
+    post_something: "Afiŝi ion al GayTravelBuddy*"
     post_success: "Afiŝita! Fermanta!"
   cancel: Rezigni
   comments:
@@ -266,14 +266,14 @@ eo:
     show:
       already_account: "ĉu vi jam havas konton?"
       choice: Elekto
-      choice_explanation: "DIASPORA* ebligas vin klasigi viajn kontaktojn en grupojn, kiuj nomiĝas „aspektoj“. Unike al DIASPORA*, aspektoj certigas, ke vi nur konigas viajn bildojn, rakontojn, kaj ŝercojn al homojal kiuj vi tion intencas."
-      learn_about_host: "Lernu pri kiel starigi propran Diaspora-servilon."
+      choice_explanation: "GayTravelBuddy* ebligas vin klasigi viajn kontaktojn en grupojn, kiuj nomiĝas „aspektoj“. Unike al GayTravelBuddy*, aspektoj certigas, ke vi nur konigas viajn bildojn, rakontojn, kaj ŝercojn al homojal kiuj vi tion intencas."
+      learn_about_host: "Lernu pri kiel starigi propran GayTravelBuddy-servilon."
       login_here: "ensalutu ĉi tie"
       ownership: Proprieto
-      ownership_explanation: "Vi posedas viajn bildojn, kaj vi ne devus rezigni tiun, por konigi ilin. Vi ankoraŭ havas proprieton de ĉio, kiun vi konigas per Diaspora, donante al vi kompletan administradon pri kiel aĵoj disdoniĝas."
+      ownership_explanation: "Vi posedas viajn bildojn, kaj vi ne devus rezigni tiun, por konigi ilin. Vi ankoraŭ havas proprieton de ĉio, kiun vi konigas per GayTravelBuddy, donante al vi kompletan administradon pri kiel aĵoj disdoniĝas."
       share_what_you_want: "Konigu kion vi volas, al kiu vi volas."
       simplicity: Simpleco
-      simplicity_explanation: "DIASPORA* purigas kaj faciligas konigadon – kaj ankaŭ privatecon. DIASPORA* ne direktas tra multaj paĝoj de agordoj kaj opcioj por sekurigi vian profilon ĉar ĝi estas planita por privateco."
+      simplicity_explanation: "GayTravelBuddy* purigas kaj faciligas konigadon – kaj ankaŭ privatecon. GayTravelBuddy* ne direktas tra multaj paĝoj de agordoj kaj opcioj por sekurigi vian profilon ĉar ĝi estas planita por privateco."
       tagline_first_half: "Dividu kion vi volas,"
       tagline_second_half: "kun kiu vi volas."
   invitations:
@@ -295,7 +295,7 @@ eo:
       aspect: Aspekto
       comma_seperated_plz: "Vi povas aldoni multajn retpoŝtadresojn, apartate per komoj."
       if_they_accept_info: "se tiu akceptos, tiu aldoniĝos al la aspekto, en kiun vi invitis tiun."
-      invite_someone_to_join: "Invitu iun aniĝi al DIASPORA*!"
+      invite_someone_to_join: "Invitu iun aniĝi al GayTravelBuddy*!"
       language: Lingvo
       personal_message: "Persona mesaĝo"
       resend: Resendi
@@ -304,8 +304,8 @@ eo:
       to: Al
   layouts:
     application:
-      powered_by: "FUNKCIAS PER DIASPORA*"
-      public_feed: "Publika DIASPORA* Afiŝostrio de %{name}"
+      powered_by: "FUNKCIAS PER GayTravelBuddy*"
+      public_feed: "Publika GayTravelBuddy* Afiŝostrio de %{name}"
       toggle: "baskuligi poŝtelefona versio"
       whats_new: "kio estas nova?"
       your_aspects: "viaj aspektoj"
@@ -452,25 +452,25 @@ eo:
     confirm_email:
       click_link: "Por aktivigi vian novan retpoŝtadreson %{unconfirmed_email}, bonvolu iru al tiun ĉi ligilon:"
       subject: "Bonvolu aktivigi vian novan retpoŝtadreson %{unconfirmed_email}"
-    email_sent_by_diaspora: "Tiu ĉi retpoŝton poŝtiĝi de DIASPORA*.  Se vi volus recivi tiajn ĉi retpoŝtojn ne plu,"
+    email_sent_by_diaspora: "Tiu ĉi retpoŝton poŝtiĝi de GayTravelBuddy*.  Se vi volus recivi tiajn ĉi retpoŝtojn ne plu,"
     hello: "Saluton %{name}!"
     liked:
       liked: "%{name} ĵus ŝatis vian afiŝon"
       view_post: "Vidi afiŝon >"
     mentioned:
       mentioned: "menciis vin en afiŝon:"
-      subject: "%{name} menciis vin ĉe DIASPORA*"
+      subject: "%{name} menciis vin ĉe GayTravelBuddy*"
     private_message:
       reply_to_or_view: "Respondi al aŭ vidi tiun ĉi interparoladon >"
     reshared:
       reshared: "%{name} rekonigis vian afiŝon."
       view_post: "Vidu afiŝon >"
     single_admin:
-      admin: "Via DIASPORA* administranto"
-      subject: "Mesaĝo pri via DIASPORA* konto:"
+      admin: "Via GayTravelBuddy* administranto"
+      subject: "Mesaĝo pri via GayTravelBuddy* konto:"
     started_sharing:
       sharing: "komencis konigi kun vi!"
-      subject: "%{name} komencis konigi kun vi ĉe DIASPORA*"
+      subject: "%{name} komencis konigi kun vi ĉe GayTravelBuddy*"
       view_profile: "Vidi la profilo de %{name}"
     thanks: "Dankon,"
     to_change_your_notification_settings: "ŝanĝi viajn sciigajn agordojn"
@@ -583,7 +583,7 @@ eo:
   profile: Profilo
   profiles:
     edit:
-      allow_search: "Lasu homoj serĉi vin ene de DIASPORA*"
+      allow_search: "Lasu homoj serĉi vin ene de GayTravelBuddy*"
       edit_profile: "Redakti profilon"
       first_name: "Persona nomo"
       last_name: Familinomo
@@ -610,9 +610,9 @@ eo:
     two: "%{count} reakcioj"
     zero: "0 reakcioj"
   registrations:
-    closed: "Registrado estas ferma ĉe tiu ĉi DIASPORA* guŝo."
+    closed: "Registrado estas ferma ĉe tiu ĉi GayTravelBuddy* guŝo."
     create:
-      success: "Vi aniĝis al DIASPORA*!"
+      success: "Vi aniĝis al GayTravelBuddy*!"
     edit:
       cancel_my_account: "Malfari mian konton"
       edit: "Redakti je %{name}"
@@ -631,7 +631,7 @@ eo:
   requests:
     create:
       sending: Sendanta
-      sent: "Vi petis dividi kun %{name}. Via peto al tiu(j) videblos je ties venonta ensalutiĝo al DIASPORA*."
+      sent: "Vi petis dividi kun %{name}. Via peto al tiu(j) videblos je ties venonta ensalutiĝo al GayTravelBuddy*."
     destroy:
       error: "Bonvolu elekti aspekton!"
       ignore: "Ignoris kontaktan peton."
@@ -669,7 +669,7 @@ eo:
   search: Serĉi
   services:
     create:
-      already_authorized: "Uzanto kun Diaspora nomo %{diaspora_id} jam sankciis tiun %{service_name} konton."
+      already_authorized: "Uzanto kun GayTravelBuddy nomo %{diaspora_id} jam sankciis tiun %{service_name} konton."
       failure: "Aŭtentigo malsukcesis."
       success: "Aŭtentokontrolo sukcesis."
     destroy:
@@ -690,10 +690,10 @@ eo:
       really_disconnect: "ĉu vi volas malkonekti %{service}?"
     inviter:
       click_link_to_accept_invitation: "Sekvu tiun ligilon por akcepti vian inviton"
-      join_me_on_diaspora: "Kuniĝu kun mi ĉe DIASPORA*"
+      join_me_on_diaspora: "Kuniĝu kun mi ĉe GayTravelBuddy*"
     remote_friend:
       invite: inviti
-      not_on_diaspora: "Ne jam ĉe DIASPORA*"
+      not_on_diaspora: "Ne jam ĉe GayTravelBuddy*"
       resend: resendi
   settings: Agordoj
   share_visibilites:
@@ -703,10 +703,10 @@ eo:
   shared:
     add_contact:
       add_new_contact: "Aldoni novan kontakton"
-      create_request: "Trovi per DIASPORA* uzantnomo"
-      enter_a_diaspora_username: "Enmetu DIASPORA* uzantnomon:"
+      create_request: "Trovi per GayTravelBuddy* uzantnomo"
+      enter_a_diaspora_username: "Enmetu GayTravelBuddy* uzantnomon:"
       know_email: "Ĉu vi scias iliajn retpoŝtadresojn? Vi devus inviti ilin"
-      your_diaspora_username_is: "Via DIASPORA* uzantnomo estas: %{diaspora_handle}"
+      your_diaspora_username_is: "Via GayTravelBuddy* uzantnomo estas: %{diaspora_handle}"
     aspect_dropdown:
       add_to_aspect: "Aldoni kontakton"
       toggle:
@@ -729,7 +729,7 @@ eo:
       invite_someone: "Inviti iun"
       invite_your_friends: "Invitu viajn amikojn"
       invites: Invitoj
-      invites_closed: "Invitoj intertempe ne eblas ĉe tiu ĉi DIASPORA* ido"
+      invites_closed: "Invitoj intertempe ne eblas ĉe tiu ĉi GayTravelBuddy* ido"
     notification:
       new: "Nova %{type} de %{from}"
     public_explain:
@@ -737,7 +737,7 @@ eo:
       logged_in: "ensalutinta al %{service}"
       manage: "administri ligitajn servojn"
       new_user_welcome_message: "Uzu #kradoetikedon por klasifiki viajn afiŝojn kaj por trovi homojn kiuj havas kun vi komunajn interesojn. Alvoku iun malaĉan per @mencio."
-      outside: "Publikaj afiŝoj estos videblaj al aliaj, kiuj estas ekster DIASPORA*."
+      outside: "Publikaj afiŝoj estos videblaj al aliaj, kiuj estas ekster GayTravelBuddy*."
       share: Dividi
       title: "Agordi ligitajn servojn"
       visibility_dropdown: "Uzu tiun falliston por ŝanĝi videblecon de via afiŝo. (Ni sugestas, ke vi faru publika tiun unuan afiŝon.)"
@@ -840,15 +840,15 @@ eo:
   tokens:
     show:
       connect_to_cubbies: "Konekti al Cubbi.es"
-      connecting_is_simple: "Konekti vian DIASPORA* konton estas tiel facila!  Skribu vian DIASPORA* uzantnomon (<b>%{diaspora_id}</b>) de via cubbi.es <a href='%{href_link}'>settings page</a> kaj kliku \"connect\"."
-      daniels_account: "La DIASPORA* konto de Daniel"
+      connecting_is_simple: "Konekti vian GayTravelBuddy* konton estas tiel facila!  Skribu vian GayTravelBuddy* uzantnomon (<b>%{diaspora_id}</b>) de via cubbi.es <a href='%{href_link}'>settings page</a> kaj kliku \"connect\"."
+      daniels_account: "La GayTravelBuddy* konto de Daniel"
       love_to_try: "Ni vin amus, se vi provi ĝin."
       making_the_connection: Konektanta
       screenshot_explanation: "%{link1}.  Tiu aparta cubby ligas kun %{link2}."
       sign_up_today: "Registiĝi hodiaŭ!"
       typical_userpage: "Tipa cubbi.es uzantpaĝo"
       via: "(de %{link})"
-      what_is_cubbies: "Cubbi.es estas la unua DIASPORA* aplikaĵo en la tuta mondo.  Ĝi estas la plej bona maniero por rete kunigi bildojn."
+      what_is_cubbies: "Cubbi.es estas la unua GayTravelBuddy* aplikaĵo en la tuta mondo.  Ĝi estas la plej bona maniero por rete kunigi bildojn."
   undo: "Ĉu malfari?"
   username: Uzantnomo
   users:
@@ -857,7 +857,7 @@ eo:
       email_not_confirmed: "Retpoŝtadreso ne povis aktiviĝi. Ĉu malĝusta ligilo?"
     destroy:
       no_password: "Bonvolu entajpi vian nunan pasvorton por fermi vian konton."
-      success: "Via konto ŝlosiĝis. Povas daŭri 20 minutoj ĝis ĝi via konto fine estos fermita. Dankon por elprovi Diasporan."
+      success: "Via konto ŝlosiĝis. Povas daŭri 20 minutoj ĝis ĝi via konto fine estos fermita. Dankon por elprovi GayTravelBuddyn."
       wrong_password: "La entajpita pasvoroto ne kongruis kun la nuna pasvorto."
     edit:
       also_commented: "...iu ankaŭ komentis pri la afiŝo de via kontakto?"
@@ -867,7 +867,7 @@ eo:
       change_language: "Ŝanĝi lingvon"
       change_password: "Ŝanĝi pasvorton"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       comment_on_post: "...iu komentas pri via afiŝo?"
       current_password: "Nuna pasvorto"
       download_photos: "elŝuti miajn bildojn"
@@ -888,23 +888,23 @@ eo:
       started_sharing: "...iu komencis konigi kun vi?"
       stream_preferences: "Torentaj agordoj"
       your_email: "Via retpoŝtadreso"
-      your_handle: "Via DIASPORA* uzantnomo"
+      your_handle: "Via GayTravelBuddy* uzantnomo"
     getting_started:
-      awesome_take_me_to_diaspora: "Malaĉe! Gvidu min al Diaspora*"
-      community_welcome: "La komunumo de DIASPORA* feliĉas, ke vi aniĝis!"
-      hashtag_explanation: "Etikedoj lasu vin pridiri kaj aboni viajn interesigojn.  Ili ankaŭ estas bona metodo trovi novajn homojn ĉe DIASPORA*."
+      awesome_take_me_to_diaspora: "Malaĉe! Gvidu min al GayTravelBuddy*"
+      community_welcome: "La komunumo de GayTravelBuddy* feliĉas, ke vi aniĝis!"
+      hashtag_explanation: "Etikedoj lasu vin pridiri kaj aboni viajn interesigojn.  Ili ankaŭ estas bona metodo trovi novajn homojn ĉe GayTravelBuddy*."
       hashtag_suggestions: "Provu sekvi etikedojn kiel #arto, #filmoj, #gif, ktp."
       hooking_up_fb: "alkroĉi vian Facebook konton"
       saved: Konservita!
       we_can_speed_things_up: "Ni povas iomete rapidigi ĝin per"
       well_hello_there: "Bone, saluton tie!"
       what_are_you_in_to: "Pri kio vi ŝatokupiĝas?"
-      what_facebook_does: "al Diaspora. Tio tiros vian nomon kaj foton, kaj ebligos krucreferencadon."
+      what_facebook_does: "al GayTravelBuddy. Tio tiros vian nomon kaj foton, kaj ebligos krucreferencadon."
       who_are_you: "Kiu vi estas?"
     logged_out:
       go_mobile: "Nun uzu poŝtelefonan!"
-      on_your_mobile_device: "per via poŝtelefono uzi DIASPORA* poŝtelefonan."
-      signed_out: "Vi elsalutis je DIASPORA*."
+      on_your_mobile_device: "per via poŝtelefono uzi GayTravelBuddy* poŝtelefonan."
+      signed_out: "Vi elsalutis je GayTravelBuddy*."
       simply_visit: "Nur iru al"
       works_on_modern: "Funkcias per ĉiuj modernaj poŝtelefonoj"
     privacy_settings:

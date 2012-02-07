@@ -34,7 +34,7 @@ module NotificationMailers
         :to => name_and_address(@recipient.name, @recipient.email)
       }
 
-      headers[:from] = "\"#{@sender.name} (Diaspora*)\" <#{AppConfig[:smtp_sender_address]}>" if @sender.present?
+      headers[:from] = "\"#{@sender.name} (GayTravelBuddy*)\" <#{AppConfig[:smtp_sender_address]}>" if @sender.present?
 
       headers
     end

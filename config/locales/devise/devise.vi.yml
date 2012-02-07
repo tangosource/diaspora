@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -25,12 +25,12 @@ vi:
         finally: "Cuối cùng - nó đây"
         made_by_people: "%{strong_diaspora} được tạo ra bởi những người yêu Internet như bạn. %{jointeam}, hay %{helpfund}!"
         no_account_till: "Tài khoản của bạn sẽ không được tạo cho đến khi bạn truy cập vào liên kết ở trên và đăng kí."
-        team_diaspora: "Đội Diaspora"
+        team_diaspora: "Đội GayTravelBuddy"
         unsubscribe: "Không nhận thư nữa, vui lòng nhấn %{link}."
         view_in: "View in"
       inviter:
         accept_at: "tại %{url}, bạn có thể chấp nhận nó qua đường dẫn bên dưới."
-        have_invited_you: "%{names} đã mời bạn tham gia Diaspora"
+        have_invited_you: "%{names} đã mời bạn tham gia GayTravelBuddy"
       unlock_instructions:
         account_locked: "Tài khoản của bạn bị khoá do đăng nhập thất bại quá số lần quy định."
         click_to_unlock: "Nhấn vào liên kết bên dưới để mở khoá tài khoản:"

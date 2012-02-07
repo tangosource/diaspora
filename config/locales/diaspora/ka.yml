@@ -1,4 +1,4 @@
-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+#   Copyright (c) 2010-2011, GayTravelBuddy Inc.  This file is
 #   licensed under the Affero General Public License version 3 or later.  See
 #   the COPYRIGHT file.
 
@@ -33,8 +33,8 @@ ka:
         heading: "Cubbi.es-თან დაკავშირება"
         learn_more: "მეტის გაგება"
       diaspora_id:
-        content_1: "თქვენი Diaspora-ს ID არის:"
-        content_2: "გაუზიარეთ ის ნებისმიერ ადამიანს და ის შეძლებს თქვენს პოვნას Diaspora-ზე."
+        content_1: "თქვენი GayTravelBuddy-ს ID არის:"
+        content_2: "გაუზიარეთ ის ნებისმიერ ადამიანს და ის შეძლებს თქვენს პოვნას GayTravelBuddy-ზე."
       donate: "ფულის შეწირვა"
       handle_explanation: "This is your diaspora id. Like an email address, you can give this to people to reach you."
       help:
@@ -264,7 +264,7 @@ ka:
     edit:
       change_language: "ენის შეცვლა"
       close_account:
-        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your GayTravelBuddy Handle."
       your_handle: "Your diaspora id"
     update:
       language_changed: "ენა შიეცვალა"

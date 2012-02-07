@@ -49,3 +49,7 @@ module Devise
     end
   end
 end
+
+  if AppConfig[:asset_host]
+    Diaspora::Application.config.action_controller.asset_host = AppConfig.asset_host
+  end

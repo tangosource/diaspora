@@ -63,11 +63,29 @@ class PlacesController < ApplicationController
     end
   end
   
-  def get_place
-    place = Place.find(params[:id])
+  def search
     respond_to do |format|
-      format.html 
-      format.json {render :json => place.to_json}
+      format.json do
+        @places = Place.search(params[:q]).limit(15)
+        render :json => @people
+      end
+      format.html do
+        places   = Place.search(params[:q], current_user)
+        @places = places.paginate( :page => params[:page], :per_page => 15)
+        render 'index'
+      end
+    end
+  end
+
+    def index
+    respond_with do |format|
+      format.json do
+        @places = Place.search params[:q], params[:limit]
+        render :json => @places.to_json 
+      end
+      format.html do
+        @places = Place.all
+      end
     end
   end
 

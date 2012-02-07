@@ -1,5 +1,4 @@
 class PlacesController < ApplicationController
-  before_filter :authenticate_user!
 
   respond_to :html, :only => [:show]
   respond_to :json, :only => [:index, :show]

@@ -66,7 +66,7 @@ Places = Backbone.View.extend({
   onSelect :  function(visibleInput, data, formatted) {
 
     if(data.add){
-     window.location = "/places/new?place[description_attributes][title]="+data.name
+     window.location = "/p/new?place[description_attributes][title]="+data.name
     }
 
     var visibleCursorIndex = visibleInput[0].selectionStart;
@@ -133,6 +133,29 @@ $(document).ready(function(){
     var selection = input[0].selectionStart; 
     input[0].setSelectionRange(selection + 2,selection + 2);  
     input.val(value+'=');
+
+    $("#status_message_fake_text").autocomplete({}, {
+      minChars : 1,
+      max : 5,
+      onSelect : function(){
+        $("#status_message_fake_text").val();
+      },
+      searchTermFromValue: view.searchTermFromValue,
+      scroll : false,
+      formatItem: function(row, i, max) {
+        return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
+      },
+      formatMatch: function(row, i, max) {
+        return row.name;
+      },
+      formatResult: function(row) {
+        return row.name;
+      },
+      disableRightAndLeft : true
+    });
+    
+   $.Autocompleter.default_value('Type a place name');
+
   });
 
 });

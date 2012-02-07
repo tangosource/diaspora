@@ -24,6 +24,8 @@ Diaspora::Application.routes.draw do
     resources :photos
   end
 
+  get 'p/get_place/:id' => 'places#get_place'
+
   # Posting and Reading
 
   resources :reshares

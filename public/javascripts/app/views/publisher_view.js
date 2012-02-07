@@ -68,7 +68,9 @@ app.views.Publisher = Backbone.View.extend({
     var empty = $('#status_message_fake_text').val();
 
     if((this.id) && (empty =="")){
+      $.getJSON('get_place/'+this.id,undefined, function(data) {
         var places = new Places(data);
+      });
     }
     
     return this;

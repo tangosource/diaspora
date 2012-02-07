@@ -294,6 +294,25 @@ $.Autocompleter = function(input, options) {
 		}
 	};
 
+
+  //Set up some default value
+  $.Autocompleter.default_value = function(text){
+    q = "";
+    data = [{
+      data: {
+        avatar: "/images/user/default.png",
+        handle: "start typing",
+        id: 1,
+        name: text,
+        url: ""
+      }
+    }]
+
+    select.display(data, q);
+    autoFill(q, data[0].value);
+    select.show();
+  }
+
 	function receiveData(q, data) {
 		if ( data && data.length && hasFocus ) {
 			stopLoading();

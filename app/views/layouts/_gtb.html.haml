@@ -4,13 +4,17 @@
       %li#logo
         = link_to image_tag('icons/logo.png'), "#"
       %li#twitter
-        = link_to image_tag('icons/twitter.png'), "#"
+        = link_to image_tag('icons/twitter.png'), 'http://twitter.com/#/GayTravelAdvice', :target => '_blank'
       %li#fb
-        = link_to image_tag('icons/facebook.png'), "#"
+        = link_to image_tag('icons/facebook.png'), 'http://www.Facebook.com/GayTravelBuddy', :target => '_blank'
   #gtb_nav
     %ul
       %li 
         = link_to 'Home', '/'
       %li 
         = link_to 'Magazine', magazine_path
+      %li 
+        = link_to 'Places', places_path
+      %li 
+        = link_to 'Destinations', destinations_path 
 

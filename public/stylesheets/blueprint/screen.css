@@ -317,3 +317,9 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
   #home_join_button .myButton:active {
     position: relative;
     top: 1px; }
+#comments_footer{
+  float: left;
+  width: 702px;
+}
+#comments{clear: both}
+    

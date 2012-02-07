@@ -101,7 +101,7 @@ Places = Backbone.View.extend({
   setAutocomplete: function(){
 
     view = this;
-    $("#status_message_fake_text").autocomplete("/places/", {
+    $("#status_message_fake_text").autocomplete("/p/", {
       minChars : 1,
       max : 5,
       onSelect : view.onSelect,

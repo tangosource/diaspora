@@ -11,6 +11,9 @@ Diaspora::Application.routes.draw do
 
 	scope 'magazine', :module => :magazine do
 	  resources :articles, :controller => "articles", :as => "magazine_articles" do
+      collection do
+        get :review
+      end
 	    resources :comments, :controller => "comments", :as => "magazine_comments", :only => [:create, :destroy]
 	  end
 	end

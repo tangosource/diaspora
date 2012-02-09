@@ -1,6 +1,5 @@
 $(document).ready( function(){
-  $('ul#places_list li').click(function(){
-    //alert('asdf');
-    $(this).children().slideToggle('slow');
+  $('ul#places_list a.home_selector').click(function(){
+    $(this).next().slideToggle('slow');
   })
 });

@@ -64,15 +64,14 @@
   .section
     %h3
       = t('.places')
-    %ul#places_list 
+    %ul#places_list.left_nav
       - @stream.related_places.each do |k,v|
+        %br
+        %a.home_selector= k.capitalize
         %li
-          = k.capitalize
-          %br
           - v.each do |place|
             = link_to place.description.title, place_path(place)
             %br
-          %br
 
   .section
     %h3

@@ -2443,6 +2443,9 @@ ul.left_nav {
       padding-left: 25px;
       width: 172px; }
 
+.section #places_list.left_nav li a{
+  color: #3F8FBA;
+  margin-left: 25px; }
 .section .left_nav a.aspect_selector,
 .section .left_nav a.home_selector {
   width: 150px; }

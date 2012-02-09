@@ -1,0 +1,9 @@
+- content_for :page_title do
+  = @article.title if @article.title
+
+= render "magazine/articles/article", :article => @article
+- if magazine_conf.include_comments
+  #comments
+    = render :partial => "magazine/comments/comment", :collection => @article.comments
+  = render "magazine/comments/form"
+

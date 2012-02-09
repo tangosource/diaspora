@@ -64,16 +64,15 @@
   .section
     %h3
       = t('.places')
-    %ul 
+    %ul#places_list 
       - @stream.related_places.each do |k,v|
-        = k.capitalize
-        %br
-        - v.each do |place|
-          = '----'
-          = link_to place.description.title, place_path(place)
+        %li
+          = k.capitalize
           %br
-        %br
-      = render :partial => 'destinations/place', :collection => @stream.related_places
+          - v.each do |place|
+            = link_to place.description.title, place_path(place)
+            %br
+          %br
 
   .section
     %h3

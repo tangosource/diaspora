@@ -10,9 +10,13 @@ Diaspora::Application.routes.draw do
   get "m" => "magazine/articles#index", :as => "magazine"
 
 	scope 'magazine', :module => :magazine do
+    #Added next line because articles#show is overriding magazine's gem ones
+    match "articles/toggle_feature/:id" => 'articles#toggle_feature', :as => :toggle_feature_articles
 	  resources :articles, :controller => "articles", :as => "magazine_articles" do
+      #Added next lines because articles#show is overriding magazine's gem ones
       collection do
         get :review
+        get :feature
       end
 	    resources :comments, :controller => "comments", :as => "magazine_comments", :only => [:create, :destroy]
 	  end

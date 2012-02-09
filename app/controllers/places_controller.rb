@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
 
   respond_to :html, :only => [:show]
-  respond_to :json, :only => [:index, :show]
+  respond_to :json, :only => [:index, :show, :get_place]
 
 
   # GET /places/1
@@ -87,5 +87,13 @@ class PlacesController < ApplicationController
       end
     end
   end
+
+    def get_place
+      respond_with do |format|
+        place = Place.find(params[:id])
+        format.html 
+        format.json {render :json => place.to_json}
+      end
+    end
 
 end

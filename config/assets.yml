@@ -57,6 +57,7 @@ javascripts:
 
     - public/javascripts/publisher.js
     - public/javascripts/place_view.js
+    - public/javascripts/application.js
   login:
     - public/javascripts/login.js
   mobile:

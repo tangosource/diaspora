@@ -17,6 +17,9 @@ defaults: &defaults
   # For development and testing, you can leave this as is.
   pod_url: "http://localhost:3000/"
 
+  # set assets host
+  # asset_host: "http://localhost:3000/"
+
   # Setting the root certificate bundle (this is operating system specific). Examples, uncomment one:
   ca_file: '/etc/pki/tls/certs/ca-bundle.crt' # CentOS
   #ca_file: '/etc/ssl/certs/ca-certificates.crt' # Debian
@@ -200,6 +203,10 @@ defaults: &defaults
   cloudfiles_api_key:  'abc123'
   cloudfiles_db_container: 'Database Backup'
   cloudfiles_images_container: 'Image Backup'
+
+  photo_storage: cloudfile
+
+  configured_services: []
 
 #
 # Use this section to override default settings in specific environments

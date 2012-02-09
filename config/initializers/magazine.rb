@@ -24,6 +24,9 @@ Magazine.configure do |config|
   # The name of the before filter we'll call to authenticate the current user.
    config.authentication_method = :authenticate_user!
 
+  # The name of the before filter we'll call to check if current user is admin
+   config.admin_authenticated_method = :redirect_unless_admin
+
   # If set to true, the comments form will POST and DELETE to the comments 
   # controller using AJAX calls.
    config.ajax_comments = true

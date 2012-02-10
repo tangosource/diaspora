@@ -2443,8 +2443,8 @@ ul.left_nav {
       padding-left: 25px;
       width: 172px; }
 
-.section #places_list.left_nav li a{
-  color: #3F8FBA;
+.section #places_list.left_nav li a {
+  color: #3f8fba;
   margin-left: 25px; }
 .section .left_nav a.aspect_selector,
 .section .left_nav a.home_selector {
@@ -2751,9 +2751,10 @@ a.toggle_selector {
   border-bottom: 2px solid #777777;
   margin-bottom: 20px; }
   #admin_nav ul {
-    display: inline; }
+    display: inline;
+    padding-left: 0.333em; }
   #admin_nav li {
-    font-size: 0.8em;
+    font-size: 0.65em;
     display: inline;
     margin-right: 0.5em; }
 

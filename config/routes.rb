@@ -51,7 +51,6 @@ Diaspora::Application.routes.draw do
 
   # Streams
   get "public" => "streams#public", :as => "public_stream"
-  get "public" => "streams#public", :as => "public_stream"
   get "stream" => "streams#multi", :as => "multi_stream"
   get "followed_tags" => "streams#followed_tags", :as => "followed_tags_stream"
   get "stream" => "streams#multi", :as => "multi_stream"

@@ -8,7 +8,7 @@
 
     %br
 
-    = link_to t('.edit'), edit_place_path(@place) if current_user.admin?
+    = link_to t('.edit'), edit_place_path(@place) if current_user and current_user.admin?
 
 
     %ul#profile_information

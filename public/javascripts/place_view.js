@@ -66,6 +66,7 @@ Places = Backbone.View.extend({
   onSelect :  function(visibleInput, data, formatted) {
 
     if(data.add){
+     data.name = data.name.slice(4,data.name.length);
      window.location = "/p/new?place[description_attributes][title]="+data.name
     }
 

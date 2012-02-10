@@ -660,6 +660,7 @@ en:
     address: "Address"
     phone: "Phone"
     website: "Website"
+    tag_list: "Tag list"
 
     new: 
       enter_username: "Pick a username (only letters, numbers, and underscores)"

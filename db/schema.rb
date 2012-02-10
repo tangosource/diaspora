@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120209005015595080) do
+ActiveRecord::Schema.define(:version => 20120210204238232655) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20120209005015595080) do
     t.datetime "updated_at"
     t.boolean  "needs_review",   :default => true
     t.boolean  "featured",       :default => false
+    t.boolean  "published",      :default => false
   end
 
   add_index "articles", ["blogger_type", "blogger_id"], :name => "index_articles_on_blogger_type_and_blogger_id"

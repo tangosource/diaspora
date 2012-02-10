@@ -16,7 +16,7 @@ Magazine.configure do |config|
    config.datetime_format = :short
   
   # Should the controllers cache the blog pages as HTML?
-   config.cache_pages = true
+   config.cache_pages = false
 
   # No. of articles to show per page
   config.articles_per_page = 5

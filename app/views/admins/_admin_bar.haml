@@ -8,5 +8,6 @@
       %li= link_to 'Correlations', correlations_path
       - if AppConfig[:mount_resque_web]
         %li= link_to 'Resque Overview', resque_web_path
+      %li= link_to 'Review Articles', review_magazine_articles_path
+      %li= link_to 'New Article', new_magazine_article_path
 
-	

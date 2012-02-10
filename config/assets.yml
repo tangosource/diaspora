@@ -9,7 +9,14 @@ javascripts:
     - public/javascripts/vendor/underscore.js
     - public/javascripts/vendor/backbone.js
     - public/javascripts/vendor/handlebars-1.0.0.beta.6.js
-    - public/javascripts/vendor/markdown/*
+    - public/javascripts/vendor/markdown/images/*
+    - public/javascripts/vendor/markdown/Markdown.Converter.js
+    - public/javascripts/vendor/markdown/Markdown.Sanitizer.js
+    - public/javascripts/vendor/markdown/markitup/jquery.markitup.js
+    - public/javascripts/vendor/markdown/markitup/sets/default/images/*
+    - public/javascripts/vendor/markdown/markitup/sets/default/set.js
+    - public/javascripts/vendor/markdown/markitup/sets/markdown/images/*
+    - public/javascripts/vendor/markdown/markitup/sets/markdown/set.js
     - public/javascripts/app/app.js
     - public/javascripts/app/helpers/*
     - public/javascripts/app/router.js

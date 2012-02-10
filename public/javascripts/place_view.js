@@ -105,7 +105,7 @@ Places = Backbone.View.extend({
       minChars : 1,
       max : 5,
       onSelect : view.onSelect,
-      searchTermFromValue: view.searchTermFromValue,
+      searchTermFromValue: Places.searchTermFromValue,
       scroll : false,
       formatItem: function(row, i, max) {
         return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;

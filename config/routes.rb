@@ -22,6 +22,7 @@ Diaspora::Application.routes.draw do
 	  end
 	end
 	
+  get "d/search" => "destinations#search", :as => "search_destinations"
   resources :d, :controller=> 'destinations', :as => 'destinations' do 
     get 'photos'
   end

@@ -14,8 +14,8 @@ class Destination < ActiveRecord::Base
     like_operator = postgres? ? "ILIKE" : "LIKE"
 
     where_clause = <<-SQL
-      destinations.permalink #{like_operator} ? OR
-      destinations.title #{like_operator} ?
+      destinations.title #{like_operator} ? OR
+      destinations.permalink #{like_operator} ?
     SQL
 
     q_tokens = []

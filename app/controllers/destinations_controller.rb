@@ -115,4 +115,17 @@ class DestinationsController < ApplicationController
       Destination.where(:permalink => params[:permalink]).first
   end
 
+  def search
+    respond_to do |format|
+      format.json do
+        @destinations = Destination.search(params[:q]).limit(15)
+        render :json => @people
+      end
+      format.html do
+        destinations   = Destination.search(params[:q], current_user)
+        @destinations = destinations.paginate( :page => params[:page], :per_page => 15)
+        render 'index'
+      end
+    end
+  end
 end

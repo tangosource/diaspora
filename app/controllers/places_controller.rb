@@ -1,3 +1,5 @@
+require File.join(Rails.root, "lib", 'stream', "place")
+
 class PlacesController < ApplicationController
 
   respond_to :html, :only => [:show]

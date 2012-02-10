@@ -1,3 +1,5 @@
+require File.join(Rails.root, "lib", 'stream', "destination")
+
 class DestinationsController < ApplicationController
   respond_to :html, :only => [:index, :show]
   respond_to :json, :only => [:index, :show]

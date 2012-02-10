@@ -58,6 +58,7 @@ javascripts:
     - public/javascripts/publisher.js
     - public/javascripts/place_view.js
     - public/javascripts/application.js
+    - public/javascripts/jquery.orbit-1.2.3.min.js
   login:
     - public/javascripts/login.js
   mobile:
@@ -112,6 +113,7 @@ stylesheets:
     - public/stylesheets/vendor/fileuploader.css
     - public/stylesheets/vendor/autoSuggest.css
     - public/stylesheets/interim-bootstrap.css
+    - public/stylesheets/orbit.css
   rtl:
     - public/stylesheets/rtl.css
 

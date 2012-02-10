@@ -140,7 +140,7 @@ $(document).ready(function(){
       onSelect : function(){
         $("#status_message_fake_text").val();
       },
-      searchTermFromValue: view.searchTermFromValue,
+      searchTermFromValue: Places.searchTermFromValue,
       scroll : false,
       formatItem: function(row, i, max) {
         return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;

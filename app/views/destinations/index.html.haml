@@ -1,5 +1,10 @@
 %h1 Destinations
 
+= form_tag("/d/search", :method => "get") do
+  = label_tag(:q, "Search for:")
+  = text_field_tag(:q, params[:q])
+  = submit_tag("Search")
+
 %ul
   -@destinations.each do |destination|
     %li

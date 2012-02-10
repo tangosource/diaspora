@@ -105,7 +105,7 @@ Places = Backbone.View.extend({
       minChars : 1,
       max : 5,
       onSelect : view.onSelect,
-      searchTermFromValue: Places.searchTermFromValue,
+      searchTermFromValue: view.searchTermFromValue,
       scroll : false,
       formatItem: function(row, i, max) {
         return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
@@ -140,7 +140,7 @@ $(document).ready(function(){
       onSelect : function(){
         $("#status_message_fake_text").val();
       },
-      searchTermFromValue: view.searchTermFromValue,
+      searchTermFromValue: Places.searchTermFromValue,
       scroll : false,
       formatItem: function(row, i, max) {
         return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;

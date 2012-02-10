@@ -570,12 +570,12 @@ $.Autocompleter.Cache = function(options) {
                 avatar: "/images/user/default.png",
                 handle: "create",
                 id: 1,
-                name: q,
+                name: "Add "+q,
                 url: "",
                 add: true
               },
-              result: "add",
-              value: "add"
+              result: "",
+              value: ""
             }
             csub[0] = create;
             return csub;

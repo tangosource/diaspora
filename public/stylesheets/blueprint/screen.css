@@ -322,4 +322,13 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
   width: 702px;
 }
 #comments{clear: both}
-    
+#admin_nav ul {
+  display: inline;
+  padding-left: 0.333em; }
+#admin_nav li {
+  font-size: 0.65em;
+  display: inline;
+  margin-right: 0.5em; }
+.section #places_list.left_nav li a {
+  color: #3f8fba;
+  margin-left: 25px; }

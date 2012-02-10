@@ -248,14 +248,18 @@ var Publisher = {
       }
     },
     initialize: function(){
-      $.getJSON($("#publisher .selected_contacts_link").attr("href"), undefined ,
-        function(data){
-          Publisher.input().autocomplete(data,
-            Publisher.autocompletion.options());
-          Publisher.input().result(Publisher.autocompletion.selectItemCallback);
-          Publisher.oldInputContent = Publisher.input().val();
-        }
-      );
+      //Quiq hack to avoid error on editing places
+      url = $("#publisher .selected_contacts_link").attr("href");
+      if(url){
+        $.getJSON(url, undefined ,
+          function(data){
+            Publisher.input().autocomplete(data,
+              Publisher.autocompletion.options());
+            Publisher.input().result(Publisher.autocompletion.selectItemCallback);
+            Publisher.oldInputContent = Publisher.input().val();
+          }
+        );
+      }
     }
   },
 

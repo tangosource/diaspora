@@ -4,7 +4,7 @@
     $(document).ready(function () {
       var autocompleteInput = $("#place_tag_list");
 
-      autocompleteInput.autoSuggest("#{tags_path}", {
+      autocompleteInput.autoSuggest('#{tags_path}/', {
         asHtmlID: "tags",
         neverSubmit: true,
         retriveLimit: 10,

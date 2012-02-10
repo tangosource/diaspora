@@ -53,6 +53,7 @@ class PlacesController < ApplicationController
   # PUT /places/1.xml
   def update
     @place = Place.find(params[:id])
+    params[:place][:tag_list] = params[:place][:tag_list].gsub(/([\#]){1,}/,'');
     respond_to do |format|
       if @place.update_attributes(params[:place])
         format.html { redirect_to(@place, :notice => 'Place was successfully updated.') }

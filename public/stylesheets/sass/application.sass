@@ -997,6 +997,39 @@ label:not(.bootstrapped)
     :right 24px
     :z-index 10
     :margin 0
+
+    :display inline-block
+
+    :padding 0.3em
+    :cursor pointer
+
+    img
+      @include opacity(0.4)
+
+      :display inline-block
+      :margin 0
+      :padding 0
+      :margin
+        :bottom -3px
+
+    &:hover
+      :background
+        :color none
+      :cursor pointer
+
+      :color #666
+      img
+        @include opacity(0.8)
+
+    &:active
+      :text-shadow 0 1px 0 #fafafa
+      :color #444
+      img
+        @include opacity(1)
+
+    &.loading
+      @include opacity(0.5)
+    
   
   #file-upload
     :position absolute !important

@@ -5,5 +5,6 @@
 - if magazine_conf.include_comments
   #comments
     = render :partial => "magazine/comments/comment", :collection => @article.comments
-  = render "magazine/comments/form"
+  - if current_user
+    = render "magazine/comments/form"
 

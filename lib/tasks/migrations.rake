@@ -65,4 +65,31 @@ namespace :migrations do
     }
 
   end
+
+  task :import_wordpress do
+    require 'yaml'
+
+    sql = ENV['SQL'] || 'wp_posts.sql'
+
+    db_config = Rails.application.config.database_configuration
+    exec "mysql -u#{db_config['username']} -p#{db_config['password']} #{db_config['database']} < #{sql}"
+
+    class WpPost < ActiveRecord::Base ; end
+
+    puts "Importing posts"
+    user = User.where(:username => 'annalove')
+    WpPost.all.each do |post|
+      print '.'
+      Magazine::Article.create(
+        :title => post.post_title, 
+        :body => DownmarkIt.to_markdown(post.post_content), 
+        :tag_list => [post.post_author], 
+        :created_at => post.post_date, 
+        :blogger_type => 'User', 
+        :blogger_id => user.id
+      )
+    end
+    puts ''
+    
+  end
 end

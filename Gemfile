@@ -157,9 +157,10 @@ group :development do
 
   # speed up development requests (already pulled into rails 3.2)
   gem 'active_reload'
-
-  gem 'hpricot'
 end
 
 # Magazine
 gem "magazine", :git => 'git@github.com:tangosource/magazine.git' #:path => '~/Sites/gems/magazine' 
+
+# Convert html to markdown
+gem 'hpricot'

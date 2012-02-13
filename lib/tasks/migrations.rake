@@ -66,15 +66,16 @@ namespace :migrations do
 
   end
 
-  task :import_wordpress do
+  task :import_wordpress => :environment do
     require 'yaml'
 
     sql = ENV['SQL'] || 'wp_posts.sql'
 
     db_config = Rails.application.config.database_configuration
-    exec "mysql -u#{Rails.configuration.database_configuration[RAILS_ENV]['username']} -p#{Rails.configuration.database_configuration[RAILS_ENV]['password']} #{Rails.configuration.database_configuration[RAILS_ENV]['database']} < #{sql}"
+    puts "mysql -u#{Rails.configuration.database_configuration[Rails.env]['username']} -p#{Rails.configuration.database_configuration[Rails.env]['password']} #{Rails.configuration.database_configuration[Rails.env]['database']} < #{sql}"
 
     class WpPost < ActiveRecord::Base ; end
+    class User < ActiveRecord::Base ; end
 
     puts "Importing posts"
     user = User.where(:username => 'annalove')

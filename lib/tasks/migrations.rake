@@ -72,7 +72,7 @@ namespace :migrations do
     sql = ENV['SQL'] || 'wp_posts.sql'
 
     db_config = Rails.application.config.database_configuration
-    exec "mysql -u#{db_config['username']} -p#{db_config['password']} #{db_config['database']} < #{sql}"
+    exec "mysql -u#{Rails.configuration.database_configuration[RAILS_ENV]['username']} -p#{Rails.configuration.database_configuration[RAILS_ENV]['password']} #{Rails.configuration.database_configuration[RAILS_ENV]['database']} < #{sql}"
 
     class WpPost < ActiveRecord::Base ; end
 

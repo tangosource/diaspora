@@ -69,22 +69,26 @@ namespace :migrations do
   task :import_wordpress => :environment do
     require 'yaml'
 
-    sql = ENV['SQL'] || 'wp_posts.sql'
+    sql1 = ENV['SQL'] || 'wp_posts.sql'
+    sql2 = ENV['SQL'] || 'wp_users.sql'
+
+    class User < ActiveRecord::Base ; end
+    class WpPost < ActiveRecord::Base ; end
+    class WpUser < ActiveRecord::Base ; end
 
     db_config = Rails.application.config.database_configuration
-    puts "mysql -u#{Rails.configuration.database_configuration[Rails.env]['username']} -p#{Rails.configuration.database_configuration[Rails.env]['password']} #{Rails.configuration.database_configuration[Rails.env]['database']} < #{sql}"
-
-    class WpPost < ActiveRecord::Base ; end
-    class User < ActiveRecord::Base ; end
+    system "mysql -u#{Rails.configuration.database_configuration[Rails.env]['username']} -p#{Rails.configuration.database_configuration[Rails.env]['password']} #{Rails.configuration.database_configuration[Rails.env]['database']} < #{sql1}"
+    system "mysql -u#{Rails.configuration.database_configuration[Rails.env]['username']} -p#{Rails.configuration.database_configuration[Rails.env]['password']} #{Rails.configuration.database_configuration[Rails.env]['database']} < #{sql2}"
 
     puts "Importing posts"
     user = User.where(:username => 'annalove')
     WpPost.all.each do |post|
+      wp_user = WpUser.where(:ID => post.post_author).first
       print '.'
       Magazine::Article.create(
         :title => post.post_title, 
         :body => DownmarkIt.to_markdown(post.post_content), 
-        :tag_list => [post.post_author], 
+        :tag_list => [wp_user.display_name.split(' ').join('_')], 
         :created_at => post.post_date, 
         :blogger_type => 'User', 
         :blogger_id => user.id
@@ -92,5 +96,7 @@ namespace :migrations do
     end
     puts ''
     
+    ActiveRecord::Migration.execute 'DROP TABLE wp_posts'
+    ActiveRecord::Migration.execute 'DROP TABLE wp_users'
   end
 end

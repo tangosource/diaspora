@@ -19,7 +19,6 @@ Diaspora::Application.routes.draw do
       #Added next lines because articles#show is overriding magazine's gem ones
       collection do
         get :review
-        get :feature
       end
 	    resources :comments, :controller => "comments", :as => "magazine_comments", :only => [:create, :destroy]
 	  end

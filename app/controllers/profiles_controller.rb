@@ -24,10 +24,12 @@ class ProfilesController < ApplicationController
     # upload and set new profile photo
     params[:profile] ||= {}
     unless params[:profile][:tag_string].nil? || params[:profile][:tag_string] == I18n.t('profiles.edit.your_tags_placeholder')
+      params[:tags] = "" if params[:tags].nil? 
       params[:profile][:tag_string].split( " " ).each do |extra_tag|
         extra_tag.strip!
         unless extra_tag == ""
           extra_tag = "##{extra_tag}" unless extra_tag.start_with?( "#" )
+          debugger
           params[:tags] += " #{extra_tag}"
         end
       end

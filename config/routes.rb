@@ -14,7 +14,6 @@ Diaspora::Application.routes.draw do
     match "articles/approve/:id" => 'articles#approve', :as => :approve_articles
     match "articles/toggle_feature/:id" => 'articles#toggle_feature', :as => :toggle_feature_articles
     match "articles/toggle_publish/:id" => 'articles#toggle_publish', :as => :toggle_publish_articles
-    match "articles/set_reviewed/:id" => 'articles#set_reviewed', :as => :reviewed_article
 	  resources :articles, :controller => "articles", :as => "magazine_articles" do
       #Added next lines because articles#show is overriding magazine's gem ones
       collection do

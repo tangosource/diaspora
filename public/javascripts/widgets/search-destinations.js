@@ -61,7 +61,7 @@
         window.location = self.searchFormAction + '?' + self.searchInputName + '=' + data['name'];
       } else { // The actual result
         self.options.element.val(formatted);
-        window.location = data['url'];
+        window.location = '/d/'+data['id'];
       }
     };
   };

@@ -1,0 +1,19 @@
+= form_for(@destination, :html => {:class => 'new_place_for'}, :validate => true) do |f|
+  %fieldset
+    .clearfix
+    
+      %b
+        = t('destinations.title')
+      = f.text_field :title
+      %b
+        = t('destinations.summary')
+      = f.text_field :summary, :rows => 5
+      %b
+        = t('destinations.permalink')
+      = f.text_area :permalink
+      %b
+        = t('destinations.photo_url')
+      = f.text_field :photo_url
+
+  .submit_field
+    = f.submit t('destinations.submit'), :class => 'in_aspects'

@@ -1059,15 +1059,14 @@ en:
     not_enabled: "webfinger does not seem to be enabled for %{account}'s host"
     no_person_constructed: "No person could be constructed from this hcard."
   destinations:
+    sign_up_message: "Sign up!"
+    title: "Title"
+    summary: "Summary"
+    permalink: "Permalink"
+    photo_url: "Photo url"
+    submit: "Submit"
     index:
       new: "New destination"
-    new:
-      sign_up_message: "Sign up!"
-      title: "Title"
-      summary: "Summary"
-      permalink: "Permalink"
-      photo_url: "Photo url"
-      submit: "Submit"
     show:
       posts_tagged_with: "Posts tagged with #%{tag}"
       nobody_talking: "Nobody is talking about %{tag} yet."

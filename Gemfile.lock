@@ -32,7 +32,7 @@ GIT
       sinatra
 
 GIT
-  remote: git@github.com:tangosource/magazine.git
+  remote: git://github.com/tangosource/magazine.git
   revision: 6cfea05b984b205de714adb1a3db4eafa424a256
   specs:
     magazine (0.4.7)

@@ -2,13 +2,14 @@ require File.join(Rails.root, "lib", "publisher")
 class Stream::Base
   TYPES_OF_POST_IN_STREAM = ['StatusMessage', 'Reshare', 'ActivityStreams::Photo']
 
-  attr_accessor :max_time, :order, :user, :publisher
+  attr_accessor :max_time, :order, :user, :publisher, :title
 
   def initialize(user, opts={})
     self.user = user
     self.max_time = opts[:max_time]
     self.order = opts[:order]
     self.publisher = Publisher.new(self.user, publisher_opts)
+    self.title = opts[:title]
   end
 
   # @return [Person]
@@ -38,7 +39,7 @@ class Stream::Base
 
   # @return [String]
   def title
-    'a title'
+    @title
   end
 
   # @return [ActiveRecord::Relation<Post>]

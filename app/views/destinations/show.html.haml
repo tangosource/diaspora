@@ -88,11 +88,11 @@
       - if user_signed_in?
         .right
           - unless tag_followed?
-            = button_to t('.follow', :tag => @stream.tag_name), tag_tag_followings_path(:name => @stream.tag_name), :method => :post,   :class => 'button take_action'
+            = button_to t('.follow', :tag => @stream.title), tag_tag_followings_path(:name => @stream.title), :method => :post,   :class => 'button take_action'
           - else
-            = button_to t('.following', :tag => @stream.tag_name), tag_tag_followings_path(:name => @stream.tag_name), :method => :delete,   :class => 'button red_on_hover tag_following in_aspects take_action'
+            = button_to t('.following', :tag => @stream.title), tag_tag_followings_path(:name => @stream.title), :method => :delete,   :class => 'button red_on_hover tag_following in_aspects take_action'
       %h2
-        = @stream.display_tag_name
+        = @stream.title
         %small
           = t('.followed_by')
           = t('people', :count => @stream.tag_follow_count)

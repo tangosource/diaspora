@@ -8,3 +8,7 @@ $(document).ready( function(){
     $(this).next().slideToggle('slow');
   })
 });
+
+$(window).load(function(){
+  $('#slider').orbit();
+});

@@ -5,16 +5,16 @@
 Diaspora::Application.routes.draw do
 
 	# Keep these above the posts resources block
-  match "magazine/page/:page" => "magazine/articles#index"
-  match "magazine/tagged/:tag" => 'magazine/articles#tagged', :as => :tagged_articles
+  match "m/page/:page" => "magazine/articles#index"
+  match "m/tagged/:tag" => 'magazine/articles#tagged', :as => :tagged_articles
   get "m" => "magazine/articles#index", :as => "magazine"
 
-	scope 'magazine', :module => :magazine do
+	scope 'm', :module => :magazine do
     #Added next line because articles#show is overriding magazine's gem ones
-    match "articles/approve/:id" => 'articles#approve', :as => :approve_articles
-    match "articles/toggle_feature/:id" => 'articles#toggle_feature', :as => :toggle_feature_articles
-    match "articles/toggle_publish/:id" => 'articles#toggle_publish', :as => :toggle_publish_articles
-	  resources :articles, :controller => "articles", :as => "magazine_articles" do
+    match "a/approve/:id" => 'articles#approve', :as => :approve_articles
+    match "a/toggle_feature/:id" => 'articles#toggle_feature', :as => :toggle_feature_articles
+    match "a/toggle_publish/:id" => 'articles#toggle_publish', :as => :toggle_publish_articles
+	  resources :a, :controller => "articles", :as => "magazine_articles" do
       #Added next lines because articles#show is overriding magazine's gem ones
       collection do
         get :review

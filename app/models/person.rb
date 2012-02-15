@@ -32,6 +32,7 @@ class Person < ActiveRecord::Base
   xml_attr :exported_key
 
   has_one :profile, :dependent => :destroy
+  belongs_to :user, :foreign_key => :owner_id
   delegate :last_name, :image_url, :to => :profile
   accepts_nested_attributes_for :profile
 

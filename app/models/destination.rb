@@ -1,7 +1,7 @@
 class Destination < ActiveRecord::Base
   validates_presence_of :permalink
 
-  acts_as_taggable_on :tags
+  acts_as_taggable
 
   def self.search(query,limit=5)
 

@@ -5,8 +5,10 @@
     mentions = model.get("mentioned_people");
     places = model.get("mentioned_places");
 
-    if(typeof places[0] != 'undefined'){
-      mentions.push(places[0]);
+    if(places){
+      if(typeof places[0] != 'undefined'){
+        mentions.push(places[0]);
+      }
     }
 
     return textFormatter.mentionify(

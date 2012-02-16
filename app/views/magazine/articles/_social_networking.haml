@@ -10,5 +10,5 @@
 :javascript
  (function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();
 
-= link_to 'share', root_path, :class => 'button creation'
+= link_to 'share', new_status_message_path(:person_id => current_user.id), :class => 'button creation', :rel => 'facebox', :action => 'post'
 

@@ -22,13 +22,14 @@ class StatusMessagesController < ApplicationController
         @aspects_with_person = @contact.aspects
         @aspect_ids = @aspects_with_person.map{|x| x.id}
         @contacts_of_contact = @contact.contacts
-        render :layout => nil
+        #render :layout => nil
       end
     else
       @aspect = :all
       @aspects = current_user.aspects
       @aspect_ids = @aspects.map{ |a| a.id }
     end
+    render :layout => nil
   end
 
   def bookmarklet

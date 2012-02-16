@@ -36,8 +36,9 @@
       - elsif all_aspects_selected?(selected_aspects)
         = hidden_field_tag 'aspect_ids[]', "all_aspects"
       - else
-        - for aspect_id in aspect_ids
-          = hidden_field_tag 'aspect_ids[]', aspect_id.to_s
+        - if !aspect_ids.nil?
+          - for aspect_id in aspect_ids
+            = hidden_field_tag 'aspect_ids[]', aspect_id.to_s
 
       .options_and_submit
         .public_toggle
@@ -79,5 +80,6 @@
 
 
     #publisher_photo_upload
-      = render 'photos/new_photo', :aspect_ids => aspect_ids.join(',')
+      - if !aspect_ids.nil?
+        = render 'photos/new_photo', :aspect_ids => aspect_ids.join(',')
 

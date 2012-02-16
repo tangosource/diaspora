@@ -37,4 +37,9 @@ class Destination < ActiveRecord::Base
     json.merge!(:tags => self.profile.tags.map{|t| "##{t.name}"}) if opts[:includes] == "tags"
     json
   end
+
+  def to_param
+    "#{id}-#{title.gsub(' ','-')}"
+  end
+
 end

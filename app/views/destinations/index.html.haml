@@ -8,7 +8,7 @@
 %ul
   -@destinations.each do |destination|
     %li
-      = link_to destination.title, destination_path(destination)
+      = link_to destination.title, destination_path(destination.to_param)
     %li
       = destination.summary
 

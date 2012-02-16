@@ -65,7 +65,7 @@
     = include_stylesheets :default, :media => 'all'
     - if rtl?
       = include_stylesheets :rtl, :media => 'all'
-    - if request.path.include?("magazine")
+    - if request.path.include?("/m/")
       = stylesheet_link_tag "magazine", :media => 'screen'
 
     :javascript

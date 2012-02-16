@@ -35,6 +35,7 @@ class ProfilesController < ApplicationController
     end
     params[:profile][:tag_string] = (params[:tags]) ? params[:tags].gsub(',',' ') : ""
     params[:profile][:searchable] ||= false
+    params[:profile][:public] ||= false
     params[:profile][:photo] = Photo.where(:author_id => current_user.person.id,
                                            :id => params[:photo_id]).first if params[:photo_id]
 

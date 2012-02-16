@@ -4,7 +4,7 @@
 
 Diaspora::Application.routes.draw do
 
-  get "search/index"
+  get "search" => "search#index", :as => "search"
 
 	# Keep these above the posts resources block
   match "magazine/page/:page" => "magazine/articles#index"

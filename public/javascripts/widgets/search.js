@@ -5,7 +5,7 @@
     this.subscribe("widget/ready", function(evt, searchForm) {
       $.extend(self, {
         searchForm: searchForm,
-        searchFormAction: '/d',
+        searchFormAction: '/search',
         searchInput: searchForm.find("input[type='search']"),
         searchInputName: searchForm.find("input[type='search']").attr("name"),
         options: {

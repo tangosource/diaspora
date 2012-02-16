@@ -50,6 +50,7 @@ class DestinationsController < ApplicationController
   # POST /destinations.xml
   def create
     @destination = Destination.new(params[:destination])
+    @destination.permalink = params[:destination][:title]
 
     respond_to do |format|
       if @destination.save
@@ -66,6 +67,9 @@ class DestinationsController < ApplicationController
   # PUT /destinations/1.xml
   def update
     @destination = Destination.find(params[:id])
+
+    params[:destination][:tag_list] = params[:destination][:tag_list].gsub(/([\#]){1,}/,'');
+    @destination.permalink = params[:destination][:title]
 
     respond_to do |format|
       if @destination.update_attributes(params[:destination])

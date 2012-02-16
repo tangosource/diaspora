@@ -58,6 +58,7 @@ javascripts:
 
     - public/javascripts/publisher.js
     - public/javascripts/place_view.js
+    - public/javascripts/vendor/jquery.autoSuggest.custom.js
   login:
     - public/javascripts/login.js
   mobile:

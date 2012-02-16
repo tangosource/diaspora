@@ -160,8 +160,7 @@ group :development do
 end
 
 # Magazine
-#gem "magazine", :git => 'git://github.com/tangosource/magazine.git' #:path => '~/Sites/gems/magazine' 
-gem "magazine", :path => '~/work/magazine'
+gem "magazine", :git => 'git://github.com/tangosource/magazine.git' #:path => '~/Sites/gems/magazine' 
 
 # Convert html to markdown
 gem 'hpricot'

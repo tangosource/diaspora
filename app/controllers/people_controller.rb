@@ -86,6 +86,12 @@ class PeopleController < ApplicationController
   def show
     @person = Person.find_from_guid_or_username(params)
 
+    unless @person.profile.public?
+      unless @person.contacts.include? current_user
+        redirect_to :back, :notice => "You need to be contact of this person." and return
+      end
+    end
+
     if remote_profile_with_no_user_session?
       raise ActiveRecord::RecordNotFound
     end

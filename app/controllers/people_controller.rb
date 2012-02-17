@@ -87,7 +87,7 @@ class PeopleController < ApplicationController
     @person = Person.find_from_guid_or_username(params)
 
     unless @person.profile.public?
-      unless @person.contacts.include? current_user
+      unless @person.contacts.include? Contact.find_by_user_id(current_user)
         redirect_to :back, :notice => "You need to be contact of this person." and return
       end
     end

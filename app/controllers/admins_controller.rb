@@ -71,6 +71,20 @@ class AdminsController < ApplicationController
     @correlations_hash = Statistics.new.generate_correlations
   end
 
+  def users_list
+    @users = User.all
+  end
+
+  def toggle_admin
+    @user = User.find(params[:id])
+    if @user.toggle_admin
+      status = @user.admin ? 'admin' : 'normal'
+      redirect_to :back, :notice => 'User has been set as ' + status + ' user succesfully.'
+    else
+      redirect_to :back, :notice => 'User has not been set as admin.'
+    end
+  end
+
   private
   def percent_change(today, yesterday)
     sprintf( "%0.02f", ((today-yesterday) / yesterday.to_f)*100).to_f

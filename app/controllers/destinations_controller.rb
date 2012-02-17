@@ -14,8 +14,9 @@ class DestinationsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json do
+
         @destinations = Destination.search params[:q], params[:limit]
-        render :json => @destinations.to_json 
+        render :json => @destinations.to_json
       end
     end
   end

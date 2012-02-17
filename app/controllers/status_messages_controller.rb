@@ -15,6 +15,7 @@ class StatusMessagesController < ApplicationController
   # @param person_id [Integer] The id of the person to be mentioned
   def new
     if params[:person_id] && @person = Person.where(:id => params[:person_id]).first
+      @article = params[:article] if params[:article]
       @aspect = :profile
       @contact = current_user.contact_for(@person)
       @aspects_with_person = []

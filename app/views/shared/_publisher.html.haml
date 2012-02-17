@@ -22,7 +22,10 @@
                 :title => popover_with_close_html( '1. ' + t('shared.public_explain.share') ),
                 'data-content' => t('shared.public_explain.new_user_welcome_message')
             - else
-              = status.text_area :fake_text, :rows => 2, :value => h(publisher_formatted_text), :tabindex => 1, :placeholder => t('.whats_on_your_mind')
+              - if @article
+                = status.text_area :fake_text, :rows => 2, :value => magazine_article_path(@article), :tabindex => 1
+              - else
+                = status.text_area :fake_text, :rows => 2, :value => h(publisher_formatted_text), :tabindex => 1, :placeholder => t('.whats_on_your_mind')
             = status.hidden_field :text, :value => h(publisher_hidden_text), :class => 'clear_on_submit'
 
             #place_publisher{:title => t('.place_publisher')}

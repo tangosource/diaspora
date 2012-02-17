@@ -73,6 +73,15 @@
             = link_to place.description.title, place_path(place)
             %br
 
+  %br
+  .section
+    %h3
+      = t('.destinations')
+    %ul#destinations_list.left_nav
+      - @stream.related_destinations.each do |destination|
+        = link_to destination.title, destination_path(destination)
+
+  %br
   .section
     %h3
       = link_to t('.photos'), destination_photos_path(@destination)

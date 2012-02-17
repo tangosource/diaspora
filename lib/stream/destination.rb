@@ -14,6 +14,10 @@ class Stream::Destination < Stream::Tag
     return places
   end
 
+  def related_destinations
+    ::Destination.tagged_with(tag_name)
+  end
+
   def related_places_each(key)
     raise 'invalid key' unless RELATED_PLACES_TAGS.include?(key)
     ::Place.tagged_with([tag_name,key], :match_all=>true)

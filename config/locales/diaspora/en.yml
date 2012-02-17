@@ -1081,6 +1081,7 @@ en:
       articles: "Articles"
       photos: "Photos"
       destinations: "Destinations"
+      edit: "Edit destination"
     photos:
       posts_tagged_with: "Posts tagged with #%{tag}"
       nobody_talking: "Nobody is talking about %{tag} yet."

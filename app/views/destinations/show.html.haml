@@ -55,6 +55,10 @@
     .profile_photo
       = image_tag @destination.photo_url
 
+  = link_to t('.edit'), edit_destination_path(@destination) if current_user and current_user.admin?
+  %br
+  %br
+
   .section
     %h3
       = t('.articles')

@@ -1065,6 +1065,7 @@ en:
     permalink: "Permalink"
     photo_url: "Photo url"
     submit: "Submit"
+    tag_list: "Tags"
     index:
       new: "New destination"
     show:
@@ -1079,6 +1080,7 @@ en:
       places: "Places"
       articles: "Articles"
       photos: "Photos"
+      destinations: "Destinations"
     photos:
       posts_tagged_with: "Posts tagged with #%{tag}"
       nobody_talking: "Nobody is talking about %{tag} yet."

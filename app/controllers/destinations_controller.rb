@@ -50,6 +50,7 @@ class DestinationsController < ApplicationController
   # POST /destinations.xml
   def create
     @destination = Destination.new(params[:destination])
+    @destination.tag_list = params[:destination][:tag_list].gsub(/([\#]){1,}/,'');
     @destination.permalink = params[:destination][:title]
 
     respond_to do |format|

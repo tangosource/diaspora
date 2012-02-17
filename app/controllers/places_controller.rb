@@ -37,6 +37,7 @@ class PlacesController < ApplicationController
   # POST /places.xml
   def create
     @place = Place.new(params[:place])
+    @place.tag_list = params[:place][:tag_list].gsub(/([\#]){1,}/,'');
 
     respond_to do |format|
       if @place.save

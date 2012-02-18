@@ -50,17 +50,21 @@ class Place < ActiveRecord::Base
 
     where_clause = <<-SQL
       descriptions.title #{like_operator} ? OR
-      places.diaspora_handle #{like_operator} ?
+      places.search_string #{like_operator} ?
     SQL
 
     q_tokens = []
     q_tokens[0] = query.to_s.strip.gsub(/(\s|$|^)/) { "%#{$1}" }
-    q_tokens[1] = q_tokens[0].gsub(/\s/,'').gsub('%','')
-    q_tokens[1] << "%"
+    q_tokens[1] = q_tokens[0].gsub(/\s/,'')
 
     [where_clause, q_tokens]
   end
   
+  before_save :build_search_string
+
+  def build_search_string 
+   self.search_string = [title, diaspora_handle, tag_list.to_a].join(' ')
+  end
 
   def as_json( opts = {} )
     opts ||= {}

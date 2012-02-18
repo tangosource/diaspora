@@ -5,7 +5,7 @@
     this.subscribe("widget/ready", function(evt, searchForm) {
       $.extend(self, {
         searchForm: searchForm,
-        searchFormAction: '/people',
+        searchFormAction: '/search',
         searchInput: searchForm.find("input[type='search']"),
         searchInputName: searchForm.find("input[type='search']").attr("name"),
         options: {
@@ -40,8 +40,10 @@
     };
 
     this.parse = function(data) {
-      var results =  data.map(function(person){
-        return {data : person, value : person['name']}
+      var results =  data.map(function(item){
+        item['url'] = item['url'].replace("destinations","d")
+        item['url'] = item['url'].replace("places","p")
+        return {data : item, value : item['name']}
       });
 
       results.push({

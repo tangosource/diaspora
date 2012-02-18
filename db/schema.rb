@@ -351,6 +351,7 @@ ActiveRecord::Schema.define(:version => 20120217204053000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "closed_account",        :default => false
+    t.string   "search_string"
   end
 
   create_table "pods", :force => true do |t|

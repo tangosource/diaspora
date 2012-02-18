@@ -3,7 +3,7 @@ class AddSearchStringToPlaces < ActiveRecord::Migration
     add_column :places, :search_string, :string
     Place.reset_column_information
 
-    Place.find_in_batches do |places
+    Place.find_in_batches do |places|
       places.each do |place|
         print '.'
         place.save

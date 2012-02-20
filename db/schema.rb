@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120210204238232655) do
+ActiveRecord::Schema.define(:version => 20120217204053000000) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -351,6 +351,7 @@ ActiveRecord::Schema.define(:version => 20120210204238232655) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "closed_account",        :default => false
+    t.string   "search_string"
   end
 
   create_table "pods", :force => true do |t|
@@ -542,6 +543,8 @@ ActiveRecord::Schema.define(:version => 20120210204238232655) do
     t.boolean  "auto_follow_back",                                  :default => false
     t.integer  "auto_follow_back_aspect_id"
     t.text     "hidden_shareables"
+    t.string   "test"
+    t.boolean  "admin",                                             :default => false
   end
 
   add_index "users", ["authentication_token"], :name => "index_users_on_authentication_token", :unique => true
@@ -550,6 +553,21 @@ ActiveRecord::Schema.define(:version => 20120210204238232655) do
   add_index "users", ["invitation_token"], :name => "index_users_on_invitation_token"
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token", :unique => true
   add_index "users", ["username"], :name => "index_users_on_username", :unique => true
+
+  create_table "wp_users", :primary_key => "ID", :force => true do |t|
+    t.string   "user_login",          :limit => 60,  :default => "", :null => false
+    t.string   "user_pass",           :limit => 64,  :default => "", :null => false
+    t.string   "user_nicename",       :limit => 50,  :default => "", :null => false
+    t.string   "user_email",          :limit => 100, :default => "", :null => false
+    t.string   "user_url",            :limit => 100, :default => "", :null => false
+    t.datetime "user_registered",                                    :null => false
+    t.string   "user_activation_key", :limit => 60,  :default => "", :null => false
+    t.integer  "user_status",                        :default => 0,  :null => false
+    t.string   "display_name",        :limit => 250, :default => "", :null => false
+  end
+
+  add_index "wp_users", ["user_login"], :name => "user_login_key"
+  add_index "wp_users", ["user_nicename"], :name => "user_nicename"
 
   add_foreign_key "aspect_memberships", "aspects", :name => "aspect_memberships_aspect_id_fk", :dependent => :delete
   add_foreign_key "aspect_memberships", "contacts", :name => "aspect_memberships_contact_id_fk", :dependent => :delete

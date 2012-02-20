@@ -56,8 +56,8 @@ class TagFollowingsController < ApplicationController
   end
 
   def create_multiple
-    if params[:tags].present?
-      params[:tags].split(",").each do |name|
+    if params[:follow_tags].present?
+      params[:follow_tags].split(",").each do |name|
         name_normalized = ActsAsTaggableOn::Tag.normalize(name)
         @tag = ActsAsTaggableOn::Tag.find_or_create_by_name(name_normalized)
         @tag_following = current_user.tag_followings.create(:tag_id => @tag.id)

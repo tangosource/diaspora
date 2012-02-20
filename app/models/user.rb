@@ -456,7 +456,11 @@ class User < ActiveRecord::Base
   end
 
   def admin?
-    AppConfig[:admins].present? && AppConfig[:admins].include?(self.username)
+    admin
+  end
+
+  def toggle_admin
+    update_attribute(:admin, !admin)
   end
 
   def guard_unconfirmed_email

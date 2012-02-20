@@ -1,0 +1,16 @@
+
+.span-24
+  = render :partial => 'admins/admin_bar.haml'
+%br
+%br
+
+%h3
+  users list
+
+%table
+  - @users.each do |user|
+    %tr
+      %td
+        = link_to user.username, user_profile_path(user)
+      %td
+        = link_to text = user.admin ? 'Set normal' : 'Set admin', toggle_admin_path(user)

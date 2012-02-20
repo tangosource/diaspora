@@ -141,7 +141,9 @@ Diaspora::Application.routes.draw do
     get   :admin_inviter
     get   :weekly_user_stats
     get   :correlations
-    get   :stats, :as => 'pod_stats'
+    get   :users_list
+    match 'toggle_admin/:id' => 'admins#toggle_admin', :as => 'toggle_admin', :via => :get
+    get   :stats, :as    => 'pod_stats'
   end
 
   resource :profile, :only => [:edit, :update]

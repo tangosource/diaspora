@@ -1066,6 +1066,7 @@ en:
     photo_url: "Photo url"
     submit: "Submit"
     tag_list: "Tags"
+    name_list: "Alternative names"
     index:
       new: "New destination"
     show:

@@ -22,7 +22,7 @@ class Stream::Destination < Stream::Tag
   end
 
   def related_destinations
-    ::Destination.tagged_with(names)
+    ::Destination.tagged_with(names, :any => true)
   end
 
   def related_places_each(key)

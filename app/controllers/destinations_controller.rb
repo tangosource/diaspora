@@ -24,7 +24,8 @@ class DestinationsController < ApplicationController
   # GET /destinations/1
   # GET /destinations/1.xml
   def show
-    @stream = Stream::Destination.new(current_user, @destination.permalink, :title => @destination.title, :max_time => params[:max_time], :page => params[:page])
+    @stream = Stream::Destination.new(current_user, @destination.permalink, :title => @destination.title, :max_time => params[:max_time], 
+                                      :page => params[:page], :names => @destination.name_list)
 
     respond_with do |format|
       format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
@@ -51,7 +52,8 @@ class DestinationsController < ApplicationController
   # POST /destinations.xml
   def create
     @destination = Destination.new(params[:destination])
-    @destination.tag_list = params[:destination][:tag_list].gsub(/([\#]){1,}/,'');
+    @destination.tag_list = params[:destination][:tag_list].gsub(/([\#]){1,}/,'')
+    @destination.name_list = params[:destination][:names].gsub(' ',', ') 
     @destination.permalink = params[:destination][:title]
 
     respond_to do |format|
@@ -71,7 +73,8 @@ class DestinationsController < ApplicationController
     @destination = Destination.find(params[:id])
 
     params[:destination][:tag_list] = params[:destination][:tag_list].gsub(/([\#]){1,}/,'');
-    @destination.permalink = params[:destination][:title]
+    params[:destination][:name_list] = params[:destination][:name_list].gsub(' ',', ') 
+    params[:destination][:permalink] = params[:destination][:title]
 
     respond_to do |format|
       if @destination.update_attributes(params[:destination])

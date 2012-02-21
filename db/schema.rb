@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120217204053000000) do
+ActiveRecord::Schema.define(:version => 20120221214826000000) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -163,6 +163,7 @@ ActiveRecord::Schema.define(:version => 20120217204053000000) do
     t.string   "photo_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "search_string"
   end
 
   create_table "invitations", :force => true do |t|
@@ -351,7 +352,6 @@ ActiveRecord::Schema.define(:version => 20120217204053000000) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "closed_account",        :default => false
-    t.string   "search_string"
   end
 
   create_table "pods", :force => true do |t|

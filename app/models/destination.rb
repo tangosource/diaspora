@@ -4,6 +4,8 @@ class Destination < ActiveRecord::Base
   acts_as_taggable
   acts_as_taggable_on :names
 
+  before_save :build_search_string
+
   def self.search(query,limit=5)
 
     sql, tokens = self.search_query_string(query)
@@ -41,6 +43,10 @@ class Destination < ActiveRecord::Base
 
   def to_param
     "#{id}-#{title.gsub(' ','-')}"
+  end
+
+  def build_search_string
+    search_string = [title, name_list.to_a].join(' ')
   end
 
 end

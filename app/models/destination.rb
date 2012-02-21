@@ -17,7 +17,7 @@ class Destination < ActiveRecord::Base
     like_operator = postgres? ? "ILIKE" : "LIKE"
 
     where_clause = <<-SQL
-      destinations.title #{like_operator} ? OR
+      destinations.search_string #{like_operator} ? OR
       destinations.permalink #{like_operator} ?
     SQL
 
@@ -46,7 +46,7 @@ class Destination < ActiveRecord::Base
   end
 
   def build_search_string
-    search_string = [title, name_list.to_a].join(' ')
+    self.search_string = [title, name_list.to_a].join(' ')
   end
 
 end

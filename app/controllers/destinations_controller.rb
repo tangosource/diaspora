@@ -5,6 +5,7 @@ class DestinationsController < ApplicationController
   respond_to :json, :only => [:index, :show]
 
   before_filter :find_destination, :only=> [:show, :photos]
+  before_filter :validates_user, :only  => [:edit]
 
   helper :tags
 
@@ -137,4 +138,11 @@ class DestinationsController < ApplicationController
       end
     end
   end
+
+  private
+   def validates_user
+     if !current_user or (current_user and !current_user.admin?)
+       redirect_to :back, :notice => 'You need to be admin user to do that.'
+     end
+   end
 end

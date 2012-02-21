@@ -5,6 +5,7 @@ class PlacesController < ApplicationController
   respond_to :html, :only => [:show]
   respond_to :json, :only => [:index, :show, :get_place]
 
+  before_filter :validates_user, :only  => [:edit]
 
   # GET /places/1
   # GET /places/1.xml
@@ -99,5 +100,12 @@ class PlacesController < ApplicationController
         format.json {render :json => place.to_json}
       end
     end
+
+  private
+   def validates_user
+     if !current_user or (current_user and !current_user.admin?)
+       redirect_to :back, :notice => 'You need to be admin user to do that.'
+     end
+   end
 
 end

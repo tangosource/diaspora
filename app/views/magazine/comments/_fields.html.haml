@@ -1,0 +1,15 @@
+%field
+  = f.label :name, "Name *"
+  = f.text_field :name, :value => current_user.name
+  = errors_on(@comment, :name)
+
+%field
+  = f.label :email, "Email"
+  = f.email_field :email, :value => current_blogger.email
+  = errors_on(@comment, :email)
+
+%field
+  = f.label :website, "Your Website"
+  = f.url_field :website, :value => user_profile_url(current_user)
+  = errors_on(@comment, :website)
+

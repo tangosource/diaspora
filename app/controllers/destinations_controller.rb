@@ -54,7 +54,7 @@ class DestinationsController < ApplicationController
   def create
     @destination = Destination.new(params[:destination])
     @destination.tag_list = params[:destination][:tag_list].gsub(/([\#]){1,}/,'')
-    @destination.name_list = params[:destination][:names].gsub(' ',', ') 
+    @destination.name_list = params[:destination][:name_list].gsub(/([\#]){1,}/,'') 
     @destination.permalink = params[:destination][:title]
 
     respond_to do |format|
@@ -73,8 +73,8 @@ class DestinationsController < ApplicationController
   def update
     @destination = Destination.find(params[:id])
 
-    params[:destination][:tag_list] = params[:destination][:tag_list].gsub(/([\#]){1,}/,'');
-    params[:destination][:name_list] = params[:destination][:name_list].gsub(' ',', ') 
+    params[:destination][:tag_list] = params[:destination][:tag_list].gsub(/([\#]){1,}/,'')
+    params[:destination][:name_list] = params[:destination][:name_list].gsub(/([\#]){1,}/,'') 
     params[:destination][:permalink] = params[:destination][:title]
 
     respond_to do |format|

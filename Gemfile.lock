@@ -32,14 +32,6 @@ GIT
       sinatra
 
 GIT
-<<<<<<< Updated upstream
-  remote: https://github.com/socialcast/resque-ensure-connected.git
-  revision: 8ac0f9e4658495097fb333a93db81d54ba9a5311
-  specs:
-    resque-ensure-connected (0.2.0)
-      activerecord (>= 2.3.5)
-      resque (>= 1.10.0)
-
   remote: git://github.com/tangosource/magazine.git
   revision: a09606064d49d2a36117d4c16e5d505212f3664c
   specs:
@@ -50,6 +42,14 @@ GIT
       nokogiri (>= 1.5.0)
       redcarpet (>= 2.0.1)
       will_paginate (>= 3.0.2)
+
+GIT
+  remote: https://github.com/socialcast/resque-ensure-connected.git
+  revision: 8ac0f9e4658495097fb333a93db81d54ba9a5311
+  specs:
+    resque-ensure-connected (0.2.0)
+      activerecord (>= 2.3.5)
+      resque (>= 1.10.0)
 
 GEM
   remote: http://rubygems.org/

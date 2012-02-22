@@ -15,6 +15,7 @@ class StatusMessagesController < ApplicationController
   # @param person_id [Integer] The id of the person to be mentioned
   def new
     if params[:person_id] && @person = Person.where(:id => params[:person_id]).first
+      @article = params[:article] if params[:article]
       @aspect = :profile
       @contact = current_user.contact_for(@person)
       @aspects_with_person = []
@@ -22,13 +23,14 @@ class StatusMessagesController < ApplicationController
         @aspects_with_person = @contact.aspects
         @aspect_ids = @aspects_with_person.map{|x| x.id}
         @contacts_of_contact = @contact.contacts
-        render :layout => nil
+        #render :layout => nil
       end
     else
       @aspect = :all
       @aspects = current_user.aspects
       @aspect_ids = @aspects.map{ |a| a.id }
     end
+    render :layout => nil
   end
 
   def bookmarklet

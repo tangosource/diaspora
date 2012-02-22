@@ -189,6 +189,7 @@ defaults: &defaults
 
   # google analytics key - if false, no javascript included
   google_a_site: false
+  google_analytics_code: 'UA-16888555-2'
 
   # piwik integration - if not set, no javascript included
   piwik_id:

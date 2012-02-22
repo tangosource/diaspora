@@ -2,31 +2,20 @@ Places = Backbone.View.extend({
 
   el: ('#publisher'),
 
+  events: {
+    "click #place_publisher": "addPlace"
+  },
+
   initialize : function(place) {
-    _.bindAll(this, 'keyDownHandler','findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput');
+    _.bindAll(this, 'findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput');
 
     if(place){
       visibleInput = $('#status_message_fake_text');
       this.onSelect(visibleInput,place,place.name);
     }
 
+    $('#place_publisher').css('width','24px');
     this.setAutocomplete();
-  },
-
-  keyDownHandler: function(){
-    var input = $('#status_message_fake_text');
-    var selectionStart = input[0].selectionStart;
-    var selectionEnd = input[0].selectionEnd;
-    var isDeletion = (event.keyCode == KEYCODES.DEL && selectionStart < input.val().length) || (event.keyCode == KEYCODES.BACKSPACE && (selectionStart > 0 || selectionStart != selectionEnd));
-    var isInsertion = (KEYCODES.isInsertion(event.keyCode) && event.keyCode != KEYCODES.RETURN );
-    var value = input.val();
-
-    if(isDeletion){
-      this.searchTermFromValue(value, selectionStart);
-    }else if(isInsertion){
-      this.searchTermFromValue(value, selectionStart);
-    }
-    
   },
 
   findStringToReplace: function(value, cursorIndex){
@@ -61,6 +50,11 @@ Places = Backbone.View.extend({
   hiddenMentionFromPlace : function(placeData){
     return "={" + placeData.name + "; " + placeData.handle + "}";
   },
+
+  hiddenMentionFromDestination : function(DestinationData){
+    return "#" + DestinationData.name;
+  },
+  
   
   
   onSelect :  function(visibleInput, data, formatted) {
@@ -70,19 +64,41 @@ Places = Backbone.View.extend({
      window.location = "/p/new?place[description_attributes][title]="+data.name
     }
 
-    var visibleCursorIndex = visibleInput[0].selectionStart;
-    var visibleLoc = this.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
-    $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);
+    if (data.url.match(/destination/)){
 
-    var mentionString = this.hiddenMentionFromPlace(data);
-    var mention = { visibleStart: visibleLoc[0],
-      visibleEnd  : visibleLoc[1],
-      mentionString : mentionString
-    };
+      var visibleCursorIndex = visibleInput[0].selectionStart;
+      var visibleLoc = this.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
+      $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);
 
-    Publisher.autocompletion.mentionList.push(mention);
-    Publisher.oldInputContent = visibleInput.val();
-    Publisher.hiddenInput().val(Publisher.autocompletion.mentionList.generateHiddenInput(visibleInput.val()));
+      var mentionString = this.hiddenMentionFromDestination(data);
+      var mention = { visibleStart: visibleLoc[0],
+        visibleEnd  : visibleLoc[1],
+        mentionString : mentionString
+      };
+
+      Publisher.autocompletion.mentionList.push(mention);
+      Publisher.oldInputContent = visibleInput.val();
+      Publisher.hiddenInput().val(Publisher.autocompletion.mentionList.generateHiddenInput(visibleInput.val()));
+
+    }else {
+
+      var visibleCursorIndex = visibleInput[0].selectionStart;
+      var visibleLoc = this.addMentionToInput(visibleInput, visibleCursorIndex, formatted);
+      $.Autocompleter.Selection(visibleInput[0], visibleLoc[1], visibleLoc[1]);
+
+      var mentionString = this.hiddenMentionFromPlace(data);
+      var mention = { visibleStart: visibleLoc[0],
+        visibleEnd  : visibleLoc[1],
+        mentionString : mentionString
+      };
+
+      Publisher.autocompletion.mentionList.push(mention);
+      Publisher.oldInputContent = visibleInput.val();
+      Publisher.hiddenInput().val(Publisher.autocompletion.mentionList.generateHiddenInput(visibleInput.val()));
+
+    }
+
+
   },
 
   addMentionToInput: function(input, cursorIndex, formatted){
@@ -101,12 +117,15 @@ Places = Backbone.View.extend({
   
   setAutocomplete: function(){
 
-    view = this;
-    $("#status_message_fake_text").autocomplete("/p/", {
+    self = this;
+
+    $("#status_message_fake_text").autocomplete("/search.json", {
       minChars : 1,
       max : 5,
-      onSelect : view.onSelect,
-      searchTermFromValue: view.searchTermFromValue,
+      cacheLength : 15,
+      delay : 800,
+      onSelect : self.onSelect,
+      searchTermFromValue: self.searchTermFromValue,
       scroll : false,
       formatItem: function(row, i, max) {
         return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
@@ -119,15 +138,9 @@ Places = Backbone.View.extend({
       },
       disableRightAndLeft : true
     });
-  }
+  },
 
-});
-
-
-$(document).ready(function(){
-  $('#place_publisher').css('width','24px');
-
-  $('#place_publisher').on('click', function(){
+  addPlace: function(){
     var input = $('#status_message_fake_text');
     var value = input.val();
     input.focus();
@@ -135,28 +148,8 @@ $(document).ready(function(){
     input[0].setSelectionRange(selection + 2,selection + 2);  
     input.val(value+'=');
 
-    $("#status_message_fake_text").autocomplete({}, {
-      minChars : 1,
-      max : 5,
-      onSelect : function(){
-        $("#status_message_fake_text").val();
-      },
-      searchTermFromValue: Places.searchTermFromValue,
-      scroll : false,
-      formatItem: function(row, i, max) {
-        return "<img src='"+ row.avatar +"' class='avatar'/>" + row.name;
-      },
-      formatMatch: function(row, i, max) {
-        return row.name;
-      },
-      formatResult: function(row) {
-        return row.name;
-      },
-      disableRightAndLeft : true
-    });
-    
-   $.Autocompleter.default_value('Type a place name');
-
-  });
+    this.setAutocomplete();
+    $.Autocompleter.default_value('Type a place name');
+  }
 
 });

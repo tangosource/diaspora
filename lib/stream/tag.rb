@@ -3,11 +3,12 @@
 #   the COPYRIGHT file.
 
 class Stream::Tag < Stream::Base
-  attr_accessor :tag_name, :people_page
+  attr_accessor :tag_name, :people_page, :names
 
   def initialize(user, tag_name, opts={})
     self.tag_name = tag_name
     self.people_page = opts[:page] || 1
+    self.names = opts[:names]
     super(user, opts)
   end
 

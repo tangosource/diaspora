@@ -22,7 +22,10 @@
                 :title => popover_with_close_html( '1. ' + t('shared.public_explain.share') ),
                 'data-content' => t('shared.public_explain.new_user_welcome_message')
             - else
-              = status.text_area :fake_text, :rows => 2, :value => h(publisher_formatted_text), :tabindex => 1, :placeholder => t('.whats_on_your_mind')
+              - if @article
+                = status.text_area :fake_text, :rows => 2, :value => magazine_article_url(@article), :tabindex => 1
+              - else
+                = status.text_area :fake_text, :rows => 2, :value => h(publisher_formatted_text), :tabindex => 1, :placeholder => t('.whats_on_your_mind')
             = status.hidden_field :text, :value => h(publisher_hidden_text), :class => 'clear_on_submit'
 
             #place_publisher{:title => t('.place_publisher')}
@@ -36,8 +39,9 @@
       - elsif all_aspects_selected?(selected_aspects)
         = hidden_field_tag 'aspect_ids[]', "all_aspects"
       - else
-        - for aspect_id in aspect_ids
-          = hidden_field_tag 'aspect_ids[]', aspect_id.to_s
+        - if !aspect_ids.nil?
+          - for aspect_id in aspect_ids
+            = hidden_field_tag 'aspect_ids[]', aspect_id.to_s
 
       .options_and_submit
         .public_toggle
@@ -79,5 +83,6 @@
 
 
     #publisher_photo_upload
-      = render 'photos/new_photo', :aspect_ids => aspect_ids.join(',')
+      - if !aspect_ids.nil?
+        = render 'photos/new_photo', :aspect_ids => aspect_ids.join(',')
 

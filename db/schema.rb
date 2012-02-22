@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120221214826000000) do
+ActiveRecord::Schema.define(:version => 20120222192653000000) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -344,14 +344,15 @@ ActiveRecord::Schema.define(:version => 20120221214826000000) do
   end
 
   create_table "places", :force => true do |t|
-    t.string   "guid",                                     :null => false
-    t.text     "url",                                      :null => false
-    t.string   "diaspora_handle",                          :null => false
-    t.text     "serialized_public_key",                    :null => false
+    t.string   "guid",                                                   :null => false
+    t.text     "url",                                                    :null => false
+    t.string   "diaspora_handle",                                        :null => false
+    t.text     "serialized_public_key",                                  :null => false
     t.integer  "owner_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "closed_account",        :default => false
+    t.boolean  "closed_account",                      :default => false
+    t.string   "search_string",         :limit => 60
   end
 
   create_table "pods", :force => true do |t|
@@ -410,8 +411,8 @@ ActiveRecord::Schema.define(:version => 20120221214826000000) do
     t.date     "birthday"
     t.string   "gender"
     t.text     "bio"
-    t.boolean  "searchable",                       :default => true, :null => false
-    t.integer  "person_id",                                          :null => false
+    t.boolean  "searchable",                       :default => true,  :null => false
+    t.integer  "person_id",                                           :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "location"
@@ -420,6 +421,7 @@ ActiveRecord::Schema.define(:version => 20120221214826000000) do
     t.string   "hidden_first_name"
     t.string   "hidden_last_name"
     t.boolean  "public",                           :default => true
+    t.boolean  "hide_birthday",                    :default => false
   end
 
   add_index "profiles", ["full_name", "searchable"], :name => "index_profiles_on_full_name_and_searchable"

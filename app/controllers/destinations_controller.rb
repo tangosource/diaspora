@@ -47,6 +47,8 @@ class DestinationsController < ApplicationController
   # GET /destinations/1/edit
   def edit
     @destination = Destination.find(params[:id])
+    @tag_list = @destination.tag_list.to_s
+    @name_list = @destination.name_list.to_s
   end
 
   # POST /destinations

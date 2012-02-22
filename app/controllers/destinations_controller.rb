@@ -53,8 +53,9 @@ class DestinationsController < ApplicationController
   # POST /destinations.xml
   def create
     @destination = Destination.new(params[:destination])
-    @destination.tag_list = params[:destination][:tag_list].gsub(/([\#]){1,}/,'')
-    @destination.name_list = params[:destination][:name_list].gsub(/([\#]){1,}/,'') 
+
+    @destination.tag_list  = extract_tags params[:destination][:tag_list] 
+    @destination.name_list = extract_tags params[:destination][:name_list]
     @destination.permalink = params[:destination][:title]
 
     respond_to do |format|
@@ -73,8 +74,8 @@ class DestinationsController < ApplicationController
   def update
     @destination = Destination.find(params[:id])
 
-    params[:destination][:tag_list] = params[:destination][:tag_list].gsub(/([\#]){1,}/,'')
-    params[:destination][:name_list] = params[:destination][:name_list].gsub(/([\#]){1,}/,'') 
+    params[:destination][:tag_list]  = extract_tags params[:destination][:tag_list]
+    params[:destination][:name_list] = extract_tags params[:destination][:name_list]
     params[:destination][:permalink] = params[:destination][:title]
 
     respond_to do |format|
@@ -144,5 +145,9 @@ class DestinationsController < ApplicationController
      if !current_user or (current_user and !current_user.admin?)
        redirect_to :back, :notice => 'You need to be admin user to do that.'
      end
+   end
+
+   def extract_tags(tags_with_hash)
+     tags_with_hash.gsub(/([\#]){1,}/,'')
    end
 end

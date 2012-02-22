@@ -3,7 +3,7 @@ class AddSearchStringToDestinations < ActiveRecord::Migration
     add_column :destinations, :search_string, :string
     Destination.reset_column_information
     Destination.all.each do |destination|
-      p '.'
+      print '.'
       destination.save
     end
   end

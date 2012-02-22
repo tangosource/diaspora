@@ -1,3 +1,30 @@
+- content_for :head do
+  :javascript
+    $(document).ready(function () {
+      var autocompleteInput = $("#destination_tag_list, #destination_name_list");
+
+      autocompleteInput.autoSuggest("#{tags_path}", {
+        selectedItemProp: "name",
+        searchObjProps: "name",
+        asHtmlID: "tags",
+        neverSubmit: true,
+        retriveLimit: 10,
+        minChars: 2,
+        keyDelay: 200,
+        startText: "",
+        emptyText: "#{t('no_results')}",
+        });
+
+      autocompleteInput.bind('keydown', function(evt){
+        if(evt.keyCode == 13 || evt.keyCode == 9 || evt.keyCode == 32){
+          evt.preventDefault();
+          if( $('li.as-result-item.active').length == 0 ){
+            $('li.as-result-item').first().click();
+          }
+        }
+      });
+    });
+
 = form_for(@destination, :html => {:class => 'new_place_for'}, :validate => true) do |f|
   %fieldset
     .clearfix

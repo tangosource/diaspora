@@ -67,8 +67,7 @@
 					x = x+""+Math.floor(Math.random()*100); //this ensures there will be unique IDs on the page if autoSuggest() is called multiple times
 					var x_id = "as-input-"+x;
 				} else {
-					x = opts.asHtmlID;
-					var x_id = x;
+					var x_id = opts.asHtmlID;
 				}
         var input = $(this)
           , id = input.attr('id')

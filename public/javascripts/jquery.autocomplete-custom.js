@@ -328,12 +328,10 @@ $.Autocompleter = function(input, options) {
 		if (!options.matchCase)
 			term = term.toLowerCase();
 		var data = cache.load(term);
-		// recieve the cached data
-		if (data && data.length) {
-			success(term, data);
 		// if an AJAX url has been supplied, try loading the data now
-		} else if( (typeof options.url == "string") && (options.url.length > 0) ){
-
+    if( (typeof options.url == "string") && (options.url.length > 0) ){
+     
+      var tmp = data;
 			var extraParams = {
 				timestamp: +new Date()
 			};
@@ -355,7 +353,11 @@ $.Autocompleter = function(input, options) {
 				success: function(data) {
 					var parsed = options.parse && options.parse(data) || parse(data);
 					cache.add(term, parsed);
-					success(term, parsed);
+          if(parsed.length > 0){
+            success(term, parsed);
+          }else {
+            success(term, tmp);
+          }
 				}
 			});
 		} else {
@@ -367,9 +369,11 @@ $.Autocompleter = function(input, options) {
 
 	function parse(data) {
 		var parsed = [];
-		//var rows = data.split("\n");
+
     var rows = _.map(data, function(value){
-     return value.name;
+      if (!value.url.match(/people/)){
+        return value.name;
+      }
     });
 
     
@@ -562,7 +566,7 @@ $.Autocompleter.Cache = function(options) {
 				for (var i = q.length - 1; i >= options.minChars; i--) {
 					var c = data[q.substr(0, i)];
 
-          // Create place if dousn't exist
+          // Create place if doesn't exist
           if($.place){
             var csub = [];
             create = {

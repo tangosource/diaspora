@@ -11,11 +11,6 @@ $(document).ready( function(){
       forgotPass = $("#forgot_password_link"),
       controls = $("#controls");
 
-  $("#login").center();
-  $(window).resize(function(){
-    $("#login").center();
-  });
-
   username.focus();
   $("form").submit(function(){
     $('#asterisk').addClass('rideSpinners');

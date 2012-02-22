@@ -61,7 +61,7 @@
     
     
     = stylesheet_link_tag "login", :media => 'screen'
-
+    
     = include_stylesheets :default, :media => 'all'
     - if rtl?
       = include_stylesheets :rtl, :media => 'all'
@@ -78,6 +78,7 @@
       if ((window.history) && (window.history.pushState === undefined)) {
         window.history.pushState = function() { };
       }
+
 
     = csrf_meta_tag
     <!--[if IE]>
@@ -141,6 +142,7 @@
       %a{:id=>"back-to-top", :title=>"#{I18n.t('.back_to_top')}", :href=>"#"}
         &#8679;
 
+    = render 'layouts/ads_footer'
     %footer
       .container
         %ul#footer_nav

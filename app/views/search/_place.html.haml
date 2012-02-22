@@ -1,0 +1,13 @@
+-#   Copyright (c) 2010-2011, Diaspora Inc.  This file is
+-#   licensed under the Affero General Public License version 3 or later.  See
+-#   the COPYRIGHT file.
+
+.stream_element{:id => "place-#{place.id}"}
+
+  = place_image_link(place)
+  .content
+    %span.from
+      =place_link(place)
+
+    .info
+      = Diaspora::Taggable.format_tags(place.tag_string)

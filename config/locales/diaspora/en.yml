@@ -32,7 +32,6 @@ en:
   back: "Back"
   public: "Public"
   limited: "Limited"
-  search: "Search"
   find_people: "Find people or #tags"
   _home: "Home"
   more: "More"
@@ -515,6 +514,18 @@ en:
     confirm_email:
         subject: "Please activate your new email address %{unconfirmed_email}"
         click_link: "To activate your new email address %{unconfirmed_email}, please follow this link:"
+  
+  search: 
+    title: "Search"
+    index:
+      results_for: "search results for"
+      results_for: "search results for"
+      no_results: "Hey! You need to search for something."
+      couldnt_find_them_send_invite: "Couldn't find them?  Send an invite!"
+      no_one_found: "...and no one was found."
+      looking_for: "Looking for posts tagged %{tag_link}?"
+      nothing_found: "Sorry. No results were found."
+
   people:
     zero: "no people"
     one: "1 person"

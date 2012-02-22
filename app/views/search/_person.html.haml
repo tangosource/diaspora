@@ -2,12 +2,14 @@
 -#   licensed under the Affero General Public License version 3 or later.  See
 -#   the COPYRIGHT file.
 
-.stream_element{:id => person.id}
+.stream_element{:id => "person-#{person.id}"}
   .right
     - if person == current_user.person
       = t('people.person.thats_you')
     - else
-      = render 'people/relationship_action', :person => person, :current_user => current_user
+      - contact = current_user.find_or_build_contact_by_person_id(person.id)
+      = aspect_membership_dropdown(contact, person, 'left')
+
   = person_image_link(person)
 
   .content
@@ -16,4 +18,3 @@
 
     .info
       = Diaspora::Taggable.format_tags(person.profile.tag_string)
-

@@ -16,7 +16,7 @@ class PeopleController < ApplicationController
   end
 
   def index
-    @aspect = :search
+    @aspects = :search
     params[:q] ||= params[:term] || ''
 
     if params[:q][0] == 35 || params[:q][0] == '#'
@@ -69,7 +69,7 @@ class PeopleController < ApplicationController
     respond_with @people
   end
 
-  def hashes_for_people people, aspects
+  def hashes_for_people(people, aspects)
     ids = people.map{|p| p.id}
     contacts = {}
     Contact.unscoped.where(:user_id => current_user.id, :person_id => ids).each do |contact|

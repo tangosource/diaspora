@@ -56,6 +56,27 @@ var Publisher = {
       formatResult: function(row) {
           return row.name;
       },
+
+      parse: function(data){
+        var parsed = [];
+        var rows = _.map(data, function(value){
+          if (value.url.match(/people/)){
+            return value.name;
+          }
+        });
+        for (var i=0; i < rows.length; i++) {
+          var row = $.trim(rows[i]);
+          if (row) {
+            row = row.split("|");
+            parsed[parsed.length] = {
+              data: data[i],
+              value: row[0],
+            };
+          }
+        }
+        return parsed;
+      },
+
       disableRightAndLeft : true
     };},
     hiddenMentionFromPerson : function(personData){
@@ -249,17 +270,10 @@ var Publisher = {
     },
     initialize: function(){
       //Quiq hack to avoid error on editing places
-      url = $("#publisher .selected_contacts_link").attr("href");
-      if(url){
-        $.getJSON(url, undefined ,
-          function(data){
-            Publisher.input().autocomplete(data,
-              Publisher.autocompletion.options());
-            Publisher.input().result(Publisher.autocompletion.selectItemCallback);
-            Publisher.oldInputContent = Publisher.input().val();
-          }
-        );
-      }
+      Publisher.input().autocomplete('/search.json',
+        Publisher.autocompletion.options());
+      Publisher.input().result(Publisher.autocompletion.selectItemCallback);
+      Publisher.oldInputContent = Publisher.input().val();
     }
   },
 

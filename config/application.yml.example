@@ -107,14 +107,14 @@ defaults: &defaults
   airbreak_api_key: ''
 
   #social media setup
-  facebook_app_id:  ''
-  facebook_app_secret: ''
+  facebook_app_id:  191153464322975
+  facebook_app_secret: 'fade0c5d0f63f9b3e610f93a07e6381f'
 
-  twitter_consumer_key: ''
-  twitter_consumer_secret: ''
+  twitter_consumer_key: 'fT39HeF2BTLGdal3OyV7A'
+  twitter_consumer_secret: 'ORcikOuCzi0nxQlzHM1c4yeUHIuPr2NzeRSZVNJkb6s'
 
-  tumblr_consumer_key: ''
-  tumblr_consumer_secret: '' 
+  tumblr_consumer_key: '4yTQ4iD5E8r80dveLPcY9kcn0gjDLEWLUEiHnRxVT0QoMq7k8c'
+  tumblr_consumer_secret: 'LDYD2lGBEUV7ruFct1qOuBUz8V1ElfOLeM3uHO6gx8GpIgZ2vR' 
 
   # Miscellaneous
 

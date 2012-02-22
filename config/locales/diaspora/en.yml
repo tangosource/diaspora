@@ -640,6 +640,7 @@ en:
       your_birthday: "Your birthday"
       your_tags: "Describe yourself in 5 words"
       alias: "I want to hide my Real name"
+      hide_birthday: "I want to hide my birthday"
 
       your_tags_placeholder: "like #movies #kittens #travel #teacher #newyork"
 

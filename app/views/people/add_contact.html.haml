@@ -12,9 +12,15 @@
 .span-6
   #profile
     .profile_photo
-      = person_image_link(@person, :size => :thumb_large, :to => :photos)
+      = image_tag "/images/user/default.png", :class => "avatar"
 
 .span-18.last
-  %h2
-    = @person.name
+  #author_info
+    %h2
+      = @person.user.username
+    .right
+      = aspect_membership_dropdown(@contact, @person, 'right')
+    %hr
 
+  %div{:style=>"text-align:center;", :class => "dull"}
+    =  t('.only_share_information_with_contacts', :name => @person.user.username)

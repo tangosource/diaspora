@@ -535,6 +535,8 @@ en:
       looking_for: "Looking for posts tagged %{tag_link}?"
     webfinger:
       fail: "Sorry, we couldn't find %{handle}."
+    add_contact:
+      only_share_information_with_contacts: "%{name} only share information with his/her contacts"
     show:
       has_not_shared_with_you_yet: "%{name} has not shared any posts with you yet!"
       incoming_request: "%{name} wants to share with you"

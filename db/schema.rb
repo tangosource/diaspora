@@ -493,7 +493,7 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
   add_index "taggings", ["created_at"], :name => "index_taggings_on_created_at"
   add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
   add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
-  add_index "taggings", ["taggable_id", "taggable_type", "tag_id"], :name => "index_taggings_uniquely", :unique => true
+  add_index "taggings", ["taggable_id", "taggable_type", "tag_id", "context"], :name => "index_taggings_uniquely2", :unique => true
 
   create_table "tags", :force => true do |t|
     t.string "name"

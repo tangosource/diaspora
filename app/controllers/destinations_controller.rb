@@ -78,7 +78,7 @@ class DestinationsController < ApplicationController
 
     params[:destination][:tag_list]  = extract_tags params[:destination][:tag_list]
     params[:destination][:name_list] = extract_tags params[:destination][:name_list]
-    params[:destination][:permalink] = params[:destination][:title]
+    params[:destination][:permalink] = params[:destination][:title] #TODO rename inputs as possible to aoid doing that here.
 
     respond_to do |format|
       if @destination.update_attributes(params[:destination])

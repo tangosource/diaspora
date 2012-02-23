@@ -82,7 +82,12 @@ defaults: &defaults
   # Community Spotlight
   # (expressed as an array of Diaspora IDs)
   community_spotlight:
-    - 'diasporahq@joindiaspora.com'
+    - 'diasporahq@joindiaspora.com',
+    - 'galen@gaytravelbuddy.com',
+    - 'jason@gaytravelbuddy.com',
+    - 'annalove@gaytravelbuddy.com',
+    - 'aaron@gaytravelbuddy.com'
+    
   
   # Email to send spotlight suggestions to
   spotlight_suggest_email: ''

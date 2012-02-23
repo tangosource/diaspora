@@ -1074,14 +1074,14 @@ en:
     not_enabled: "webfinger does not seem to be enabled for %{account}'s host"
     no_person_constructed: "No person could be constructed from this hcard."
   destinations:
-    sign_up_message: "Sign up!"
+    sign_up_message: "Create a new destination."
     title: "Title"
     summary: "Summary"
-    permalink: "Permalink"
+    permalink: "Permalink (e.g. european_union)"
     photo_url: "Photo url"
     submit: "Submit"
-    tag_list: "Tags"
-    name_list: "Alternative names"
+    tag_list: "Tags (features of the destination)"
+    name_list: "Alternative names (e.g. EU, Europe, European Union)"
     index:
       new: "New destination"
     show:

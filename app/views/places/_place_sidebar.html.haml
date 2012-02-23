@@ -3,6 +3,10 @@
 -#   the COPYRIGHT file.
 
 #profile
+  %h3
+    = @stream.place.title
+  = Diaspora::Taggable.format_tags(@stream.place.tag_string)
+
   .profile_photo
     = place_image_tag(place, :size => :thumb_large, :to => :photos)
 

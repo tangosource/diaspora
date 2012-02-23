@@ -26,7 +26,7 @@ class DestinationsController < ApplicationController
   # GET /destinations/1.xml
   def show
     @stream = Stream::Destination.new(current_user, @destination.permalink, :title => @destination.title, :max_time => params[:max_time], 
-                                      :page => params[:page], :names => @destination.name_list)
+                                      :page => params[:page], :names => @destination.name_list, :related_tags => @destination.tag_list)
 
     respond_with do |format|
       format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }

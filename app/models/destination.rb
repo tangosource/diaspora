@@ -52,4 +52,8 @@ class Destination < ActiveRecord::Base
   def tag_string
     self.tag_list.map{|tag| "#" + tag}.join(" ")
   end
+
+  def alternative_names_tag_string
+    self.search_string.split(" ").map{|tag| '#' + tag}.join(' ')
+  end
 end

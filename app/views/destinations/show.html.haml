@@ -77,7 +77,7 @@
     %h3
       = t('.destinations')
     %ul#destinations_list.left_nav
-      - @stream.related_destinations.each do |destination|
+      - @stream.related_destinations_using_tags(:reject => @destination).each do |destination|
         = link_to destination.title, destination_path(destination)
 
   %br
@@ -99,6 +99,9 @@
         %small
           = t('.followed_by')
           = t('people', :count => @stream.tag_follow_count)
+      .alternative_names_tags
+        Alternative names:
+        = @destination.search_string
 
     - if current_user
       = render 'shared/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :for_all_aspects => true, :aspect => @stream.aspect

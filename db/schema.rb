@@ -38,9 +38,9 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
     t.integer  "comments_count", :default => 0,     :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "needs_review",   :default => true
     t.boolean  "featured",       :default => false
     t.boolean  "published",      :default => false
+    t.boolean  "needs_review",   :default => true
   end
 
   add_index "articles", ["blogger_type", "blogger_id"], :name => "index_articles_on_blogger_type_and_blogger_id"
@@ -135,22 +135,20 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
     t.datetime "updated_at"
   end
 
-  add_index "conversations", ["author_id"], :name => "conversations_author_id_fk"
-
   create_table "descriptions", :force => true do |t|
     t.string   "diaspora_handle"
     t.string   "image_url"
     t.string   "image_url_small"
     t.string   "image_url_medium"
-    t.boolean  "searchable",                                                    :default => true, :null => false
-    t.integer  "place_id",                                                                        :null => false
+    t.boolean  "searchable",                     :default => true, :null => false
+    t.integer  "place_id",                                         :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "location"
     t.string   "title",            :limit => 70
     t.text     "summary"
-    t.decimal  "lat",                            :precision => 10, :scale => 0
-    t.decimal  "lng",                            :precision => 10, :scale => 0
+    t.decimal  "lat"
+    t.decimal  "lng"
     t.text     "address"
     t.string   "phone"
     t.string   "website"
@@ -195,7 +193,6 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
     t.string   "target_type",             :limit => 60,                   :null => false
   end
 
-  add_index "likes", ["author_id"], :name => "likes_author_id_fk"
   add_index "likes", ["guid"], :name => "index_likes_on_guid", :unique => true
   add_index "likes", ["target_id", "author_id", "target_type"], :name => "index_likes_on_target_id_and_author_id_and_target_type", :unique => true
   add_index "likes", ["target_id"], :name => "index_likes_on_post_id"
@@ -221,7 +218,6 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
   end
 
   add_index "messages", ["author_id"], :name => "index_messages_on_author_id"
-  add_index "messages", ["conversation_id"], :name => "messages_conversation_id_fk"
 
   create_table "notification_actors", :force => true do |t|
     t.integer  "notification_id"
@@ -253,7 +249,7 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
     t.text   "data",                 :null => false
   end
 
-  add_index "o_embed_caches", ["url"], :name => "index_o_embed_caches_on_url", :length => {"url"=>255}
+  add_index "o_embed_caches", ["url"], :name => "index_o_embed_caches_on_url"
 
   create_table "oauth_access_tokens", :force => true do |t|
     t.integer  "authorization_id",                :null => false
@@ -344,15 +340,15 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
   end
 
   create_table "places", :force => true do |t|
-    t.string   "guid",                                                   :null => false
-    t.text     "url",                                                    :null => false
-    t.string   "diaspora_handle",                                        :null => false
-    t.text     "serialized_public_key",                                  :null => false
+    t.string   "guid",                                     :null => false
+    t.text     "url",                                      :null => false
+    t.string   "diaspora_handle",                          :null => false
+    t.text     "serialized_public_key",                    :null => false
     t.integer  "owner_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "closed_account",                      :default => false
-    t.string   "search_string",         :limit => 60
+    t.boolean  "closed_account",        :default => false
+    t.string   "search_string"
   end
 
   create_table "pods", :force => true do |t|
@@ -545,7 +541,6 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
     t.boolean  "auto_follow_back",                                  :default => false
     t.integer  "auto_follow_back_aspect_id"
     t.text     "hidden_shareables"
-    t.string   "test"
     t.boolean  "admin",                                             :default => false
   end
 
@@ -555,21 +550,6 @@ ActiveRecord::Schema.define(:version => 20120222192653000000) do
   add_index "users", ["invitation_token"], :name => "index_users_on_invitation_token"
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token", :unique => true
   add_index "users", ["username"], :name => "index_users_on_username", :unique => true
-
-  create_table "wp_users", :primary_key => "ID", :force => true do |t|
-    t.string   "user_login",          :limit => 60,  :default => "", :null => false
-    t.string   "user_pass",           :limit => 64,  :default => "", :null => false
-    t.string   "user_nicename",       :limit => 50,  :default => "", :null => false
-    t.string   "user_email",          :limit => 100, :default => "", :null => false
-    t.string   "user_url",            :limit => 100, :default => "", :null => false
-    t.datetime "user_registered",                                    :null => false
-    t.string   "user_activation_key", :limit => 60,  :default => "", :null => false
-    t.integer  "user_status",                        :default => 0,  :null => false
-    t.string   "display_name",        :limit => 250, :default => "", :null => false
-  end
-
-  add_index "wp_users", ["user_login"], :name => "user_login_key"
-  add_index "wp_users", ["user_nicename"], :name => "user_nicename"
 
   add_foreign_key "aspect_memberships", "aspects", :name => "aspect_memberships_aspect_id_fk", :dependent => :delete
   add_foreign_key "aspect_memberships", "contacts", :name => "aspect_memberships_contact_id_fk", :dependent => :delete

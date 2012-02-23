@@ -45,12 +45,16 @@
     = render :partial => 'people/index', :locals => {:people => @stream.tagged_people}
 
   %br
-
   .section
     .profile_photo
       = image_tag @destination.photo_url
 
   = link_to t('.edit'), edit_destination_path(@destination) if current_user and current_user.admin?
+
+  %br
+  = link_to t(".remove"), destination_path(@destination), :method => :delete, :confirm => "Are you sure you want to remove this destination?" if current_user && current_user.admin?
+
+
   %br
   %br
 

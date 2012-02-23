@@ -209,6 +209,8 @@ defaults: &defaults
 
   configured_services: []
 
+  google_ads: false
+
 #
 # Use this section to override default settings in specific environments
 #

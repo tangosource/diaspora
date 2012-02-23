@@ -50,7 +50,7 @@
     #followed_tags_listing
       = render 'tags/followed_tags_listings'
   
-  - if Rails.env != 'development'
+  - if AppConfig[:google_ads]
     .home_ad
       :javascript
         google_ad_client = "ca-pub-0516633517886131";

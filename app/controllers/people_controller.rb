@@ -16,7 +16,7 @@ class PeopleController < ApplicationController
   end
 
   def index
-    @aspect = :search
+    @aspects = :search
     params[:q] ||= params[:term] || ''
 
     if params[:q][0] == 35 || params[:q][0] == '#'
@@ -69,7 +69,7 @@ class PeopleController < ApplicationController
     respond_with @people
   end
 
-  def hashes_for_people people, aspects
+  def hashes_for_people(people, aspects)
     ids = people.map{|p| p.id}
     contacts = {}
     Contact.unscoped.where(:user_id => current_user.id, :person_id => ids).each do |contact|
@@ -84,11 +84,13 @@ class PeopleController < ApplicationController
   end
 
   def show
-    @person = Person.find_from_guid_or_username(params)
+    @person = Person.includes(:user).find_from_guid_or_username(params)
 
     if !@person.profile.public? and current_user != @person.user
-      unless @person.contacts.include? Contact.find_by_user_id(current_user)
-        redirect_to :back, :notice => "You need to be contact of this person." and return
+      @contact = current_user.contact_for(@person)
+      unless current_user.contacts.receiving.include? @contact
+        @contact = Contact.new unless @contact
+        render :add_contact, :notice => "You need to be contact of this person." and return
       end
     end
 

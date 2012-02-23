@@ -2788,7 +2788,7 @@ a.toggle_selector {
     display: inline;
     padding-left: 0.333em; }
   #admin_nav li {
-    font-size: 0.65em;
+    font-size: 0.6em;
     display: inline;
     margin-right: 0.5em; }
 
@@ -3058,3 +3058,28 @@ a.toggle_selector {
   #home_join_button .myButton:active {
     position: relative;
     top: 1px; }
+
+.search-content-block {
+  margin-top: 20px; }
+
+#gtb_logo .google_ad {
+  display: block;
+  width: 468px;
+  height: 60px;
+  background: black;
+  float: right; }
+
+.ads_bottom .google_ad {
+  display: block;
+  width: 728px;
+  height: 90px;
+  background: black;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+#home_user_badge .google_ad {
+  display: block;
+  width: 180px;
+  height: 250px;
+  background: black;
+  margin: 0 auto; }

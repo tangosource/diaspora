@@ -38,6 +38,10 @@
   = select_date profile.birthday, :prompt => true,
     :default => true, :order => t('date.order'), :start_year => 2000, :end_year => 1930, :prefix => 'profile[date]'
 
+  %p{:class=>"checkbox_select"}
+    = label_tag 'profile[hide_birthday]', t('profiles.edit.hide_birthday')
+    = check_box_tag 'profile[hide_birthday]', true, profile.hide_birthday
+
   %br
   %br
 

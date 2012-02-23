@@ -86,7 +86,7 @@ class PeopleController < ApplicationController
   def show
     @person = Person.includes(:user).find_from_guid_or_username(params)
 
-    if !@person.profile.public? and current_user != @person.user
+    if !@person.profile.public? and current_user and current_user != @person.user
       @contact = current_user.contact_for(@person)
       unless current_user.contacts.receiving.include? @contact
         @contact = Contact.new unless @contact

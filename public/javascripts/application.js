@@ -8,6 +8,8 @@ $(document).ready( function(){
     $(this).next().slideToggle('slow');
   });
 
+});
+
+$(window).load( function(){
   $("a[href^='http://']").attr("rel","nofollow");
-  $("a[href^='http://']").css("background-color","yellow");
 });

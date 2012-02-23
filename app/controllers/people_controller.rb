@@ -88,9 +88,11 @@ class PeopleController < ApplicationController
 
     if !@person.profile.public? and current_user and current_user != @person.user
       @contact = current_user.contact_for(@person)
-      unless current_user.contacts.receiving.include? @contact
+      if @contact.blank?
         @contact = Contact.new unless @contact
         render :add_contact, :notice => "You need to be contact of this person." and return
+      elsif @contact and !@contact.sharing
+        render :add_contact, :notice => 'Is not sharing with you' and return
       end
     end
 

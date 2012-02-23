@@ -23,4 +23,8 @@
     %hr
 
   %div{:style=>"text-align:center;", :class => "dull"}
-    =  t('.only_share_information_with_contacts', :name => @person.user.username)
+    - if @contact.new_record?
+      =  t('.you_are_not_contact', :name => @person.user.username)
+    - else
+      =  t('.only_share_information_with_contacts', :name => @person.user.username)
+

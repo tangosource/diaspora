@@ -84,7 +84,7 @@ en:
       unknown_person: "unknown person"
       video_title:
         unknown: "Unknown Video Title"
-      diaspora_alpha: "GayTravelBuddy* ALPHA"
+      diaspora_alpha: "GayTravelBuddy ALPHA"
   aspects:
     zero: "no aspects"
     one: "1 aspect"
@@ -170,7 +170,7 @@ en:
 
       new_here:
         title: "Welcome New Users"
-        follow: "Follow %{link} and welcome new users to GayTravelBuddy*!"
+        follow: "Follow %{link} and welcome new users to GayTravelBuddy!"
         learn_more: "Learn more"
 
       help:
@@ -354,7 +354,7 @@ en:
       view_all: "View all"
       recent_notifications: "Recent notifications"
     application:
-      powered_by: "POWERED BY GayTravelBuddy*"
+      powered_by: "POWERED BY GayTravelBuddy"
       whats_new: "what's new?"
       toggle: "toggle mobile"
       public_feed: "Public GayTravelBuddy Feed for %{name}"
@@ -495,13 +495,13 @@ en:
         subject: "A message about your GayTravelBuddy account:"
         admin: "Your GayTravelBuddy administrator"
     started_sharing:
-        subject: "%{name} started sharing with you on GayTravelBuddy*"
+        subject: "%{name} started sharing with you on GayTravelBuddy"
         sharing: "has started sharing with you!"
         view_profile: "View %{name}'s profile"
     comment_on_post:
         reply: "Reply or view %{name}'s post >"
     mentioned:
-        subject: "%{name} has mentioned you on GayTravelBuddy*"
+        subject: "%{name} has mentioned you on GayTravelBuddy"
         mentioned: "mentioned you in a post:"
     private_message:
         reply_to_or_view: "Reply to or view this conversation >"
@@ -768,7 +768,7 @@ en:
     failure:
       error: "there was an error connecting that service"
     inviter:
-      join_me_on_diaspora: "Join me on GayTravelBuddy*"
+      join_me_on_diaspora: "Join me on GayTravelBuddy"
       click_link_to_accept_invitation: "Follow this link to accept your invitation"
     finder:
       fetching_contacts: "GayTravelBuddy is populating your %{service} friends please check back in a few minutes."
@@ -968,10 +968,10 @@ en:
 
   users:
     logged_out:
-      signed_out: "You've signed out of GayTravelBuddy*"
+      signed_out: "You've signed out of GayTravelBuddy"
       go_mobile: "Now go mobile."
       simply_visit: "Simply visit"
-      on_your_mobile_device: "on your mobile device to access GayTravelBuddy* mobile."
+      on_your_mobile_device: "on your mobile device to access GayTravelBuddy mobile."
       works_on_modern: "Works on all modern smartphones"
 
     edit:
@@ -1029,7 +1029,7 @@ en:
       well_hello_there: "Well, hello there!"
       community_welcome: "GayTravelBuddy's community is happy to have you aboard!"
 
-      awesome_take_me_to_diaspora: "Awesome! Take me to GayTravelBuddy*"
+      awesome_take_me_to_diaspora: "Awesome! Take me to GayTravelBuddy"
 
       who_are_you: "Who are you?"
       we_can_speed_things_up: "We can speed things up a bit by"

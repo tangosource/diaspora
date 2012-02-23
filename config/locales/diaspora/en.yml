@@ -547,8 +547,7 @@ en:
     webfinger:
       fail: "Sorry, we couldn't find %{handle}."
     add_contact:
-      you_are_not_contact: "%{name} only share information with his/her contacts."
-      only_share_information_with_contacts: "%{name} has not started to share information with you."
+      private_profile: "This user is private. If you would like to connect with them, please send them a private message here."
     show:
       has_not_shared_with_you_yet: "%{name} has not shared any posts with you yet!"
       incoming_request: "%{name} wants to share with you"

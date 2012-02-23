@@ -10,7 +10,7 @@ module PlacesHelper
     if opts[:to] == :photos
       link_to place_image_tag(place, opts[:size]), place_photos_path(place)
     else
-      "<a #{place_href(place)} class='#{opts[:class]}' #{ ("target=" + opts[:target]) if opts[:target]}>
+      "<a href='#{place_href(place)}' class='#{opts[:class]}' #{ ("target=" + opts[:target]) if opts[:target]}>
       #{place_image_tag(place, opts[:size])}
       </a>".html_safe
     end
@@ -23,7 +23,7 @@ module PlacesHelper
   def place_link(place, opts={})
     opts[:class] ||= ""
     remote_or_hovercard_link = "/places/#{place.id}".html_safe
-    "<a data-hovercard='#{remote_or_hovercard_link}' #{place_href(place)} class='#{opts[:class]}' #{ ("target=" + opts[:target]) if opts[:target]}>#{h(place.title)}</a>".html_safe
+    "<a data-hovercard='#{remote_or_hovercard_link}' href='#{place_href(place)}' class='#{opts[:class]}' #{ ("target=" + opts[:target]) if opts[:target]}>#{h(place.title)}</a>".html_safe
   end
 
 end

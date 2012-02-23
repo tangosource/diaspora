@@ -10,6 +10,6 @@
 
 %field
   = f.label :website, "Your Website"
-  = f.url_field :website, :value => user_profile_url(current_user)
+  = f.url_field :website, :value => user_profile_url(current_user.username)
   = errors_on(@comment, :website)
 

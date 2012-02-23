@@ -49,4 +49,7 @@ class Destination < ActiveRecord::Base
     self.search_string = [title, name_list.to_a].join(' ')
   end
 
+  def tag_string
+    self.tag_list.map{|tag| "#" + tag}.join(" ")
+  end
 end

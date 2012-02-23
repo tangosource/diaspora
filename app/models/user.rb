@@ -224,6 +224,11 @@ class User < ActiveRecord::Base
     save
   end
 
+
+  ######### Contacts #####################
+  def find_or_build_contact_by_person_id(id)
+    contacts.find_by_person_id(id) || contacts.build(:person_id => id)
+  end
   ######### Aspects ######################
   def add_contact_to_aspect(contact, aspect)
     return true if AspectMembership.exists?(:contact_id => contact.id, :aspect_id => aspect.id)

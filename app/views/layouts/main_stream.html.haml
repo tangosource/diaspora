@@ -49,6 +49,17 @@
 
     #followed_tags_listing
       = render 'tags/followed_tags_listings'
+  
+  .home_ad
+    :javascript
+      google_ad_client = "ca-pub-0516633517886131";
+      / gtb side bar /
+      google_ad_slot = "4940211615";
+      google_ad_width = 180;
+      google_ad_height = 250;
+    %script{:type=>"text/javascript", :src=>"http://pagead2.googlesyndication.com/pagead/show_ads.js"}
+      
+
 
 .span-13.append-1
   #aspect_stream_container.stream_container

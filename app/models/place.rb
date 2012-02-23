@@ -79,6 +79,9 @@ class Place < ActiveRecord::Base
     json
   end
 
+  def tag_string
+    self.tag_list.map{|tag| "#" + tag}.join(" ")
+  end
 end
 
 

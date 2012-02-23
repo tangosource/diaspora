@@ -652,7 +652,7 @@ en:
       your_tags: "Describe yourself in 5 words"
       alias: "I want to hide my Real name"
       hide_birthday: "I want to hide my birthday"
-
+      searchable_profile: 'Search'
       your_tags_placeholder: "like #movies #kittens #travel #teacher #newyork"
 
       your_bio: "Your bio"

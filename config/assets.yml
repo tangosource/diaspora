@@ -79,7 +79,6 @@ javascripts:
     #- public/javascripts/place_view.js
     - public/javascripts/aspect-edit-pane.js
     - public/javascripts/fileuploader-custom.js
-    - public/javascripts/application.js
   people:
     - public/javascripts/aspect-edit-pane.js
     - public/javascripts/fileuploader-custom.js

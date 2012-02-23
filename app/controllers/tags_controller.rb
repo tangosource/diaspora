@@ -35,17 +35,22 @@ class TagsController < ApplicationController
   def show
     @stream = Stream::Tag.new(current_user, params[:name], :max_time => max_time, :page => params[:page])
 
-    respond_with do |format|
-      format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
+    if request.format.html?
+      destinations = Destination.search(@stream.tag_name)
+      redirect_to destination_path(destinations.first) if destinations.count > 0
+    else
+      respond_with do |format|
+        format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
+      end
     end
   end
 
- def tag_followed?
+  def tag_followed?
    if @tag_followed.nil?
      @tag_followed = TagFollowing.joins(:tag).where(:tags => {:name => params[:name]}, :user_id => current_user.id).exists?
    end
    @tag_followed
- end
+  end
 
   def prep_tags_for_javascript
     @tags.map! do |obj|

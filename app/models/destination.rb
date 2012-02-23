@@ -46,7 +46,7 @@ class Destination < ActiveRecord::Base
   end
 
   def build_search_string
-    self.search_string = [title, name_list.to_a].join(' ')
+    self.search_string = [title.downcase, name_list.to_a.map(&:downcase)].join(' ')
   end
 
   def tag_string

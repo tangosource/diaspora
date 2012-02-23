@@ -1,30 +1,34 @@
 - content_for :head do
   :javascript
     $(document).ready(function () {
-      var autocompleteInput = $("#destination_tag_list, #destination_name_list");
-
-      autocompleteInput.autoSuggest("#{tags_path}", {
-        selectedItemProp: "name",
-        searchObjProps: "name",
+      var tagList = $("#destination_tag_list");
+      tagList.autoSuggest('#{tags_path}/', {
         asHtmlID: "tags",
         neverSubmit: true,
         retriveLimit: 10,
+        asHtmlID: "tags",
         minChars: 2,
         keyDelay: 200,
         startText: "",
-        emptyText: "#{t('no_results')}",
+        emptyText: "no_results",
         preFill: "#{@tag_list}"
         });
 
-      autocompleteInput.bind('keydown', function(evt){
-        if(evt.keyCode == 13 || evt.keyCode == 9 || evt.keyCode == 32){
-          evt.preventDefault();
-          if( $('li.as-result-item.active').length == 0 ){
-            $('li.as-result-item').first().click();
-          }
-        }
-      });
+      var nameList = $("#destination_name_list");
+      nameList.autoSuggest('#{tags_path}/', {
+        asHtmlID: "tags",
+        neverSubmit: true,
+        retriveLimit: 10,
+        asHtmlID: "names",
+        minChars: 2,
+        keyDelay: 200,
+        startText: "",
+        emptyText: "no_results",
+        preFill: "#{@name_list}"
+        });
+
     });
+    
 
 = form_for(@destination, :html => {:class => 'new_place_for'}, :validate => true) do |f|
   %fieldset

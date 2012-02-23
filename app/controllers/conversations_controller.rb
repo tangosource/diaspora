@@ -22,7 +22,8 @@ class ConversationsController < ApplicationController
   end
 
   def create
-    person_ids = Contact.where(:id => params[:contact_ids].split(',')).map! do |contact|
+    contact_ids = params[:contact_ids] || params[:contact_autocomplete]
+    person_ids = Contact.where(:id => contact_ids.split(',')).map! do |contact|
       contact.person_id
     end
 
@@ -32,12 +33,14 @@ class ConversationsController < ApplicationController
     params[:conversation][:messages_attributes] = [ {:author => current_user.person, :text => message_text }]
 
     @conversation = Conversation.new(params[:conversation])
+
     if @conversation.save
       Postzord::Dispatcher.build(current_user, @conversation).post
       flash[:notice] = I18n.t('conversations.create.sent')
     else
       flash[:error] = I18n.t('conversations.create.fail')
     end
+
     if params[:profile]
       redirect_to person_path(params[:profile])
     else

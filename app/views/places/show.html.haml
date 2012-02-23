@@ -27,8 +27,8 @@
   
 
 .span-6
-  = render :partial => 'places/place_sidebar', :locals => {:place => @stream.place}
-  = render :partial => 'shared/social_networking'
+  = render 'places/place_sidebar', :place => @stream.place
+  = render 'shared/social_networking'
 
 
 .span-18.last

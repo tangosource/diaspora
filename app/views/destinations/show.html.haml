@@ -47,11 +47,6 @@
   %br
 
   .section
-    = render "tags/followed_tags_listings"
-
-  %br
-
-  .section
     .profile_photo
       = image_tag @destination.photo_url
 
@@ -82,13 +77,8 @@
     %h3
       = t('.destinations')
     %ul#destinations_list.left_nav
-      - @stream.related_destinations.each do |destination|
+      - @stream.related_destinations_using_tags(:reject => @destination).each do |destination|
         = link_to destination.title, destination_path(destination)
-
-  %br
-  .section
-    %h3
-      = link_to t('.photos'), destination_photos_path(@destination)
 
   %br
 
@@ -109,6 +99,9 @@
         %small
           = t('.followed_by')
           = t('people', :count => @stream.tag_follow_count)
+      .alternative_names_tags
+        Alternative names:
+        = @destination.search_string
 
     - if current_user
       = render 'shared/publisher', :selected_aspects => @stream.aspect_ids, :aspect_ids => @stream.aspect_ids, :for_all_aspects => true, :aspect => @stream.aspect

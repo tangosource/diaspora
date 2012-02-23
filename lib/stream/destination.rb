@@ -30,4 +30,9 @@ class Stream::Destination < Stream::Tag
     ::Place.tagged_with(key).tagged_with(names, :any => true)
   end
 
+  def related_destinations_using_tags(opts=nil)
+    destinations = ::Destination.tagged_with(related_tags, :any => true)
+    destinations = destinations.reject{|destination| destination == opts[:reject]} if opts
+    destinations
+  end
 end

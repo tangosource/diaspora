@@ -995,7 +995,7 @@ img.scaled_full {
 header #global_search {
   display: inline;
   position: relative;
-  top: -20px; }
+  left: 191px; }
   header #global_search form {
     display: inline; }
     header #global_search form input {

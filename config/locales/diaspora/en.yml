@@ -673,9 +673,6 @@ en:
     summary: "Describe the place briefly."
     location: "Generally, where is it?"
     image_url: "Enter the url for the place's profile image."
-    address: "Address"
-    phone: "Phone"
-    website: "Website"
     tag_list: "Tag list"
 
     new: 
@@ -690,6 +687,9 @@ en:
       summary: "Description"
       location: "Location"
       edit: "Edit place"
+      address: "Address"
+      phone: "Phone"
+      website: "Website"
   registrations:
     new:
       create_my_account: "Create my account!"

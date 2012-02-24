@@ -289,7 +289,6 @@ en:
     create:
       sent: "Message sent"
       fail: "Invalid message"
-      no_participants: "We could't deliver your message because the participants are not in your aspects"
     new_message:
       fail: "Invalid message"
     destroy:

@@ -33,13 +33,10 @@ class ConversationsController < ApplicationController
     params[:conversation][:messages_attributes] = [ {:author => current_user.person, :text => message_text }]
 
     @conversation = Conversation.new(params[:conversation])
-    can_send_to_other_users = current_user.has_conversation_participants_in_facets(@conversation.participant_ids)
 
-    if can_send_to_other_users && @conversation.save
+    if @conversation.save
       Postzord::Dispatcher.build(current_user, @conversation).post
       flash[:notice] = I18n.t('conversations.create.sent')
-    elsif not can_send_to_other_users
-      flash[:error] = I18n.t('conversations.create.no_participants')
     else
       flash[:error] = I18n.t('conversations.create.fail')
     end

@@ -484,10 +484,6 @@ class User < ActiveRecord::Base
     end
   end
 
-  def has_conversation_participants_in_facets(participant_ids)
-    (aspects.map(&:contacts).flatten.map(&:person_id) & participant_ids).size > 0
-  end
-
   # Generate public/private keys for User and associated Person
   def generate_keys
     key_size = (Rails.env == 'test' ? 512 : 4096)

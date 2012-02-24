@@ -48,7 +48,7 @@ class PublicsController < ApplicationController
   end
 
   def privacy
-      render 'publics/privacy'
+      render 'publics/privacy', :layout => 'application'
   end
 
   def statements

@@ -174,6 +174,8 @@ Diaspora::Application.routes.draw do
   controller :publics do
     get 'webfinger'             => :webfinger
     get 'hcard/users/:guid'     => :hcard
+    get 'privacy_policy'        => :privacy
+    get 'statements'            => :statements
     get '.well-known/host-meta' => :host_meta
     post 'receive/users/:guid'  => :receive
     post 'receive/public'       => :receive_public
@@ -232,4 +234,8 @@ Diaspora::Application.routes.draw do
 
   # Startpage
   root :to => 'home#show'
+
+  # privacy
+
+
 end

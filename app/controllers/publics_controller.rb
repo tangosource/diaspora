@@ -47,6 +47,14 @@ class PublicsController < ApplicationController
     end
   end
 
+  def privacy
+      render 'publics/privacy'
+  end
+
+  def statements
+      render 'publics/statements'
+  end
+
   def host_meta
     render 'host_meta', :content_type => 'application/xrd+xml'
   end

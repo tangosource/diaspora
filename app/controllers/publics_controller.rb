@@ -52,7 +52,7 @@ class PublicsController < ApplicationController
   end
 
   def statements
-      render 'publics/statements'
+      render 'publics/statements', :layout => 'application'
   end
 
   def host_meta

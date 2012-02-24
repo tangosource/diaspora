@@ -82,6 +82,11 @@ class Place < ActiveRecord::Base
   def tag_string
     self.tag_list.map{|tag| "#" + tag}.join(" ")
   end
+
+  def to_param
+    "#{id}-#{title.gsub(' ','-')}"
+  end
+
 end
 
 

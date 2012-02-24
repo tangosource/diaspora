@@ -3662,3 +3662,54 @@ a.toggle_selector
   height: 250px
   background: black
   margin: 0 auto 
+
+ul.places
+  padding: 20px 10px
+  overflow: hidden
+  -webkit-column-count: 3
+  -webkit-column-gap: 20px
+  -moz-column-count: 3
+  -moz-column-gap: 20px
+  -o-column-count: 3
+  -o-column-gap: 20px
+  column-count: 3
+  column-gap: 20px
+  li
+    line-height: 26px
+    border-bottom: 1px solid #EAEAEA
+    padding: 1px 0 0 20px
+    background: url('/images/places.png') no-repeat 5px 50%
+    &:hover
+      background-color: #FAFAF5
+        
+ul.destinations
+  padding: 20px 10px 20px 0
+  overflow: hidden
+  li
+    display: inline-block
+    line-height: 26px
+    width: 44%
+    float: left
+    border: 1px solid #EAEAEA
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.08) 
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.08) 
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,.08) 
+    box-shadow: 0 1px 3px rgba(0,0,0,.08) 
+    padding: 10px 10px 0 20px
+    margin: 0 0 20px 20px
+    background: url('/images/destination.png') no-repeat 5px 12px
+    &:hover
+      background-color: #FAFAF5
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1) 
+      -o-box-shadow: 0 1px 5px rgba(0,0,0,0.1) 
+      -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1) 
+      -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1) 
+      border: 1px solid #DDD
+        
+
+.places_form, .destinations_form
+  margin: 30px 10px 20px
+  input#q
+    width: 800px
+  input[type="submit"]
+    float: right

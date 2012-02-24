@@ -808,6 +808,7 @@ en:
       whats_on_your_mind: "What's on your mind?"
       publishing_to: "publishing to: "
       discard_post: "Discard post"
+      aspects: "Aspects"
       new_user_prefill:
         newhere: "NewHere"
         hello: "Hey everyone, I'm #%{new_user_tag}. "
@@ -864,6 +865,7 @@ en:
   status_messages:
     new:
       mentioning: "Mentioning: %{person}"
+      share_this_story: "Share this story"
     create:
       success: "Successfully mentioned: %{names}"
     helper:

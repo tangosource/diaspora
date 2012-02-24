@@ -38,7 +38,7 @@ en:
   next: "next"
   previous: "previous"
   _comments: "Comments"
-  all_aspects: "All Aspects"
+  all_aspects: "All Spheres"
   no_results: "No Results Found"
   _contacts: "Contacts"
   welcome: "Welcome!"
@@ -86,29 +86,29 @@ en:
         unknown: "Unknown Video Title"
       diaspora_alpha: "GayTravelBuddy ALPHA"
   aspects:
-    zero: "no aspects"
-    one: "1 aspect"
-    two: "%{count} aspects"
-    few: "%{count} aspects"
-    many: "%{count} aspects"
-    other: "%{count} aspects"
-    contacts_visible: "Contacts in this aspect will be able to see each other."
-    contacts_not_visible: "Contacts in this aspect will not be able to see each other."
+    zero: "no spheres"
+    one: "1 sphere"
+    two: "%{count} spheres"
+    few: "%{count} spheres"
+    many: "%{count} spheres"
+    other: "%{count} spheres"
+    contacts_visible: "Contacts in this sphere will be able to see each other."
+    contacts_not_visible: "Contacts in this sphere will not be able to see each other."
     edit:
-      make_aspect_list_visible: "make contacts in this aspect visible to each other?"
-      remove_aspect: "Delete this aspect"
-      confirm_remove_aspect: "Are you sure you want to delete this aspect?"
+      make_aspect_list_visible: "make contacts in this sphere visible to each other?"
+      remove_aspect: "Delete this sphere"
+      confirm_remove_aspect: "Are you sure you want to delete this sphere?"
       add_existing: "Add an existing contact"
       done: "Done"
       rename: "rename"
-      aspect_list_is_visible: "aspect list is visible to others in aspect"
-      aspect_list_is_not_visible: "aspect list is hidden to others in aspect"
+      aspect_list_is_visible: "sphere list is visible to others in sphere"
+      aspect_list_is_not_visible: "sphere list is hidden to others in sphere"
       update: "update"
       updating: "updating"
     aspect_contacts:
       done_editing: "done editing"
     show:
-      edit_aspect: "edit aspect"
+      edit_aspect: "edit sphere"
     no_posts_message:
       start_talking: "Nobody has said anything yet!"
     no_contacts_message:
@@ -120,35 +120,35 @@ en:
       select_all: "Select all"
       deselect_all: "Deselect all"
       edit_aspect: "Edit %{name}"
-      add_an_aspect: "+ Add an aspect"
+      add_an_aspect: "+ Add an sphere"
     selected_contacts:
       view_all_community_spotlight: "See all community spotlight"
       view_all_contacts: "View all contacts"
       no_contacts: "You don't have any contacts here yet."
-      manage_your_aspects: "Manage your aspects."
+      manage_your_aspects: "Manage your spheres."
     new:
       name: "Name (only visible to you)"
       create: "Create"
     create:
-      success: "Your new aspect %{name} was created"
-      failure: "Aspect creation failed."
+      success: "Your new sphere %{name} was created"
+      failure: "Sphere creation failed."
     destroy:
       success: "%{name} was successfully removed."
       failure: "%{name} is not empty and could not be removed."
     update:
-      success: "Your aspect, %{name}, has been successfully edited."
-      failure: "Your aspect, %{name}, had too long name to be saved."
+      success: "Your sphere, %{name}, has been successfully edited."
+      failure: "Your sphere, %{name}, had too long name to be saved."
     move_contact:
       failure: "didn't work %{inspect}"
-      success: "Person moved to new aspect"
+      success: "Person moved to new sphere"
       error: "Error moving contact: %{inspect}"
     add_to_aspect:
-      failure: "Failed to add contact to aspect."
-      success: "Successfully added contact to aspect."
+      failure: "Failed to add contact to sphere."
+      success: "Successfully added contact to sphere."
     helper:
       remove: "remove"
-      aspect_not_empty: "Aspect not empty"
-      are_you_sure: "Are you sure you want to delete this aspect?"
+      aspect_not_empty: "Sphere not empty"
+      are_you_sure: "Are you sure you want to delete this sphere?"
     seed:
       family: "Family"
       work: "Work"
@@ -157,7 +157,7 @@ en:
     index:
       donate: "Donate"
       keep_us_running: "Keep %{pod} running fast and buy servers their coffee fix with a monthly donation!"
-      your_aspects: "Your Aspects"
+      your_aspects: "Your Spheres"
       no_tags: "+ Find a tag to follow"
       unfollow_tag: "Stop following #%{tag}"
       handle_explanation: "This is your GayTravelBuddy ID. Like an email address, you can give this to people to reach you."
@@ -203,9 +203,9 @@ en:
 
   aspect_memberships:
     destroy:
-      success: "Successfully removed person from aspect"
-      failure: "Failed to remove person from aspect"
-      no_membership: "Could not find the selected person in that aspect"
+      success: "Successfully removed person from sphere"
+      failure: "Failed to remove person from sphere"
+      no_membership: "Could not find the selected person in that sphere"
 
   bookmarklet:
     heading: "Bookmarklet"
@@ -247,7 +247,7 @@ en:
     index:
       add_to_aspect: "add contacts to %{name}"
       start_a_conversation: "Start a conversation"
-      add_a_new_aspect: "Add a new aspect"
+      add_a_new_aspect: "Add a new sphere"
       title: "Contacts"
       your_contacts: "Your Contacts"
       no_contacts: "Looks like you need to add some contacts!"
@@ -256,7 +256,7 @@ en:
       all_contacts: "All Contacts"
       only_sharing_with_me: "Only sharing with me"
       remove_person_from_aspect: "Remove %{person_name} from \"%{aspect_name}\""
-      many_people_are_you_sure: "Are you sure you want to start a private conversation with more than %{suggested_limit} contacts? Posting to this aspect may be a better way to contact them."
+      many_people_are_you_sure: "Are you sure you want to start a private conversation with more than %{suggested_limit} contacts? Posting to this sphere may be a better way to contact them."
     spotlight:
       community_spotlight: "Community Spotlight"
 
@@ -308,7 +308,7 @@ en:
       already_account: "already have an account?"
       login_here: "log in here"
       choice: "Choice"
-      choice_explanation: "GayTravelBuddy lets you sort your connections into groups called aspects. Unique to GayTravelBuddy, aspects ensure that your photos, stories and jokes are shared only with the people you intend."
+      choice_explanation: "GayTravelBuddy lets you sort your connections into groups called spheres. Unique to GayTravelBuddy, spheres ensure that your photos, stories and jokes are shared only with the people you intend. If you add someone to a sphere, they receive permission to view content intended for that sphere. However, they won't see your content in their stream unless they add you to a sphere as well."
       ownership: "Ownership"
       ownership_explanation: "You own your pictures, and you shouldn’t have to give that up just to share them. You maintain ownership of everything you share on GayTravelBuddy, giving you full control over how it's distributed."
       simplicity: "Simplicity"
@@ -326,13 +326,13 @@ en:
     new:
       language: "Language"
       invite_someone_to_join: "Invite someone to join GayTravelBuddy!"
-      if_they_accept_info: "if they accept, they will be added to the aspect you invited them."
+      if_they_accept_info: "if they accept, they will be added to the sphere you invited them."
       comma_seperated_plz: "You can enter multiple email addresses separated by commas."
       to: "To"
       personal_message: "Personal message"
       send_an_invitation: "Send an invitation"
       send_invitation: "Send invitation"
-      aspect: "Aspect"
+      aspect: "Sphere"
       already_invited: "The following people have not accepted your invitation:"
       resend: "Resend"
     check_token:
@@ -358,7 +358,7 @@ en:
       whats_new: "what's new?"
       toggle: "toggle mobile"
       public_feed: "Public GayTravelBuddy Feed for %{name}"
-      your_aspects: "your aspects"
+      your_aspects: "your spheres"
       back_to_top: "Back to top"
 
   likes:
@@ -552,7 +552,7 @@ en:
     show:
       has_not_shared_with_you_yet: "%{name} has not shared any posts with you yet!"
       incoming_request: "%{name} wants to share with you"
-      return_to_aspects: "Return to your aspects page"
+      return_to_aspects: "Return to your spheres page"
       to_accept_or_ignore: "to accept or ignore it."
       does_not_exist: "Person does not exist!"
       not_connected: "You are not sharing with this person"
@@ -577,13 +577,13 @@ en:
       location: "location"
       gender: "gender"
       born: "birthday"
-      in_aspects: "in aspects"
+      in_aspects: "in spheres"
       remove_from: "Remove %{name} from %{aspect}?"
     helper:
       results_for: " results for %{params}"
       people_on_pod_are_aware_of: " people on pod are aware of"
     aspect_list:
-      edit_membership: "edit aspect membership"
+      edit_membership: "edit sphere membership"
     add_contact_small:
       add_contact_from_tag: "add contact from tag"
 
@@ -718,7 +718,7 @@ en:
       existing: "Existing contacts"
     destroy:
       success: "You are now sharing."
-      error: "Please select an aspect!"
+      error: "Please select an sphere!"
       ignore: "Ignored contact request."
     create:
       sending: "Sending"
@@ -793,11 +793,11 @@ en:
       add_to_aspect: "Add contact"
       toggle:
         zero: "Add contact"
-        one: "In %{count} aspect"
-        two: "In %{count} aspects"
-        few: "In %{count} aspects"
-        many: "In %{count} aspects"
-        other: "In %{count} aspects"
+        one: "In %{count} sphere"
+        two: "In %{count} spheres"
+        few: "In %{count} spheres"
+        many: "In %{count} spheres"
+        other: "In %{count} spheres"
     publisher:
       posting: "Posting..."
       share: "Share"
@@ -810,7 +810,7 @@ en:
       whats_on_your_mind: "What's on your mind?"
       publishing_to: "publishing to: "
       discard_post: "Discard post"
-      aspects: "Aspects"
+      aspects: "Spheres"
       new_user_prefill:
         newhere: "NewHere"
         hello: "Hey everyone, I'm #%{new_user_tag}. "
@@ -853,7 +853,7 @@ en:
       currently_unavailable: 'commenting currently unavailable'
       via: "via %{link}"
       ignore_user: "Ignore %{name}"
-      ignore_user_description: "Ignore and remove user from all aspects?"
+      ignore_user_description: "Ignore and remove user from all spheres?"
       hide_and_mute: "Hide and mute post"
       like: "Like"
       unlike: "Unlike"
@@ -863,7 +863,7 @@ en:
       show: "show"
     footer:
       logged_in_as: "logged in as %{name}"
-      your_aspects: "your aspects"
+      your_aspects: "your spheres"
   status_messages:
     new:
       mentioning: "Mentioning: %{person}"
@@ -931,7 +931,7 @@ en:
 
   streams:
     community_spotlight_stream: "Community Spotlight"
-    aspects_stream: "Aspects"
+    aspects_stream: "Spheres"
     mentioned_stream: "@Mentions"
     followed_tags_stream: "#Followed Tags"
 
@@ -967,7 +967,7 @@ en:
       contacts_title: "People in your Stream"
 
     aspects:
-      title: "Your Aspects"
+      title: "Your Spheres"
 
   users:
     logged_out:
@@ -1007,7 +1007,7 @@ en:
       getting_started: 'New User Prefrences'
       following: "Following Settings"
       auto_follow_back: "Automatically follow back if someone follows you"
-      auto_follow_aspect: "Aspect for automatically followed users:"
+      auto_follow_aspect: "Sphere for automatically followed users:"
 
       close_account:
         dont_go: "Hey, please don't go!"

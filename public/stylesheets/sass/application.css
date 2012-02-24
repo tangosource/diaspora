@@ -3083,3 +3083,29 @@ a.toggle_selector {
   height: 250px;
   background: black;
   margin: 0 auto; }
+
+ul.places {
+  padding: 20px 10px;
+  overflow: hidden;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -o-column-count: 3;
+  -o-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px; }
+  ul.places li {
+    line-height: 26px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 1px 0 0 20px;
+    background: url("/images/places.png") no-repeat 5px 50%; }
+    ul.places li:hover {
+      background-color: #fafaf5; }
+
+.places_form {
+  margin: 30px 10px 20px; }
+  .places_form input#q {
+    width: 800px; }
+  .places_form input[type="submit"] {
+    float: right; }

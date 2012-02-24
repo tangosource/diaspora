@@ -3662,3 +3662,30 @@ a.toggle_selector
   height: 250px
   background: black
   margin: 0 auto 
+
+ul.places
+  padding: 20px 10px
+  overflow: hidden
+  -webkit-column-count: 3
+  -webkit-column-gap: 20px
+  -moz-column-count: 3
+  -moz-column-gap: 20px
+  -o-column-count: 3
+  -o-column-gap: 20px
+  column-count: 3
+  column-gap: 20px
+  li
+    line-height: 26px
+    border-bottom: 1px solid #EAEAEA
+    padding: 1px 0 0 20px
+    background: url('/images/places.png') no-repeat 5px 50%
+    &:hover
+      background-color: #FAFAF5
+        
+
+.places_form
+  margin: 30px 10px 20px
+  input#q
+    width: 800px
+  input[type="submit"]
+    float: right

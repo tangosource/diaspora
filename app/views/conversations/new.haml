@@ -28,14 +28,18 @@
       %h3
         = t('conversations.index.new_message')
 
-    = form_for Conversation.new do |conversation|
+    = form_for @conversation do |conversation|
       %br
 
       .span-2
         %h4
           = t('.to')
       .span-10.last
-        = text_field_tag "contact_autocomplete"
+        - if @person
+          = text_field_tag "conversation[to]", @person.messaging_name, :disabled => true
+          = hidden_field_tag "person_ids", @person.id.to_s
+        -else
+          = text_field_tag "contact_autocomplete"
       .clearfix
 
       .span-2

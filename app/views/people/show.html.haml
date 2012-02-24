@@ -12,7 +12,7 @@
   = @person.name
 
 .span-6
-  = render :partial => 'people/profile_sidebar', :locals => {:person => @person, :contact => @contact }
+  = render 'people/profile_sidebar', :person => @person, :contact => @contact
 
   - if user_signed_in? && @contact.persisted? && @contacts_of_contact.count > 0
     .span-5.last#contacts_of_contact

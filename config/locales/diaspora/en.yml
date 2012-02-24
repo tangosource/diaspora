@@ -569,6 +569,7 @@ en:
       you_have_no_tags: "you have no tags!"
       add_some: "add some"
       edit: "edit"
+      send_message: "Send a Message"
     profile_sidebar:
       remove_contact: "remove contact"
       edit_my_profile: "Edit my profile"

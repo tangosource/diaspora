@@ -22,9 +22,13 @@ class ConversationsController < ApplicationController
   end
 
   def create
-    contact_ids = params[:contact_ids] || params[:contact_autocomplete]
-    person_ids = Contact.where(:id => contact_ids.split(',')).map! do |contact|
-      contact.person_id
+    if params[:person_ids]
+      person_ids = params[:person_ids].split(',')
+    else
+      contact_ids = params[:contact_ids] || params[:contact_autocomplete]
+      person_ids = Contact.where(:id => contact_ids.split(',')).map! do |contact|
+        contact.person_id
+      end
     end
 
     params[:conversation][:participant_ids] = person_ids | [current_user.person.id]
@@ -63,18 +67,24 @@ class ConversationsController < ApplicationController
   end
 
   def new
-    all_contacts_and_ids = Contact.connection.select_rows(
-      current_user.contacts.joins(:person => :profile).
-        select("contacts.id, profiles.first_name, profiles.last_name, people.diaspora_handle").to_sql
-    ).map{|r| {:value => r[0], :name => Person.name_from_attrs(r[1], r[2], r[3]).gsub(/(")/, "'")} }
+    @conversation = Conversation.new
 
-    @contact_ids = ""
+    if params[:to]
+      @person = Person.find(params[:to])
+    else
+      all_contacts_and_ids = Contact.connection.select_rows(
+        current_user.contacts.joins(:person => :profile).
+          select("contacts.id, profiles.first_name, profiles.last_name, people.diaspora_handle").to_sql
+      ).map{|r| {:value => r[0], :name => Person.name_from_attrs(r[1], r[2], r[3]).gsub(/(")/, "'")} }
 
-    @contacts_json = all_contacts_and_ids.to_json
-    if params[:contact_id]
-      @contact_ids = current_user.contacts.find(params[:contact_id]).id
-    elsif params[:aspect_id]
-      @contact_ids = current_user.aspects.find(params[:aspect_id]).contacts.map{|c| c.id}.join(',')
+      @contact_ids = ""
+
+      @contacts_json = all_contacts_and_ids.to_json
+      if params[:contact_id]
+        @contact_ids = current_user.contacts.find(params[:contact_id]).id
+      elsif params[:aspect_id]
+        @contact_ids = current_user.aspects.find(params[:aspect_id]).contacts.map{|c| c.id}.join(',')
+      end
     end
     render :layout => false
   end

@@ -7,6 +7,7 @@
           :class => "button"
 
       - else
+        = link_to t('.send_message'), new_conversation_path(:to => person.id), :class => 'button', :rel => 'facebox'
         = aspect_membership_dropdown(contact, person, 'right')
     - elsif user_signed_in? && current_user.person == person
       = link_to t('people.profile_sidebar.edit_my_profile'), edit_profile_path, :class => 'button creation'

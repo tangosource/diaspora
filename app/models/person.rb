@@ -318,6 +318,14 @@ class Person < ActiveRecord::Base
     self
   end
 
+  def messaging_name
+    if self.profile.full_name.blank?
+      self.diaspora_handle
+    else
+      self.profile.full_name.titleize
+    end
+  end
+
   protected
 
   def clean_url

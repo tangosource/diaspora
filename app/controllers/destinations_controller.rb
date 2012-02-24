@@ -123,9 +123,13 @@ class DestinationsController < ApplicationController
 
   def find_destination
     id = params[:id] || params[:destination_id]
-    @destination = 
-      Destination.find(id) || 
-      Destination.where(:permalink => params[:permalink]).first
+    begin
+      @destination = 
+        Destination.find(id) || 
+        Destination.where(:permalink => params[:permalink]).first
+    rescue ActiveRecord::RecordNotFound
+      redirect_to :back, :notice => 'Destination doesn\'t exist.'
+    end
   end
 
   def search

@@ -12,7 +12,11 @@ class Stream::Place < Stream::Base
   end
 
   def place
-    @place ||= ::Place.find(place_id)
+    begin
+      @place ||= ::Place.find(place_id)
+    rescue ActiveRecord::RecordNotFound
+      return nil
+    end
   end
 
   # @return [ActiveRecord::Association<Post>] AR association of posts

@@ -12,7 +12,10 @@ class PlacesController < ApplicationController
   def show
     @stream = Stream::Place.new(current_user, params[:id], :max_time => max_time, :page => params[:page])
 
+    
+
     respond_with do |format|
+      format.html { redirect_to :back, :notice => 'Place doesn\'t exist.' unless @stream.place }
       format.json{ render_for_api :backbone, :json => @stream.stream_posts, :root => :posts }
     end
   end

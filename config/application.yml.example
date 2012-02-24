@@ -211,6 +211,9 @@ defaults: &defaults
 
   google_ads: false
 
+  gtb_getsatisfaction: false
+  gtb_google_a: false
+
 #
 # Use this section to override default settings in specific environments
 #

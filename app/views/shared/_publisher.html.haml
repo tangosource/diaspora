@@ -22,7 +22,7 @@
                 :title => popover_with_close_html( '1. ' + t('shared.public_explain.share') ),
                 'data-content' => t('shared.public_explain.new_user_welcome_message')
             - else
-              - if @article
+              - if @article!=""
                 = status.text_area :fake_text, :rows => 2, :value => magazine_article_url(@article), :tabindex => 1
               - else
                 = status.text_area :fake_text, :rows => 2, :value => h(publisher_formatted_text), :tabindex => 1, :placeholder => t('.whats_on_your_mind')
@@ -60,7 +60,10 @@
               - elsif selected_aspects.size == 1
                 = selected_aspects.first.name
               - else
-                = t('.toggle', :count => selected_aspects.size)
+                - if @article!=""
+                  = t('.aspects', :count => selected_aspects.size)
+                - else
+                  = t('.toggle', :count => selected_aspects.size)
               &#9660;
 
             .wrapper

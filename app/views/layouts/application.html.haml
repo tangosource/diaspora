@@ -145,9 +145,6 @@
     = render 'layouts/ads_footer'
     %footer
       .container
-        %ul#sub-footer_nav
-          %li= link_to 'Privacy Policy', :controller => "publics", :action => "privacy"  
-          %li= link_to 'Statement of Rights and Responsibilities', :controller => "publics", :action => "statements"  
         %ul#footer_nav
           %li= link_to image_tag('icons/twitter.png'), 'http://twitter.com/#/GayTravelAdvice', :target => '_blank'
           %li= link_to image_tag('icons/facebook.png'), 'http://www.Facebook.com/GayTravelBuddy', :target => '_blank'
@@ -155,6 +152,8 @@
           %li= link_to 'Magazine', ''
           %li= link_to 'Places', places_path
           %li= link_to 'Destinations', destinations_path
+          %li= link_to 'Privacy Policy', :controller => "publics", :action => "privacy"  
+          %li= link_to 'Statement of Rights and Responsibilities', :controller => "publics", :action => "statements"  
     #sat_widget
       :css
         a.fdbk_tab_bottom{

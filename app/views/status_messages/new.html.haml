@@ -13,7 +13,7 @@
   .span-15.last
     #facebox_header
       %h3
-        - if @article
+        - unless @article.blank?
           = t('.share_this_story')
         - else
           = t('.mentioning', :person => @person.name)

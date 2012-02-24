@@ -1,17 +1,15 @@
 %h1 Destinations
 
-= form_tag("/d/search", :method => "get") do
+= form_tag("/d/search", :method => "get", :class => "destinations_form") do
+  = submit_tag("Search")
   = label_tag(:q, "Search for:")
   = text_field_tag(:q, params[:q])
-  = submit_tag("Search")
 
-%ul
+%ul.destinations
   -@destinations.each do |destination|
     %li
-      = link_to destination.title, destination_path(destination.to_param)
-    %li
-      = destination.summary
-
+      %h4= link_to destination.title, destination_path(destination.to_param)
+      %p= destination.summary
 
 - if current_user && current_user.admin?
   = link_to t('.new') , new_destination_path

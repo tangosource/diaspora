@@ -3683,21 +3683,30 @@ ul.places
       background-color: #FAFAF5
         
 ul.destinations
-  padding: 20px 10px 20px 0
-  overflow: hidden
+  padding: 20px 0
+  margin: 0
   li
-    display: inline-block
     line-height: 26px
-    width: 44%
-    float: left
     border: 1px solid #EAEAEA
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.08) 
     -moz-box-shadow: 0 1px 3px rgba(0,0,0,.08) 
     -o-box-shadow: 0 1px 3px rgba(0,0,0,.08) 
     box-shadow: 0 1px 3px rgba(0,0,0,.08) 
-    padding: 10px 10px 0 20px
-    margin: 0 0 20px 20px
-    background: url('/images/destination.png') no-repeat 5px 12px
+    padding: 15px
+    margin: 0 0 20px 0
+    overflow: hidden
+    .info
+      float: right
+      width: 750px
+      h4 a
+        font-size: 28px
+      p
+        font-size: 14px
+
+    img
+      float: left
+      height: 150px
+      width: 150px
     &:hover
       background-color: #FAFAF5
       box-shadow: 0 1px 5px rgba(0,0,0,0.1) 
@@ -3708,8 +3717,20 @@ ul.destinations
         
 
 .places_form, .destinations_form
-  margin: 30px 10px 20px
-  input#q
-    width: 800px
-  input[type="submit"]
+  overflow: hidden
+  margin: 30px 0 20px
+  .search_field
+    padding: 2px 0
+    width: 830px
     float: right
+    position: relative
+    label
+      line-height: 24px
+    input#q
+      width: 820px
+      margin: 0
+  input[type="submit"]
+    float: left
+
+.clear
+  clear: both

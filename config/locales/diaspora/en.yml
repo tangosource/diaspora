@@ -668,15 +668,15 @@ en:
       failed: "Failed to update profile"
 
   places: 
-    title: "Place name."
-    summary: "Describe the place briefly."
+    title: "Establishment name."
+    summary: "Describe the establishment briefly."
     location: "Generally, where is it?"
-    image_url: "Enter the url for the place's profile image."
+    image_url: "Enter the url for the establishment's profile image."
     tag_list: "Tag list"
 
     new: 
       enter_username: "Pick a username (only letters, numbers, and underscores)"
-      submit: "Create Place"
+      submit: "Create Establishment"
     show:
       following: "Following %{place}"
       stop_following: "Stop following %{place}"
@@ -685,7 +685,7 @@ en:
     place_sidebar:
       summary: "Description"
       location: "Location"
-      edit: "Edit place"
+      edit: "Edit establishment"
       address: "Address"
       phone: "Phone"
       website: "Website"
@@ -1095,7 +1095,7 @@ en:
       stop_following: "Stop Following #%{tag}"
       followed_by: 'followed by'
       none: "The empty tag does not exist!"
-      places: "Places"
+      places: "Establishments"
       articles: "Articles"
       photos: "Photos"
       destinations: "Destinations"
@@ -1110,7 +1110,7 @@ en:
       stop_following: "Stop Following #%{tag}"
       followed_by: 'followed by'
       none: "The empty tag does not exist!"
-      places: "Places"
+      places: "Establishments"
       articles: "Articles"
       photos: "Photos"
 

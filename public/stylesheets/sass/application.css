@@ -3096,10 +3096,14 @@ ul.places {
   column-count: 3;
   column-gap: 20px; }
   ul.places li {
+    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
     line-height: 26px;
     border-bottom: 1px solid #eaeaea;
     padding: 1px 0 0 20px;
-    background: url("/images/places.png") no-repeat 5px 50%; }
+    background: url("/images/places.png") no-repeat 5px 8px; }
     ul.places li:hover {
       background-color: #fafaf5; }
 

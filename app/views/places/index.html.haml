@@ -2,11 +2,10 @@
 
 = form_tag("/places/search", :method => "get", :class => "places_form") do
   = submit_tag("Search")
-  .search_field
-    = label_tag(:q, "Search for:")
-    = text_field_tag(:q, params[:q])
+  = label_tag(:q, "Search for:")
+  = text_field_tag(:q, params[:q])
 
 %ul.places
   -@places.each do |place|
     %li
-      = link_to "sd sdsdasdasdasd asd asd asd asd as da sdasdasd"
+      = link_to place.title, place_path(place.to_param)

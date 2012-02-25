@@ -183,7 +183,7 @@ Diaspora::Application.routes.draw do
     get 'hub'                   => :hub
   end
 
-
+  get '/pages/:action' => 'pages'
 
   # External
 

@@ -2,14 +2,18 @@
 
 = form_tag("/d/search", :method => "get", :class => "destinations_form") do
   = submit_tag("Search")
-  = label_tag(:q, "Search for:")
-  = text_field_tag(:q, params[:q])
+  .search_field
+    = label_tag(:q, "Search for:")
+    = text_field_tag(:q, params[:q])
 
 %ul.destinations
   -@destinations.each do |destination|
     %li
-      %h4= link_to destination.title, destination_path(destination.to_param)
-      %p= destination.summary
+      %img{:src => destination.photo_url}
+      .info
+        %h4= link_to destination.title, destination_path(destination.to_param)
+        %p= destination.summary
+      .clear
 
 - if current_user && current_user.admin?
   = link_to t('.new') , new_destination_path

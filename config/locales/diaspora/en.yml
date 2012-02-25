@@ -166,7 +166,7 @@ en:
       people_sharing_with_you: "People sharing with you"
 
       welcome_to_diaspora: "Welcome to GayTravelBuddy, %{name}!"
-      introduce_yourself: "This is your passport.  Jump in and introduce yourself."
+      introduce_yourself: "This is your Passport (aka Stream or Homepage). Take a look at the walkthrough below to get started."
 
       new_here:
         title: "Welcome New Users"
@@ -199,7 +199,7 @@ en:
 
     aspect_stream:
       stay_updated: "Stay Updated"
-      stay_updated_explanation: "Your main passport is populated with all of your contacts, tags you follow, and posts from some creative members of the community."
+      stay_updated_explanation: "Your main Passport is populated with all of your contacts, tags you follow, and posts, so consider it your home base as you travel about the site. Be sure to also check out the Magazine, Establishments, and Destinations located at the top of the page, and search the site using the search bar above."
 
   aspect_memberships:
     destroy:
@@ -835,8 +835,8 @@ en:
       reshare: "Reshare"
     public_explain:
       control_your_audience: "Control your Audience"
-      new_user_welcome_message: "Use #hashtags to classify your posts and find people who share your interests.  Call out awesome people with @Mentions"
-      visibility_dropdown: "Use this dropdown to change visibility of your post.  (We suggest you make this first one public.)"
+      new_user_welcome_message: "We use #hashtags and @mentions on GTB. Use a #hashtag whenever you'd like to trend something in your post. You can create and follow as many #hashtags as you like. Whenever someone uses a #hashtag you follow, that content will show up on your Passport. You can also @mention people, and use = to reference an establishment or destination."
+      visibility_dropdown: 'Use this drop down menu to change the visibility of specific posts to particular spheres. Create as many spheres as you like, such as "work" or "acquaintances." We suggest you make your first #NewHere post public!'
       title: "Set up connected services"
       share: "Share"
       outside: "Public messages will be available for others outside of GayTravelBuddy to see."

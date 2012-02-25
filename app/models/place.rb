@@ -84,7 +84,7 @@ class Place < ActiveRecord::Base
   end
 
   def to_param
-    "#{id}-#{title.gsub(' ','-')}"
+    "#{id}-#{title.gsub(' ','-').gsub('.','')}"
   end
 
 end

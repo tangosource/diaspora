@@ -42,7 +42,7 @@ class Destination < ActiveRecord::Base
   end
 
   def to_param
-    "#{id}-#{title.gsub(' ','-')}"
+    "#{id}-#{title.gsub(' ','-').gsub('.','')}"
   end
 
   def build_search_string

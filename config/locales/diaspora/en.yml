@@ -166,7 +166,7 @@ en:
       people_sharing_with_you: "People sharing with you"
 
       welcome_to_diaspora: "Welcome to GayTravelBuddy, %{name}!"
-      introduce_yourself: "This is your stream.  Jump in and introduce yourself."
+      introduce_yourself: "This is your passport.  Jump in and introduce yourself."
 
       new_here:
         title: "Welcome New Users"
@@ -199,7 +199,7 @@ en:
 
     aspect_stream:
       stay_updated: "Stay Updated"
-      stay_updated_explanation: "Your main stream is populated with all of your contacts, tags you follow, and posts from some creative members of the community."
+      stay_updated_explanation: "Your main passport is populated with all of your contacts, tags you follow, and posts from some creative members of the community."
 
   aspect_memberships:
     destroy:
@@ -308,7 +308,7 @@ en:
       already_account: "already have an account?"
       login_here: "log in here"
       choice: "Choice"
-      choice_explanation: "GayTravelBuddy lets you sort your connections into groups called spheres. Unique to GayTravelBuddy, spheres ensure that your photos, stories and jokes are shared only with the people you intend. If you add someone to a sphere, they receive permission to view content intended for that sphere. However, they won't see your content in their stream unless they add you to a sphere as well."
+      choice_explanation: "GayTravelBuddy lets you sort your connections into groups called spheres. Unique to GayTravelBuddy, spheres ensure that your photos, stories and jokes are shared only with the people you intend. If you add someone to a sphere, they receive permission to view content intended for that sphere. However, they won't see your content in their passport unless they add you to a sphere as well."
       ownership: "Ownership"
       ownership_explanation: "You own your pictures, and you shouldn’t have to give that up just to share them. You maintain ownership of everything you share on GayTravelBuddy, giving you full control over how it's distributed."
       simplicity: "Simplicity"
@@ -781,7 +781,7 @@ en:
 
   blocks:
     create:
-      success: "Alright, you won't see that user in your stream again. #silencio!"
+      success: "Alright, you won't see that user in your passport again. #silencio!"
       failure: "I couldn't ignore that user.  #evasion"
     destroy:
       success: "Let's see what they have to say! #sayhello"
@@ -943,7 +943,7 @@ en:
       contacts_title: "People whose posts you commented on"
 
     like_stream:
-      title: "Like Stream"
+      title: "Like Passport"
       contacts_title: "People whose posts you like"
 
     followed_tag:
@@ -962,8 +962,8 @@ en:
       contacts_title: "Recent Posters"
 
     multi:
-      title: "Stream"
-      contacts_title: "People in your Stream"
+      title: "Passport"
+      contacts_title: "People in your Passport"
 
     aspects:
       title: "Your Spheres"
@@ -1000,8 +1000,8 @@ en:
       reshared: "...someone reshares your post?"
       change: "Change"
       email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Until you follow this link and activate the new address, we will continue to use your original address %{email}."
-      stream_preferences: "Stream Preferences"
-      show_community_spotlight: "Show Community Spotlight in Stream?"
+      stream_preferences: "Passport Preferences"
+      show_community_spotlight: "Show Community Spotlight in Passport?"
       show_getting_started: 'Re-enable Getting Started'
       getting_started: 'New User Prefrences'
       following: "Following Settings"

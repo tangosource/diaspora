@@ -3150,6 +3150,3 @@ ul.destinations {
       margin: 0; }
   .places_form input[type="submit"], .destinations_form input[type="submit"] {
     float: left; }
-
-.clear {
-  clear: both; }

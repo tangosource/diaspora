@@ -674,6 +674,9 @@ en:
     location: "Generally, where is it?"
     image_url: "Enter the url for the place's profile image."
     tag_list: "Tag list"
+    address: "Address"
+    phone: "Phone"
+    website: "Website"
 
     new: 
       enter_username: "Pick a username (only letters, numbers, and underscores)"

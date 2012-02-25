@@ -9,7 +9,10 @@
 %ul.destinations
   -@destinations.each do |destination|
     %li
-      %img{:src => destination.photo_url}
+      - unless destination.photo_url.blank?
+        = link_to image_tag(destination.photo_url), destination_path(destination.to_param)
+      - else
+        %img
       .info
         %h4= link_to destination.title, destination_path(destination.to_param)
         %p= destination.summary

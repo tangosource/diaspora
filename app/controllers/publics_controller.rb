@@ -51,6 +51,10 @@ class PublicsController < ApplicationController
       render 'publics/privacy', :layout => 'application'
   end
 
+  def contact
+      render 'publics/contact', :layout => 'application'
+  end
+
   def statements
       render 'publics/statements', :layout => 'application'
   end

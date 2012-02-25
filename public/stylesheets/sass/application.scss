@@ -323,6 +323,8 @@ ul.as-selections {
 
 #author_info {
   position: relative;
+  height: 125px;
+  
   .avatar img {
     position: relative;
     top: 0px;
@@ -357,6 +359,11 @@ ul.as-selections {
       padding: 0; } }
   .right {
     top: 10px; }
+  
+  .below{
+    top: 90px;
+    position: relative;
+  }
   .description {
     margin: {
       bottom: 10px; }; } }

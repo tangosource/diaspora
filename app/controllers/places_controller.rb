@@ -39,7 +39,7 @@ class PlacesController < ApplicationController
   # POST /places.xml
   def create
     @place = Place.new(params[:place])
-    @place.tag_list = params[:place][:tag_list].gsub(/([\#]){1,}/,'');
+    @place.tag_list = params[:place][:tag_list].gsub(/([\#]){1,}/,'')
 
     respond_to do |format|
       if @place.save
@@ -56,7 +56,7 @@ class PlacesController < ApplicationController
   # PUT /places/1.xml
   def update
     @place = Place.find(params[:id])
-    params[:place][:tag_list] = params[:place][:tag_list].gsub(/([\#]){1,}/,'');
+    params[:place][:tag_list] = params[:place][:tag_list].gsub(/([\#]){1,}/,'')
     respond_to do |format|
       if @place.update_attributes(params[:place])
         format.html { redirect_to(@place, :notice => 'Place was successfully updated.') }

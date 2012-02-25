@@ -1,5 +1,5 @@
 #author_info
-  .right
+  .below
     - if user_signed_in? && current_user.person != person
       - if @block.present?
         = link_to t('users.privacy_settings.stop_ignoring'), block_path(@block),

@@ -1,18 +1,24 @@
 = javascript_include_tag "validation"
 -# = javascript_include_tag 'vendor/jquery.ghostInput'
 
-= javascript_tag "Diaspora.Page = 'InvitationsEdit';"
-.span-7.append-1.prepend-3
+.span12.signup
+  Connect and find new friends to travel or meet with:
   %br
   %br
-  %br
-  %br
-  = image_tag('ribbon.png')
-  #home_join_button
-    = link_to 'Join Us Now!', '/users/sign_up', :class => "myButton"
-  - flash.each do |name, msg|
-    %p{:class => "login_#{name}"}= msg
+  %ul
+    %li  § Be inspired by a community who loves to explore
+    %li  § Read and submit articles and reviews about the places you want to go and the things you want to do
+    %li  § Keep a blog to contribute to the culture we’re creating
+    %li  § Book accommodations, trips, and more with LGBT friendly vendors and coordinate with friends across the globe
+    %li  § Gain access to exclusive deals and offerings curated and tailored specifically for you and your interests
 
+  %p
+    The site is currently in its beta phase.
+    Be a part of the experience from the beginning, and create an account today. 
+
+.span12.signup.last
+  .lrdiscoverwidget{"data-background" => "off", "data-css" => "", "data-logo" => "off", "data-share-url" => "www.gaytravelbuddy.com", :rel => "1XKBFXDB"}
+  %script{:src => "http://launchrock-ignition.s3.amazonaws.com/ignition.1.1.js", :type => "text/javascript"}
 
 .span-10
   %br

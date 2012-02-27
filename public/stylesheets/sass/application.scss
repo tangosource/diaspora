@@ -773,6 +773,25 @@ form p {
   padding: 0;
   margin: 0; }
 
+
+
+#privacy-settings{
+  .privacy-header{
+    margin-top: 25px;
+  }
+  form p.profile_privacy{
+    width: 75%;
+    label{
+      left: 25px;
+      top: 0px;
+    }
+    img{
+      position: relative;
+      top: 6px;
+    }
+  }
+}
+
 form p.checkbox_select {
   width: 75%;
   label {

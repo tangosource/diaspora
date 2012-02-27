@@ -7,6 +7,7 @@ class ProfilesController < ApplicationController
 
   respond_to :html
   respond_to :js, :only => :update
+
   def edit
     @person = current_user.person
     @aspect  = :person_edit
@@ -19,6 +20,8 @@ class ProfilesController < ApplicationController
         :value => ("#"+obj.name)}
       end
   end
+
+
 
   def update
     # upload and set new profile photo
@@ -69,5 +72,17 @@ class ProfilesController < ApplicationController
       end
     end
 
+  end
+
+  def update_privacy
+    hide = params[:profile][:public] && params[:profile][:public] == '0'
+    message = hide ? "Your profile is now hidden" : "Your profile shows publicly now"
+
+    data = if current_user.update_profile(params[:profile])
+      {:success => true, :msg => message}
+    else
+      {:success => false, :msg => "We have had errors processing the requested action"}
+    end
+    render :json => data
   end
 end

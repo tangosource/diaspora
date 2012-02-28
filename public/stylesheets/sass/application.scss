@@ -782,8 +782,9 @@ form p {
   form p.profile_privacy{
     width: 75%;
     label{
-      left: 25px;
-      top: 0px;
+      display: inline-block;
+      margin-left: 20px;
+      margin-top: -1px;
     }
     img{
       position: relative;

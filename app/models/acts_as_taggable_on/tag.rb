@@ -1,5 +1,10 @@
 class ActsAsTaggableOn::Tag
 
+  def self.extract_from_params(tags)
+    tags = tags.gsub(/([\#]){1,}/,'').split(',')
+    tags.map {|tag| tag.strip.gsub(' ', '_')}.join(',')
+  end
+
   def followed_count
    @followed_count ||= TagFollowing.where(:tag_id => self.id).count
   end

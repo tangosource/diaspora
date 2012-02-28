@@ -47,7 +47,8 @@
   %br
   .section
     .profile_photo
-      = image_tag @destination.photo_url
+      - if @destination.photo_url
+        = image_tag @destination.photo_url
 
   = link_to t('.edit'), edit_destination_path(@destination) if current_user and current_user.admin?
 

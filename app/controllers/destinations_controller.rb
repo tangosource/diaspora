@@ -1,4 +1,5 @@
 require File.join(Rails.root, "lib", 'stream', "destination")
+require File.join(Rails.root,"app", "models", "acts_as_taggable_on", "tag.rb")
 
 class DestinationsController < ApplicationController
   respond_to :html, :only => [:index, :show]
@@ -55,10 +56,9 @@ class DestinationsController < ApplicationController
   # POST /destinations.xml
   def create
     @destination = Destination.new(params[:destination])
-
-    @destination.tag_list  = extract_tags params[:destination][:tag_list] 
-    @destination.name_list = extract_tags params[:destination][:name_list]
-    @destination.permalink = params[:destination][:title]
+    @destination.tag_list   = ActsAsTaggableOn::Tag.extract_from_params(params[:destination][:tag_list])
+    @destination.name_list  = ActsAsTaggableOn::Tag.extract_from_params(params[:destination][:name_list])
+    @destination.permalink  = params[:destination][:title]
 
     respond_to do |format|
       if @destination.save
@@ -76,9 +76,9 @@ class DestinationsController < ApplicationController
   def update
     @destination = Destination.find(params[:id])
 
-    params[:destination][:tag_list]  = extract_tags params[:destination][:tag_list]
-    params[:destination][:name_list] = extract_tags params[:destination][:name_list]
-    params[:destination][:permalink] = params[:destination][:title] #TODO rename inputs as possible to aoid doing that here.
+    params[:destination][:tag_list]   = ActsAsTaggableOn::Tag.extract_from_params(params[:destination][:tag_list])
+    params[:destination][:name_list]  = ActsAsTaggableOn::Tag.extract_from_params(params[:destination][:name_list])
+    params[:destination][:permalink]  = params[:destination][:title]
 
     respond_to do |format|
       if @destination.update_attributes(params[:destination])

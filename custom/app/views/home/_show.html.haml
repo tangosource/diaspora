@@ -16,12 +16,10 @@
     The site is currently in its beta phase.
     Be a part of the experience from the beginning, and create an account today. 
 
-.span12.signup.last
-  .lrdiscoverwidget{"data-background" => "off", "data-css" => "", "data-logo" => "off", "data-share-url" => "www.gaytravelbuddy.com", :rel => "1XKBFXDB"}
-  %script{:src => "http://launchrock-ignition.s3.amazonaws.com/ignition.1.1.js", :type => "text/javascript"}
+:css 
+  #home_join_button {margin-left: 15px;}
 
-.span-10
-  %br
-  %br
-  %br
-  %br
+.span12.signup.last
+  =image_tag('ribbon.png')
+  %div#home_join_button
+    = link_to 'Join Us Now!', '/users/sign_up', :class => "myButton"

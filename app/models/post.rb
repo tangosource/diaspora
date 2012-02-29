@@ -20,6 +20,7 @@ class Post < ActiveRecord::Base
       post.raw_message
     }, :as => :text
     t.add :public
+    t.add :skip_formatting
     t.add :created_at
     t.add :comments_count
     t.add :likes_count

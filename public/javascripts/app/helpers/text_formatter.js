@@ -1,21 +1,26 @@
 (function(){
   var textFormatter = function textFormatter(model) {
     var text = model.get("text");
+    var skip = model.get("skip_formatting");
 
-    mentions = model.get("mentioned_people");
-    places = model.get("mentioned_places");
+    if(skip)
+      return text;
+    else{
+      mentions = model.get("mentioned_people");
+      places = model.get("mentioned_places");
 
-    if(places){
-      if(typeof places[0] != 'undefined'){
-        mentions.push(places[0]);
+      if(places){
+        if(typeof places[0] != 'undefined'){
+          mentions.push(places[0]);
+        }
       }
-    }
 
-    return textFormatter.mentionify(
-      textFormatter.hashtagify(
-        textFormatter.markdownify(text)
-        ), mentions
-      )
+      return textFormatter.mentionify(
+        textFormatter.hashtagify(
+          textFormatter.markdownify(text)
+          ), mentions
+        )
+    }
   };
 
   textFormatter.markdownify = function markdownify(text){

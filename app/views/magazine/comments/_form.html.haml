@@ -1,0 +1,22 @@
+= form_for @comment,  :url =>magazine_article_magazine_comments_path(@article), :remote => true,
+                      :html => {:class => "new_article_comment", :id => "new_article_comment" } do |f|
+  %p Leave a comment
+
+  = field :class => "hidden" do
+    = f.label :nickname
+    = f.text_field :nickname
+    Hide me using CSS
+
+  - if current_blogger
+    = field :class => "hidden" do
+      = render 'magazine/comments/fields', :f => f
+
+  = field do
+    = f.label :body, "Your comment *"
+    %br
+    = f.text_area :body
+    %br
+    = errors_on @comment, :body
+
+  = actions do
+    = f.submit "Add Comment", :disable_with => 'Adding Comment...'

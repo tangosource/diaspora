@@ -3179,10 +3179,13 @@ a.toggle_selector {
         float: left;
         margin: 50px 10px; } } }
   #gtb_nav {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
     width: 100%;
     float: left;
     border: solid #dadada 0.1em;
     margin-bottom: 20px;
+    background-color: #F4F4F4;
     ul {
       padding: 0px;
       li {
@@ -3190,6 +3193,7 @@ a.toggle_selector {
         line-height: 40px;
         float: left;
         border-right: solid #dadada 0.1em;
+        border-left: solid #ffffff 0.1em;
         a {
           color: black; } } } } }
 

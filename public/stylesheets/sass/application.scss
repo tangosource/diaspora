@@ -4,7 +4,7 @@
 @import "mixins";
 
 body {
-  padding: 2em;
+  padding: 2em 2em 0 2em;
   margin: 0 {
     top: 33px; };
   background-image: url(/images/bg-pattern.png);
@@ -1691,6 +1691,7 @@ ul#request_result {
         right: 1em; } } } }
 
 footer {
+    background-color: #FFFFFF;
   width: 100%;
   left: 0;
   bottom: 0;

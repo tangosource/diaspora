@@ -5,19 +5,28 @@
 - content_for :page_title do
   = t('.title')
 
-#section_header
-  %h2
-    = t('privacy')
-  = render 'shared/settings_nav'
+#privacy-settings
+  #section_header
+    %h2
+      = t('privacy')
+    = render 'shared/settings_nav'
 
-.span-12.prepend-5.last
-  %h3
-    = t('.ignored_users')
+  .span-12.prepend-5.last
+    %h3
+      = t('.ignored_users')
 
-  - @blocks.each do |block|
-    = block.person.name
-    \-
-    = link_to t('.stop_ignoring'), block_path(block),
-      :method => :delete
-    %br
+    - @blocks.each do |block|
+      = block.person.name
+      \-
+      = link_to t('.stop_ignoring'), block_path(block),
+        :method => :delete
+      %br
 
+    %h4.privacy-header
+      = t('privacy')
+    = form_for current_user.profile, :as => :profile, :url => update_privacy_profile_path do|form|
+      %p.profile_privacy
+        = form.label :public, t('.profile_privacy')
+        = form.check_box :public
+
+= javascript_include_tag 'users/privacySettings'

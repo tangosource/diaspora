@@ -1026,6 +1026,7 @@ en:
       title: "Privacy Settings"
       ignored_users: "Ignored Users"
       stop_ignoring: "Stop ignoring"
+      profile_privacy: "Show public profile"
 
     destroy:
       success: "Your account has been locked.  It may take 20 minutes for us to finish closing your account.  Thank you for trying GayTravelBuddy."

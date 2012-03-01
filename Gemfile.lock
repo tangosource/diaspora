@@ -33,12 +33,13 @@ GIT
 
 GIT
   remote: git://github.com/tangosource/magazine.git
-  revision: 6009a35684294ae05f164e7e683ce2d0a62d237a
+  revision: 48438901eafc2ebef88034ac212bb7811c6e1fca
   specs:
     magazine (0.4.7)
       RedCloth (>= 4.2.9)
       acts-as-taggable-on (>= 2.0.6)
       albino (>= 1.3.3)
+      carrierwave (= 0.5.8)
       nokogiri (>= 1.5.0)
       redcarpet (>= 2.0.1)
       will_paginate (>= 3.0.2)

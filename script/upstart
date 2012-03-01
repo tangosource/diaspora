@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASEDIR=$(dirname $0)
+cd $BASEDIR/..
+
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
+[ -e .rvmrc ] && source .rvmrc
+
+exec bundle exec unicorn_rails -c config/unicorn_staging.rb -E $RAILS_ENV

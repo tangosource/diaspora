@@ -1,0 +1,63 @@
+#     TS original config 
+server {                                                                               
+  index index.html index.htm;
+  server_name staging.gaytravelbuddy.com;
+  root /var/www/staging/public;
+  dav_methods off;
+
+  if (-f $document_root/maintenance.html) {
+          return 503;
+  }
+  error_page 503 @503;
+  location @503 {
+          rewrite ^(.*)$ /maintenance.html break;
+  }
+
+  try_files $uri/index.html $uri.txt $uri.html $uri @app;
+
+  location @app {
+	  proxy_pass        http://localhost:3000;
+    proxy_redirect     off;
+    proxy_set_header   Host             $host;
+    proxy_set_header   X-Real-IP        $remote_addr;
+    proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+  }
+}
+
+server {                                                                               
+  listen 443;
+  ssl on;
+  ssl_certificate /etc/ssl/gtb/secure_gaytravelbuddy_com.crt;
+  ssl_certificate_key /etc/ssl/gtb/secure_gaytravelbuddy_com.key;
+
+  server_name staging.gaytravelbuddy.com;
+  access_log /var/log/nginx/nginx.vhost.error.log;
+
+
+  root /var/www/staging/public;
+  dav_methods off;
+
+  if (-f $document_root/maintenance.html) {
+          return 503;
+  }
+  error_page 503 @503;
+  location @503 {
+          rewrite ^(.*)$ /maintenance.html break;
+  }
+
+  try_files $uri/index.html $uri.txt $uri.html $uri @app;
+
+  location @app {
+	  proxy_pass        http://localhost:3000;
+    proxy_redirect     off;
+    proxy_set_header   Host             $host;
+    proxy_set_header   X-Real-IP        $remote_addr;
+    proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+  }
+
+
+ # location / {
+ #   root /var/www/staging/public;
+ #   index index.html;
+ # }
+ }

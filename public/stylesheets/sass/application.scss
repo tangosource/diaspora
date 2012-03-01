@@ -1690,9 +1690,11 @@ ul#request_result {
         top: 2px;
         right: 1em; } } } }
 
-footer {
+footer.signup {
   bottom: 0;
   position: absolute;
+}
+footer {
   width: 100%;
   left: 0;
   padding-bottom: 20px;

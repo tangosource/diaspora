@@ -1691,6 +1691,8 @@ ul#request_result {
         right: 1em; } } } }
 
 footer {
+  bottom: 0;
+  position: absolute;
   width: 100%;
   left: 0;
   padding-bottom: 20px;

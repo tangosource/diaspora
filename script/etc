@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+set -e
+
+etc_host="root@gaytravelbuddy.com"
+current_dir=`dirname "$0"`
+etc="$current_dir/../etc"
+whitelist="$etc/files"
+dest="$etc/"
+
+
+help()
+{
+cat << EOF
+Usage:
+
+script/etc pull
+script/etc push
+
+
+EOF
+}
+
+etc_pull()
+{
+  rsync -aP $etc_host:/etc --files-from=$whitelist $dest
+}
+
+etc_push()
+{
+  echo 'etc_push'
+}
+
+
+case $1 in
+  pull) etc_pull ;;
+  push) etc_push ;;
+  *)    help     ;;
+esac

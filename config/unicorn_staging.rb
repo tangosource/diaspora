@@ -4,16 +4,26 @@ rails_env = ENV['RAILS_ENV'] || 'staging'
 #user  = 'diaspora'
 #group = 'diaspora'
 
-worker_processes 2
+worker_processes 10
 
 ## Load the app before spawning workers
 #preload_app true
 
 # How long to wait before killing an unresponsive worker
-timeout 30
+#timeout 30
 
-#pid '/var/run/diaspora/diaspora.pid'
+pid 'tmp/pids/staging.pid'
 #listen '/var/run/diaspora/diaspora.sock', :backlog => 2048
+listen '/var/run/gtb/staging0.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging1.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging2.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging3.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging4.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging5.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging6.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging7.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging8.sock', :backlog => 2048, :tcp_nodelay => true
+listen '/var/run/gtb/staging9.sock', :backlog => 2048, :tcp_nodelay => true
 
 # Ruby Enterprise Feature
 if GC.respond_to?(:copy_on_write_friendly=)

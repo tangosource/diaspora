@@ -240,5 +240,5 @@ Diaspora::Application.routes.draw do
 
   # privacy
 
-  match '*path' => redirect('/d')
+
 end

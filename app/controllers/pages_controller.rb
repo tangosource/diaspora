@@ -6,4 +6,8 @@ class PagesController < ApplicationController
 
   def statements     ; end
 
+  def raise_error
+    raise "Testing exception notification errors"
+  end
+
 end

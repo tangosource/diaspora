@@ -164,3 +164,5 @@ gem "magazine", :git => 'git://github.com/tangosource/magazine.git' #:path => '~
 
 # Convert html to markdown
 gem 'hpricot'
+
+gem 'exception_notification'

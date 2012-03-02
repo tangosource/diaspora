@@ -47,6 +47,7 @@ Diaspora::Application.configure do
           :openssl_verify_mode => AppConfig[:smtp_openssl_verify_mode]
         }
       end
+      ActionMailer::Base.smtp_settings = config.action_mailer.smtp_settings
     end
   end
 

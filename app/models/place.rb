@@ -2,6 +2,8 @@ class Place < ActiveRecord::Base
   include ROXML
   include Encryptor::Public
   include Diaspora::Guid
+  include Gtb::Params
+
   acts_as_taggable
 
   has_one :description, :dependent => :destroy
@@ -84,7 +86,7 @@ class Place < ActiveRecord::Base
   end
 
   def to_param
-    "#{id}-#{title.gsub(' ','-').gsub('.','')}"
+    param_normalize id, title
   end
 
 end

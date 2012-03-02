@@ -25,7 +25,7 @@ gem 'twitter', '2.0.2'
 # mail
 
 gem 'messagebus_ruby_api', '1.0.3'
-gem 'airbrake'
+#gem 'airbrake'
 gem 'newrelic_rpm'
 gem "rpm_contrib", "~> 2.1.7"
 

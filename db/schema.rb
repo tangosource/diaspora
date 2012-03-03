@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120301230755151617) do
+ActiveRecord::Schema.define(:version => 20120303002003221311) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -170,7 +170,7 @@ ActiveRecord::Schema.define(:version => 20120301230755151617) do
 
   create_table "images", :force => true do |t|
     t.integer  "article_id", :null => false
-    t.string   "url",        :null => false
+    t.string   "file",       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

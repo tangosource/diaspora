@@ -4,7 +4,9 @@
 
 Diaspora::Application.routes.draw do
 
-  get "subscriptions/index"
+
+  match "subscriptions/index" => "subscriptions#index", :as => "subscriptions"
+  match "subscriptions/new" => "subscriptions#new", :as => "subscriptions_new"
 
   get "subscriptions/new"
 

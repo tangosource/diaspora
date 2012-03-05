@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: git://github.com/tangosource/magazine.git
-  revision: 9e5e465f17e3b249f1cf6184c181a13ca2d892bc
+  revision: d828a882ac080f631138a1a4cb6b5d7796955e4b
   specs:
     magazine (0.4.7)
       RedCloth (>= 4.2.9)
@@ -418,7 +418,7 @@ GEM
       simple_oauth (~> 0.1)
     typhoeus (0.3.3)
       mime-types
-    tzinfo (0.3.31)
+    tzinfo (0.3.32)
     unicorn (4.1.1)
       kgio (~> 2.4)
       rack

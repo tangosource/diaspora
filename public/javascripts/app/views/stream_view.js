@@ -1,7 +1,7 @@
 app.views.Stream = Backbone.View.extend({
   legacyTemplate : true,
   events: {
-    "click #paginate": "render"
+    "click #paginate": "more"
   },
 
   initialize: function(options) {
@@ -11,6 +11,19 @@ app.views.Stream = Backbone.View.extend({
     this.setupEvents()
     this.setupInfiniteScroll()
     this.setupLightbox()
+  },
+
+  more: function(){
+    self = this;
+    $('#paginate').text('Load more Posts');
+    $('#paginate').on('click', function(){
+      if(self.stream.fetch()) {
+        self.appendLoader()
+      };
+
+      return this;
+
+    });
   },
 
   setupEvents : function(){
@@ -74,7 +87,7 @@ app.views.Stream = Backbone.View.extend({
     var bufferPx = 500;
 
     if(distFromBottom < bufferPx) {
-      this.render();
+      this.more();
     }
 
     return this;

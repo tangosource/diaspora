@@ -1,4 +1,6 @@
 class Destination < ActiveRecord::Base
+  include Gtb::Params
+
   validates_presence_of :permalink
 
   acts_as_taggable
@@ -42,7 +44,7 @@ class Destination < ActiveRecord::Base
   end
 
   def to_param
-    "#{id}-#{title.gsub(' ','-').gsub('.','')}"
+    param_normalize id, title
   end
 
   def build_search_string

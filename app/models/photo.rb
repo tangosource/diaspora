@@ -60,26 +60,24 @@ class Photo < ActiveRecord::Base
     end
   end
 
-  def self.diaspora_initialize(params = {})
-    photo = self.new params.to_hash
-    photo.author = params[:author]
-    photo.public = params[:public] if params[:public]
-    photo.pending = params[:pending] if params[:pending]
-    photo.diaspora_handle = photo.author.diaspora_handle
 
-    photo.random_string = ActiveSupport::SecureRandom.hex(10)
+  def self.diaspora_initialize(params = {})
+    photo = self.new(params.to_hash).tap do|p|
+      p.author = params[:author] || photo.author
+      p.public = params[:public] || p.public
+      p.pending = params[:pending] || p.pending
+      p.diaspora_handle = p.author.diaspora_handle
+      p.random_string = ActiveSupport::SecureRandom.hex(10)
+    end
 
     if params[:user_file]
       image_file = params.delete(:user_file)
-      photo.unprocessed_image.store! image_file
-
+      photo.unprocessed_image.store!(image_file)
     elsif params[:image_url]
       photo.remote_unprocessed_image_url = params[:image_url]
       photo.unprocessed_image.store!
     end
-
     photo.update_remote_path
-
     photo
   end
 

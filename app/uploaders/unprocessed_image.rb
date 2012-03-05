@@ -17,7 +17,10 @@ class UnprocessedImage < CarrierWave::Uploader::Base
     model.random_string + File.extname(@filename) if @filename
   end
 
-  version :thumb_small
+  version :thumb_small do
+    process :resize_to_fill => [60, 40]
+  end
+
   version :thumb_medium
   version :thumb_large
   version :scaled_full

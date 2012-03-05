@@ -364,6 +364,15 @@ ActiveRecord::Schema.define(:version => 20120303002003221311) do
     t.string   "search_string",         :limit => 60
   end
 
+  create_table "plans", :force => true do |t|
+    t.string   "name"
+    t.float    "amount"
+    t.string   "interval"
+    t.string   "currency"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "pods", :force => true do |t|
     t.string   "host"
     t.boolean  "ssl"
@@ -482,6 +491,19 @@ ActiveRecord::Schema.define(:version => 20120303002003221311) do
   add_index "share_visibilities", ["shareable_id", "shareable_type", "contact_id"], :name => "shareable_and_contact_id"
   add_index "share_visibilities", ["shareable_id", "shareable_type", "hidden", "contact_id"], :name => "shareable_and_hidden_and_contact_id"
   add_index "share_visibilities", ["shareable_id"], :name => "index_post_visibilities_on_post_id"
+
+  create_table "subscriptions", :force => true do |t|
+    t.string   "company_name"
+    t.string   "address"
+    t.integer  "zip"
+    t.string   "country"
+    t.string   "billing_address"
+    t.string   "billing_zip"
+    t.string   "billing_country"
+    t.string   "stripe_customer_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tag_followings", :force => true do |t|
     t.integer  "tag_id",     :null => false

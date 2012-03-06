@@ -1710,11 +1710,13 @@ ul#request_result {
         top: 2px;
         right: 1em; } } } }
 
-footer.signup {
+footer.stream {
   bottom: 0;
-  position: absolute;
+  position: relative;
 }
 footer {
+  bottom: 0;
+  position: absolute;
   width: 100%;
   left: 0;
   padding-bottom: 20px;

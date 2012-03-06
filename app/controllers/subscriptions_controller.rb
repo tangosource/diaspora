@@ -1,4 +1,6 @@
 class SubscriptionsController < ApplicationController
+  before_filter :validates_user_presence, :only => [:new, :create]
+
   def index
   end
 
@@ -13,6 +15,15 @@ class SubscriptionsController < ApplicationController
       redirect_to subscriptions_path, :notice => 'Thank you for subscribing!'
     else
       render :new, :notice => 'There was a problem when creating your subscription, try it again please.'
+    end
+  end
+
+  protected
+  def validates_user_presence
+    if current_user
+      true
+    else
+      redirect :back
     end
   end
 end

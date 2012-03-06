@@ -1,2 +1,7 @@
+#section_header
+  %h2
+    = t('settings')
+  = render 'shared/settings_nav'
+
 - @plans.each do |plan|
   = link_to "Suscribe to #{plan.name}", new_plan_subscription_path(plan)

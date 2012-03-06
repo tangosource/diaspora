@@ -39,7 +39,7 @@
       <%= select_month nil, {:add_month_numbers_true => true}, {:name => nil, :id => "card_month"}%>
       <%= select_year nil, {:start_year => Date.today.year, :end_year => Date.today.year+15}, {:name => nil, :id => "card_year"}%>
     </fieldset>
-    <%= f.hidden_field :stripe_customer_token %>
+    <%= f.hidden_field :stripe_card_token %>
     <!-- Form fields omitted -->
     <div id='stripe_error'>
       <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.</noscript>

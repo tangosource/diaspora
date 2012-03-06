@@ -24,7 +24,7 @@ subscription = {
   },
   handleStripeResponse: function(status, response) {
     if (status === 200) {
-      $('#subscription_stripe_customer_token').val(response.id);
+      $('#subscription_stripe_card_token').val(response.id);
       $('#new_subscription').submit();
     } else {
       $('#stripe_error').text(response.error.message);

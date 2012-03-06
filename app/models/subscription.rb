@@ -5,8 +5,6 @@ class Subscription < ActiveRecord::Base
   attr_accessor :stripe_card_token
   attr_accessor :email
 
-  #scope :user_subscriptions, where(:user_id => user_id)
-
   def save_with_payment
     if valid?
       customer = Stripe::Customer.create(:description => email, :plan => plan_id, :card => stripe_card_token)
@@ -17,6 +15,10 @@ class Subscription < ActiveRecord::Base
       logger.error "Stripe error when creating customer: #{e.message}"
       errors.add :base, "There was a problem with your credit card."
       false
+  end
+
+  def self.user_subscriptions(user_id)
+    where :user_id => user_id
   end
 
 end

@@ -1,5 +1,4 @@
 $(document).ready( function(){
-  $('#card_number').val(5224980108320195);
 var subscription;
 jQuery(function() {
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));

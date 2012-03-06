@@ -1,3 +1,5 @@
+$(document).ready( function(){
+  $('#card_number').val(5224980108320195);
 var subscription;
 jQuery(function() {
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
@@ -5,10 +7,14 @@ jQuery(function() {
 });
 subscription = {
   setupForm: function() {
-    return $('#new_subscription').submit(function() {
-      $('input[type=submit]').attr('disabled', true);
-      return subscription.processCard();
-    });
+      $('input[type=submit]').on('click', function(e){
+
+        $(this).attr('disabled', true);
+        //Freeze the submit event in order to wait for a response from Sprite
+        e.preventDefault();
+
+        return subscription.processCard();
+      });
   },
   processCard: function() {
     var card;
@@ -22,9 +28,16 @@ subscription = {
   },
   handleStripeResponse: function(status, response) {
     if (status === 200) {
-      return alert(response.id);
+      alert(response.id);
+
+      // Execute the submit
+      $('#new_subscription').submit();
+
     } else {
-      return alert(response.error.message);
+      alert(response.error.message);
+      $('#stripe_error').text(response.error.message);
+      $('input[type=submit]').attr('disabled', false);
     }
   }
 };
+});

@@ -503,6 +503,7 @@ ActiveRecord::Schema.define(:version => 20120303002003221311) do
     t.string   "stripe_customer_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "tag_followings", :force => true do |t|

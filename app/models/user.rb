@@ -52,6 +52,8 @@ class User < ActiveRecord::Base
   has_many :authorizations, :class_name => 'OAuth2::Provider::Models::ActiveRecord::Authorization', :foreign_key => :resource_owner_id
   has_many :applications, :through => :authorizations, :source => :client
 
+  has_many :subscriptions
+
 	# User can write blog posts
 	blogs
 

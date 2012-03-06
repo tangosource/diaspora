@@ -1,9 +1,11 @@
 class Subscription < ActiveRecord::Base
   belongs_to :user
-  belongs_to :plans
+  belongs_to :plan
 
   attr_accessor :stripe_card_token
   attr_accessor :email
+
+  #scope :user_subscriptions, where(:user_id => user_id)
 
   def save_with_payment
     if valid?

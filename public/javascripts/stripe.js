@@ -8,12 +8,9 @@ jQuery(function() {
 subscription = {
   setupForm: function() {
       $('input[type=submit]').on('click', function(e){
-
         $(this).attr('disabled', true);
-        //Freeze the submit event in order to wait for a response from Sprite
-        e.preventDefault();
-
-        return subscription.processCard();
+        subscription.processCard();
+        false;
       });
   },
   processCard: function() {
@@ -28,13 +25,9 @@ subscription = {
   },
   handleStripeResponse: function(status, response) {
     if (status === 200) {
-      alert(response.id);
-
-      // Execute the submit
+      $('#subscription_stripe_customer_token').val(response.id);
       $('#new_subscription').submit();
-
     } else {
-      alert(response.error.message);
       $('#stripe_error').text(response.error.message);
       $('input[type=submit]').attr('disabled', false);
     }

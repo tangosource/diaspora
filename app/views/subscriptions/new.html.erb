@@ -11,6 +11,22 @@
       </div>
     <% end %>
     <fieldset>
+        <%= f.label :company_name %>
+        <%= f.text_field :company_name %>
+    </fieldset>
+    <fieldset>
+        <%= f.label :address %>
+        <%= f.text_field :address %>
+    </fieldset>
+    <fieldset>
+        <%= f.label :zip %>
+        <%= f.text_field :zip %>
+    </fieldset>
+    <fieldset>
+        <%= f.label :country %>
+        <%= f.text_field :country %>
+    </fieldset>
+    <fieldset>
         <%= label_tag :card_number, "Credit Card Number " %>
         <%= text_field_tag :card_number, nil, :name => nil %>
     </fieldset>

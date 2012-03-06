@@ -7,3 +7,8 @@
 %ul
 - @plans.each do |plan|
   %li= link_to "Suscribe to #{plan.name}", new_plan_subscription_path(plan)
+
+%h3= 'You are already suscribed to:'
+%ul
+- @subscriptions.each do |subscription|
+  %li= subscription.plan.name if subscription.plan

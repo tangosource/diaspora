@@ -3,6 +3,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def new
+    @subscription = Subscription.new
   end
 
 end

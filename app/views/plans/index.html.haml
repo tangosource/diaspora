@@ -3,5 +3,7 @@
     = t('settings')
   = render 'shared/settings_nav'
 
+%h2= 'Available plans'
+%ul
 - @plans.each do |plan|
-  = link_to "Suscribe to #{plan.name}", new_plan_subscription_path(plan)
+  %li= link_to "Suscribe to #{plan.name}", new_plan_subscription_path(plan)

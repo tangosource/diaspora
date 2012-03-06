@@ -1,5 +1,6 @@
 class Subscription < ActiveRecord::Base
   belongs_to :user
+  belongs_to :plans
 
   attr_accessor :stripe_card_token
   attr_accessor :email

@@ -1,3 +1,4 @@
+<div class='subscriptions' >
 <%= form_for @subscription do |f| %>
   <% if @subscription.errors.any? %>
     <div class="error_messages">
@@ -9,23 +10,19 @@
       </ul>
     </div>
   <% end %>
-  <%= f.hidden_field :plan_id %>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>  
-  <div class="field">
+  <fieldset>
       <%= label_tag :card_number, "Credit Card Number " %>
       <%= text_field_tag :card_number, nil, :name => nil %>
-  </div>
-  <div class="field">
+  </fieldset>
+  <fieldset>
       <%= label_tag :card_code, "Security Code on Card (CVV)" %>
       <%= text_field_tag :card_code, nil, :name => nil %>
-  </div>
-  <div class="field">
+  </fieldset>
+  <fieldset>
     <%= label_tag :card_month, "Card Expiration" %>
     <%= select_month nil, {:add_month_numbers_true => true}, {:name => nil, :id => "card_month"}%>
     <%= select_year nil, {:start_year => Date.today.year, :end_year => Date.today.year+15}, {:name => nil, :id => "card_year"}%>
-  </div>
+  </fieldset>
   <div class="actions"><%= f.submit "Subscribe" %></div>
 <% end %>
+</div>

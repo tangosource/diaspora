@@ -2,10 +2,11 @@ class Subscription < ActiveRecord::Base
   belongs_to :user
 
   attr_accessor :stripe_card_token
+  attr_accessor :email
 
   def save_with_payment
     if valid?
-      customer = Stripe::Customer.create(:description => current_user.email, :plan => plan_id, :card => stripe_card_token)
+      customer = Stripe::Customer.create(:description => email, :plan => plan_id, :card => stripe_card_token)
       stripe_customer_token = customer.id
       save!
     end

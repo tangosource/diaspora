@@ -1,5 +1,5 @@
 class SubscriptionsController < ApplicationController
-  before_filter :validates_user_presence, :only => [:new, :create]
+  before_filter :authenticate_user1, :only => :create
 
   def create
     @subscription = Subscription.new(params[:subscription])
@@ -11,12 +11,4 @@ class SubscriptionsController < ApplicationController
     end
   end
 
-  protected
-  def validates_user_presence
-    if current_user
-      true
-    else
-      redirect :back
-    end
-  end
 end

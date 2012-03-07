@@ -12,6 +12,9 @@
         %td= plan.name
 
 
+%br
+%br
+%h3= 'Subscribe to a plan'
 .subscriptions
   = form_for @subscription do |f|
     - if @subscription.errors.any?

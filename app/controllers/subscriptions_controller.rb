@@ -1,5 +1,5 @@
 class SubscriptionsController < ApplicationController
-  before_filter :authenticate_user1, :only => :create
+  before_filter :authenticate_user!, :only => :create
 
   def create
     @subscription = Subscription.new(params[:subscription])
@@ -9,6 +9,12 @@ class SubscriptionsController < ApplicationController
     else
       render :new, :notice => 'There was a problem when creating your subscription, try it again please.'
     end
+  end
+
+  def destroy
+    @subscription = Subscription.find(params[:id])
+    @subscription.delete_with_payment
+    redirect_to plans_path
   end
 
 end

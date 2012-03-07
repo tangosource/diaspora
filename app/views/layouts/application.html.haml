@@ -88,9 +88,12 @@
 
 
     = csrf_meta_tag
+    = tag :meta, :name => "stripe-key", :content => AppConfig[:stripe_public_key]
     <!--[if IE]>
     = include_javascripts :ie
     <![endif]-->
+
+    = javascript_include_tag "https://js.stripe.com/v1/"
 
     = jquery_include_tag
     - unless @landing_page
@@ -150,8 +153,8 @@
         &#8679;
 
     = render 'layouts/ads_footer'
-    - if params[:controller] == 'home' and params[:action] == 'show'
-      %footer.signup
+    - if params[:controller] == 'places' and params[:action] != 'show'
+      %footer.ajax
         = render 'layouts/footer_nav'
     - else
       %footer

@@ -1,0 +1,17 @@
+.plans
+  %table
+    = form_for plan do |f|
+      %tr
+        %td= f.label :name
+        %td= f.text_field :name
+      %tr
+        %td= f.label :amount
+        %td= f.text_field :amount
+      %tr
+        %td= f.label :interval
+        %td= f.text_field :interval
+      %tr
+        %td= f.label :currency
+        %td= f.text_field :currency
+      %tr
+        %td= f.submit

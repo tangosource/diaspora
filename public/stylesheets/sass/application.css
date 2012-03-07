@@ -1640,6 +1640,10 @@ ul#request_result {
       top: 2px;
       right: 1em; }
 
+footer.stream {
+  bottom: 0;
+  position: relative;
+}
 footer {
   width: 100%;
   left: 0;

@@ -4,6 +4,11 @@
 
 Diaspora::Application.routes.draw do
 
+  resources :subscriptions
+  resources :plans
+
+  get "subscriptions/new"
+
   get "search" => "search#index", :as => "search"
 
 	# Keep these above the posts resources block

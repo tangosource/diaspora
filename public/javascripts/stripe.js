@@ -6,7 +6,7 @@ jQuery(function() {
 });
 subscription = {
   setupForm: function() {
-      $('input[type=submit]').on('click', function(e){
+      $('#subscription_submit').on('click', function(e){
         $(this).attr('disabled', true);
         subscription.processCard();
         false;

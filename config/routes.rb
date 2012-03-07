@@ -5,9 +5,7 @@
 Diaspora::Application.routes.draw do
 
   resources :subscriptions
-  resources :plans do
-    resources :subscriptions
-  end
+  resources :plans
 
   get "subscriptions/new"
 

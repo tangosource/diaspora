@@ -214,6 +214,10 @@ defaults: &defaults
   gtb_getsatisfaction: false
   gtb_google_a: false
 
+  # Stripe
+  stripe_api_key:    ""
+  stripe_public_key: ""
+
 #
 # Use this section to override default settings in specific environments
 #

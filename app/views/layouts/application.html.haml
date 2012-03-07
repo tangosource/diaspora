@@ -88,7 +88,7 @@
 
 
     = csrf_meta_tag
-    = tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY
+    = tag :meta, :name => "stripe-key", :content => AppConfig[:stripe_public_key]
     <!--[if IE]>
     = include_javascripts :ie
     <![endif]-->

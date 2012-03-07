@@ -3,8 +3,11 @@ class PlansController < ApplicationController
 
   def index
     @plans = Plan.all
-    @subscription = Plan.new.subscriptions.build
-    @subscriptions = Subscription.user_subscriptions(current_user.id)
+    if current_user.subscription
+      @subscription = current_user.subscription
+    else
+      @subscription = Plan.new.subscriptions.build
+    end
   end
 
 end

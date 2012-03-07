@@ -8,6 +8,9 @@ $(document).ready( function(){
     $(this).next().slideToggle('slow');
   });
 
+  //Selects the first radio button on /plans
+  $('#Subscription_Plan_1').attr('checked', true)
+
 });
 
 $(window).load( function(){

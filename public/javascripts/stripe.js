@@ -24,6 +24,7 @@ subscription = {
   },
   handleStripeResponse: function(status, response) {
     if (status === 200) {
+      $('#subscription_plan_id').val($('input:checked').val());
       $('#subscription_stripe_card_token').val(response.id);
       $('#new_subscription').submit();
     } else {

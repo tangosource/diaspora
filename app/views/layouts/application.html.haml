@@ -153,8 +153,8 @@
         &#8679;
 
     = render 'layouts/ads_footer'
-    - if params[:controller] == 'streams' and params[:action] == 'multi'
-      %footer.stream
+    - if params[:controller] == 'places' and params[:action] != 'show'
+      %footer.ajax
         = render 'layouts/footer_nav'
     - else
       %footer

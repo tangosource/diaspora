@@ -1,14 +1,6 @@
 class SubscriptionsController < ApplicationController
   before_filter :validates_user_presence, :only => [:new, :create]
 
-  def index
-  end
-
-  def new
-    plan = Plan.find(params[:plan_id])
-    @subscription = plan.subscriptions.build
-  end
-
   def create
     @subscription = Subscription.new(params[:subscription])
     @subscription.user_id = current_user.id

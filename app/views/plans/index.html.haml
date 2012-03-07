@@ -3,18 +3,18 @@
     = t('settings')
   = render 'shared/settings_nav'
 
-%h2= 'Available plans'
+%h2= 'Subscribe to a plan'
+%br
+%br
+
+%h3= 'Available plans'
 .plans
   %table
     - @plans.each do |plan|
       %tr
-        %td= radio_button plan.name, "Plan", :checked => true
+        %td= radio_button "Subscription", "Plan", plan.id
         %td= plan.name
 
-
-%br
-%br
-%h3= 'Subscribe to a plan'
 .subscriptions
   = form_for @subscription do |f|
     - if @subscription.errors.any?

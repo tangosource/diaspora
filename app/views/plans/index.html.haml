@@ -4,15 +4,12 @@
   = render 'shared/settings_nav'
 
 %h2= 'Available plans'
-%ul
-  %li
-    = radio_button "plan", "plan", "1 year"
-    = "1 year"
-  %li
-    = radio_button "plan", "plan", "2 year"
-    = "2 year"
--#- @plans.each do |plan|
-  -#%li= link_to "Suscribe to #{plan.name}", new_plan_subscription_path(plan)
+.plans
+  %table
+    - @plans.each do |plan|
+      %tr
+        %td= radio_button plan.name, "Plan", :checked => true
+        %td= plan.name
 
 
 .subscriptions

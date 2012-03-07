@@ -3,58 +3,29 @@
     = t('settings')
   = render 'shared/settings_nav'
 
-%h2= 'Subscribe to a plan'
-%br
-%br
+- if @subscription.new_record?
+  = render :partial => 'subscription', :locals => {:subscription => @subscription, :plans => @plans}
+- else
+  .subscriptions
+    %h3= 'Your current subscription: '
+    %br
+    %br
+    = form_for @subscription do |f|
+      %table
+        %tr
+          %td= label_tag 'Plan'
+          %td= @subscription.plan.name
+        %tr
+          %td= f.label :company_name
+          %td= f.text_field :company_name, :disabled => 'disabled'
+        %tr
+          %td= f.label :address
+          %td= f.text_field :address, :disabled => 'disabled'
+        %tr
+          %td= f.label :zip
+          %td= f.text_field :zip, :disabled => 'disabled'
+        %tr
+          %td= f.label :country
+          %td= f.text_field :country, :disabled => 'disabled'
+    = link_to 'Unsuscribe', subscription_path(@subscription), :confirm => 'Are you sure you want to unsuscribe?', :method => :delete
 
-%h3= 'Available plans'
-.plans
-  %table
-    - @plans.each do |plan|
-      %tr
-        %td= radio_button "Subscription", "Plan", plan.id
-        %td= plan.name
-
-.subscriptions
-  = form_for @subscription do |f|
-    - if @subscription.errors.any?
-      .error_messages
-        %h2
-          = pluralize(@subscription.errors.count, "error")
-          prohibited this subscription from being saved:
-        %ul
-          - @subscription.errors.full_messages.each do |msg|
-            %li= msg
-    = f.hidden_field :plan_id
-    %table
-      %tr
-        %td= f.label :company_name
-        %td= f.text_field :company_name
-      %tr
-        %td= f.label :address
-        %td= f.text_field :address
-      %tr
-        %td= f.label :zip
-        %td= f.text_field :zip
-      %tr
-        %td= f.label :country
-        %td= f.text_field :country
-      %tr
-        %td= label_tag :email
-        %td= f.text_field :email
-      %tr
-        %td= label_tag :card_number, "Credit Card Number "
-        %td= text_field_tag :card_number, nil, :name => nil
-      %tr
-        %td= label_tag :card_code, "Security Code on Card (CVV)"
-        %td= text_field_tag :card_code, nil, :name => nil
-      %tr
-        %td= label_tag :card_month, "Card Expiration"
-        %td
-          = select_month nil, {:add_month_numbers_true => true}, {:name => nil, :id => "card_month"}
-          = select_year nil, {:start_year => Date.today.year, :end_year => Date.today.year+15}, {:name => nil, :id => "card_year"}
-    = f.hidden_field :stripe_card_token
-    / Form fields omitted
-    #stripe_error
-      %noscript JavaScript is not enabled and is required for this form. First enable it in your web browser settings.
-    .actions= f.submit "Subscribe"

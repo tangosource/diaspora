@@ -3,14 +3,25 @@
 
 @import "mixins";
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 94%;
+  position: relative;
   padding: 2em 0 0 0;
   margin: 0 {
     top: 33px; };
   background-image: url(/images/bg-pattern.png);
   font: {
     family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    size: 13px; }; }
+    size: 13px; }; 
+  
+  .container {
+    padding-bottom: 60px;  
+  }
+}
 
 a {
   color: $blue;
@@ -1716,10 +1727,10 @@ footer.ajax {
 }
 footer {
   bottom: 0;
-  position: relative;
+  position: absolute;
   width: 100%;
   left: 0;
-  padding-bottom: 20px;
+  padding: 15px 0;
   color: #999999;
   box-shadow: 0 1px 17px rgba(0,0,0,0.2);
   border-top: 1px solid #DDD;
@@ -1727,6 +1738,7 @@ footer {
   margin: 5px 0 0 0;
   height: auto;
   .container {
+    padding: 0;
     }
   img {
     position: relative;

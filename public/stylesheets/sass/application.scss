@@ -1710,13 +1710,13 @@ ul#request_result {
         top: 2px;
         right: 1em; } } } }
 
-footer.stream {
+footer.ajax {
   bottom: 0;
-  position: relative;
+  position: absolute;
 }
 footer {
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0;
   padding-bottom: 20px;
@@ -3365,6 +3365,13 @@ ul.destinations {
 #instructions-1XKBFXDB{position: relative;}
 #email-1XKBFXDB{width: 265px;}       
 
-.subscriptions fieldset{
-  position: relative;
+.subscriptions{
+  table{
+    width: 350px;
+  }
+  td{
+    width: 100px;
+  }
+  label{
+    position: relative;}
 }

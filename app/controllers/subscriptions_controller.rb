@@ -7,7 +7,7 @@ class SubscriptionsController < ApplicationController
     if @subscription.save_with_payment
       redirect_to plans_path, :notice => 'Thank you for subscribing!'
     else
-      render :new, :notice => 'There was a problem when creating your subscription, try it again please.'
+      redirect_to plans_path, :notice => 'There was a problem when creating your subscription, try it again please.'
     end
   end
 

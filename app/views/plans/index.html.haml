@@ -13,8 +13,8 @@
         %td= 'Name'
         %td= plan.name
       %tr
-        %td= 'Amount (in cents)'
-        %td= plan.amount
+        %td= 'Amount'
+        %td= number_to_currency(plan.amount / 100, :currrency => '$')
       %tr
         %td= 'Interval'
         %td= plan.interval

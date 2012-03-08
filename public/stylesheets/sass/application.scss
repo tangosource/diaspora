@@ -3380,6 +3380,9 @@ ul.destinations {
 
 .subscriptions{
   table{
+    background-color: white;
+    padding: 10px 15px 10px 5px;
+    border-radius: 10px;
     width: 350px;}
   td{
     width: 100px;}
@@ -3389,7 +3392,10 @@ ul.destinations {
 
 .plans{
   table{
-    width: 350px;}
+    background-color: white;
+    padding: 10px 15px 10px 5px;
+    border-radius: 10px;
+  width: 350px;}
   td{
     width: 100px;}
   label{

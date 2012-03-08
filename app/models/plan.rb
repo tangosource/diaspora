@@ -15,7 +15,7 @@ class Plan < ActiveRecord::Base
     save!
     rescue Stripe::InvalidRequestError => e
       logger.error "Stripe error when creating plan: #{e.message}"
-      errors.add :base, "There was an error when creating the plan."
+      errors.add :base, "There was an error when creating the plan: #{e.message}"
       false
   end
     

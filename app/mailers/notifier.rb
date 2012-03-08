@@ -65,6 +65,10 @@ class Notifier < ActionMailer::Base
     send_notification(:confirm_email, recipient_id)
   end
 
+  def subscribed(user_id, plan_id)
+    send_notification(:subscribed, user_id, nil, plan_id)
+  end
+
   private
   def send_notification(type, *args)
     @notification = NotificationMailers.const_get(type.to_s.camelize).new(*args)

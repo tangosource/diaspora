@@ -9,6 +9,7 @@
       %tr
         %td= radio_button "Subscription", "Plan", plan.id
         %td= plan.name
+        %td= number_to_currency(plan.amount, :unit => '$')
 
 .subscriptions
   = form_for subscription do |f|

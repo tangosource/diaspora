@@ -1,6 +1,9 @@
 module NotificationMailers
   class Subscribed < NotificationMailers::Base
 
+    attr_accessor :recipient, :plan
+
+
     def set_headers(plan_id)
       @plan = Plan.find(plan_id)
       @headers[:to] = "aaron+anna@gaytravelbuddy.com"

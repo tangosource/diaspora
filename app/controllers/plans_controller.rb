@@ -16,7 +16,7 @@ class PlansController < ApplicationController
   end
 
   def create
-    if Plan.create(params[:plan])
+    if @plan = Plan.create(params[:plan])
       redirect_to plans_path, :notice => 'Plan created successfuly.'
     else
       render :new, :notice => 'There was a problem when creating the plan.'

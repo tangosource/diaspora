@@ -22,8 +22,12 @@ class SubscriptionsController < ApplicationController
 
   def destroy
     @subscription = Subscription.find(params[:id])
-    @subscription.delete_with_payment
-    redirect_to subscriptions_path
+    @plan = Plan.find(@subscription.plan_id)
+    if @subscription.delete_with_payment
+      redirect_to subscriptions_path, :notice => "You were unsuscribed from #{@plan.name} plan successfuly."
+    else
+      redirect_to subscriptions_path, :notice => 'There was a problem when deleting your subscription, try it again please.'
+    end
   end
 
 end

@@ -25,6 +25,7 @@ class Subscription < ActiveRecord::Base
     self.email = cu[:description]
     if valid?
       cu.cancel_subscription
+      destroy
     end
   end
 

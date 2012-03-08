@@ -21,8 +21,9 @@ class Subscription < ActiveRecord::Base
   end
 
   def delete_with_payment
+    cu = Stripe::Customer.retrieve(self.stripe_customer_token)
+    self.email = cu[:description]
     if valid?
-      cu = Stripe::Customer.retrieve(self.stripe_customer_token)
       cu.cancel_subscription
     end
   end

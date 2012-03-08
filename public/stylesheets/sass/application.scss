@@ -8,16 +8,16 @@ html {
 }
 
 body {
-  min-height: 94%;
+  min-height: 100%;
   position: relative;
-  padding: 38px 0 0 0;
   background-image: url(/images/bg-pattern.png);
   font: {
     family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     size: 13px; }; 
   
-  .container {
-    padding-bottom: 60px;  
+  .container.fixed {
+    padding: 40px 0 80px;
+    margin: 0 auto;
   }
 }
 

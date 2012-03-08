@@ -1,32 +1,24 @@
 = include_javascripts :plans
 
-#section_header
-  %h2
-    = t('settings')
-  = render 'shared/settings_nav'
-
-- if @subscription.new_record?
-  = render :partial => 'subscription', :locals => {:subscription => @subscription, :plans => @plans}
-- else
-  .subscriptions
-    %h3= 'Your current subscription: '
-    %br
-    %br
-    = form_for @subscription do |f|
-      %table
-        %tr
-          %td= label_tag 'Plan'
-          %td= @subscription.plan.name
-        %tr
-          %td= f.label :company_name
-          %td= f.text_field :company_name, :disabled => 'disabled'
-        %tr
-          %td= f.label :address
-          %td= f.text_field :address, :disabled => 'disabled'
-        %tr
-          %td= f.label :zip
-          %td= f.text_field :zip, :disabled => 'disabled'
-        %tr
-          %td= f.label :country
-          %td= f.text_field :country, :disabled => 'disabled'
+%h2= 'Plans'
+%br
+%br
+- @plans.each do |plan|
+  .plans
+    %table
+      %tr
+        %td= 'Stripe ID'
+        %td= plan.stripe_id
+      %tr
+        %td= 'Name'
+        %td= plan.name
+      %tr
+        %td= 'Amount'
+        %td= plan.amount
+      %tr
+        %td= 'Interval'
+        %td= plan.interval
+      %tr
+        %td= 'Currency'
+        %td= plan.currency
 

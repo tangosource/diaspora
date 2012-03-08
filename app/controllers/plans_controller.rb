@@ -1,6 +1,10 @@
 class PlansController < ApplicationController
   before_filter :admin_user?, :only => :new
 
+  def index
+    @plans = Plan.all
+  end
+
   def new
     @plan =  Plan.new
   end

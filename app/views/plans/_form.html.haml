@@ -2,6 +2,9 @@
   %table
     = form_for plan do |f|
       %tr
+        %td= f.label 'Stripe ID'
+        %td= f.text_field :stripe_id
+      %tr
         %td= f.label :name
         %td= f.text_field :name
       %tr

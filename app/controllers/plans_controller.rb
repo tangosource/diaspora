@@ -1,5 +1,5 @@
 class PlansController < ApplicationController
-  before_filter :admin_user?, :only => :new
+  before_filter :admin_user?, :only => [:index, :new]
 
   def index
     @plans = Plan.all

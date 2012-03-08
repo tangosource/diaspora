@@ -366,7 +366,7 @@ ActiveRecord::Schema.define(:version => 20120303002003221311) do
 
   create_table "plans", :force => true do |t|
     t.string   "name"
-    t.float    "amount"
+    t.integer  "amount"
     t.string   "interval"
     t.string   "currency"
     t.datetime "created_at"

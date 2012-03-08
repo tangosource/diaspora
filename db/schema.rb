@@ -371,6 +371,7 @@ ActiveRecord::Schema.define(:version => 20120303002003221311) do
     t.string   "currency"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "stripe_id"
   end
 
   create_table "pods", :force => true do |t|

@@ -16,7 +16,7 @@
       %table
         %tr
           %td= label_tag 'Plan'
-          %td= @subscription.plan.name + "  (" + number_to_currency(@subscription.plan.amount, :unit => '$') + ")"
+          %td= @subscription.plan.name + "  (" + number_to_currency(@subscription.plan.amount / 100, :unit => '$') + ")"
         %tr
           %td= f.label :company_name
           %td= f.text_field :company_name, :disabled => 'disabled'

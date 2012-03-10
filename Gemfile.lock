@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: git://github.com/tangosource/magazine.git
-  revision: d828a882ac080f631138a1a4cb6b5d7796955e4b
+  revision: 7a0db8d32ee6b1baeaf73918511fb69bbf0de396
   specs:
     magazine (0.4.7)
       RedCloth (>= 4.2.9)
@@ -276,7 +276,7 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     newrelic_rpm (3.3.2)
-    nokogiri (1.5.0)
+    nokogiri (1.5.2)
     oauth (0.4.5)
     oauth2 (0.5.0)
       faraday (>= 0.6.1, < 0.8)

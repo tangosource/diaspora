@@ -2,6 +2,7 @@ class SubscriptionsController < ApplicationController
   before_filter :authenticate_user!, :only => [:create, :index]
 
   def index
+    @subscriptions = Subscription.includes(:user, :plan).all
   end
 
   def new

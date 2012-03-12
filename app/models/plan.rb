@@ -40,4 +40,8 @@ class Plan < ActiveRecord::Base
       errors.add :base, "There was an error when creating the plan: #{e.message}"
       false
   end
+
+  def to_dollars
+    self.amount / 100
+  end
 end

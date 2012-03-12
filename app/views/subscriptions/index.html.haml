@@ -1,0 +1,10 @@
+.subscriptions
+  %table
+    - @subscriptions.each do |subscription|
+      %tr
+        %td= 'USER' 
+        %td= 'PLAN'
+      %tr
+        %td= link_to "#{subscription.user.username}", user_profile_path(subscription.user.username)
+        %td= subscription.plan.name
+        %td= number_to_currency(subscription.plan.to_dollars, :unit => '$')

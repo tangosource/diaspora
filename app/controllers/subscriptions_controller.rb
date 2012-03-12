@@ -2,6 +2,9 @@ class SubscriptionsController < ApplicationController
   before_filter :authenticate_user!, :only => [:create, :index]
 
   def index
+  end
+
+  def new
     @plans = Plan.all
     if current_user.subscription
       @subscription = current_user.subscription

@@ -8,7 +8,6 @@ class Subscription < ActiveRecord::Base
   validates_presence_of :email, :company_name, :address, :country, :zip
 
   def save_with_payment
-    debugger
     if valid?
       customer = Stripe::Customer.create(:description => email, :plan => self.plan.stripe_id, :card => stripe_card_token)
       self.stripe_customer_token = customer.id

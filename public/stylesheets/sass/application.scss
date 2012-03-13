@@ -3,14 +3,23 @@
 
 @import "mixins";
 
+html {
+  height: 100%;
+}
+
 body {
-  padding: 2em 0 0 0;
-  margin: 0 {
-    top: 33px; };
+  min-height: 100%;
+  position: relative;
   background-image: url(/images/bg-pattern.png);
   font: {
     family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    size: 13px; }; }
+    size: 13px; }; 
+  
+  .container.fixed {
+    padding: 0 0 80px;
+    margin: 20px auto 20px auto;
+  }
+}
 
 a {
   color: $blue;
@@ -1710,14 +1719,16 @@ ul#request_result {
         top: 2px;
         right: 1em; } } } }
 
-footer.signup {
+footer.ajax {
   bottom: 0;
   position: absolute;
 }
 footer {
+  bottom: 0;
+  position: absolute;
   width: 100%;
   left: 0;
-  padding-bottom: 20px;
+  padding: 15px 0;
   color: #999999;
   box-shadow: 0 1px 17px rgba(0,0,0,0.2);
   border-top: 1px solid #DDD;
@@ -1725,6 +1736,7 @@ footer {
   margin: 5px 0 0 0;
   height: auto;
   .container {
+    padding: 0;
     }
   img {
     position: relative;
@@ -2699,8 +2711,7 @@ ul.left_nav {
     left: 10px;
     top: 20px; };
   margin: {
-    left: -10px;
-    top: -20px; }; }
+    left: -10px;}; }
 
 #aspect_stream_header {
   padding: 0 12px; }
@@ -3262,6 +3273,9 @@ a.toggle_selector {
   background: black;
   float: right; }
 
+.ads_bottom {
+  min-height: 150px;
+}
 .ads_bottom .google_ad {
   display: block;
   width: 728px;
@@ -3363,3 +3377,27 @@ ul.destinations {
 
 #instructions-1XKBFXDB{position: relative;}
 #email-1XKBFXDB{width: 265px;}       
+
+.subscriptions{
+  table{
+    background-color: white;
+    padding: 10px 15px 10px 5px;
+    border-radius: 10px;
+    width: 350px;}
+  td{
+    width: 100px;}
+  label{
+    position: relative;}
+}
+
+.plans{
+  table{
+    background-color: white;
+    padding: 10px 15px 10px 5px;
+    border-radius: 10px;
+  width: 350px;}
+  td{
+    width: 100px;}
+  label{
+    position: relative;}
+}

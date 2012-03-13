@@ -69,13 +69,13 @@ Magazine.configure do |config|
   }
 
   # Configuration for cloudfiles (initializers/carrierwave.rb)
-  config.cloud_storage = :fog
-  config.cloud_fog_credentials = {
+  config.storage = :fog
+  config.fog_credentials = {
       :provider           => 'Rackspace',
       :rackspace_username => AppConfig[:cloudfiles_username],
       :rackspace_api_key  => AppConfig[:cloudfiles_api_key]
     }
-  config.cloud_fog_directory = AppConfig[:cloudfiles_dir]
-  config.cloud_fog_host = AppConfig[:cloudfiles_dir]
+  config.fog_directory = AppConfig[:cloudfiles_dir]
+  config.fog_host = AppConfig[:cloudfiles_host]
   
 end

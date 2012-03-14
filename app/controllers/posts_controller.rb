@@ -46,6 +46,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post = current_user.posts.where(:id => params[:id]).first
+    @post = Post.find(params[:id]) if @post.blank? and current_user.admin
     if @post
       current_user.retract(@post)
       respond_to do |format|

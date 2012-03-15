@@ -48,8 +48,9 @@
         return place.handle == diasporaId
       });
      
-      if(place)
-      return "<a href='/p/" + place.id + "' class='mention'>" + fullName + "</a>"
+      if(place){
+      return "<a href='/p/" + place.id + "' class='mention'>" + fullName + "</a> ";
+      }
 
       return person ? "<a href='/people/" + person.guid + "' class='mention'>" + fullName + "</a>" : fullName;
     })

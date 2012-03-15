@@ -1,0 +1,25 @@
+-# = javascript_include_tag 'vendor/jquery.ghostInput'
+
+.span12.signup
+  Connect and find new friends to travel or meet with:
+  %br
+  %br
+  %ul
+    %li  • Be inspired by a community who loves to explore
+    %li  • Read and submit articles and reviews about the places you want to go and the things you want to do
+    %li  • Keep a blog to contribute to the culture we’re creating
+    %li  • Book accommodations, trips, and more with LGBT friendly vendors and coordinate with friends across the globe
+    %li  • Gain access to exclusive deals and offerings curated and tailored specifically for you and your interests
+
+  %p
+    The site is currently in its beta phase.
+    We'll be rolling out new features on a regular basis, and we welcome your feedback as we create the GTB experience for you.
+
+:css 
+  #home_join_button {margin-left: 15px;}
+
+.span12.signup.last
+  =image_tag('ribbon.png')
+  %div#home_join_button
+    = link_to 'Join Us Now!', '/users/sign_up', :class => "myButton"
+

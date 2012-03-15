@@ -44,6 +44,19 @@ class PostsController < ApplicationController
     end
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+   if @post.update_attribute :text, params[:post][:text]
+     redirect_to multi_stream_path
+   else
+     redirect_to :back
+   end
+  end
+
   def destroy
     @post = current_user.posts.where(:id => params[:id]).first
     @post = Post.find(params[:id]) if @post.blank? and current_user.admin

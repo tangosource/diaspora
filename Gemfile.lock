@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: git://github.com/tangosource/magazine.git
-  revision: 7a0db8d32ee6b1baeaf73918511fb69bbf0de396
+  revision: 50ea9f6cd84cc4572be51b7860d1c7a18299a801
   specs:
     magazine (0.4.7)
       RedCloth (>= 4.2.9)

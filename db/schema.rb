@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120303002003221311) do
+ActiveRecord::Schema.define(:version => 20120316195419557632) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -169,10 +169,14 @@ ActiveRecord::Schema.define(:version => 20120303002003221311) do
   end
 
   create_table "images", :force => true do |t|
-    t.integer  "article_id", :null => false
-    t.string   "file",       :null => false
+    t.integer  "article_id",       :null => false
+    t.string   "file",             :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "random_string"
+    t.string   "name"
+    t.string   "alt_name"
+    t.boolean  "is_default_image"
   end
 
   create_table "invitations", :force => true do |t|

@@ -3401,3 +3401,54 @@ ul.destinations {
   label{
     position: relative;}
 }
+
+.article_form_existing_image_fields, .article_form_new_image_fields{
+  margin-bottom: 50px;
+}
+
+.article_form_existing_image_fields{
+
+  input[type='checkbox'], label{
+    display: inline-block !important;
+  }
+}
+
+.article_form_new_image_fields{
+
+  .image_file_fields{
+    width: 100%;
+    display: block;
+
+    label{
+      width: 20%;
+    }
+
+    input{
+      width: 70% !important;
+    }
+
+    input, label{
+      float: left;
+    }
+  }
+
+  .image_names{
+    width: 71%;
+    display: block;
+    margin-left: 182px;
+
+    label{
+      width: 20%;
+    }
+
+    input{
+      width: 78% !important;
+    }
+
+    input, label{
+      float: left;
+    }
+  }
+}
+
+

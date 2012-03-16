@@ -140,8 +140,8 @@
 
     = render 'layouts/templates'
 
+    = render 'layouts/gtb'
     .container.fixed{:style=> "#{yield(:break_the_mold)}"}
-      = render 'layouts/gtb'
       - if @aspsect == :getting_started || @page == :logged_out
         = yield
       - else

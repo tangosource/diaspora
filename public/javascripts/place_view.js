@@ -7,15 +7,18 @@ Places = Backbone.View.extend({
   },
 
   initialize : function(place) {
-    _.bindAll(this, 'findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput');
+    _.bindAll(this, 'findStringToReplace','searchTermFromValue', 'onSelect','addMentionToInput', 'autoadd');
 
     if(place){
       visibleInput = $('#status_message_fake_text');
-      this.onSelect(visibleInput,place,place.name);
     }
 
     $('#place_publisher').css('width','24px');
     this.setAutocomplete();
+  },
+
+  autoadd: function(place){
+    this.onSelect(visibleInput,place,place.name);
   },
 
   findStringToReplace: function(value, cursorIndex){

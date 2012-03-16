@@ -420,3 +420,9 @@ ul.destinations {
 
 #email-1XKBFXDB {
   width: 265px; }
+
+.span-24.last{
+  border: solid #DADADA 0.1em;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #FFFFFF; }

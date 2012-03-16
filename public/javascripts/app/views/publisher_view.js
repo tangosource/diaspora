@@ -18,6 +18,13 @@ app.views.Publisher = Backbone.View.extend({
   },
 
   createStatusMessage : function(evt) {
+
+    if(typeof(place) != "undefined"){
+      places.autoadd(place);
+    } else if(typeof(destination) != "undefined"){
+      destinations.autoadd(destination);
+    }
+
     if(evt){ evt.preventDefault(); }
 
     var serializedForm = $(evt.target).closest("form").serializeObject();
@@ -69,8 +76,17 @@ app.views.Publisher = Backbone.View.extend({
 
     if((this.id) && (empty =="")){
       $.getJSON('get_place/'+this.id,undefined, function(data) {
-        var places = new Places(data);
+        places = new Places(data);
+        place = data;
+        console.log(data);
       });
+    }else{
+      var start = empty.indexOf('#')+1;
+      var end =empty.indexOf('.');
+      destination = {};
+      destination['name'] = window.location.pathname.split('/').pop().split('-').pop()+' ';
+      destination['url']="destination" 
+      destinations = new Places(destination);
     }
     
     return this;

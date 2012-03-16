@@ -1,0 +1,9 @@
+%h2= 'Edit Post'
+%br
+%br
+- form_tag post_path(@post), :method => :put do
+  = hidden_field :id, :id
+  = text_field :post, :text
+  = submit_tag 'Submit'
+
+

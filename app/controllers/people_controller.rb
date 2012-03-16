@@ -86,13 +86,15 @@ class PeopleController < ApplicationController
   def show
     @person = Person.includes(:user).find_from_guid_or_username(params)
 
-    if !@person.profile.public? and current_user and current_user != @person.user
-      @contact = current_user.contact_for(@person)
-      if @contact.blank?
-        @contact = Contact.new unless @contact
-        render :add_contact, :notice => "You need to be contact of this person." and return
-      elsif @contact and !@contact.sharing
-        render :add_contact, :notice => 'Is not sharing with you' and return
+    if current_user and !current_user.admin?
+      if !@person.profile.public? and current_user and current_user != @person.user
+        @contact = current_user.contact_for(@person)
+        if @contact.blank?
+          @contact = Contact.new unless @contact
+          render :add_contact, :notice => "You need to be contact of this person." and return
+        elsif @contact and !@contact.sharing
+          render :add_contact, :notice => 'Is not sharing with you' and return
+        end
       end
     end
 

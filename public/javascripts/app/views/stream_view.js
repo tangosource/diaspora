@@ -60,14 +60,11 @@ app.views.Stream = Backbone.View.extend({
   },
 
   appendLoader: function(){
-    $("#paginate").html($("<img>", {
-      src : "/images/static-loader.png",
-      "class" : "loader"
-    }));
+    $('#paginate').text('Loading posts...');
   },
 
   removeLoader: function() {
-    $("#paginate").empty();
+    $('#paginate').text('No more Posts');
   },
 
   setupLightbox : function(){

@@ -422,6 +422,8 @@ ul.destinations {
   width: 265px; }
 
 .span-24.last{
+  padding: 15px 10px;
+  box-sizing:border-box; 
   border: solid #DADADA 0.1em;
   border-radius: 3px;
   -moz-border-radius: 3px;

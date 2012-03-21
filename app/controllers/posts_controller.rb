@@ -80,7 +80,7 @@ class PostsController < ApplicationController
   end
 
   def user_can_not_comment_on_post?
-    if @post.public && @post.author.local?
+    if @post && @post.public && @post.author.local?
       false
     elsif current_user.contact_for(@post.author)
       false

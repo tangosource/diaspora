@@ -4,7 +4,7 @@
 
 #profile
   .profile_photo
-    = person_image_link(person, :size => :thumb_large, :to => :photos)
+    = person_image_link(person, :to => :photos)
 
   - if user_signed_in?
     - if person != current_user.person

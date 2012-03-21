@@ -24,7 +24,7 @@
       - if @contacts_of_contact.count > 8
         %p.see_all= link_to t('.see_all'), person_contacts_path(@person)
 
-.span-18.last
+.span-17.last
   .stream_container
     = render 'people/sub_header', :person => @person, :contact => @contact
 

@@ -26,7 +26,7 @@
             = status.hidden_field :text, :value => h(publisher_hidden_text), :class => 'clear_on_submit'
 
             #publisher-images
-              #map-marker.btn{:title => t('.get_location')}
+              #locator.btn{:title => t('.get_location')}
                 = image_tag 'icons/marker.png', :alt => t('.get_location').titleize, :class => 'publisher_image'
               #file-upload.btn{:title => t('.upload_photos')}
                 = image_tag 'icons/camera.png', :alt => t('.upload_photos').titleize, :class => 'publisher_image'

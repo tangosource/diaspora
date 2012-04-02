@@ -9,7 +9,9 @@ app.views.Publisher = Backbone.View.extend({
   events : {
     "focus textarea" : "open",
     "click #hide_publisher" : "clear",
-    "submit form" : "createStatusMessage"
+    "submit form" : "createStatusMessage",
+    "click #locator" : "showLocation",
+    "click #hide_location" : "destroyLocation"
   },
 
   initialize : function(){
@@ -31,7 +33,8 @@ app.views.Publisher = Backbone.View.extend({
       },
       "aspect_ids" : serializedForm["aspect_ids[]"],
       "photos" : serializedForm["photos[]"],
-      "services" : serializedForm["services[]"]
+      "services" : serializedForm["services[]"],
+      "location" : serializedForm["location[address]"]
     }, {
       url : "/status_messages",
       success : function() {
@@ -47,6 +50,22 @@ app.views.Publisher = Backbone.View.extend({
 
     // clear state
     this.clear();
+
+    // clear location
+    this.destroyLocation();
+  },
+
+  // creates the locator
+  showLocation: function(){
+    if($('#location').length == 0){
+      $('#publisher_textarea_wrapper').after('<div id="location"></div>');
+      app.views.locator = new app.views.Locator;
+    }
+  },
+
+  // destroys the locator
+  destroyLocation: function(){
+    app.views.locator.remove();
   },
 
   clear : function() {

@@ -25,7 +25,9 @@ $(document).ready(function() {
     geocoder.geocode({'latLng': latlng}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         if (results[0]) {
-          $('#publisher_textarea_wrapper').after('<div id="location">' + results[0].formatted_address + '</div>');
+          $('#publisher_textarea_wrapper').after('<div id="location"></div>');
+          $('#location').append('<div id="location_address">' + results[0].formatted_address + '</div>');
+          $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png?1327687959"></a>');
         }
       } else {
         alert("Geocoder failed due to: " + status);

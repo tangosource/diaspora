@@ -25,8 +25,7 @@ $(document).ready(function() {
     geocoder.geocode({'latLng': latlng}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         if (results[0]) {
-          $('#publisher_textarea_wrapper').after('<div id="location"></div>');
-          $('#location').append('<div id="location_address">' + results[0].formatted_address + '</div>');
+          $('#location').html('<div id="location_address">' + results[0].formatted_address + '</div>');
           $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
           bindClickToHideLocation();
         }
@@ -37,6 +36,8 @@ $(document).ready(function() {
   }
 
   function success(position) {
+    $('#publisher_textarea_wrapper').after('<div id="location"></div>');
+    $('#location').append('<div id="location_address"><img alt="delete location" src="/images/ajax-loader.gif"></div>');
     getAddress(position.coords);
   }
 

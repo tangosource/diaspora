@@ -27,7 +27,7 @@ $(document).ready(function() {
         if (results[0]) {
           $('#publisher_textarea_wrapper').after('<div id="location"></div>');
           $('#location').append('<div id="location_address">' + results[0].formatted_address + '</div>');
-          $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png?1327687959"></a>');
+          $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
           bindClickToHideLocation();
         }
       } else {

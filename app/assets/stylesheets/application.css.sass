@@ -2892,3 +2892,23 @@ a.toggle_selector
   .btn
     :height 19px
     :width 19px
+
+#location
+  :border 1px solid #999
+  :height 20px
+  #location_address
+    :width 460px
+    :float left
+    :margin-left 5px
+  a#hide_location
+    :position absolute
+    :right 22px
+    :filter alpha(opacity=30)
+    :-moz-opacity 0.3
+    :-khtml-opacity 0.3
+    :opacity 0.3
+    :z-index 5
+  a#hide_location:hover
+    :-khtml-opacity 1
+    :opacity 1 
+    :cursor pointer

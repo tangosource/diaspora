@@ -28,6 +28,7 @@ $(document).ready(function() {
           $('#publisher_textarea_wrapper').after('<div id="location"></div>');
           $('#location').append('<div id="location_address">' + results[0].formatted_address + '</div>');
           $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png?1327687959"></a>');
+          bindClickToHideLocation();
         }
       } else {
         alert("Geocoder failed due to: " + status);
@@ -51,5 +52,11 @@ $(document).ready(function() {
     geocoder = new google.maps.Geocoder();
     navigator.geolocation.getCurrentPosition(success, error);
   });
+
+  function bindClickToHideLocation(){
+    $('#hide_location').click(function(){
+      $('#location').remove();
+    });
+  }
 
 });

@@ -37,14 +37,10 @@ $(document).ready(function() {
   }
 
   function success(position) {
-    var s = document.querySelector('#location');
-    
     getAddress(position.coords);
   }
 
   function error(msg) {
-    var s = document.querySelector('#status');
-    s.className = 'fail';
     errorGettingPosition(msg);
   }
 

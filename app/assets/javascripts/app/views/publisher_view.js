@@ -9,7 +9,8 @@ app.views.Publisher = Backbone.View.extend({
   events : {
     "focus textarea" : "open",
     "click #hide_publisher" : "clear",
-    "submit form" : "createStatusMessage"
+    "submit form" : "createStatusMessage",
+    "click #locator" : "showLocation"
   },
 
   initialize : function(){
@@ -47,6 +48,11 @@ app.views.Publisher = Backbone.View.extend({
 
     // clear state
     this.clear();
+  },
+
+  // creates the locator
+  showLocation: function(){
+    locator = new Locator;
   },
 
   clear : function() {

@@ -1,4 +1,6 @@
 function Locator(){
+ 
+  var address;
 
   (function initializer(){
     geocoder = new google.maps.Geocoder();
@@ -16,7 +18,6 @@ function Locator(){
   }
 
   function success(position) {
-    $('#location').append('<div id="location_address"><img alt="delete location" src="/images/ajax-loader.gif"></div>');
     getAddress(position.coords);
   }
 
@@ -25,6 +26,7 @@ function Locator(){
     geocoder.geocode({'latLng': latlng}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         if (results[0]) {
+          address = results[0].formatted_address;
           $('#location').html('<div id="location_address">' + results[0].formatted_address + '</div>');
           $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
           bindClickToHideLocation();
@@ -53,6 +55,14 @@ function Locator(){
             {
               alert("ERROR:"+ err.message);
             }
+  }
+
+  function address(){
+    return address;
+  }
+
+  return{
+    address: address
   }
 
 };

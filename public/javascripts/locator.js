@@ -16,8 +16,6 @@ function Locator(){
   }
 
   function success(position) {
-    $('#location').remove();
-    $('#publisher_textarea_wrapper').after('<div id="location"></div>');
     $('#location').append('<div id="location_address"><img alt="delete location" src="/images/ajax-loader.gif"></div>');
     getAddress(position.coords);
   }

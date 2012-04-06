@@ -52,7 +52,9 @@ app.views.Publisher = Backbone.View.extend({
 
   // creates the locator
   showLocation: function(){
-    locator = new Locator;
+    if(typeof(app.views.locator) != 'object'){
+      app.views.locator = new app.views.Locator;
+    }
   },
 
   clear : function() {

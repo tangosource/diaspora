@@ -10,7 +10,8 @@ app.views.Publisher = Backbone.View.extend({
     "focus textarea" : "open",
     "click #hide_publisher" : "clear",
     "submit form" : "createStatusMessage",
-    "click #locator" : "showLocation"
+    "click #locator" : "showLocation",
+    "click #hide_location" : "destroyLocation"
   },
 
   initialize : function(){
@@ -52,9 +53,15 @@ app.views.Publisher = Backbone.View.extend({
 
   // creates the locator
   showLocation: function(){
-    if(typeof(app.views.locator) != 'object'){
+    if($('#location').length == 0){
+      $('#publisher_textarea_wrapper').after('<div id="location"></div>');
       app.views.locator = new app.views.Locator;
     }
+  },
+
+  // destroys the locator
+  destroyLocation: function(){
+    app.views.locator.remove();
   },
 
   clear : function() {

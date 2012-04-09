@@ -25,6 +25,7 @@ app.views.Locator = Backbone.View.extend({
 
     locator.getAddress(function(address){
       $('#location').html('<div id="location_address">' + address + '</div>');
+      $('#location_address').val(address);
       $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
     });
   },

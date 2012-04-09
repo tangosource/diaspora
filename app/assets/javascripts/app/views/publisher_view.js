@@ -33,7 +33,8 @@ app.views.Publisher = Backbone.View.extend({
       },
       "aspect_ids" : serializedForm["aspect_ids[]"],
       "photos" : serializedForm["photos[]"],
-      "services" : serializedForm["services[]"]
+      "services" : serializedForm["services[]"],
+      "location" : serializedForm["location[address]"]
     }, {
       url : "/status_messages",
       success : function() {

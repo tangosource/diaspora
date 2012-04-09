@@ -50,6 +50,9 @@ app.views.Publisher = Backbone.View.extend({
 
     // clear state
     this.clear();
+
+    // clear location
+    this.destroyLocation();
   },
 
   // creates the locator

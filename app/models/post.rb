@@ -44,7 +44,7 @@ class Post < ActiveRecord::Base
     t.add :mentioned_people
     t.add :photos
     t.add :nsfw
-    t.add :location
+    t.add 'location.address', :as => :location
   end
 
   xml_attr :provider_display_name

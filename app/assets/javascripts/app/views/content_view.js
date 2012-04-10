@@ -56,7 +56,7 @@ app.views.Content = app.views.StreamObject.extend({
   },
 
   location: function(){
-    var location = this.model.get('location')? this.model.get('location').posts.address : '';
+    var location = this.model.get('location')? this.model.get('location') : '';
     return location;
   }
 

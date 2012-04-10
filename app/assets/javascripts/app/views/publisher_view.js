@@ -65,8 +65,10 @@ app.views.Publisher = Backbone.View.extend({
 
   // destroys the location
   destroyLocation: function(){
-    if(app.views.location)
+    if(app.views.location){
       app.views.location.remove();
+      $('#location_address').attr('value','');
+    }
   },
 
   clear : function() {

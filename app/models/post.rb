@@ -44,7 +44,7 @@ class Post < ActiveRecord::Base
     t.add :mentioned_people
     t.add :photos
     t.add :nsfw
-    t.add 'location.address', :as => :location
+    t.add :address
   end
 
   xml_attr :provider_display_name
@@ -94,6 +94,10 @@ class Post < ActiveRecord::Base
   def raw_message; ""; end
   def mentioned_people; []; end
   def photos; []; end
+
+  def address
+    location.address if location
+  end
 
   def self.excluding_blocks(user)
     people = user.blocks.map{|b| b.person_id}

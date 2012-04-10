@@ -56,8 +56,8 @@ app.views.Content = app.views.StreamObject.extend({
   },
 
   location: function(){
-    var location = this.model.get('location')? this.model.get('location') : '';
-    return location;
+    var address = this.model.get('address')? this.model.get('address') : '';
+    return address;
   }
 
 });

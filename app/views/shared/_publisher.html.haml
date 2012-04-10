@@ -31,6 +31,7 @@
               #file-upload.btn{:title => t('.upload_photos')}
                 = image_tag 'icons/camera.png', :alt => t('.upload_photos').titleize, :class => 'publisher_image'
             = hidden_field :location, :address
+            = hidden_field :location, :coords
 
       - if publisher_public
         = hidden_field_tag 'aspect_ids[]', "public"

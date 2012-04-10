@@ -1,4 +1,4 @@
-app.views.Locator = Backbone.View.extend({
+app.views.Location = Backbone.View.extend({
 
   el: "#location",
 
@@ -7,9 +7,6 @@ app.views.Locator = Backbone.View.extend({
   },
 
   initialize: function(){
-
-    this.collection = new app.models.Location;
-    this.collection.bind('add', this.addLocation);
 
     this.render();
     view = this;
@@ -23,9 +20,10 @@ app.views.Locator = Backbone.View.extend({
   getLocation: function(e){
     locator = new Google.Locator;
 
-    locator.getAddress(function(address){
+    locator.getAddress(function(address, latlng){
       $('#location').html('<div id="location_address">' + address + '</div>');
       $('#location_address').val(address);
+      $('#location_coords').val(latlng.Ya + "," + latlng.Za);
       $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
     });
   },

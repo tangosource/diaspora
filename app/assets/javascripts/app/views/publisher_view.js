@@ -34,7 +34,8 @@ app.views.Publisher = Backbone.View.extend({
       "aspect_ids" : serializedForm["aspect_ids[]"],
       "photos" : serializedForm["photos[]"],
       "services" : serializedForm["services[]"],
-      "location" : serializedForm["location[address]"]
+      "location_address" : serializedForm["location[address]"],
+      "location_coords" : serializedForm["location[coords]"]
     }, {
       url : "/status_messages",
       success : function() {
@@ -55,17 +56,20 @@ app.views.Publisher = Backbone.View.extend({
     this.destroyLocation();
   },
 
-  // creates the locator
+  // creates the location
   showLocation: function(){
     if($('#location').length == 0){
       $('#publisher_textarea_wrapper').after('<div id="location"></div>');
-      app.views.locator = new app.views.Locator;
+      app.views.location = new app.views.Location;
     }
   },
 
-  // destroys the locator
+  // destroys the location
   destroyLocation: function(){
-    app.views.locator.remove();
+    if(app.views.location){
+      app.views.location.remove();
+      $('#location_address').attr('value','');
+    }
   },
 
   clear : function() {

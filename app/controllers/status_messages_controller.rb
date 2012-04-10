@@ -45,7 +45,8 @@ class StatusMessagesController < ApplicationController
     services = [*params[:services]].compact
 
     @status_message = current_user.build_post(:status_message, params[:status_message])
-    @status_message.build_location(:address => params[:location])
+    lat, lng = split_coords(params[:location_coords])
+    @status_message.build_location(:address => params[:location_address], :lat => lat, :lng => lng) unless params[:location_address].blank?
     @status_message.attach_photos_by_ids(params[:photos])
 
     if @status_message.save
@@ -107,5 +108,10 @@ class StatusMessagesController < ApplicationController
 
   def remove_getting_started
     current_user.disable_getting_started
+  end
+
+  private
+  def split_coords(coords)
+    coords.split(',')
   end
 end

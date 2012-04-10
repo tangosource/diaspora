@@ -11,7 +11,8 @@ app.views.Content = app.views.StreamObject.extend({
       text : app.helpers.textFormatter(this.model.get("text"), this.model),
       o_embed_html : this.embedHTML(),
       largePhoto : this.largePhoto(),
-      smallPhotos : this.smallPhotos()
+      smallPhotos : this.smallPhotos(),
+      location: this.location()
     });
   },
 
@@ -52,6 +53,11 @@ app.views.Content = app.views.StreamObject.extend({
       el.css('height','auto');
     });
     $(evt.currentTarget).hide();
+  },
+
+  location: function(){
+    var address = this.model.get('address')? this.model.get('address') : '';
+    return address;
   }
 
 });
@@ -68,3 +74,6 @@ app.views.ActivityStreams__Photo = app.views.Content.extend({
   templateName : "activity-streams-photo"
 });
 
+app.views.LocationStream = app.views.Content.extend({
+  templateName: "status-message-location"
+});

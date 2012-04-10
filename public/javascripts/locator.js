@@ -16,12 +16,13 @@ Google.Locator = function (){
         var return_value;
         if (status == google.maps.GeocoderStatus.OK) {
           if (results[0]) {
-            return_value = results[0].formatted_address;
+            address = results[0].formatted_address;
+            coords = latlng;
           }
         } else {
           return_value = "Geocoder failed due to: " + status;
         }
-        return callback(return_value)
+        return callback(address, coords)
       })
     })
   };

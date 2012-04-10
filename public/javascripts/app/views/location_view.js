@@ -20,7 +20,8 @@ app.views.Location = Backbone.View.extend({
   getLocation: function(e){
     locator = new Google.Locator;
 
-    locator.getAddress(function(address){
+    locator.getAddress(function(address, latlng){
+      console.log(address, latlng);
       $('#location').html('<div id="location_address">' + address + '</div>');
       $('#location_address').val(address);
       $('#location').append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');

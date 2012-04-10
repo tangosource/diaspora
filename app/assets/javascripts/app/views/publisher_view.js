@@ -55,17 +55,17 @@ app.views.Publisher = Backbone.View.extend({
     this.destroyLocation();
   },
 
-  // creates the locator
+  // creates the location
   showLocation: function(){
     if($('#location').length == 0){
       $('#publisher_textarea_wrapper').after('<div id="location"></div>');
-      app.views.locator = new app.views.Locator;
+      app.views.location = new app.views.Location;
     }
   },
 
-  // destroys the locator
+  // destroys the location
   destroyLocation: function(){
-    app.views.locator.remove();
+    app.views.location.remove();
   },
 
   clear : function() {

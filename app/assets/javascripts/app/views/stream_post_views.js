@@ -6,7 +6,8 @@ app.views.StreamPost = app.views.Post.extend({
     ".feedback" : "feedbackView",
     ".likes" : "likesInfoView",
     ".comments" : "commentStreamView",
-    ".post-content" : "postContentView"
+    ".post-content" : "postContentView",
+    ".status-message-location" : "postLocationStreamView"
   },
 
   events: {
@@ -42,6 +43,10 @@ app.views.StreamPost = app.views.Post.extend({
     var normalizedClass = this.model.get("post_type").replace(/::/, "__");
     var postClass = app.views[normalizedClass] || app.views.StatusMessage;
     return new postClass({ model : this.model });
+  },
+
+  postLocationStreamView : function(){
+    return new app.views.LocationStream({ model : this.model});
   },
 
   removeNsfwShield: function(evt){

@@ -8,9 +8,6 @@ app.views.Location = Backbone.View.extend({
 
   initialize: function(){
 
-    this.collection = new app.models.Location;
-    this.collection.bind('add', this.addLocation);
-
     this.render();
     view = this;
     $('#locator').click(view.getLocation());

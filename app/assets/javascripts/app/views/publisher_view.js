@@ -11,7 +11,8 @@ app.views.Publisher = Backbone.View.extend({
     "click #hide_publisher" : "clear",
     "submit form" : "createStatusMessage",
     "click #locator" : "showLocation",
-    "click #hide_location" : "destroyLocation"
+    "click #hide_location" : "destroyLocation",
+    "keypress #location_address" : "avoidEnter"
   },
 
   initialize : function(){
@@ -34,7 +35,7 @@ app.views.Publisher = Backbone.View.extend({
       "aspect_ids" : serializedForm["aspect_ids[]"],
       "photos" : serializedForm["photos[]"],
       "services" : serializedForm["services[]"],
-      "location_address" : serializedForm["location[address]"],
+      "location_address" : $("#location_address").val(),
       "location_coords" : serializedForm["location[coords]"]
     }, {
       url : "/status_messages",
@@ -70,6 +71,12 @@ app.views.Publisher = Backbone.View.extend({
       app.views.location.remove();
       $('#location_address').attr('value','');
     }
+  },
+
+  // avoid submitting form when pressing Enter key
+  avoidEnter: function(evt){
+    if(evt.keyCode == 13)
+      return false;
   },
 
   clear : function() {

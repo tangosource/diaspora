@@ -12,7 +12,6 @@ app.views.Location = Backbone.View.extend({
   },
 
   getLocation: function(e){
-
     element = this.el;
 
     locator = new Google.Locator;
@@ -22,14 +21,5 @@ app.views.Location = Backbone.View.extend({
       $(element).append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
     });
   },
-
-  removeLocation: function(){
-    var self = this;
-  },
-
-  addLocation: function(){
-    var self = this;
-  }
-
 });
 

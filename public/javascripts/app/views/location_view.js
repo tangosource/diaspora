@@ -2,15 +2,9 @@ app.views.Location = Backbone.View.extend({
 
   el: "#location",
 
-  events: {
-    "click #locator" : "getLocation"
-  },
-
   initialize: function(){
-
     this.render();
-    view = this;
-    $('#locator').click(view.getLocation());
+    this.getLocation();
   },
 
   render: function(){

@@ -78,6 +78,23 @@ describe("app.views.Publisher", function() {
   });
 
   describe('#destroyLocation', function(){
+    it("Destroy location if exists", function(){
+
+      // inserts location to the DOM; it is the location's view element
+      setFixtures('<div id="location"></container>'); 
+
+      // creates a new Location view with the #location element
+      // with this we avoid unnecessarily to call the google API
+      app.views.Location = new Backbone.View({el:"#location"});
+
+      // creates the mock 
+      app.views.location = sinon.mock(app.views.Location);
+      app.views.location = app.views.location.object;
+
+      // calls the destroy function and test the expected result
+      this.view.destroyLocation();
+      expect($("#location").length).toBe(0);
+    })
   });
 
   describe('#avoidEnter', function(){

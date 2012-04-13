@@ -75,6 +75,24 @@ describe("app.views.Publisher", function() {
   });
 
   describe('#showLocation', function(){
+    it("Show location", function(){
+
+      // inserts location to the DOM; it is the location's view element
+      setFixtures('<div id="publisher_textarea_wrapper"></container>'); 
+
+      // creates a fake Locator to avoid google API call 
+      Google = {};
+      Google.Locator = function(){return { getAddress:function(){}}};
+
+      // validates there is not location
+      expect($("#location").length).toBe(0);
+
+      // this should create a new location
+      this.view.showLocation();
+
+      // validates there is one location created
+      expect($("#location").length).toBe(1);
+    })
   });
 
   describe('#destroyLocation', function(){

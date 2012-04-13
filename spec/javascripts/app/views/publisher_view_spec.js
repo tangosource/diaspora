@@ -106,8 +106,7 @@ describe("app.views.Publisher", function() {
       app.views.Location = new Backbone.View({el:"#location"});
 
       // creates the mock 
-      app.views.location = sinon.mock(app.views.Location);
-      app.views.location = app.views.location.object;
+      app.views.location = sinon.mock(app.views.Location).object;
 
       // calls the destroy function and test the expected result
       this.view.destroyLocation();
@@ -116,6 +115,14 @@ describe("app.views.Publisher", function() {
   });
 
   describe('#avoidEnter', function(){
+    it("Avoid submitting the form when pressing enter", function(){
+      // simulates the event object
+      evt = {};
+      evt.keyCode = 13;
+
+      // should return false in order to avoid the form submition
+      expect(this.view.avoidEnter(evt)).toBeFalsy();
+    })
   });
 });
 

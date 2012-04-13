@@ -8,7 +8,7 @@ app.views.Location = Backbone.View.extend({
   },
 
   render: function(){
-    $(this.el).append('<div id="location_address"><img alt="delete location" src="/images/ajax-loader.gif"></div>');
+    $(this.el).append('<img alt="delete location" src="/images/ajax-loader.gif">');
   },
 
   getLocation: function(e){

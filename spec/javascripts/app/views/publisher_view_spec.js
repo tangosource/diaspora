@@ -73,4 +73,14 @@ describe("app.views.Publisher", function() {
       expect(this.view.$("input[name='photos[]']").length).toBe(0);
     })
   });
+
+  describe('#showLocation', function(){
+  });
+
+  describe('#destroyLocation', function(){
+  });
+
+  describe('#avoidEnter', function(){
+  });
 });
+

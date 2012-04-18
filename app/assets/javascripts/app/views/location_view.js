@@ -8,7 +8,7 @@ app.views.Location = Backbone.View.extend({
   },
 
   render: function(){
-    $(this.el).append('<img alt="delete location" src="/images/ajax-loader.gif">');
+    $(this.el).append('<img alt="delete location" src="/ajax-loader.gif">');
   },
 
   getLocation: function(e){
@@ -18,7 +18,7 @@ app.views.Location = Backbone.View.extend({
     locator.getAddress(function(address, latlng){
       $(element).html('<input id="location_address" value="' + address + '"/>');
       $('#location_coords').val(latlng.Ya + "," + latlng.Za);
-      $(element).append('<a id="hide_location"><img alt="delete location" src="/images/deletelabel.png"></a>');
+      $(element).append('<a id="hide_location"><img alt="delete location" src="/deletelabel.png"></a>');
     });
   },
 });

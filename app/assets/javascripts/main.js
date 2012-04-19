@@ -41,3 +41,4 @@
 //= require bootstrap-tooltip
 //= require bootstrap-popover
 //= require bootstrap-dropdown
+//= require locator

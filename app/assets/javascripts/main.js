@@ -41,4 +41,6 @@
 //= require bootstrap-tooltip
 //= require bootstrap-popover
 //= require bootstrap-dropdown
+//= require osmlocator
+//= require OpenLayers
 //= require locator

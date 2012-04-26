@@ -96,7 +96,10 @@ class Post < ActiveRecord::Base
   def photos; []; end
 
   def address
-    location.address if location
+    if self.class.to_s == "StatusMessage" 
+      puts 'true'
+      location.address if location 
+    end
   end
 
   def self.excluding_blocks(user)

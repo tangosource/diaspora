@@ -17,7 +17,7 @@ app.views.Location = Backbone.View.extend({
     locator = new Google.Locator;
     locator.getAddress(function(address, latlng){
       $(element).html('<input id="location_address" value="' + address + '"/>');
-      $('#location_coords').val(latlng.Ya + "," + latlng.Za);
+      $('#location_coords').val(latlng.lat() + "," + latlng.lng());
       $(element).append('<a id="hide_location"><img alt="delete location" src="/assets/deletelabel.png"></a>');
     });
   },
